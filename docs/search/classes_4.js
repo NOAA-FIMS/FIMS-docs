@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['population_3c_20t_20_3e_33',['Population&lt; T &gt;',['../structfims_1_1Population_3_01T_01_4.html',1,'fims']]]
+  ['model_37',['Model',['../classfims_1_1Model.html',1,'fims']]],
+  ['modeltraits_38',['ModelTraits',['../structModelTraits.html',1,'']]]
 ];
