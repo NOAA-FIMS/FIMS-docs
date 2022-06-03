@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['selectivitybase_47',['SelectivityBase',['../structfims_1_1SelectivityBase.html#a93172d14907ecc8b6dde7c98137576fa',1,'fims::SelectivityBase']]]
+  ['recruitmentbase_51',['RecruitmentBase',['../structfims_1_1RecruitmentBase.html#a284bcb2e5db9b033c68a3fd314bd1a65',1,'fims::RecruitmentBase']]]
 ];
