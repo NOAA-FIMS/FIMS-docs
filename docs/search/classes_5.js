@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['population_3c_20t_20_3e_43',['Population&lt; T &gt;',['../structfims_1_1Population_3_01T_01_4.html',1,'fims']]]
+  ['maturitybase_52',['MaturityBase',['../structfims_1_1MaturityBase.html',1,'fims']]],
+  ['model_53',['Model',['../classfims_1_1Model.html',1,'fims']]],
+  ['modeltraits_54',['ModelTraits',['../structModelTraits.html',1,'']]]
 ];

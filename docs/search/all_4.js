@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['id_8',['id',['../structfims_1_1FIMSObject.html#a971b2bf344a2662e578407b324b831bc',1,'fims::FIMSObject']]],
-  ['id_5fg_9',['id_g',['../structfims_1_1MaturityBase.html#aaa291c70af1b5051dd4f500d0eb88493',1,'fims::MaturityBase::id_g()'],['../structfims_1_1RecruitmentBase.html#a3ac855d58eb5d649b2683f1bcf912e87',1,'fims::RecruitmentBase::id_g()'],['../structfims_1_1SelectivityBase.html#ad798ab79131a2ce7128b6b041da0dee3',1,'fims::SelectivityBase::id_g()']]],
-  ['information_10',['Information',['../classfims_1_1Information.html',1,'fims']]]
+  ['fimsobject_4',['FIMSObject',['../structfims_1_1FIMSObject.html',1,'fims']]],
+  ['fimsobject_3c_20type_20_3e_5',['FIMSObject&lt; Type &gt;',['../structfims_1_1FIMSObject.html',1,'fims']]],
+  ['fimsrcppinterfacebase_6',['FIMSRcppInterfaceBase',['../classFIMSRcppInterfaceBase.html',1,'']]],
+  ['fimstraits_7',['FIMSTraits',['../structfims_1_1FIMSTraits.html',1,'fims']]],
+  ['fixed_5feffects_5fparameters_8',['fixed_effects_parameters',['../structfims_1_1FIMSObject.html#a55787c34a989c76c5ae35883b2f333e5',1,'fims::FIMSObject']]],
+  ['fleet_9',['Fleet',['../structfims_1_1Fleet.html',1,'fims']]]
 ];

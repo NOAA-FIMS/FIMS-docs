@@ -92,28 +92,60 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../interface/interface.hpp&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;model_object.hpp&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>fims {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classfims_1_1Information.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfims_1_1Information.html">Information</a> {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="keyword">typedef</span> fims::FIMSTrait&lt;T&gt;::variable_t variable_t;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="keyword">typedef</span> fims::FIMSTrait&lt;T&gt;::real_t real_t;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  std::vector&lt;variable_t*&gt; parameters;  <span class="comment">// list of all estimated parameters</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  std::vector&lt;variable_t*&gt;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;      random_effects_parameters;  <span class="comment">// list of all random effects parameters</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  std::vector&lt;variable_t*&gt;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      fixed_effects_parameters;  <span class="comment">// list of all fixed effects parameters</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordtype">bool</span> CreateModel() {}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}  <span class="comment">// namespace fims</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;def.hpp&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// #include &quot;../interface/interface.hpp&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;model_object.hpp&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;../population_dynamics/recruitment/recruitment.hpp&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../population_dynamics/selectivity/selectivity.hpp&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">namespace </span>fims {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="classfims_1_1Information.html">   29</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classfims_1_1Information.html">Information</a> {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">static</span> std::shared_ptr&lt;Information&lt;T&gt; &gt; fims_information;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::vector&lt;T*&gt; parameters; <span class="comment">// list of all estimated parameters</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        std::vector&lt;T*&gt; random_effects_parameters; <span class="comment">// list of all random effects parameters</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        std::vector&lt;T*&gt; fixed_effects_parameters; <span class="comment">// list of all fixed effects parameters</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        std::map&lt;uint32_t, std::shared_ptr&lt;fims::RecruitmentBase&lt;T&gt; &gt; &gt; recruitment_models;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        std::map&lt;uint32_t, std::shared_ptr&lt;fims::SelectivityBase&lt;T&gt; &gt; &gt; selectivity_models;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_COMMON_INFORMATION_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">   44</a></span>&#160;        <span class="keyword">static</span> std::shared_ptr&lt;Information&lt;T&gt; &gt; <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">GetInstance</a>() {</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keywordflow">if</span> (<a class="code" href="classfims_1_1Information.html">Information&lt;T&gt;::fims_information</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <a class="code" href="classfims_1_1Information.html">Information&lt;T&gt;::fims_information</a> = std::make_shared&lt;fims::Information&lt;T&gt; &gt;();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classfims_1_1Information.html">Information&lt;T&gt;::fims_information</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classfims_1_1Information.html#a2840d06e11b4847b1ae5fa7cfd22111b">   57</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classfims_1_1Information.html#a2840d06e11b4847b1ae5fa7cfd22111b">RegisterRarameter</a>(T&amp; p) {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            this-&gt;parameters.push_back(&amp;p);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classfims_1_1Information.html#a55f104ddbc63cca3637a69bf3ea6972b">   66</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classfims_1_1Information.html#a55f104ddbc63cca3637a69bf3ea6972b">RegisterRandomEffect</a>(T&amp; re) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            this-&gt;random_effects_parameters.push_back(&amp;re);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        }</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="classfims_1_1Information.html#a736ba30994a8c2b3a3c5093f3e692d49">   76</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classfims_1_1Information.html#a736ba30994a8c2b3a3c5093f3e692d49">CreateModel</a>() {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Information::CreateModel(): Not yet implemented.\n&quot;</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::shared_ptr&lt;Information&lt;T&gt; &gt; Information&lt;T&gt;::fims_information = <span class="keyword">nullptr</span>; <span class="comment">//singleton instance</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;} <span class="comment">// namespace fims</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_COMMON_INFORMATION_HPP */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassfims_1_1Information_html"><div class="ttname"><a href="classfims_1_1Information.html">fims::Information</a></div><div class="ttdef"><b>Definition:</b> information.hpp:26</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a55f104ddbc63cca3637a69bf3ea6972b"><div class="ttname"><a href="classfims_1_1Information.html#a55f104ddbc63cca3637a69bf3ea6972b">fims::Information::RegisterRandomEffect</a></div><div class="ttdeci">void RegisterRandomEffect(T &amp;re)</div><div class="ttdef"><b>Definition:</b> information.hpp:66</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html"><div class="ttname"><a href="classfims_1_1Information.html">fims::Information</a></div><div class="ttdef"><b>Definition:</b> information.hpp:29</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:44</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a2840d06e11b4847b1ae5fa7cfd22111b"><div class="ttname"><a href="classfims_1_1Information.html#a2840d06e11b4847b1ae5fa7cfd22111b">fims::Information::RegisterRarameter</a></div><div class="ttdeci">void RegisterRarameter(T &amp;p)</div><div class="ttdef"><b>Definition:</b> information.hpp:57</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a736ba30994a8c2b3a3c5093f3e692d49"><div class="ttname"><a href="classfims_1_1Information.html#a736ba30994a8c2b3a3c5093f3e692d49">fims::Information::CreateModel</a></div><div class="ttdeci">bool CreateModel()</div><div class="ttdef"><b>Definition:</b> information.hpp:76</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['maturitybase_40',['MaturityBase',['../structfims_1_1MaturityBase.html',1,'fims']]],
-  ['model_41',['Model',['../classfims_1_1Model.html',1,'fims']]],
-  ['modeltraits_42',['ModelTraits',['../structModelTraits.html',1,'']]]
+  ['logisticmaturity_50',['LogisticMaturity',['../structfims_1_1LogisticMaturity.html',1,'fims']]],
+  ['logisticselectivity_51',['LogisticSelectivity',['../structfims_1_1LogisticSelectivity.html',1,'fims::LogisticSelectivity&lt; T &gt;'],['../classLogisticSelectivity.html',1,'LogisticSelectivity']]]
 ];

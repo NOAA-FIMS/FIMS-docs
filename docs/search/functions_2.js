@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['maturitybase_50',['MaturityBase',['../structfims_1_1MaturityBase.html#a3c091ce642d497c5fd5313e24792a9cc',1,'fims::MaturityBase']]]
+  ['getid_66',['GetId',['../structfims_1_1FIMSObject.html#a711658401af3d645c33905e80df14f42',1,'fims::FIMSObject']]],
+  ['getinstance_67',['GetInstance',['../classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2',1,'fims::Information']]]
 ];
