@@ -98,25 +98,24 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;../population_dynamics/fleet/fleet.hpp&quot;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;../population_dynamics/population/population.hpp&quot;</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;../population_dynamics/selectivity/selectivity.hpp&quot;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;../population_dynamics/recruitment/recruitment.hpp&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;../population_dynamics/recruitment/recruitment.hpp&quot;</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;../population_dynamics/selectivity/selectivity.hpp&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">namespace </span>fims {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classfims_1_1Model.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfims_1_1Model.html">Model</a> {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">static</span> std::shared_ptr&lt;Model&lt;T&gt; &gt;  fims_model;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::vector &lt; std::shared_ptr&lt;Population&lt;T&gt; &gt; &gt; populations;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  std::vector &lt; std::shared_ptr&lt;Fleet&lt;T&gt; &gt; &gt; fleets;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;std::shared_ptr&lt;Model&lt;T&gt; &gt; <a class="code" href="classfims_1_1Model.html">Model&lt;T&gt;::fims_model</a> = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}  <span class="comment">// namespace fims</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_COMMON_MODEL_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">static</span> std::shared_ptr&lt;Model&lt;T&gt; &gt; fims_model;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  std::vector&lt;std::shared_ptr&lt;Population&lt;T&gt; &gt; &gt; populations;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  std::vector&lt;std::shared_ptr&lt;Fleet&lt;T&gt; &gt; &gt; fleets;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;std::shared_ptr&lt;Model&lt;T&gt; &gt; <a class="code" href="classfims_1_1Model.html">Model&lt;T&gt;::fims_model</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace fims</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_COMMON_MODEL_HPP */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassfims_1_1Model_html"><div class="ttname"><a href="classfims_1_1Model.html">fims::Model</a></div><div class="ttdef"><b>Definition:</b> model.hpp:32</div></div>
 <!-- start footer part -->
