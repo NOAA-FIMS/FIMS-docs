@@ -136,15 +136,15 @@ $(function() {
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;std::map&lt;uint32_t, RecruitmentInterfaceBase*&gt;</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    RecruitmentInterfaceBase::live_objects;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitment.html">   66</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBevertonHoltRecruitment.html">BevertonHoltRecruitment</a> : <span class="keyword">public</span> <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a> {</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html">   66</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a> : <span class="keyword">public</span> <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a> {</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classParameter.html">Parameter</a> steep;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <a class="code" href="classParameter.html">Parameter</a> rzero;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <a class="code" href="classParameter.html">Parameter</a> phizero;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="classBevertonHoltRecruitment.html">BevertonHoltRecruitment</a>() : <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a>() {}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a>() : <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a>() {}</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classBevertonHoltRecruitment.html">BevertonHoltRecruitment</a>() {}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a>() {}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">virtual</span> uint32_t get_id() { <span class="keywordflow">return</span> this-&gt;id; }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
@@ -303,7 +303,7 @@ $(function() {
 <div class="ttc" id="aclassRecruitmentInterfaceBase_html"><div class="ttname"><a href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a></div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:40</div></div>
 <div class="ttc" id="aclassParameter_html"><div class="ttname"><a href="classParameter.html">Parameter</a></div><div class="ttdoc">RcppInterface class that defines the interface between R and C++ for parameter types.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:48</div></div>
 <div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:48</div></div>
-<div class="ttc" id="aclassBevertonHoltRecruitment_html"><div class="ttname"><a href="classBevertonHoltRecruitment.html">BevertonHoltRecruitment</a></div><div class="ttdoc">Rcpp interface for Beverton-Holt as an S4 object. To instantiate from R: beverton_holt &lt;- new(fims$be...</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:66</div></div>
+<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a></div><div class="ttdoc">Rcpp interface for Beverton-Holt as an S4 object. To instantiate from R: beverton_holt &lt;- new(fims$be...</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:66</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

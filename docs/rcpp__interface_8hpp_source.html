@@ -162,18 +162,18 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      .field(<span class="stringliteral">&quot;is_random_effect&quot;</span>, &amp;Parameter::is_random_effect)</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;      .field(<span class="stringliteral">&quot;estimated&quot;</span>, &amp;Parameter::estimated);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  Rcpp::class_&lt;BevertonHoltRecruitment&gt;(<span class="stringliteral">&quot;BevertonHoltRecruitment&quot;</span>)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  Rcpp::class_&lt;BevertonHoltRecruitmentInterface&gt;(<span class="stringliteral">&quot;BevertonHoltRecruitment&quot;</span>)</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;      .constructor()</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      .field(<span class="stringliteral">&quot;steep&quot;</span>, &amp;BevertonHoltRecruitment::steep)</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      .field(<span class="stringliteral">&quot;rzero&quot;</span>, &amp;BevertonHoltRecruitment::rzero)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      .field(<span class="stringliteral">&quot;phizero&quot;</span>, &amp;BevertonHoltRecruitment::phizero)</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      .method(<span class="stringliteral">&quot;get_id&quot;</span>, &amp;BevertonHoltRecruitment::get_id);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      .field(<span class="stringliteral">&quot;steep&quot;</span>, &amp;BevertonHoltRecruitmentInterface::steep)</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      .field(<span class="stringliteral">&quot;rzero&quot;</span>, &amp;BevertonHoltRecruitmentInterface::rzero)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      .field(<span class="stringliteral">&quot;phizero&quot;</span>, &amp;BevertonHoltRecruitmentInterface::phizero)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      .method(<span class="stringliteral">&quot;get_id&quot;</span>, &amp;BevertonHoltRecruitmentInterface::get_id);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  Rcpp::class_&lt;LogisticSelectivity&gt;(<span class="stringliteral">&quot;LogisticSelectivity&quot;</span>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  Rcpp::class_&lt;LogisticSelectivityInterface&gt;(<span class="stringliteral">&quot;LogisticSelectivity&quot;</span>)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      .constructor()</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      .field(<span class="stringliteral">&quot;median&quot;</span>, &amp;LogisticSelectivity::median)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      .field(<span class="stringliteral">&quot;slope&quot;</span>, &amp;LogisticSelectivity::slope)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      .method(<span class="stringliteral">&quot;get_id&quot;</span>, &amp;LogisticSelectivity::get_id);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      .field(<span class="stringliteral">&quot;median&quot;</span>, &amp;LogisticSelectivityInterface::median)</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      .field(<span class="stringliteral">&quot;slope&quot;</span>, &amp;LogisticSelectivityInterface::slope)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      .method(<span class="stringliteral">&quot;get_id&quot;</span>, &amp;LogisticSelectivityInterface::get_id);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RCPP_INTERFACE_HPP */</span><span class="preprocessor"></span></div>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['bevertonholtrecruitment_50',['BevertonHoltRecruitment',['../classBevertonHoltRecruitment.html',1,'']]]
+  ['bevertonholtrecruitmentinterface_51',['BevertonHoltRecruitmentInterface',['../classBevertonHoltRecruitmentInterface.html',1,'']]]
 ];

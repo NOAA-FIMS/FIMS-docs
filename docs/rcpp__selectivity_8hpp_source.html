@@ -134,14 +134,14 @@ $(function() {
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;std::map&lt;uint32_t, SelectivityInterfaceBase*&gt;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    SelectivityInterfaceBase::selectivity_objects;</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classLogisticSelectivity.html">   63</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLogisticSelectivity.html">LogisticSelectivity</a> : <span class="keyword">public</span> <a class="code" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a> {</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classLogisticSelectivityInterface.html">   63</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLogisticSelectivityInterface.html">LogisticSelectivityInterface</a> : <span class="keyword">public</span> <a class="code" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a> {</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <a class="code" href="classParameter.html">Parameter</a> median;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="classParameter.html">Parameter</a> slope;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classLogisticSelectivity.html">LogisticSelectivity</a>() : <a class="code" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a>() {}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classLogisticSelectivityInterface.html">LogisticSelectivityInterface</a>() : <a class="code" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a>() {}</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classLogisticSelectivity.html">LogisticSelectivity</a>() {}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classLogisticSelectivityInterface.html">LogisticSelectivityInterface</a>() {}</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keyword">virtual</span> uint32_t get_id() { <span class="keywordflow">return</span> this-&gt;id; }</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
@@ -264,10 +264,10 @@ $(function() {
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassLogisticSelectivityInterface_html"><div class="ttname"><a href="classLogisticSelectivityInterface.html">LogisticSelectivityInterface</a></div><div class="ttdoc">Rcpp interface for logistic selectivity as an S4 object. To instantiate from R: logistic_selectivity ...</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:63</div></div>
 <div class="ttc" id="aclassFIMSRcppInterfaceBase_html"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></div><div class="ttdoc">Base class for all interface objects.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:67</div></div>
 <div class="ttc" id="aclassParameter_html"><div class="ttname"><a href="classParameter.html">Parameter</a></div><div class="ttdoc">RcppInterface class that defines the interface between R and C++ for parameter types.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:48</div></div>
 <div class="ttc" id="aclassSelectivityInterfaceBase_html"><div class="ttname"><a href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:40</div></div>
-<div class="ttc" id="aclassLogisticSelectivity_html"><div class="ttname"><a href="classLogisticSelectivity.html">LogisticSelectivity</a></div><div class="ttdoc">Rcpp interface for logistic selectivity as an S4 object. To instantiate from R: logistic_selectivity ...</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:63</div></div>
 <div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:48</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
