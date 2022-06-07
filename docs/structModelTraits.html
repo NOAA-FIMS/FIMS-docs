@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>FIMS: ModelTraits&lt; Type &gt; Struct Template Reference</title>
+<title>FIMS: ModelTraits&lt; T &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,19 +72,62 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="structModelTraits-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">ModelTraits&lt; Type &gt; Struct Template Reference</div>  </div>
+<div class="title">ModelTraits&lt; T &gt; Struct Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="structModelTraits.html" title="ModelTraits class that contains the DataVector and ParameterVector types.">ModelTraits</a> class that contains the DataVector and ParameterVector types.  
+ <a href="structModelTraits.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="interface_8hpp_source.html">interface.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a69880dfc32dc330f54f7fabaf3fcd250"><td class="memItemLeft" align="right" valign="top"><a id="a69880dfc32dc330f54f7fabaf3fcd250"></a>
-typedef CppAD::vector&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DataVector</b></td></tr>
-<tr class="separator:a69880dfc32dc330f54f7fabaf3fcd250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a418946a22560cdf56a21e037f92a75a9"><td class="memItemLeft" align="right" valign="top"><a id="a418946a22560cdf56a21e037f92a75a9"></a>
-typedef CppAD::vector&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ParameterVector</b></td></tr>
-<tr class="separator:a418946a22560cdf56a21e037f92a75a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5963625b217eec01ad13cdcc1095c3a5"><td class="memItemLeft" align="right" valign="top">typedef CppAD::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModelTraits.html#a5963625b217eec01ad13cdcc1095c3a5">DataVector</a></td></tr>
+<tr class="separator:a5963625b217eec01ad13cdcc1095c3a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f483f4514e00f458ce93b9bd06c5f79"><td class="memItemLeft" align="right" valign="top">typedef CppAD::vector&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structModelTraits.html#a0f483f4514e00f458ce93b9bd06c5f79">ParameterVector</a></td></tr>
+<tr class="separator:a0f483f4514e00f458ce93b9bd06c5f79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;typename T&gt;<br />
+struct ModelTraits&lt; T &gt;</h3>
+
+<p><a class="el" href="structModelTraits.html" title="ModelTraits class that contains the DataVector and ParameterVector types.">ModelTraits</a> class that contains the DataVector and ParameterVector types. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a5963625b217eec01ad13cdcc1095c3a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5963625b217eec01ad13cdcc1095c3a5">&#9670;&nbsp;</a></span>DataVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef CppAD::vector&lt;T&gt; <a class="el" href="structModelTraits.html">ModelTraits</a>&lt; T &gt;::<a class="el" href="structModelTraits.html#a5963625b217eec01ad13cdcc1095c3a5">DataVector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is a vector of the data that is differentiable </p>
+
+</div>
+</div>
+<a id="a0f483f4514e00f458ce93b9bd06c5f79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f483f4514e00f458ce93b9bd06c5f79">&#9670;&nbsp;</a></span>ParameterVector</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef CppAD::vector&lt;T&gt; <a class="el" href="structModelTraits.html">ModelTraits</a>&lt; T &gt;::<a class="el" href="structModelTraits.html#a0f483f4514e00f458ce93b9bd06c5f79">ParameterVector</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is a vector of the parameters that is differentiable </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>inst/include/interface/<a class="el" href="interface_8hpp_source.html">interface.hpp</a></li>
 </ul>
