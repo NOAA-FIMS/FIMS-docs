@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['recruitmentbase_79',['RecruitmentBase',['../structfims_1_1RecruitmentBase.html#a284bcb2e5db9b033c68a3fd314bd1a65',1,'fims::RecruitmentBase']]],
-  ['registerparameter_80',['RegisterParameter',['../classfims_1_1Information.html#a7abb023dedff9942a54ddf65fa942fa9',1,'fims::Information']]],
-  ['registerrandomeffect_81',['RegisterRandomEffect',['../classfims_1_1Information.html#a55f104ddbc63cca3637a69bf3ea6972b',1,'fims::Information']]]
+  ['getid_92',['GetId',['../structfims_1_1FIMSObject.html#a711658401af3d645c33905e80df14f42',1,'fims::FIMSObject']]],
+  ['getinstance_93',['GetInstance',['../classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2',1,'fims::Information']]]
 ];

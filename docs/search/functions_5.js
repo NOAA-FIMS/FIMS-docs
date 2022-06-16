@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['selectivitybase_82',['SelectivityBase',['../structfims_1_1SelectivityBase.html#a93172d14907ecc8b6dde7c98137576fa',1,'fims::SelectivityBase']]]
+  ['log_94',['log',['../fims__math_8hpp.html#a9067b9920f9eeef90a1968fd907c4566',1,'fims']]],
+  ['logistic_95',['logistic',['../fims__math_8hpp.html#a4d48e30e355c7dcda1897f413e2d179f',1,'fims']]]
 ];

@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['selectivitybase_40',['SelectivityBase',['../structfims_1_1SelectivityBase.html',1,'fims::SelectivityBase&lt; T &gt;'],['../structfims_1_1SelectivityBase.html#a93172d14907ecc8b6dde7c98137576fa',1,'fims::SelectivityBase::SelectivityBase()']]],
-  ['selectivityinterfacebase_41',['SelectivityInterfaceBase',['../classSelectivityInterfaceBase.html',1,'']]],
-  ['slope_42',['slope',['../structfims_1_1LogisticMaturity.html#aab43d748416982aba2470667e9fb4f60',1,'fims::LogisticMaturity::slope()'],['../structfims_1_1LogisticSelectivity.html#a16ce601199f70289aeac984adce53e24',1,'fims::LogisticSelectivity::slope()']]],
-  ['slope_5fasc_43',['slope_asc',['../structfims_1_1DoubleLogisticSelectivity.html#ad2dcfad2f1dc39ae26cad3b1ee101388',1,'fims::DoubleLogisticSelectivity']]],
-  ['slope_5fdesc_44',['slope_desc',['../structfims_1_1DoubleLogisticSelectivity.html#a6088669dc4c3b639e914e00e44e2c0d3',1,'fims::DoubleLogisticSelectivity']]],
-  ['srbevertonholt_45',['SRBevertonHolt',['../structfims_1_1SRBevertonHolt.html',1,'fims']]],
-  ['steep_46',['steep',['../structfims_1_1SRBevertonHolt.html#a9725bfb881e36b3c53b1d64e1a28e02d',1,'fims::SRBevertonHolt']]],
-  ['subpopulation_47',['Subpopulation',['../classfims_1_1Subpopulation.html',1,'fims']]]
+  ['random_5feffects_5fparameters_42',['random_effects_parameters',['../structfims_1_1FIMSObject.html#ae62632ed38b082bb8200abb2a11e1fab',1,'fims::FIMSObject']]],
+  ['real_5ft_43',['real_t',['../structfims_1_1FIMSTraits.html#a9c392642234ad977d0f8a6ea0dcf7106',1,'fims::FIMSTraits']]],
+  ['recruitmentbase_44',['RecruitmentBase',['../structfims_1_1RecruitmentBase.html',1,'fims::RecruitmentBase&lt; Type &gt;'],['../structfims_1_1RecruitmentBase.html#a284bcb2e5db9b033c68a3fd314bd1a65',1,'fims::RecruitmentBase::RecruitmentBase()']]],
+  ['recruitmentinterfacebase_45',['RecruitmentInterfaceBase',['../classRecruitmentInterfaceBase.html',1,'']]],
+  ['registerparameter_46',['RegisterParameter',['../classfims_1_1Information.html#a7abb023dedff9942a54ddf65fa942fa9',1,'fims::Information']]],
+  ['registerrandomeffect_47',['RegisterRandomEffect',['../classfims_1_1Information.html#a55f104ddbc63cca3637a69bf3ea6972b',1,'fims::Information']]],
+  ['rzero_48',['rzero',['../structfims_1_1SRBevertonHolt.html#a79cc0300e8d25b69e300924c9de9376c',1,'fims::SRBevertonHolt']]]
 ];

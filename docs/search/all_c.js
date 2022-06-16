@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['variable_5fmatrix_48',['variable_matrix',['../structfims_1_1FIMSTraits.html#a4dc81a625d355cb21747c368505247ec',1,'fims::FIMSTraits']]],
-  ['variable_5ft_49',['variable_t',['../structfims_1_1FIMSTraits.html#a70b1d8b9976b69b3b45a98d2e4783cfa',1,'fims::FIMSTraits']]],
-  ['variable_5fvector_50',['variable_vector',['../structfims_1_1FIMSTraits.html#a85e1e32b0ec907e73ba5f2d65a4b4ef7',1,'fims::FIMSTraits']]]
+  ['selectivitybase_49',['SelectivityBase',['../structfims_1_1SelectivityBase.html',1,'fims::SelectivityBase&lt; T &gt;'],['../structfims_1_1SelectivityBase.html#a93172d14907ecc8b6dde7c98137576fa',1,'fims::SelectivityBase::SelectivityBase()']]],
+  ['selectivityinterfacebase_50',['SelectivityInterfaceBase',['../classSelectivityInterfaceBase.html',1,'']]],
+  ['slope_51',['slope',['../structfims_1_1LogisticMaturity.html#aab43d748416982aba2470667e9fb4f60',1,'fims::LogisticMaturity::slope()'],['../structfims_1_1LogisticSelectivity.html#a16ce601199f70289aeac984adce53e24',1,'fims::LogisticSelectivity::slope()']]],
+  ['slope_5fasc_52',['slope_asc',['../structfims_1_1DoubleLogisticSelectivity.html#ad2dcfad2f1dc39ae26cad3b1ee101388',1,'fims::DoubleLogisticSelectivity']]],
+  ['slope_5fdesc_53',['slope_desc',['../structfims_1_1DoubleLogisticSelectivity.html#a6088669dc4c3b639e914e00e44e2c0d3',1,'fims::DoubleLogisticSelectivity']]],
+  ['srbevertonholt_54',['SRBevertonHolt',['../structfims_1_1SRBevertonHolt.html',1,'fims']]],
+  ['steep_55',['steep',['../structfims_1_1SRBevertonHolt.html#a9725bfb881e36b3c53b1d64e1a28e02d',1,'fims::SRBevertonHolt']]],
+  ['subpopulation_56',['Subpopulation',['../classfims_1_1Subpopulation.html',1,'fims']]]
 ];

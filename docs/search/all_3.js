@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['evaluate_6',['evaluate',['../structfims_1_1LogisticMaturity.html#a6466073e1ec51d8b88abbce7f567dd32',1,'fims::LogisticMaturity::evaluate()'],['../structfims_1_1MaturityBase.html#a8877a301b7cddfcf1f0949dd80a2dfbb',1,'fims::MaturityBase::evaluate()'],['../structfims_1_1RecruitmentBase.html#af4b9637d45489983cb08714326f62532',1,'fims::RecruitmentBase::evaluate()'],['../structfims_1_1SRBevertonHolt.html#ab5587e4a4f4e2b577c6b571640705b64',1,'fims::SRBevertonHolt::evaluate()'],['../structfims_1_1DoubleLogisticSelectivity.html#a4934e209221929995d14fee13c8aa28a',1,'fims::DoubleLogisticSelectivity::evaluate()'],['../structfims_1_1LogisticSelectivity.html#a9632051bd495ee11d583d2f1d8a53a9a',1,'fims::LogisticSelectivity::evaluate()'],['../structfims_1_1SelectivityBase.html#aeefea019d125a982549da482f3f3071e',1,'fims::SelectivityBase::evaluate()']]]
+  ['data_5fmatrix_5',['data_matrix',['../structfims_1_1FIMSTraits.html#a7c44b62df5624dc2a965f8384f805bac',1,'fims::FIMSTraits']]],
+  ['data_5fvector_6',['data_vector',['../structfims_1_1FIMSTraits.html#a3476347b67c66ba7906c77ac9081d2b3',1,'fims::FIMSTraits']]],
+  ['datavector_7',['DataVector',['../structModelTraits.html#a5963625b217eec01ad13cdcc1095c3a5',1,'ModelTraits']]],
+  ['def_2ehpp_8',['def.hpp',['../def_8hpp.html',1,'']]],
+  ['double_5flogistic_9',['double_logistic',['../fims__math_8hpp.html#af366ee018ee5051cd427f25cb7ed0552',1,'fims']]],
+  ['doublelogisticselectivity_10',['DoubleLogisticSelectivity',['../structfims_1_1DoubleLogisticSelectivity.html',1,'fims']]]
 ];

@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['getid_76',['GetId',['../structfims_1_1FIMSObject.html#a711658401af3d645c33905e80df14f42',1,'fims::FIMSObject']]],
-  ['getinstance_77',['GetInstance',['../classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2',1,'fims::Information']]]
+  ['double_5flogistic_89',['double_logistic',['../fims__math_8hpp.html#af366ee018ee5051cd427f25cb7ed0552',1,'fims']]]
 ];

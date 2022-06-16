@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['id_15',['id',['../structfims_1_1FIMSObject.html#a971b2bf344a2662e578407b324b831bc',1,'fims::FIMSObject']]],
-  ['id_5fg_16',['id_g',['../structfims_1_1MaturityBase.html#aaa291c70af1b5051dd4f500d0eb88493',1,'fims::MaturityBase::id_g()'],['../structfims_1_1RecruitmentBase.html#a3ac855d58eb5d649b2683f1bcf912e87',1,'fims::RecruitmentBase::id_g()'],['../structfims_1_1SelectivityBase.html#ad798ab79131a2ce7128b6b041da0dee3',1,'fims::SelectivityBase::id_g()']]],
-  ['information_17',['Information',['../classfims_1_1Information.html',1,'fims']]]
+  ['getid_20',['GetId',['../structfims_1_1FIMSObject.html#a711658401af3d645c33905e80df14f42',1,'fims::FIMSObject']]],
+  ['getinstance_21',['GetInstance',['../classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2',1,'fims::Information']]]
 ];

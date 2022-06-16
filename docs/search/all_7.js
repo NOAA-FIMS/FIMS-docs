@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['logisticmaturity_18',['LogisticMaturity',['../structfims_1_1LogisticMaturity.html',1,'fims']]],
-  ['logisticselectivity_19',['LogisticSelectivity',['../structfims_1_1LogisticSelectivity.html',1,'fims']]],
-  ['logisticselectivityinterface_20',['LogisticSelectivityInterface',['../classLogisticSelectivityInterface.html',1,'']]]
+  ['id_22',['id',['../structfims_1_1FIMSObject.html#a971b2bf344a2662e578407b324b831bc',1,'fims::FIMSObject']]],
+  ['id_5fg_23',['id_g',['../structfims_1_1MaturityBase.html#aaa291c70af1b5051dd4f500d0eb88493',1,'fims::MaturityBase::id_g()'],['../structfims_1_1RecruitmentBase.html#a3ac855d58eb5d649b2683f1bcf912e87',1,'fims::RecruitmentBase::id_g()'],['../structfims_1_1SelectivityBase.html#ad798ab79131a2ce7128b6b041da0dee3',1,'fims::SelectivityBase::id_g()']]],
+  ['information_24',['Information',['../classfims_1_1Information.html',1,'fims']]]
 ];
