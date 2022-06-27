@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['parameter_74',['Parameter',['../classParameter.html',1,'']]],
-  ['population_75',['Population',['../structfims_1_1Population.html',1,'fims']]],
-  ['populationinterfacebase_76',['PopulationInterfaceBase',['../classPopulationInterfaceBase.html',1,'']]]
+  ['logisticmaturity_80',['LogisticMaturity',['../structfims_1_1LogisticMaturity.html',1,'fims']]],
+  ['logisticselectivity_81',['LogisticSelectivity',['../structfims_1_1LogisticSelectivity.html',1,'fims']]],
+  ['logisticselectivityinterface_82',['LogisticSelectivityInterface',['../classLogisticSelectivityInterface.html',1,'']]]
 ];

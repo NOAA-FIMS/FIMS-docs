@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['recruitmentbase_77',['RecruitmentBase',['../structfims_1_1RecruitmentBase.html',1,'fims']]],
-  ['recruitmentinterfacebase_78',['RecruitmentInterfaceBase',['../classRecruitmentInterfaceBase.html',1,'']]]
+  ['maturitybase_83',['MaturityBase',['../structfims_1_1MaturityBase.html',1,'fims']]],
+  ['model_84',['Model',['../classfims_1_1Model.html',1,'fims']]],
+  ['modeltraits_85',['ModelTraits',['../structModelTraits.html',1,'']]]
 ];
