@@ -80,7 +80,7 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * File:   rcpp_growth.hpp</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This File is part of the NOAA, National Marine Fisheries Service</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Fisheries Integrated Modeling System project. See LICENSE file </span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * Fisheries Integrated Modeling System project. See LICENSE file</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * for reuse information.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef FIMS_INTERFACE_RCPP_RCPP_OBJECTS_RCPP_GROWTH_HPP</span></div>
@@ -110,73 +110,72 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;uint32_t GrowthInterfaceBase::id_g = 1;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;std::map&lt;uint32_t, GrowthInterfaceBase*&gt;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    GrowthInterfaceBase::live_objects;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classEWAAGrowthInterface.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEWAAGrowthInterface.html">EWAAGrowthInterface</a> : <span class="keyword">public</span> <a class="code" href="classGrowthInterfaceBase.html">GrowthInterfaceBase</a> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">   46</a></span>&#160;  std::vector&lt;double&gt; <a class="code" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">weights</a>; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">   47</a></span>&#160;  std::vector&lt;double&gt; <a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <a class="code" href="classEWAAGrowthInterface.html">EWAAGrowthInterface</a>() : <a class="code" href="classGrowthInterfaceBase.html">GrowthInterfaceBase</a>() {}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classEWAAGrowthInterface.html">EWAAGrowthInterface</a>() {}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keyword">virtual</span> uint32_t get_id() { <span class="keywordflow">return</span> this-&gt;id; }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">   62</a></span>&#160;  <span class="keyword">inline</span> std::map&lt;double, double&gt; <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(std::vector&lt;double&gt; <a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;   std::vector&lt;double&gt; <a class="code" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">weights</a>){</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::map&lt;double, double&gt; mymap;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>.size() != <a class="code" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">weights</a>.size()){</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      Rcpp::stop(<span class="stringliteral">&quot;ages and weights must be the same length&quot;</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; <a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>.size(); i++) {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        mymap.insert(std::pair&lt;double, double&gt;(<a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>[i], <a class="code" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">weights</a>[i]));</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> mymap;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  std::map&lt;double, double&gt; ewaa = <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;ages, this-&gt;weights);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keywordtype">double</span> evaluate(<span class="keywordtype">double</span> age){</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="structfims_1_1EWAAgrowth.html">fims::EWAAgrowth&lt;double&gt;</a> EWAAGrowth = <a class="code" href="structfims_1_1EWAAgrowth.html">fims::EWAAgrowth&lt;double&gt;</a>();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    EWAAGrowth.<a class="code" href="structfims_1_1EWAAgrowth.html#a2229a8a240827aa2d31fcd245b45dae2">ewaa</a> = this-&gt;ewaa;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> EWAAGrowth.<a class="code" href="structfims_1_1EWAAgrowth.html#aae84570d0850a7dbe9d63f97eebb3a39">evaluate</a>(age);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> add_to_fims_tmb() {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="comment">// base model</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_REAL_TYPE&gt; &gt; d0 =</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_REAL_TYPE&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    std::shared_ptr&lt;fims::EWAAgrowth&lt;TMB_FIMS_REAL_TYPE&gt; &gt; b0 =</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        std::make_shared&lt;fims::EWAAgrowth&lt;TMB_FIMS_REAL_TYPE&gt; &gt;();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// set relative info</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    b0-&gt;id = this-&gt;id;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    b0-&gt;ewaa = this-&gt;ewaa;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;   </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    d0-&gt;growth_models[b0-&gt;id] = b0;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    d0-&gt;growth_models[b0-&gt;id] = b0;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  };</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;std::map&lt;uint32_t, GrowthInterfaceBase*&gt; GrowthInterfaceBase::live_objects;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classEWAAGrowthInterface.html">   43</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEWAAGrowthInterface.html">EWAAGrowthInterface</a> : <span class="keyword">public</span> <a class="code" href="classGrowthInterfaceBase.html">GrowthInterfaceBase</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">   45</a></span>&#160;  std::vector&lt;double&gt; <a class="code" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">weights</a>; </div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">   46</a></span>&#160;  std::vector&lt;double&gt; <a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>;    </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <a class="code" href="classEWAAGrowthInterface.html">EWAAGrowthInterface</a>() : <a class="code" href="classGrowthInterfaceBase.html">GrowthInterfaceBase</a>() {}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classEWAAGrowthInterface.html">EWAAGrowthInterface</a>() {}</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">virtual</span> uint32_t get_id() { <span class="keywordflow">return</span> this-&gt;id; }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">   61</a></span>&#160;  <span class="keyword">inline</span> std::map&lt;double, double&gt; <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(std::vector&lt;double&gt; <a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>,</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                                           std::vector&lt;double&gt; <a class="code" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">weights</a>) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    std::map&lt;double, double&gt; mymap;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>.size() != <a class="code" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">weights</a>.size()) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      Rcpp::stop(<span class="stringliteral">&quot;ages and weights must be the same length&quot;</span>);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">for</span> (uint32_t i = 0; i &lt; <a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>.size(); i++) {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      mymap.insert(std::pair&lt;double, double&gt;(<a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>[i], <a class="code" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">weights</a>[i]));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">return</span> mymap;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  std::map&lt;double, double&gt; ewaa = <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;ages, this-&gt;weights);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordtype">double</span> evaluate(<span class="keywordtype">double</span> age) {</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="structfims_1_1EWAAgrowth.html">fims::EWAAgrowth&lt;double&gt;</a> EWAAGrowth = <a class="code" href="structfims_1_1EWAAgrowth.html">fims::EWAAgrowth&lt;double&gt;</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    EWAAGrowth.<a class="code" href="structfims_1_1EWAAgrowth.html#a2229a8a240827aa2d31fcd245b45dae2">ewaa</a> = this-&gt;ewaa;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> EWAAGrowth.<a class="code" href="structfims_1_1EWAAgrowth.html#aae84570d0850a7dbe9d63f97eebb3a39">evaluate</a>(age);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> add_to_fims_tmb() {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// base model</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_REAL_TYPE&gt; &gt; d0 =</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_REAL_TYPE&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    std::shared_ptr&lt;fims::EWAAgrowth&lt;TMB_FIMS_REAL_TYPE&gt; &gt; b0 =</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        std::make_shared&lt;fims::EWAAgrowth&lt;TMB_FIMS_REAL_TYPE&gt; &gt;();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// set relative info</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    b0-&gt;id = this-&gt;id;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    b0-&gt;ewaa = this-&gt;ewaa;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    d0-&gt;growth_models[b0-&gt;id] = b0;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    d0-&gt;growth_models[b0-&gt;id] = b0;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassGrowthInterfaceBase_html"><div class="ttname"><a href="classGrowthInterfaceBase.html">GrowthInterfaceBase</a></div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:17</div></div>
 <div class="ttc" id="astructfims_1_1EWAAgrowth_html"><div class="ttname"><a href="structfims_1_1EWAAgrowth.html">fims::EWAAgrowth</a></div><div class="ttdoc">EWAAgrowth class that returns the EWAA function value.</div><div class="ttdef"><b>Definition:</b> ewaa.hpp:23</div></div>
 <div class="ttc" id="aclassFIMSRcppInterfaceBase_html"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></div><div class="ttdoc">Base class for all interface objects.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:67</div></div>
-<div class="ttc" id="aclassEWAAGrowthInterface_html_ada130444d3ff680e5813e5fdac3fa860"><div class="ttname"><a href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">EWAAGrowthInterface::make_map</a></div><div class="ttdeci">std::map&lt; double, double &gt; make_map(std::vector&lt; double &gt; ages, std::vector&lt; double &gt; weights)</div><div class="ttdoc">Create a map of input numeric vectors.</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:62</div></div>
-<div class="ttc" id="aclassEWAAGrowthInterface_html_ac64ebcacc22bb5b546194626dfe46b86"><div class="ttname"><a href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">EWAAGrowthInterface::weights</a></div><div class="ttdeci">std::vector&lt; double &gt; weights</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:46</div></div>
-<div class="ttc" id="aclassEWAAGrowthInterface_html"><div class="ttname"><a href="classEWAAGrowthInterface.html">EWAAGrowthInterface</a></div><div class="ttdoc">Rcpp interface for EWAAgrowth as an S4 object. To instantiate from R: ewaa &lt;- new(fims$EWAAgrowth)</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:44</div></div>
+<div class="ttc" id="aclassEWAAGrowthInterface_html_ada130444d3ff680e5813e5fdac3fa860"><div class="ttname"><a href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">EWAAGrowthInterface::make_map</a></div><div class="ttdeci">std::map&lt; double, double &gt; make_map(std::vector&lt; double &gt; ages, std::vector&lt; double &gt; weights)</div><div class="ttdoc">Create a map of input numeric vectors.</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:61</div></div>
+<div class="ttc" id="aclassEWAAGrowthInterface_html_ac64ebcacc22bb5b546194626dfe46b86"><div class="ttname"><a href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">EWAAGrowthInterface::weights</a></div><div class="ttdeci">std::vector&lt; double &gt; weights</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:45</div></div>
+<div class="ttc" id="aclassEWAAGrowthInterface_html"><div class="ttname"><a href="classEWAAGrowthInterface.html">EWAAGrowthInterface</a></div><div class="ttdoc">Rcpp interface for EWAAgrowth as an S4 object. To instantiate from R: ewaa &lt;- new(fims$EWAAgrowth)</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:43</div></div>
 <div class="ttc" id="astructfims_1_1EWAAgrowth_html_a2229a8a240827aa2d31fcd245b45dae2"><div class="ttname"><a href="structfims_1_1EWAAgrowth.html#a2229a8a240827aa2d31fcd245b45dae2">fims::EWAAgrowth::ewaa</a></div><div class="ttdeci">std::map&lt; double, double &gt; ewaa</div><div class="ttdef"><b>Definition:</b> ewaa.hpp:29</div></div>
 <div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:50</div></div>
 <div class="ttc" id="astructfims_1_1EWAAgrowth_html_aae84570d0850a7dbe9d63f97eebb3a39"><div class="ttname"><a href="structfims_1_1EWAAgrowth.html#aae84570d0850a7dbe9d63f97eebb3a39">fims::EWAAgrowth::evaluate</a></div><div class="ttdeci">virtual const T evaluate(const T &amp;a)</div><div class="ttdoc">Returns the weight at age a (in kg) from the input vector.</div><div class="ttdef"><b>Definition:</b> ewaa.hpp:41</div></div>
-<div class="ttc" id="aclassEWAAGrowthInterface_html_aed99ee7c0a5c4e72fcb746ff7683d510"><div class="ttname"><a href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">EWAAGrowthInterface::ages</a></div><div class="ttdeci">std::vector&lt; double &gt; ages</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:47</div></div>
+<div class="ttc" id="aclassEWAAGrowthInterface_html_aed99ee7c0a5c4e72fcb746ff7683d510"><div class="ttname"><a href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">EWAAGrowthInterface::ages</a></div><div class="ttdeci">std::vector&lt; double &gt; ages</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:46</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
