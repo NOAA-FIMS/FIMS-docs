@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['slope_126',['slope',['../structfims_1_1LogisticMaturity.html#aab43d748416982aba2470667e9fb4f60',1,'fims::LogisticMaturity::slope()'],['../structfims_1_1LogisticSelectivity.html#a16ce601199f70289aeac984adce53e24',1,'fims::LogisticSelectivity::slope()']]],
-  ['slope_5fasc_127',['slope_asc',['../structfims_1_1DoubleLogisticSelectivity.html#ad2dcfad2f1dc39ae26cad3b1ee101388',1,'fims::DoubleLogisticSelectivity']]],
-  ['slope_5fdesc_128',['slope_desc',['../structfims_1_1DoubleLogisticSelectivity.html#a6088669dc4c3b639e914e00e44e2c0d3',1,'fims::DoubleLogisticSelectivity']]],
-  ['steep_129',['steep',['../structfims_1_1SRBevertonHolt.html#a9725bfb881e36b3c53b1d64e1a28e02d',1,'fims::SRBevertonHolt']]]
+  ['random_5feffects_5fparameters_141',['random_effects_parameters',['../structfims_1_1FIMSObject.html#ae62632ed38b082bb8200abb2a11e1fab',1,'fims::FIMSObject']]],
+  ['recruit_5fbias_5fadjustment_142',['recruit_bias_adjustment',['../structfims_1_1RecruitmentBase.html#a0a0295742c69979b0d66b40e12fdd4f9',1,'fims::RecruitmentBase']]],
+  ['recruit_5fbias_5fadjustment_5ffraction_143',['recruit_bias_adjustment_fraction',['../structfims_1_1RecruitmentBase.html#a23cda8ea540407d06d2b59167166db2f',1,'fims::RecruitmentBase']]],
+  ['recruit_5fdeviations_144',['recruit_deviations',['../structfims_1_1RecruitmentBase.html#ac65d0fbc23e87f8987f47c1fb6fed74d',1,'fims::RecruitmentBase']]],
+  ['rzero_145',['rzero',['../structfims_1_1SRBevertonHolt.html#a79cc0300e8d25b69e300924c9de9376c',1,'fims::SRBevertonHolt']]]
 ];

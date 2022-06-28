@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['recruitmentbase_110',['RecruitmentBase',['../structfims_1_1RecruitmentBase.html#a284bcb2e5db9b033c68a3fd314bd1a65',1,'fims::RecruitmentBase']]],
-  ['registerparameter_111',['RegisterParameter',['../classfims_1_1Information.html#a7abb023dedff9942a54ddf65fa942fa9',1,'fims::Information']]],
-  ['registerrandomeffect_112',['RegisterRandomEffect',['../classfims_1_1Information.html#a55f104ddbc63cca3637a69bf3ea6972b',1,'fims::Information']]]
+  ['preparebiasadjustment_122',['PrepareBiasAdjustment',['../structfims_1_1RecruitmentBase.html#a40fa55df6d7bda29acdd999aa10e2e93',1,'fims::RecruitmentBase']]],
+  ['prepareconstraineddeviations_123',['PrepareConstrainedDeviations',['../structfims_1_1RecruitmentBase.html#a3fdcdb3d61e8218ff24a5aca8369f75c',1,'fims::RecruitmentBase']]]
 ];
