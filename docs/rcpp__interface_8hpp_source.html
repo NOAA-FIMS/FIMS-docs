@@ -92,7 +92,7 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;rcpp_objects/rcpp_fishing_mortality.hpp&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;rcpp_objects/rcpp_fleet.hpp&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;rcpp_objects/rcpp_growth.hpp&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;rcpp_objects/rcpp_likelihoods.hpp&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;rcpp_objects/rcpp_tmb_dnorm_distribution.hpp&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;rcpp_objects/rcpp_maturity.hpp&quot;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;rcpp_objects/rcpp_natural_mortality.hpp&quot;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;rcpp_objects/rcpp_population.hpp&quot;</span></div>
@@ -155,18 +155,27 @@ $(function() {
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      .field(<span class="stringliteral">&quot;slope&quot;</span>, &amp;LogisticSelectivityInterface::slope)</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      .method(<span class="stringliteral">&quot;get_id&quot;</span>, &amp;LogisticSelectivityInterface::get_id);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  Rcpp::class_&lt;EWAAGrowthInterface&gt;(<span class="stringliteral">&quot;EWAAgrowth&quot;</span>)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      .constructor()</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      .field(<span class="stringliteral">&quot;ages&quot;</span>, &amp;<a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">EWAAGrowthInterface::ages</a>)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      .field(<span class="stringliteral">&quot;weights&quot;</span>, &amp;<a class="code" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">EWAAGrowthInterface::weights</a>)</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      .method(<span class="stringliteral">&quot;evaluate&quot;</span>, &amp;EWAAGrowthInterface::evaluate);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RCPP_INTERFACE_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;   Rcpp::class_&lt;DnormDistributionsInterface&gt;(<span class="stringliteral">&quot;TMBDnormDistribution&quot;</span>)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    .constructor()</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    .method(<span class="stringliteral">&quot;get_id&quot;</span>,  &amp;DnormDistributionsInterface::get_id)</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    .method(<span class="stringliteral">&quot;evaluate&quot;</span>,  &amp;DnormDistributionsInterface::evaluate&lt;double&gt;)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    .field(<span class="stringliteral">&quot;x&quot;</span>, &amp;DnormDistributionsInterface::x)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    .field(<span class="stringliteral">&quot;mean&quot;</span>, &amp;DnormDistributionsInterface::mean)</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    .field(<span class="stringliteral">&quot;sd&quot;</span>, &amp;DnormDistributionsInterface::sd);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  Rcpp::class_&lt;EWAAGrowthInterface&gt;(<span class="stringliteral">&quot;EWAAgrowth&quot;</span>)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      .constructor()</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      .field(<span class="stringliteral">&quot;ages&quot;</span>, &amp;<a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">EWAAGrowthInterface::ages</a>)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      .field(<span class="stringliteral">&quot;weights&quot;</span>, &amp;<a class="code" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">EWAAGrowthInterface::weights</a>)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      .method(<span class="stringliteral">&quot;evaluate&quot;</span>, &amp;EWAAGrowthInterface::evaluate);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* RCPP_INTERFACE_HPP */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassEWAAGrowthInterface_html_ac64ebcacc22bb5b546194626dfe46b86"><div class="ttname"><a href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">EWAAGrowthInterface::weights</a></div><div class="ttdeci">std::vector&lt; double &gt; weights</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:45</div></div>
 <div class="ttc" id="aclassParameter_html"><div class="ttname"><a href="classParameter.html">Parameter</a></div><div class="ttdoc">RcppInterface class that defines the interface between R and C++ for parameter types.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:48</div></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:50</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:53</div></div>
 <div class="ttc" id="aclassEWAAGrowthInterface_html_aed99ee7c0a5c4e72fcb746ff7683d510"><div class="ttname"><a href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">EWAAGrowthInterface::ages</a></div><div class="ttdeci">std::vector&lt; double &gt; ages</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:46</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

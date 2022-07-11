@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['real_5ft_157',['real_t',['../structfims_1_1FIMSTraits.html#a9c392642234ad977d0f8a6ea0dcf7106',1,'fims::FIMSTraits']]]
+  ['parametervector_190',['ParameterVector',['../structModelTraits.html#a0f483f4514e00f458ce93b9bd06c5f79',1,'ModelTraits']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['parametervector_156',['ParameterVector',['../structModelTraits.html#a0f483f4514e00f458ce93b9bd06c5f79',1,'ModelTraits']]]
+  ['eigenvector_189',['EigenVector',['../structModelTraits.html#a3dcd934c2d219c48a380905b922a5075',1,'ModelTraits']]]
 ];
