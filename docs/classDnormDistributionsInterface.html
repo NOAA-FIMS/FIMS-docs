@@ -97,12 +97,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6f48d599f7b74423293790068778ac1d"><td class="memItemLeft" align="right" valign="top"><a id="a6f48d599f7b74423293790068778ac1d"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_id</b> ()</td></tr>
 <tr class="separator:a6f48d599f7b74423293790068778ac1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa5023c0f547384b873576b024600de"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:affa5023c0f547384b873576b024600de"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#affa5023c0f547384b873576b024600de">evaluate</a> ()</td></tr>
-<tr class="memdesc:affa5023c0f547384b873576b024600de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate normal probability density function, default returns the log of the pdf.  <a href="classDnormDistributionsInterface.html#affa5023c0f547384b873576b024600de">More...</a><br /></td></tr>
-<tr class="separator:affa5023c0f547384b873576b024600de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9ecda133beab815e3b84d7f2d9e326"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#aaf9ecda133beab815e3b84d7f2d9e326">evaluate</a> (bool do_log)</td></tr>
+<tr class="memdesc:aaf9ecda133beab815e3b84d7f2d9e326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate normal probability density function, default returns the log of the pdf.  <a href="classDnormDistributionsInterface.html#aaf9ecda133beab815e3b84d7f2d9e326">More...</a><br /></td></tr>
+<tr class="separator:aaf9ecda133beab815e3b84d7f2d9e326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e5ca07d302175c32a4d2301b70e72ea"><td class="memItemLeft" align="right" valign="top"><a id="a6e5ca07d302175c32a4d2301b70e72ea"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>add_to_fims_tmb</b> ()</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#a6e5ca07d302175c32a4d2301b70e72ea">add_to_fims_tmb</a> ()</td></tr>
+<tr class="memdesc:a6e5ca07d302175c32a4d2301b70e72ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual method to inherit to add objects to the TMB model <br /></td></tr>
 <tr class="separator:a6e5ca07d302175c32a4d2301b70e72ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -138,27 +138,26 @@ static std::vector&lt; <a class="el" href="classFIMSRcppInterfaceBase.html">FIMS
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Rcpp interface for Dnorm as an S4 object. To instantiate from R: dnorm_ &lt;- new(fims$TMBDnormDistribution) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="affa5023c0f547384b873576b024600de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affa5023c0f547384b873576b024600de">&#9670;&nbsp;</a></span>evaluate()</h2>
+<a id="aaf9ecda133beab815e3b84d7f2d9e326"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9ecda133beab815e3b84d7f2d9e326">&#9670;&nbsp;</a></span>evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">T DnormDistributionsInterface::evaluate </td>
+          <td class="memname">double DnormDistributionsInterface::evaluate </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>do_log</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -171,6 +170,8 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>log pdf </dd></dl>
+
+<p>Implements <a class="el" href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a>.</p>
 
 </div>
 </div>

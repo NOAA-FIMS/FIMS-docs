@@ -87,7 +87,7 @@ Inheritance diagram for EWAAGrowthInterface:</div>
  <div class="center">
   <img src="classEWAAGrowthInterface.png" usemap="#EWAAGrowthInterface_map" alt=""/>
   <map id="EWAAGrowthInterface_map" name="EWAAGrowthInterface_map">
-<area href="classGrowthInterfaceBase.html" alt="GrowthInterfaceBase" shape="rect" coords="0,56,149,80"/>
+<area href="classGrowthInterfaceBase.html" title="Rcpp interface that serves as the parent class for Rcpp growth interfaces. This type should be inheri..." alt="GrowthInterfaceBase" shape="rect" coords="0,56,149,80"/>
 <area href="classFIMSRcppInterfaceBase.html" title="Base class for all interface objects." alt="FIMSRcppInterfaceBase" shape="rect" coords="0,0,149,24"/>
   </map>
 </div></div>
@@ -95,16 +95,19 @@ Inheritance diagram for EWAAGrowthInterface:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4724c0195fe5e66c957fed02eee23ce2"><td class="memItemLeft" align="right" valign="top"><a id="a4724c0195fe5e66c957fed02eee23ce2"></a>
-virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_id</b> ()</td></tr>
+virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEWAAGrowthInterface.html#a4724c0195fe5e66c957fed02eee23ce2">get_id</a> ()</td></tr>
+<tr class="memdesc:a4724c0195fe5e66c957fed02eee23ce2"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the id of the <a class="el" href="classGrowthInterfaceBase.html" title="Rcpp interface that serves as the parent class for Rcpp growth interfaces. This type should be inheri...">GrowthInterfaceBase</a> object <br /></td></tr>
 <tr class="separator:a4724c0195fe5e66c957fed02eee23ce2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada130444d3ff680e5813e5fdac3fa860"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a> (std::vector&lt; double &gt; <a class="el" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>, std::vector&lt; double &gt; <a class="el" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">weights</a>)</td></tr>
 <tr class="memdesc:ada130444d3ff680e5813e5fdac3fa860"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a map of input numeric vectors.  <a href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">More...</a><br /></td></tr>
 <tr class="separator:ada130444d3ff680e5813e5fdac3fa860"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3058064b4eee436d347b9d8eb3c12055"><td class="memItemLeft" align="right" valign="top"><a id="a3058064b4eee436d347b9d8eb3c12055"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>evaluate</b> (double age)</td></tr>
+double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEWAAGrowthInterface.html#a3058064b4eee436d347b9d8eb3c12055">evaluate</a> (double age)</td></tr>
+<tr class="memdesc:a3058064b4eee436d347b9d8eb3c12055"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rcpp interface to the EWAAgrowth evaluate method you can call from R using ewaagrowth.evaluate(age) <br /></td></tr>
 <tr class="separator:a3058064b4eee436d347b9d8eb3c12055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a434fbda40a57d18806799dc867dddf60"><td class="memItemLeft" align="right" valign="top"><a id="a434fbda40a57d18806799dc867dddf60"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>add_to_fims_tmb</b> ()</td></tr>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEWAAGrowthInterface.html#a434fbda40a57d18806799dc867dddf60">add_to_fims_tmb</a> ()</td></tr>
+<tr class="memdesc:a434fbda40a57d18806799dc867dddf60"><td class="mdescLeft">&#160;</td><td class="mdescRight">this adds the values to the TMB model object <br /></td></tr>
 <tr class="separator:a434fbda40a57d18806799dc867dddf60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -113,22 +116,20 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac64ebcacc22bb5b546194626dfe46b86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed99ee7c0a5c4e72fcb746ff7683d510"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a></td></tr>
 <tr class="separator:aed99ee7c0a5c4e72fcb746ff7683d510"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a134796f622557d6bbd2b1ec3754e7"><td class="memItemLeft" align="right" valign="top"><a id="a56a134796f622557d6bbd2b1ec3754e7"></a>
-std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ewaa</b> = <a class="el" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;<a class="el" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>, this-&gt;<a class="el" href="classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86">weights</a>)</td></tr>
+<tr class="memitem:a56a134796f622557d6bbd2b1ec3754e7"><td class="memItemLeft" align="right" valign="top">std::map&lt; double, double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEWAAGrowthInterface.html#a56a134796f622557d6bbd2b1ec3754e7">ewaa</a></td></tr>
 <tr class="separator:a56a134796f622557d6bbd2b1ec3754e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc2d5f9d01adeacf478f938be9c688a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEWAAGrowthInterface.html#a9cc2d5f9d01adeacf478f938be9c688a">initialized</a> = false</td></tr>
+<tr class="separator:a9cc2d5f9d01adeacf478f938be9c688a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classGrowthInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classGrowthInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classGrowthInterfaceBase.html">GrowthInterfaceBase</a></td></tr>
-<tr class="memitem:aedcf584aed8f0401ebb0b2bb99c3394a inherit pub_attribs_classGrowthInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="aedcf584aed8f0401ebb0b2bb99c3394a"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="memitem:aedcf584aed8f0401ebb0b2bb99c3394a inherit pub_attribs_classGrowthInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrowthInterfaceBase.html#aedcf584aed8f0401ebb0b2bb99c3394a">id</a></td></tr>
 <tr class="separator:aedcf584aed8f0401ebb0b2bb99c3394a inherit pub_attribs_classGrowthInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_classGrowthInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classGrowthInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classGrowthInterfaceBase.html">GrowthInterfaceBase</a></td></tr>
-<tr class="memitem:ac76907326cf02002a0c370c4d3cd13b2 inherit pub_static_attribs_classGrowthInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="ac76907326cf02002a0c370c4d3cd13b2"></a>
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id_g</b> = 1</td></tr>
+<tr class="memitem:ac76907326cf02002a0c370c4d3cd13b2 inherit pub_static_attribs_classGrowthInterfaceBase"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrowthInterfaceBase.html#ac76907326cf02002a0c370c4d3cd13b2">id_g</a> = 1</td></tr>
 <tr class="separator:ac76907326cf02002a0c370c4d3cd13b2 inherit pub_static_attribs_classGrowthInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a6704a5b7c2e7d63d6183136d6fb48e inherit pub_static_attribs_classGrowthInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="a5a6704a5b7c2e7d63d6183136d6fb48e"></a>
-static std::map&lt; uint32_t, <a class="el" href="classGrowthInterfaceBase.html">GrowthInterfaceBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>live_objects</b></td></tr>
+<tr class="memitem:a5a6704a5b7c2e7d63d6183136d6fb48e inherit pub_static_attribs_classGrowthInterfaceBase"><td class="memItemLeft" align="right" valign="top">static std::map&lt; uint32_t, <a class="el" href="classGrowthInterfaceBase.html">GrowthInterfaceBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGrowthInterfaceBase.html#a5a6704a5b7c2e7d63d6183136d6fb48e">live_objects</a></td></tr>
 <tr class="separator:a5a6704a5b7c2e7d63d6183136d6fb48e inherit pub_static_attribs_classGrowthInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a27f6c0a9860f56c17951872fe26b1515 inherit pub_static_attribs_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="a27f6c0a9860f56c17951872fe26b1515"></a>
@@ -175,12 +176,12 @@ static std::vector&lt; <a class="el" href="classFIMSRcppInterfaceBase.html">FIMS
 <p>Create a map of input numeric vectors. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">weights_</td><td>std::double vector of weights </td></tr>
-    <tr><td class="paramname">ages_</td><td>std::double vector of ages </td></tr>
+    <tr><td class="paramname">weights</td><td>T vector of weights </td></tr>
+    <tr><td class="paramname">ages</td><td>T vector of ages </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>std::map&lt;double, double&gt; </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>std::map&lt;T, T&gt; </dd></dl>
 
 </div>
 </div>
@@ -197,6 +198,36 @@ static std::vector&lt; <a class="el" href="classFIMSRcppInterfaceBase.html">FIMS
       </table>
 </div><div class="memdoc">
 <p>ages for each age class </p>
+
+</div>
+</div>
+<a id="a56a134796f622557d6bbd2b1ec3754e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56a134796f622557d6bbd2b1ec3754e7">&#9670;&nbsp;</a></span>ewaa</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;double, double&gt; EWAAGrowthInterface::ewaa</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>map of ewaa values </p>
+
+</div>
+</div>
+<a id="a9cc2d5f9d01adeacf478f938be9c688a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc2d5f9d01adeacf478f938be9c688a">&#9670;&nbsp;</a></span>initialized</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool EWAAGrowthInterface::initialized = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>boolean tracking if weights and ages vectors have been set </p>
 
 </div>
 </div>
