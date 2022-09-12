@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logistic_148',['logistic',['../fims__math_8hpp.html#a4d48e30e355c7dcda1897f413e2d179f',1,'fims']]]
+  ['information_148',['Information',['../classfims_1_1Information.html#a8ddefaa0d044fdc97e07ca6425abd242',1,'fims::Information']]]
 ];

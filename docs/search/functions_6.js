@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['make_5fmap_149',['make_map',['../classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860',1,'EWAAGrowthInterface']]],
-  ['maturitybase_150',['MaturityBase',['../structfims_1_1MaturityBase.html#a3c091ce642d497c5fd5313e24792a9cc',1,'fims::MaturityBase']]]
+  ['logistic_149',['logistic',['../fims__math_8hpp.html#a4d48e30e355c7dcda1897f413e2d179f',1,'fims']]]
 ];
