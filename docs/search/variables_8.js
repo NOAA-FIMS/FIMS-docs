@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['random_5feffects_5fparameters_179',['random_effects_parameters',['../structfims_1_1FIMSObject.html#ae62632ed38b082bb8200abb2a11e1fab',1,'fims::FIMSObject']]],
-  ['recruit_5fbias_5fadjustment_180',['recruit_bias_adjustment',['../structfims_1_1RecruitmentBase.html#a0a0295742c69979b0d66b40e12fdd4f9',1,'fims::RecruitmentBase']]],
-  ['recruit_5fbias_5fadjustment_5ffraction_181',['recruit_bias_adjustment_fraction',['../structfims_1_1RecruitmentBase.html#a23cda8ea540407d06d2b59167166db2f',1,'fims::RecruitmentBase']]],
-  ['recruit_5fdeviations_182',['recruit_deviations',['../structfims_1_1RecruitmentBase.html#ac65d0fbc23e87f8987f47c1fb6fed74d',1,'fims::RecruitmentBase']]],
-  ['rzero_183',['rzero',['../classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af',1,'BevertonHoltRecruitmentInterface::rzero()'],['../structfims_1_1SRBevertonHolt.html#a79cc0300e8d25b69e300924c9de9376c',1,'fims::SRBevertonHolt::rzero()']]]
+  ['max_176',['max',['../classParameter.html#abf208d234c8c4b45d6085a28d95c79ec',1,'Parameter']]],
+  ['mean_177',['mean',['../classDnormDistributionsInterface.html#a157057ff78054cfe7ae32d257b93ac9d',1,'DnormDistributionsInterface']]],
+  ['meanlog_178',['meanlog',['../classDlnormDistributionsInterface.html#a20a951626ca31d1c5cddd862bfaf3376',1,'DlnormDistributionsInterface']]],
+  ['median_179',['median',['../classLogisticSelectivityInterface.html#ac4d5a6f85f05ada7b54314bbe133c537',1,'LogisticSelectivityInterface::median()'],['../structfims_1_1LogisticMaturity.html#a899f289dffa1242604794a85cf6e33f7',1,'fims::LogisticMaturity::median()'],['../structfims_1_1LogisticSelectivity.html#a125a146a56820b8f3bc83179ff070f0e',1,'fims::LogisticSelectivity::median()']]],
+  ['median_5fasc_180',['median_asc',['../structfims_1_1DoubleLogisticSelectivity.html#a6c39680a5dbf78e688b5282b8690058b',1,'fims::DoubleLogisticSelectivity']]],
+  ['median_5fdesc_181',['median_desc',['../structfims_1_1DoubleLogisticSelectivity.html#a5c6c7be249b421344ed50536633702f7',1,'fims::DoubleLogisticSelectivity']]],
+  ['min_182',['min',['../classParameter.html#a136f68724d014785a836ec73cb07f634',1,'Parameter']]]
 ];

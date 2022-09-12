@@ -78,19 +78,13 @@ $(function() {
 <div class="title">fims_math.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;cmath&gt;</code><br />
+<code>#include &quot;../interface/interface.hpp&quot;</code><br />
+</div>
 <p><a href="fims__math_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a47db17dc35ac45b2cdd68f01537e4a0f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a47db17dc35ac45b2cdd68f01537e4a0f"><td class="memTemplItemLeft" align="right" valign="top">const T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fims__math_8hpp.html#a47db17dc35ac45b2cdd68f01537e4a0f">fims::exp</a> (const T &amp;x)</td></tr>
-<tr class="memdesc:a47db17dc35ac45b2cdd68f01537e4a0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The exponential function.  <a href="fims__math_8hpp.html#a47db17dc35ac45b2cdd68f01537e4a0f">More...</a><br /></td></tr>
-<tr class="separator:a47db17dc35ac45b2cdd68f01537e4a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9067b9920f9eeef90a1968fd907c4566"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a9067b9920f9eeef90a1968fd907c4566"><td class="memTemplItemLeft" align="right" valign="top">const T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fims__math_8hpp.html#a9067b9920f9eeef90a1968fd907c4566">fims::log</a> (const T &amp;x)</td></tr>
-<tr class="memdesc:a9067b9920f9eeef90a1968fd907c4566"><td class="mdescLeft">&#160;</td><td class="mdescRight">The natural log function (base e)  <a href="fims__math_8hpp.html#a9067b9920f9eeef90a1968fd907c4566">More...</a><br /></td></tr>
-<tr class="separator:a9067b9920f9eeef90a1968fd907c4566"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d48e30e355c7dcda1897f413e2d179f"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a4d48e30e355c7dcda1897f413e2d179f"><td class="memTemplItemLeft" align="right" valign="top">const T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fims__math_8hpp.html#a4d48e30e355c7dcda1897f413e2d179f">fims::logistic</a> (const T &amp;median, const T &amp;slope, const T &amp;x)</td></tr>
 <tr class="memdesc:a4d48e30e355c7dcda1897f413e2d179f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The general logistic function.  <a href="fims__math_8hpp.html#a4d48e30e355c7dcda1897f413e2d179f">More...</a><br /></td></tr>
@@ -193,8 +187,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Returns the maximum between a and b in a continuous manner using:</p>
-<p>(a + b + fims::ad_fabs(a - b)) *.5;</p>
-<p>This is an approximation with minimal error.</p>
+<p>(a + b + fims::ad_fabs(a - b)) *.5; Reference: <a class="el" href="fims__math_8hpp.html#ad478fc97fc94719ab6aa77b6afc9c025">fims::ad_fabs()</a> This is an approximation with minimal error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">a</td><td></td></tr>
@@ -249,7 +242,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Returns the minimum between a and b in a continuous manner using:</p>
-<p>(a + b - fims::ad_fabs(a - b))*.5;</p>
+<p>(a + b - fims::ad_fabs(a - b))*.5; Reference: <a class="el" href="fims__math_8hpp.html#ad478fc97fc94719ab6aa77b6afc9c025">fims::ad_fabs()</a></p>
 <p>This is an approximation with minimal error.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -330,89 +323,6 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-</div>
-</div>
-<a id="a47db17dc35ac45b2cdd68f01537e4a0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47db17dc35ac45b2cdd68f01537e4a0f">&#9670;&nbsp;</a></span>exp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const T fims::exp </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The exponential function. </p>
-<p>The exponential function. The code cannot be tested using the compilation flag -DTMB_MODEL through CMake and Google Test.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>value to exponentiate. Please use fims::exp&lt;double&gt;(x) if x is an integer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the exponentiated value </dd></dl>
-
-</div>
-</div>
-<a id="a9067b9920f9eeef90a1968fd907c4566"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9067b9920f9eeef90a1968fd907c4566">&#9670;&nbsp;</a></span>log()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const T fims::log </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>x</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The natural log function (base e) </p>
-<p>The natural log function (base e) The code cannot be tested using the compilation flag -DTMB_MODEL through CMake and Google Test.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>the value to take the log of. Please use fims::log&lt;double&gt;(x) if x is an integer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">x</td><td>the value to take the log of. Please use fims::log&lt;double&gt;(x) if x is an integer. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the log of the value </dd></dl>
 
 </div>
 </div>

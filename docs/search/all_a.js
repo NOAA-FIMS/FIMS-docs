@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['p_60',['p',['../structfims_1_1Dmultinom.html#a72a983d7919b630b5610777d08a826dd',1,'fims::Dmultinom']]],
-  ['parameter_61',['Parameter',['../classParameter.html',1,'']]],
-  ['parameters_62',['parameters',['../structfims_1_1FIMSObject.html#a3c1320fa1468e2fad7369685c836710a',1,'fims::FIMSObject']]],
-  ['parametervector_63',['ParameterVector',['../structModelTraits.html#a0f483f4514e00f458ce93b9bd06c5f79',1,'ModelTraits']]],
+  ['p_61',['p',['../classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a',1,'DmultinomDistributionsInterface']]],
+  ['parameter_62',['Parameter',['../classParameter.html',1,'Parameter'],['../classParameter.html#a83a7b25fbbe9434fcfc2ff58bd34cd8b',1,'Parameter::Parameter(double value, double min, double max, bool estimated)'],['../classParameter.html#a0daabd9177ee8c2e46af55347279ef5d',1,'Parameter::Parameter(double value)'],['../classParameter.html#a5ba93ca36c3261d3850e67f92717c2f5',1,'Parameter::Parameter()']]],
+  ['parameters_63',['parameters',['../classfims_1_1Information.html#acc348133fcaf5d0863c945b045ceaf05',1,'fims::Information::parameters()'],['../structfims_1_1FIMSObject.html#a3c1320fa1468e2fad7369685c836710a',1,'fims::FIMSObject::parameters()']]],
   ['phizero_64',['phizero',['../classBevertonHoltRecruitmentInterface.html#ab7fc071b4bf0eda6eb2f3218eb7cec6d',1,'BevertonHoltRecruitmentInterface::phizero()'],['../structfims_1_1SRBevertonHolt.html#a2e3cfead0d39d8052bba3934fbd45760',1,'fims::SRBevertonHolt::phizero()']]],
   ['population_65',['Population',['../structfims_1_1Population.html',1,'fims']]],
   ['populationinterfacebase_66',['PopulationInterfaceBase',['../classPopulationInterfaceBase.html',1,'']]],
-  ['preparebiasadjustment_67',['PrepareBiasAdjustment',['../structfims_1_1RecruitmentBase.html#a40fa55df6d7bda29acdd999aa10e2e93',1,'fims::RecruitmentBase']]],
-  ['prepareconstraineddeviations_68',['PrepareConstrainedDeviations',['../structfims_1_1RecruitmentBase.html#a3fdcdb3d61e8218ff24a5aca8369f75c',1,'fims::RecruitmentBase']]]
+  ['populations_67',['populations',['../classfims_1_1Model.html#a0f37c126e631a89af9ab93a90e3a6c5d',1,'fims::Model']]],
+  ['preparebiasadjustment_68',['PrepareBiasAdjustment',['../structfims_1_1RecruitmentBase.html#a40fa55df6d7bda29acdd999aa10e2e93',1,'fims::RecruitmentBase']]],
+  ['prepareconstraineddeviations_69',['PrepareConstrainedDeviations',['../structfims_1_1RecruitmentBase.html#a3fdcdb3d61e8218ff24a5aca8369f75c',1,'fims::RecruitmentBase']]]
 ];

@@ -102,27 +102,23 @@ $(function() {
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">// this is like a memory tracker.</span></div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="comment">// Assigning each one its own ID is a way to keep track of</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="comment">// all the instances of the  growthBase class.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keyword">static</span> uint32_t id_g;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="comment">/* @brief Constructor.</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <a class="code" href="structfims_1_1GrowthBase.html">GrowthBase</a>() { this-&gt;<span class="keywordtype">id</span> = GrowthBase::id_g++; }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="comment">/*</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">   * @brief Calculates the  growth at the independent variable value.</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">   * @param a The age at which to return weight of the fish (in kg).</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">   */</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> T evaluate(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a) = 0;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;uint32_t <a class="code" href="structfims_1_1GrowthBase.html">GrowthBase&lt;T&gt;::id_g</a> = 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}  <span class="comment">// namespace fims</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* POPULATION_DYNAMICS_GROWTH_BASE_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structfims_1_1GrowthBase.html#a3c857b815f158be187ecf3851de39c6a">   32</a></span>&#160;  <span class="keyword">static</span> uint32_t <a class="code" href="structfims_1_1GrowthBase.html#a3c857b815f158be187ecf3851de39c6a">id_g</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structfims_1_1GrowthBase.html#a199c82ee9f55c313b4a366eeb7fb4cc6">   37</a></span>&#160;  <a class="code" href="structfims_1_1GrowthBase.html#a199c82ee9f55c313b4a366eeb7fb4cc6">GrowthBase</a>() { this-&gt;<span class="keywordtype">id</span> = <a class="code" href="structfims_1_1GrowthBase.html#a3c857b815f158be187ecf3851de39c6a">GrowthBase::id_g</a>++; }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> T <a class="code" href="structfims_1_1GrowthBase.html#a7dc71bc5ed028b8f4ab9ea315e0d7595">evaluate</a>(<span class="keyword">const</span> <span class="keywordtype">double</span>&amp; a) = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;uint32_t <a class="code" href="structfims_1_1GrowthBase.html#a3c857b815f158be187ecf3851de39c6a">GrowthBase&lt;T&gt;::id_g</a> = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}  <span class="comment">// namespace fims</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* POPULATION_DYNAMICS_GROWTH_BASE_HPP */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="astructfims_1_1GrowthBase_html_a7dc71bc5ed028b8f4ab9ea315e0d7595"><div class="ttname"><a href="structfims_1_1GrowthBase.html#a7dc71bc5ed028b8f4ab9ea315e0d7595">fims::GrowthBase::evaluate</a></div><div class="ttdeci">virtual const T evaluate(const double &amp;a)=0</div><div class="ttdoc">Calculates the growth at the independent variable value.</div></div>
 <div class="ttc" id="astructfims_1_1GrowthBase_html"><div class="ttname"><a href="structfims_1_1GrowthBase.html">fims::GrowthBase</a></div><div class="ttdoc">Base class for all growth functors.</div><div class="ttdef"><b>Definition:</b> growth_base.hpp:27</div></div>
+<div class="ttc" id="astructfims_1_1GrowthBase_html_a199c82ee9f55c313b4a366eeb7fb4cc6"><div class="ttname"><a href="structfims_1_1GrowthBase.html#a199c82ee9f55c313b4a366eeb7fb4cc6">fims::GrowthBase::GrowthBase</a></div><div class="ttdeci">GrowthBase()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> growth_base.hpp:37</div></div>
+<div class="ttc" id="astructfims_1_1GrowthBase_html_a3c857b815f158be187ecf3851de39c6a"><div class="ttname"><a href="structfims_1_1GrowthBase.html#a3c857b815f158be187ecf3851de39c6a">fims::GrowthBase::id_g</a></div><div class="ttdeci">static uint32_t id_g</div><div class="ttdef"><b>Definition:</b> growth_base.hpp:32</div></div>
 <div class="ttc" id="astructfims_1_1FIMSObject_html"><div class="ttname"><a href="structfims_1_1FIMSObject.html">fims::FIMSObject</a></div><div class="ttdoc">FIMSObject struct that defines member types and returns the unique id.</div><div class="ttdef"><b>Definition:</b> model_object.hpp:25</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

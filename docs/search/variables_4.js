@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['id_167',['id',['../structfims_1_1FIMSObject.html#a971b2bf344a2662e578407b324b831bc',1,'fims::FIMSObject::id()'],['../classGrowthInterfaceBase.html#aedcf584aed8f0401ebb0b2bb99c3394a',1,'GrowthInterfaceBase::id()'],['../classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be',1,'RecruitmentInterfaceBase::id()']]],
-  ['id_5fg_168',['id_g',['../structfims_1_1DistributionsBase.html#a1e18b0b9a53968ce5e75c3c1a1914f82',1,'fims::DistributionsBase::id_g()'],['../classGrowthInterfaceBase.html#ac76907326cf02002a0c370c4d3cd13b2',1,'GrowthInterfaceBase::id_g()'],['../classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd',1,'RecruitmentInterfaceBase::id_g()'],['../structfims_1_1MaturityBase.html#aaa291c70af1b5051dd4f500d0eb88493',1,'fims::MaturityBase::id_g()'],['../structfims_1_1RecruitmentBase.html#a3ac855d58eb5d649b2683f1bcf912e87',1,'fims::RecruitmentBase::id_g()'],['../structfims_1_1SelectivityBase.html#ad798ab79131a2ce7128b6b041da0dee3',1,'fims::SelectivityBase::id_g()']]],
-  ['initialized_169',['initialized',['../classEWAAGrowthInterface.html#a9cc2d5f9d01adeacf478f938be9c688a',1,'EWAAGrowthInterface']]]
+  ['fims_5finformation_165',['fims_information',['../classfims_1_1Information.html#aa33a45dc0d82669b04a2944118958f27',1,'fims::Information']]],
+  ['fims_5finterface_5fobjects_166',['fims_interface_objects',['../classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515',1,'FIMSRcppInterfaceBase']]],
+  ['fims_5fmodel_167',['fims_model',['../classfims_1_1Model.html#a73e22a73bde8079e0a9151a5712420af',1,'fims::Model']]],
+  ['fixed_5feffects_5fparameters_168',['fixed_effects_parameters',['../classfims_1_1Information.html#a5df4d0764aa0f0af3412efb66c77312e',1,'fims::Information::fixed_effects_parameters()'],['../structfims_1_1FIMSObject.html#a55787c34a989c76c5ae35883b2f333e5',1,'fims::FIMSObject::fixed_effects_parameters()']]],
+  ['fleets_169',['fleets',['../classfims_1_1Model.html#abad7642cc71f5fd97a687ad3f1b795e4',1,'fims::Model']]]
 ];

@@ -77,10 +77,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Rcpp interface for Dnorm as an S4 object. To instantiate from R: dnorm_ &lt;- new(fims$TMBDnormDistribution)  
+<p>Rcpp interface for Dnorm as an S4 object. To instantiate from R: dnorm_ &lt;- new(fims$TMBDlnormDistribution)  
  <a href="classDnormDistributionsInterface.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="rcpp__tmb__dnorm__distribution_8hpp_source.html">rcpp_tmb_dnorm_distribution.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="rcpp__tmb__distribution_8hpp_source.html">rcpp_tmb_distribution.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DnormDistributionsInterface:</div>
 <div class="dyncontent">
@@ -94,52 +94,46 @@ Inheritance diagram for DnormDistributionsInterface:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6f48d599f7b74423293790068778ac1d"><td class="memItemLeft" align="right" valign="top"><a id="a6f48d599f7b74423293790068778ac1d"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>get_id</b> ()</td></tr>
-<tr class="separator:a6f48d599f7b74423293790068778ac1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf9ecda133beab815e3b84d7f2d9e326"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#aaf9ecda133beab815e3b84d7f2d9e326">evaluate</a> (bool do_log)</td></tr>
-<tr class="memdesc:aaf9ecda133beab815e3b84d7f2d9e326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate normal probability density function, default returns the log of the pdf.  <a href="classDnormDistributionsInterface.html#aaf9ecda133beab815e3b84d7f2d9e326">More...</a><br /></td></tr>
-<tr class="separator:aaf9ecda133beab815e3b84d7f2d9e326"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e5ca07d302175c32a4d2301b70e72ea"><td class="memItemLeft" align="right" valign="top"><a id="a6e5ca07d302175c32a4d2301b70e72ea"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#a6e5ca07d302175c32a4d2301b70e72ea">add_to_fims_tmb</a> ()</td></tr>
-<tr class="memdesc:a6e5ca07d302175c32a4d2301b70e72ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual method to inherit to add objects to the TMB model <br /></td></tr>
-<tr class="separator:a6e5ca07d302175c32a4d2301b70e72ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d46a592495997817ca5eb2276aac29"><td class="memItemLeft" align="right" valign="top"><a id="af9d46a592495997817ca5eb2276aac29"></a>
+virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#af9d46a592495997817ca5eb2276aac29">get_id</a> ()</td></tr>
+<tr class="memdesc:af9d46a592495997817ca5eb2276aac29"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_id method for child distribution interface objects to inherit <br /></td></tr>
+<tr class="separator:af9d46a592495997817ca5eb2276aac29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a7b0532100eb957dad1ed5093e70ce3"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#a0a7b0532100eb957dad1ed5093e70ce3">evaluate</a> (bool do_log)</td></tr>
+<tr class="memdesc:a0a7b0532100eb957dad1ed5093e70ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate normal probability density function, default returns the log of the pdf.  <a href="classDnormDistributionsInterface.html#a0a7b0532100eb957dad1ed5093e70ce3">More...</a><br /></td></tr>
+<tr class="separator:a0a7b0532100eb957dad1ed5093e70ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebe03fd9ae5d150d264f88e240fff015"><td class="memItemLeft" align="right" valign="top"><a id="aebe03fd9ae5d150d264f88e240fff015"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#aebe03fd9ae5d150d264f88e240fff015">add_to_fims_tmb</a> ()</td></tr>
+<tr class="memdesc:aebe03fd9ae5d150d264f88e240fff015"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds the dnorm distribution and its parameters to the TMB model <br /></td></tr>
+<tr class="separator:aebe03fd9ae5d150d264f88e240fff015"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a548824b92bedb476bc50826c4ca1c476"><td class="memItemLeft" align="right" valign="top"><a id="a548824b92bedb476bc50826c4ca1c476"></a>
-<a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
+<tr class="memitem:a548824b92bedb476bc50826c4ca1c476"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#a548824b92bedb476bc50826c4ca1c476">x</a></td></tr>
 <tr class="separator:a548824b92bedb476bc50826c4ca1c476"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a157057ff78054cfe7ae32d257b93ac9d"><td class="memItemLeft" align="right" valign="top"><a id="a157057ff78054cfe7ae32d257b93ac9d"></a>
-<a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>mean</b></td></tr>
+<tr class="memitem:a157057ff78054cfe7ae32d257b93ac9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#a157057ff78054cfe7ae32d257b93ac9d">mean</a></td></tr>
 <tr class="separator:a157057ff78054cfe7ae32d257b93ac9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bc34cb22cadc75c65bc0bb38978a57d"><td class="memItemLeft" align="right" valign="top"><a id="a9bc34cb22cadc75c65bc0bb38978a57d"></a>
-<a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sd</b></td></tr>
+<tr class="memitem:a9bc34cb22cadc75c65bc0bb38978a57d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDnormDistributionsInterface.html#a9bc34cb22cadc75c65bc0bb38978a57d">sd</a></td></tr>
 <tr class="separator:a9bc34cb22cadc75c65bc0bb38978a57d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classDistributionsInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classDistributionsInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a></td></tr>
-<tr class="memitem:afdb0fac86d30fbd1fc60abea3ad209fe inherit pub_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="afdb0fac86d30fbd1fc60abea3ad209fe"></a>
-uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
+<tr class="memitem:afdb0fac86d30fbd1fc60abea3ad209fe inherit pub_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a></td></tr>
 <tr class="separator:afdb0fac86d30fbd1fc60abea3ad209fe inherit pub_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_static_attribs_classDistributionsInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classDistributionsInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a></td></tr>
-<tr class="memitem:af2f7855cea3e05c6b3db1984dbf9b499 inherit pub_static_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="af2f7855cea3e05c6b3db1984dbf9b499"></a>
-static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><b>id_g</b> = 1</td></tr>
+<tr class="memitem:af2f7855cea3e05c6b3db1984dbf9b499 inherit pub_static_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDistributionsInterfaceBase.html#af2f7855cea3e05c6b3db1984dbf9b499">id_g</a></td></tr>
 <tr class="separator:af2f7855cea3e05c6b3db1984dbf9b499 inherit pub_static_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae285ae2cd00da6eddbabf2c090ffa9fc inherit pub_static_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="ae285ae2cd00da6eddbabf2c090ffa9fc"></a>
-static std::map&lt; uint32_t, <a class="el" href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>live_objects</b></td></tr>
+<tr class="memitem:ae285ae2cd00da6eddbabf2c090ffa9fc inherit pub_static_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top">static std::map&lt; uint32_t, <a class="el" href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDistributionsInterfaceBase.html#ae285ae2cd00da6eddbabf2c090ffa9fc">live_objects</a></td></tr>
 <tr class="separator:ae285ae2cd00da6eddbabf2c090ffa9fc inherit pub_static_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
-<tr class="memitem:a27f6c0a9860f56c17951872fe26b1515 inherit pub_static_attribs_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="a27f6c0a9860f56c17951872fe26b1515"></a>
-static std::vector&lt; <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>fims_interface_objects</b></td></tr>
+<tr class="memitem:a27f6c0a9860f56c17951872fe26b1515 inherit pub_static_attribs_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515">fims_interface_objects</a></td></tr>
 <tr class="separator:a27f6c0a9860f56c17951872fe26b1515 inherit pub_static_attribs_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Rcpp interface for Dnorm as an S4 object. To instantiate from R: dnorm_ &lt;- new(fims$TMBDnormDistribution) </p>
+<div class="textblock"><p>Rcpp interface for Dnorm as an S4 object. To instantiate from R: dnorm_ &lt;- new(fims$TMBDlnormDistribution) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aaf9ecda133beab815e3b84d7f2d9e326"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf9ecda133beab815e3b84d7f2d9e326">&#9670;&nbsp;</a></span>evaluate()</h2>
+<a id="a0a7b0532100eb957dad1ed5093e70ce3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a7b0532100eb957dad1ed5093e70ce3">&#9670;&nbsp;</a></span>evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -148,7 +142,7 @@ static std::vector&lt; <a class="el" href="classFIMSRcppInterfaceBase.html">FIMS
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double DnormDistributionsInterface::evaluate </td>
+          <td class="memname">virtual double DnormDistributionsInterface::evaluate </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
           <td class="paramname"><em>do_log</em></td><td>)</td>
@@ -171,12 +165,58 @@ static std::vector&lt; <a class="el" href="classFIMSRcppInterfaceBase.html">FIMS
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>log pdf </dd></dl>
 
-<p>Implements <a class="el" href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a>.</p>
+<p>Implements <a class="el" href="classDistributionsInterfaceBase.html#a5d9993ff1cc28507b609920dfd7e9d44">DistributionsInterfaceBase</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a157057ff78054cfe7ae32d257b93ac9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a157057ff78054cfe7ae32d257b93ac9d">&#9670;&nbsp;</a></span>mean</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> DnormDistributionsInterface::mean</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>mean of x for the normal distribution </p>
+
+</div>
+</div>
+<a id="a9bc34cb22cadc75c65bc0bb38978a57d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bc34cb22cadc75c65bc0bb38978a57d">&#9670;&nbsp;</a></span>sd</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> DnormDistributionsInterface::sd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>sd of x for the normal distribution </p>
+
+</div>
+</div>
+<a id="a548824b92bedb476bc50826c4ca1c476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a548824b92bedb476bc50826c4ca1c476">&#9670;&nbsp;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> DnormDistributionsInterface::x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>observed data </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>inst/include/interface/rcpp/rcpp_objects/<a class="el" href="rcpp__tmb__dnorm__distribution_8hpp_source.html">rcpp_tmb_dnorm_distribution.hpp</a></li>
+<li>inst/include/interface/rcpp/rcpp_objects/<a class="el" href="rcpp__tmb__distribution_8hpp_source.html">rcpp_tmb_distribution.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

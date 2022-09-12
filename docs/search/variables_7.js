@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['p_176',['p',['../structfims_1_1Dmultinom.html#a72a983d7919b630b5610777d08a826dd',1,'fims::Dmultinom']]],
-  ['parameters_177',['parameters',['../structfims_1_1FIMSObject.html#a3c1320fa1468e2fad7369685c836710a',1,'fims::FIMSObject']]],
-  ['phizero_178',['phizero',['../classBevertonHoltRecruitmentInterface.html#ab7fc071b4bf0eda6eb2f3218eb7cec6d',1,'BevertonHoltRecruitmentInterface::phizero()'],['../structfims_1_1SRBevertonHolt.html#a2e3cfead0d39d8052bba3934fbd45760',1,'fims::SRBevertonHolt::phizero()']]]
+  ['live_5fobjects_175',['live_objects',['../classGrowthInterfaceBase.html#a5a6704a5b7c2e7d63d6183136d6fb48e',1,'GrowthInterfaceBase::live_objects()'],['../classPopulationInterfaceBase.html#a99fc4b0a5a0f572f9bf46670a996d3e9',1,'PopulationInterfaceBase::live_objects()'],['../classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a',1,'RecruitmentInterfaceBase::live_objects()'],['../classDistributionsInterfaceBase.html#ae285ae2cd00da6eddbabf2c090ffa9fc',1,'DistributionsInterfaceBase::live_objects()']]]
 ];
