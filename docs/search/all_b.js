@@ -1,15 +1,8 @@
 var searchData=
 [
-  ['random_5feffects_5fparameters_70',['random_effects_parameters',['../classfims_1_1Information.html#ae45e93d755fff4fa5d5f557881a1fba6',1,'fims::Information::random_effects_parameters()'],['../structfims_1_1FIMSObject.html#ae62632ed38b082bb8200abb2a11e1fab',1,'fims::FIMSObject::random_effects_parameters()']]],
-  ['recruit_5fbias_5fadjustment_71',['recruit_bias_adjustment',['../structfims_1_1RecruitmentBase.html#a0a0295742c69979b0d66b40e12fdd4f9',1,'fims::RecruitmentBase']]],
-  ['recruit_5fbias_5fadjustment_5ffraction_72',['recruit_bias_adjustment_fraction',['../structfims_1_1RecruitmentBase.html#a23cda8ea540407d06d2b59167166db2f',1,'fims::RecruitmentBase']]],
-  ['recruit_5fdeviations_73',['recruit_deviations',['../structfims_1_1RecruitmentBase.html#ac65d0fbc23e87f8987f47c1fb6fed74d',1,'fims::RecruitmentBase']]],
-  ['recruit_5fnll_74',['recruit_nll',['../structfims_1_1RecruitmentBase.html#a4902394592972850d118fd89f3a45af3',1,'fims::RecruitmentBase']]],
-  ['recruitment_5fbase_2ehpp_75',['recruitment_base.hpp',['../recruitment__base_8hpp.html',1,'']]],
-  ['recruitment_5fmodels_76',['recruitment_models',['../classfims_1_1Information.html#a948f4364ac05690919821bcce7c3cfdb',1,'fims::Information']]],
-  ['recruitmentbase_77',['RecruitmentBase',['../structfims_1_1RecruitmentBase.html',1,'fims::RecruitmentBase&lt; Type &gt;'],['../structfims_1_1RecruitmentBase.html#a284bcb2e5db9b033c68a3fd314bd1a65',1,'fims::RecruitmentBase::RecruitmentBase()']]],
-  ['recruitmentinterfacebase_78',['RecruitmentInterfaceBase',['../classRecruitmentInterfaceBase.html',1,'']]],
-  ['registerparameter_79',['RegisterParameter',['../classfims_1_1Information.html#a7abb023dedff9942a54ddf65fa942fa9',1,'fims::Information']]],
-  ['registerrandomeffect_80',['RegisterRandomEffect',['../classfims_1_1Information.html#a55f104ddbc63cca3637a69bf3ea6972b',1,'fims::Information']]],
-  ['rzero_81',['rzero',['../classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af',1,'BevertonHoltRecruitmentInterface::rzero()'],['../structfims_1_1SRBevertonHolt.html#a79cc0300e8d25b69e300924c9de9376c',1,'fims::SRBevertonHolt::rzero()']]]
+  ['observed_5fagecomp_5fdata_73',['observed_agecomp_data',['../structfims_1_1Fleet.html#a1fcf95f3fbe97fbad3e79032d03cb63a',1,'fims::Fleet']]],
+  ['observed_5fagecomp_5fdata_5fid_74',['observed_agecomp_data_id',['../structfims_1_1Fleet.html#af0d89d413658609b472a1f1f9468d44f',1,'fims::Fleet']]],
+  ['observed_5findex_5fdata_75',['observed_index_data',['../structfims_1_1Fleet.html#abcb9fdb74c91a5fcf33fb61b3cb050f0',1,'fims::Fleet']]],
+  ['observed_5findex_5fdata_5fid_76',['observed_index_data_id',['../structfims_1_1Fleet.html#a8568482baf9621eb4befa80f89e99a89',1,'fims::Fleet']]],
+  ['operator_28_29_77',['operator()',['../structfims_1_1DataObject.html#a9da05e4608f7ce171d9a673c106c2b6b',1,'fims::DataObject::operator()(size_t i)'],['../structfims_1_1DataObject.html#abe1e0c4eddbe32d9cb46c0afa4401280',1,'fims::DataObject::operator()(size_t i, size_t j)'],['../structfims_1_1DataObject.html#a1d4dcb8369f76b111a818f4d5b1caeeb',1,'fims::DataObject::operator()(size_t i, size_t j, size_t k)'],['../structfims_1_1DataObject.html#af1270d260b049494a33861a2a67d0042',1,'fims::DataObject::operator()(size_t i, size_t j, size_t k, size_t l)']]]
 ];

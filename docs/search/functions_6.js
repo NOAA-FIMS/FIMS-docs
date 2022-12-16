@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logistic_149',['logistic',['../fims__math_8hpp.html#a4d48e30e355c7dcda1897f413e2d179f',1,'fims']]]
+  ['initialize_175',['Initialize',['../structfims_1_1Fleet.html#ac4e0f31ac0e3d613b787db6ca484ed95',1,'fims::Fleet']]]
 ];

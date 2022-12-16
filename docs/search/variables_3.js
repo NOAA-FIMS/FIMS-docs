@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['estimate_5frecruit_5fdeviations_163',['estimate_recruit_deviations',['../structfims_1_1RecruitmentBase.html#ad105c4b06dd0d0a1e531d2c2cd7ef716',1,'fims::RecruitmentBase']]],
-  ['estimated_164',['estimated',['../classParameter.html#ae80893b5a7df6bb489c7aa314f15204b',1,'Parameter']]],
-  ['ewaa_165',['ewaa',['../classEWAAGrowthInterface.html#a56a134796f622557d6bbd2b1ec3754e7',1,'EWAAGrowthInterface::ewaa()'],['../structfims_1_1EWAAgrowth.html#a2229a8a240827aa2d31fcd245b45dae2',1,'fims::EWAAgrowth::ewaa()']]]
+  ['fims_5finterface_5fobjects_204',['fims_interface_objects',['../classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515',1,'FIMSRcppInterfaceBase']]],
+  ['fims_5fmodel_205',['fims_model',['../classfims_1_1Model.html#a771abca518a0243f74ab94d5a970523c',1,'fims::Model']]],
+  ['fixed_5feffects_5fparameters_206',['fixed_effects_parameters',['../structfims_1_1FIMSObject.html#a55787c34a989c76c5ae35883b2f333e5',1,'fims::FIMSObject']]],
+  ['fleets_207',['fleets',['../classfims_1_1Model.html#abad7642cc71f5fd97a687ad3f1b795e4',1,'fims::Model']]]
 ];

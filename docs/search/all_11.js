@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_99',['x',['../classDnormDistributionsInterface.html#a548824b92bedb476bc50826c4ca1c476',1,'DnormDistributionsInterface::x()'],['../classDlnormDistributionsInterface.html#ad06d7fb7cebfd89d7de57a669bdd2190',1,'DlnormDistributionsInterface::x()'],['../classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578',1,'DmultinomDistributionsInterface::x()']]]
+  ['value_119',['value',['../classParameter.html#a48e21d83cbd2310c2738f85036b589ab',1,'Parameter']]]
 ];

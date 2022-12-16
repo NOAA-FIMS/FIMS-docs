@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['weights_98',['weights',['../classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86',1,'EWAAGrowthInterface']]]
+  ['use_5frecruit_5fbias_5fadjustment_118',['use_recruit_bias_adjustment',['../structfims_1_1RecruitmentBase.html#aad9a38352b090f82d6d72594f6028e1b',1,'fims::RecruitmentBase']]]
 ];
