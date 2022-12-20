@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['data_5fmatrix_194',['data_matrix',['../structfims_1_1FIMSTraits.html#a7c44b62df5624dc2a965f8384f805bac',1,'fims::FIMSTraits']]],
-  ['data_5fvector_195',['data_vector',['../structfims_1_1FIMSTraits.html#a3476347b67c66ba7906c77ac9081d2b3',1,'fims::FIMSTraits']]],
-  ['datavector_196',['DataVector',['../structModelTraits.html#a5963625b217eec01ad13cdcc1095c3a5',1,'ModelTraits']]]
+  ['data_5fiterator_418',['data_iterator',['../classfims_1_1Information.html#aeb218555f86da1848d1561650381be07',1,'fims::Information']]],
+  ['distribution_5fmodels_5fiterator_419',['distribution_models_iterator',['../classfims_1_1Information.html#a9d3890af83e112b0a8773150ccd19b8a',1,'fims::Information']]]
 ];

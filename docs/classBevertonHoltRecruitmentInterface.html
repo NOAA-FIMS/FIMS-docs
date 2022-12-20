@@ -98,6 +98,10 @@ Public Member Functions</h2></td></tr>
 virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBevertonHoltRecruitmentInterface.html#aca73a10cce5316257a27744622cd4e13">get_id</a> ()</td></tr>
 <tr class="memdesc:aca73a10cce5316257a27744622cd4e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the ID of the interface base object <br /></td></tr>
 <tr class="separator:aca73a10cce5316257a27744622cd4e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a769423d2ff84105da200df7ccdb12593"><td class="memItemLeft" align="right" valign="top"><a id="a769423d2ff84105da200df7ccdb12593"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBevertonHoltRecruitmentInterface.html#a769423d2ff84105da200df7ccdb12593">evaluate</a> (double spawners, double ssbzero)</td></tr>
+<tr class="memdesc:a769423d2ff84105da200df7ccdb12593"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluate method for child recruitment interface objects to inherit <br /></td></tr>
+<tr class="separator:a769423d2ff84105da200df7ccdb12593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d85e6ae1cb0df4b7d460df4ccf20c84"><td class="memItemLeft" align="right" valign="top"><a id="a9d85e6ae1cb0df4b7d460df4ccf20c84"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBevertonHoltRecruitmentInterface.html#a9d85e6ae1cb0df4b7d460df4ccf20c84">add_to_fims_tmb</a> ()</td></tr>
 <tr class="memdesc:a9d85e6ae1cb0df4b7d460df4ccf20c84"><td class="mdescLeft">&#160;</td><td class="mdescRight">this adds the parameter values and derivatives to the TMB model object <br /></td></tr>
@@ -109,8 +113,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac2a21e3d552fb5f3c04a53d02f3369cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a182bad1d3365885939438e14fade01af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">rzero</a></td></tr>
 <tr class="separator:a182bad1d3365885939438e14fade01af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7fc071b4bf0eda6eb2f3218eb7cec6d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBevertonHoltRecruitmentInterface.html#ab7fc071b4bf0eda6eb2f3218eb7cec6d">phizero</a></td></tr>
-<tr class="separator:ab7fc071b4bf0eda6eb2f3218eb7cec6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classRecruitmentInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classRecruitmentInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a></td></tr>
 <tr class="memitem:a3edf8070f5555b4868b429f7ef1b41be inherit pub_attribs_classRecruitmentInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a></td></tr>
 <tr class="separator:a3edf8070f5555b4868b429f7ef1b41be inherit pub_attribs_classRecruitmentInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,21 +131,6 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Rcpp interface for Beverton-Holt as an S4 object. To instantiate from R: beverton_holt &lt;- new(fims$beverton_holt) </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab7fc071b4bf0eda6eb2f3218eb7cec6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7fc071b4bf0eda6eb2f3218eb7cec6d">&#9670;&nbsp;</a></span>phizero</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> BevertonHoltRecruitmentInterface::phizero</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>unfished spawning biomass per recruit </p>
-
-</div>
-</div>
 <a id="a182bad1d3365885939438e14fade01af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a182bad1d3365885939438e14fade01af">&#9670;&nbsp;</a></span>rzero</h2>
 
