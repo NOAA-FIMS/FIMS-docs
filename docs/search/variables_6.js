@@ -1,6 +1,10 @@
 var searchData=
 [
-  ['growth_342',['growth',['../structfims_1_1Population.html#a85c481fbcfea5364ba071739b789e272',1,'fims::Population']]],
-  ['growth_5fid_343',['growth_id',['../structfims_1_1Population.html#a58e0691f8b670f498cf045b2f392a0c0',1,'fims::Population']]],
-  ['growth_5fmodels_344',['growth_models',['../classfims_1_1Information.html#a5114b1064b83064f9685a1b82a1fb0ce',1,'fims::Information']]]
+  ['max_219',['max',['../classParameter.html#abf208d234c8c4b45d6085a28d95c79ec',1,'Parameter']]],
+  ['mean_220',['mean',['../classDnormDistributionsInterface.html#a157057ff78054cfe7ae32d257b93ac9d',1,'DnormDistributionsInterface']]],
+  ['meanlog_221',['meanlog',['../classDlnormDistributionsInterface.html#a20a951626ca31d1c5cddd862bfaf3376',1,'DlnormDistributionsInterface']]],
+  ['median_222',['median',['../classLogisticSelectivityInterface.html#ac4d5a6f85f05ada7b54314bbe133c537',1,'LogisticSelectivityInterface::median()'],['../structfims_1_1LogisticMaturity.html#a899f289dffa1242604794a85cf6e33f7',1,'fims::LogisticMaturity::median()'],['../structfims_1_1LogisticSelectivity.html#a125a146a56820b8f3bc83179ff070f0e',1,'fims::LogisticSelectivity::median()']]],
+  ['median_5fasc_223',['median_asc',['../structfims_1_1DoubleLogisticSelectivity.html#a6c39680a5dbf78e688b5282b8690058b',1,'fims::DoubleLogisticSelectivity']]],
+  ['median_5fdesc_224',['median_desc',['../structfims_1_1DoubleLogisticSelectivity.html#a5c6c7be249b421344ed50536633702f7',1,'fims::DoubleLogisticSelectivity']]],
+  ['min_225',['min',['../classParameter.html#a136f68724d014785a836ec73cb07f634',1,'Parameter']]]
 ];

@@ -7,6 +7,6 @@ var searchData=
   ['age_5fcomposition_4',['age_composition',['../structfims_1_1Fleet.html#a78a3320fee0e61af7ce4983725ebf3bb',1,'fims::Fleet']]],
   ['agecomp_5flikelihood_5',['agecomp_likelihood',['../structfims_1_1Fleet.html#a7ed4398abfe3fdfcde5e82b427e93b82',1,'fims::Fleet']]],
   ['agecomp_5flikelihood_5fid_6',['agecomp_likelihood_id',['../structfims_1_1Fleet.html#a9d0888ee36c6b58a94a806dbf2238ccf',1,'fims::Fleet']]],
-  ['ages_7',['ages',['../classfims_1_1Information.html#a332d7d8771003629ffb3244ecdfc6afa',1,'fims::Information::ages()'],['../classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510',1,'EWAAGrowthInterface::ages()'],['../structfims_1_1Population.html#a425b33fa4300bbbef707791ca947828a',1,'fims::Population::ages()']]],
+  ['ages_7',['ages',['../classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510',1,'EWAAGrowthInterface']]],
   ['at_8',['at',['../structfims_1_1DataObject.html#aa58a115f624f9a0f72d9519d1c4a35d3',1,'fims::DataObject::at(size_t i)'],['../structfims_1_1DataObject.html#a2b0f3c7e9adfdbe27456703e04d4c9ad',1,'fims::DataObject::at(size_t i, size_t j)'],['../structfims_1_1DataObject.html#a4ed03f923c46dc3ca0d60ca3aa42210d',1,'fims::DataObject::at(size_t i, size_t j, size_t k)'],['../structfims_1_1DataObject.html#a40a2198000f2a531c510b56c166950c7',1,'fims::DataObject::at(size_t i, size_t j, size_t k, size_t l)']]]
 ];

@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['naa_134',['naa',['../structfims_1_1Population.html#ab8eaaa80a98b7579208dfc1e0026c7f3',1,'fims::Population']]],
-  ['nages_135',['nages',['../classfims_1_1Information.html#a58177520f53b3d518c37c9fc1ef2be8e',1,'fims::Information::nages()'],['../structfims_1_1Fleet.html#a8a81de06e87320303de61a48cf7c6ce1',1,'fims::Fleet::nages()'],['../structfims_1_1Population.html#a25b7b2a52527dc7d20009c7ff32ab1d3',1,'fims::Population::nages()']]],
-  ['nfleets_136',['nfleets',['../structfims_1_1Population.html#aef6c78d259c6c1f31091a7dcd41adbed',1,'fims::Population']]],
-  ['nseasons_137',['nseasons',['../classfims_1_1Information.html#af65fd03c12f588b9f3722c7dc1d1d414',1,'fims::Information::nseasons()'],['../structfims_1_1Population.html#aa50ba8b7b1cc5eb9ba172d9b175a06b9',1,'fims::Population::nseasons()']]],
-  ['numbers_5fat_5fage_138',['numbers_at_age',['../structfims_1_1Population.html#aa9abc81e811f15c05c2b92eedf52c2da',1,'fims::Population']]],
-  ['nyears_139',['nyears',['../classfims_1_1Information.html#a6b249de2fd3878b024f28862eb3001b0',1,'fims::Information::nyears()'],['../structfims_1_1Fleet.html#ab7922cb44e65badedbe4eeb4486add79',1,'fims::Fleet::nyears()'],['../structfims_1_1Population.html#a67ff1da875a0d13671bf6685acb570da',1,'fims::Population::nyears()']]]
+  ['p_80',['p',['../classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a',1,'DmultinomDistributionsInterface']]],
+  ['parameter_81',['Parameter',['../classParameter.html',1,'Parameter'],['../classParameter.html#a83a7b25fbbe9434fcfc2ff58bd34cd8b',1,'Parameter::Parameter(double value, double min, double max, bool estimated)'],['../classParameter.html#a0daabd9177ee8c2e46af55347279ef5d',1,'Parameter::Parameter(double value)'],['../classParameter.html#a5ba93ca36c3261d3850e67f92717c2f5',1,'Parameter::Parameter()']]],
+  ['parameters_82',['parameters',['../classfims_1_1Information.html#acc348133fcaf5d0863c945b045ceaf05',1,'fims::Information::parameters()'],['../structfims_1_1FIMSObject.html#a3c1320fa1468e2fad7369685c836710a',1,'fims::FIMSObject::parameters()']]],
+  ['phizero_83',['phizero',['../classBevertonHoltRecruitmentInterface.html#ab7fc071b4bf0eda6eb2f3218eb7cec6d',1,'BevertonHoltRecruitmentInterface::phizero()'],['../structfims_1_1SRBevertonHolt.html#a2e3cfead0d39d8052bba3934fbd45760',1,'fims::SRBevertonHolt::phizero()']]],
+  ['population_84',['Population',['../structfims_1_1Population.html',1,'fims']]],
+  ['populationinterfacebase_85',['PopulationInterfaceBase',['../classPopulationInterfaceBase.html',1,'']]],
+  ['populations_86',['populations',['../classfims_1_1Model.html#a0f37c126e631a89af9ab93a90e3a6c5d',1,'fims::Model']]],
+  ['preparebiasadjustment_87',['PrepareBiasAdjustment',['../structfims_1_1RecruitmentBase.html#a40fa55df6d7bda29acdd999aa10e2e93',1,'fims::RecruitmentBase']]],
+  ['prepareconstraineddeviations_88',['PrepareConstrainedDeviations',['../structfims_1_1RecruitmentBase.html#a3fdcdb3d61e8218ff24a5aca8369f75c',1,'fims::RecruitmentBase']]]
 ];
