@@ -77,7 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Rcpp interface for Dlnorm as an S4 object. To instantiate from R: dlnorm_ &lt;- new(fims$TMBDnormDistribution)  
+<p>Rcpp interface for Dlnorm as an S4 object. To instantiate from R: dlnorm_ &lt;- new(fims$TMBDlnormDistribution)  
  <a href="classDlnormDistributionsInterface.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="rcpp__tmb__distribution_8hpp_source.html">rcpp_tmb_distribution.hpp</a>&gt;</code></p>
@@ -114,6 +114,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a20a951626ca31d1c5cddd862bfaf3376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a41b4b7197ec9d9994555550dd09abc26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDlnormDistributionsInterface.html#a41b4b7197ec9d9994555550dd09abc26">sdlog</a></td></tr>
 <tr class="separator:a41b4b7197ec9d9994555550dd09abc26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672306331b8218b99a6bca19ade7bb4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDlnormDistributionsInterface.html#a672306331b8218b99a6bca19ade7bb4e">do_bias_correction</a></td></tr>
+<tr class="separator:a672306331b8218b99a6bca19ade7bb4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classDistributionsInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classDistributionsInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a></td></tr>
 <tr class="memitem:afdb0fac86d30fbd1fc60abea3ad209fe inherit pub_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a></td></tr>
 <tr class="separator:afdb0fac86d30fbd1fc60abea3ad209fe inherit pub_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,7 +132,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a27f6c0a9860f56c17951872fe26b1515 inherit pub_static_attribs_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Rcpp interface for Dlnorm as an S4 object. To instantiate from R: dlnorm_ &lt;- new(fims$TMBDnormDistribution) </p>
+<div class="textblock"><p>Rcpp interface for Dlnorm as an S4 object. To instantiate from R: dlnorm_ &lt;- new(fims$TMBDlnormDistribution) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a69d90f2d5dc082ad7be469ff7fb9648e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a69d90f2d5dc082ad7be469ff7fb9648e">&#9670;&nbsp;</a></span>evaluate()</h2>
@@ -170,6 +172,21 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a672306331b8218b99a6bca19ade7bb4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672306331b8218b99a6bca19ade7bb4e">&#9670;&nbsp;</a></span>do_bias_correction</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DlnormDistributionsInterface::do_bias_correction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>true if the lognormal should be bias corrected, default FALSE </p>
+
+</div>
+</div>
 <a id="a20a951626ca31d1c5cddd862bfaf3376"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20a951626ca31d1c5cddd862bfaf3376">&#9670;&nbsp;</a></span>meanlog</h2>
 

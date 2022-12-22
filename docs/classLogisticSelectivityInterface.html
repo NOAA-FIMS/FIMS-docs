@@ -98,6 +98,9 @@ Public Member Functions</h2></td></tr>
 virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogisticSelectivityInterface.html#ab293bd02d59b6672317a3b3b6b979fb3">get_id</a> ()</td></tr>
 <tr class="memdesc:ab293bd02d59b6672317a3b3b6b979fb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the id for the logistic selectivity interface <br /></td></tr>
 <tr class="separator:ab293bd02d59b6672317a3b3b6b979fb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af10a57e448b0a9c9a5394ce5f8da6ee1"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogisticSelectivityInterface.html#af10a57e448b0a9c9a5394ce5f8da6ee1">evaluate</a> (double x)</td></tr>
+<tr class="memdesc:af10a57e448b0a9c9a5394ce5f8da6ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluate the logistic selectivity function  <a href="classLogisticSelectivityInterface.html#af10a57e448b0a9c9a5394ce5f8da6ee1">More...</a><br /></td></tr>
+<tr class="separator:af10a57e448b0a9c9a5394ce5f8da6ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a376ac337132fccd7ce1384af38dfadfb"><td class="memItemLeft" align="right" valign="top"><a id="a376ac337132fccd7ce1384af38dfadfb"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogisticSelectivityInterface.html#a376ac337132fccd7ce1384af38dfadfb">add_to_fims_tmb</a> ()</td></tr>
 <tr class="memdesc:a376ac337132fccd7ce1384af38dfadfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">this adds the parameter values and derivatives to the TMB model object <br /></td></tr>
@@ -126,7 +129,44 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Rcpp interface for logistic selectivity as an S4 object. To instantiate from R: logistic_selectivity &lt;- new(fims$logistic_selectivity) </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="af10a57e448b0a9c9a5394ce5f8da6ee1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af10a57e448b0a9c9a5394ce5f8da6ee1">&#9670;&nbsp;</a></span>evaluate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual double LogisticSelectivityInterface::evaluate </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>evaluate the logistic selectivity function </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The independent variable in the logistic function (e.g., age or size in selectivity). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classSelectivityInterfaceBase.html#ad0ba72196e6a15591504a3f4c774d189">SelectivityInterfaceBase</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
 <a id="ac4d5a6f85f05ada7b54314bbe133c537"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4d5a6f85f05ada7b54314bbe133c537">&#9670;&nbsp;</a></span>median</h2>
 

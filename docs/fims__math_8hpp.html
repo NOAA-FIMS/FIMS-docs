@@ -89,14 +89,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a4d48e30e355c7dcda1897f413e2d179f"><td class="memTemplItemLeft" align="right" valign="top">const T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fims__math_8hpp.html#a4d48e30e355c7dcda1897f413e2d179f">fims::logistic</a> (const T &amp;median, const T &amp;slope, const T &amp;x)</td></tr>
 <tr class="memdesc:a4d48e30e355c7dcda1897f413e2d179f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The general logistic function.  <a href="fims__math_8hpp.html#a4d48e30e355c7dcda1897f413e2d179f">More...</a><br /></td></tr>
 <tr class="separator:a4d48e30e355c7dcda1897f413e2d179f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d19b86b88e4e025879a42798ed79336"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a5d19b86b88e4e025879a42798ed79336"><td class="memTemplItemLeft" align="right" valign="top">const T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fims__math_8hpp.html#a5d19b86b88e4e025879a42798ed79336">fims::logit</a> (const T &amp;a, const T &amp;b, const T &amp;x)</td></tr>
-<tr class="memdesc:a5d19b86b88e4e025879a42798ed79336"><td class="mdescLeft">&#160;</td><td class="mdescRight">A logit function for bounding of parameters.  <a href="fims__math_8hpp.html#a5d19b86b88e4e025879a42798ed79336">More...</a><br /></td></tr>
-<tr class="separator:a5d19b86b88e4e025879a42798ed79336"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb91050c6b8ce1bff0eaade59b4f351a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:afb91050c6b8ce1bff0eaade59b4f351a"><td class="memTemplItemLeft" align="right" valign="top">const T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fims__math_8hpp.html#afb91050c6b8ce1bff0eaade59b4f351a">fims::inv_logit</a> (const T &amp;a, const T &amp;b, const T &amp;logit_x)</td></tr>
-<tr class="memdesc:afb91050c6b8ce1bff0eaade59b4f351a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An inverse logit function for bounding of parameters.  <a href="fims__math_8hpp.html#afb91050c6b8ce1bff0eaade59b4f351a">More...</a><br /></td></tr>
-<tr class="separator:afb91050c6b8ce1bff0eaade59b4f351a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af366ee018ee5051cd427f25cb7ed0552"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:af366ee018ee5051cd427f25cb7ed0552"><td class="memTemplItemLeft" align="right" valign="top">const T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fims__math_8hpp.html#af366ee018ee5051cd427f25cb7ed0552">fims::double_logistic</a> (const T &amp;median_asc, const T &amp;slope_asc, const T &amp;median_desc, const T &amp;slope_desc, const T &amp;x)</td></tr>
 <tr class="memdesc:af366ee018ee5051cd427f25cb7ed0552"><td class="mdescLeft">&#160;</td><td class="mdescRight">The general double logistic function.  <a href="fims__math_8hpp.html#af366ee018ee5051cd427f25cb7ed0552">More...</a><br /></td></tr>
@@ -334,61 +326,6 @@ template&lt;class T &gt; </div>
 
 </div>
 </div>
-<a id="afb91050c6b8ce1bff0eaade59b4f351a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb91050c6b8ce1bff0eaade59b4f351a">&#9670;&nbsp;</a></span>inv_logit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const T fims::inv_logit </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>logit_x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>An inverse logit function for bounding of parameters. </p>
-<p>\( a+\frac{b-a}{1+\mathrm{exp}(-\mathrm{logit}(x))}\) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">a</td><td>lower bound </td></tr>
-    <tr><td class="paramname">b</td><td>upper bound </td></tr>
-    <tr><td class="paramname">logit_x</td><td>the parameter in real space </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the parameter in bounded space </dd></dl>
-
-</div>
-</div>
 <a id="a4d48e30e355c7dcda1897f413e2d179f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d48e30e355c7dcda1897f413e2d179f">&#9670;&nbsp;</a></span>logistic()</h2>
 
@@ -442,61 +379,6 @@ template&lt;class T &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-</div>
-</div>
-<a id="a5d19b86b88e4e025879a42798ed79336"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d19b86b88e4e025879a42798ed79336">&#9670;&nbsp;</a></span>logit()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const T fims::logit </td>
-          <td>(</td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const T &amp;&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>A logit function for bounding of parameters. </p>
-<p>\( -\mathrm{log}(b-x) + \mathrm{log}(x-a) \) </p><dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">a</td><td>lower bound </td></tr>
-    <tr><td class="paramname">b</td><td>upper bound </td></tr>
-    <tr><td class="paramname">x</td><td>the parameter in bounded space </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the parameter in real space </dd></dl>
 
 </div>
 </div>

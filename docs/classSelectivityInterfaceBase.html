@@ -88,8 +88,9 @@ Inheritance diagram for SelectivityInterfaceBase:</div>
  <div class="center">
   <img src="classSelectivityInterfaceBase.png" usemap="#SelectivityInterfaceBase_map" alt=""/>
   <map id="SelectivityInterfaceBase_map" name="SelectivityInterfaceBase_map">
-<area href="classFIMSRcppInterfaceBase.html" title="Base class for all interface objects." alt="FIMSRcppInterfaceBase" shape="rect" coords="0,0,163,24"/>
-<area href="classLogisticSelectivityInterface.html" title="Rcpp interface for logistic selectivity as an S4 object. To instantiate from R: logistic_selectivity ..." alt="LogisticSelectivityInterface" shape="rect" coords="0,112,163,136"/>
+<area href="classFIMSRcppInterfaceBase.html" title="Base class for all interface objects." alt="FIMSRcppInterfaceBase" shape="rect" coords="106,0,309,24"/>
+<area href="classDoubleLogisticSelectivityInterface.html" title="Rcpp interface for logistic selectivity as an S4 object. To instantiate from R: logistic_selectivity ..." alt="DoubleLogisticSelectivityInterface" shape="rect" coords="0,112,203,136"/>
+<area href="classLogisticSelectivityInterface.html" title="Rcpp interface for logistic selectivity as an S4 object. To instantiate from R: logistic_selectivity ..." alt="LogisticSelectivityInterface" shape="rect" coords="213,112,416,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -99,6 +100,10 @@ Public Member Functions</h2></td></tr>
 virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSelectivityInterfaceBase.html#a4bfb14efaa2304eb7b1828dba443edb3">get_id</a> ()=0</td></tr>
 <tr class="memdesc:a4bfb14efaa2304eb7b1828dba443edb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the ID of the interface base object <br /></td></tr>
 <tr class="separator:a4bfb14efaa2304eb7b1828dba443edb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0ba72196e6a15591504a3f4c774d189"><td class="memItemLeft" align="right" valign="top"><a id="ad0ba72196e6a15591504a3f4c774d189"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSelectivityInterfaceBase.html#ad0ba72196e6a15591504a3f4c774d189">evaluate</a> (double x)=0</td></tr>
+<tr class="memdesc:ad0ba72196e6a15591504a3f4c774d189"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluate the function <br /></td></tr>
+<tr class="separator:ad0ba72196e6a15591504a3f4c774d189"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="a9183d9379777d8be70ab66af1a07f94c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>

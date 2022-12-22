@@ -1,8 +1,10 @@
 var searchData=
 [
-  ['random_5feffects_5fparameters_236',['random_effects_parameters',['../structfims_1_1FIMSObject.html#ae62632ed38b082bb8200abb2a11e1fab',1,'fims::FIMSObject']]],
-  ['recruit_5fbias_5fadjustment_237',['recruit_bias_adjustment',['../structfims_1_1RecruitmentBase.html#a0a0295742c69979b0d66b40e12fdd4f9',1,'fims::RecruitmentBase']]],
-  ['recruit_5fbias_5fadjustment_5ffraction_238',['recruit_bias_adjustment_fraction',['../structfims_1_1RecruitmentBase.html#a23cda8ea540407d06d2b59167166db2f',1,'fims::RecruitmentBase']]],
-  ['recruit_5fdeviations_239',['recruit_deviations',['../structfims_1_1RecruitmentBase.html#ac65d0fbc23e87f8987f47c1fb6fed74d',1,'fims::RecruitmentBase']]],
-  ['rzero_240',['rzero',['../classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af',1,'BevertonHoltRecruitmentInterface::rzero()'],['../structfims_1_1SRBevertonHolt.html#a79cc0300e8d25b69e300924c9de9376c',1,'fims::SRBevertonHolt::rzero()']]]
+  ['live_5fobjects_361',['live_objects',['../classGrowthInterfaceBase.html#a5a6704a5b7c2e7d63d6183136d6fb48e',1,'GrowthInterfaceBase::live_objects()'],['../classNLLInterfaceBase.html#a017e42351e74f8077f1f7cd09a16bb2a',1,'NLLInterfaceBase::live_objects()'],['../classPopulationInterfaceBase.html#a99fc4b0a5a0f572f9bf46670a996d3e9',1,'PopulationInterfaceBase::live_objects()'],['../classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a',1,'RecruitmentInterfaceBase::live_objects()'],['../classDistributionsInterfaceBase.html#ae285ae2cd00da6eddbabf2c090ffa9fc',1,'DistributionsInterfaceBase::live_objects()']]],
+  ['lmax_362',['lmax',['../structfims_1_1DataObject.html#a6568ecbb11c6fd60e2833f5058753afa',1,'fims::DataObject']]],
+  ['log_5ffmort_363',['log_Fmort',['../structfims_1_1Fleet.html#a8ff30c9ad1cd9fd4131b770ee5662615',1,'fims::Fleet']]],
+  ['log_5fm_364',['log_M',['../structfims_1_1Population.html#a0e0b683ba310a5d34d6342340d44e4fa',1,'fims::Population']]],
+  ['log_5fnaa_365',['log_naa',['../structfims_1_1Population.html#a099b804138b7f3c1e01e8eb5b80e2bad',1,'fims::Population']]],
+  ['log_5fq_366',['log_q',['../structfims_1_1Fleet.html#ac946797f0ddb46606986526040d27522',1,'fims::Fleet']]],
+  ['log_5fsigma_5frecruit_367',['log_sigma_recruit',['../classRecruitmentNLLInterface.html#a3210cb2ffc51313dd938067c91ee8fff',1,'RecruitmentNLLInterface::log_sigma_recruit()'],['../structfims_1_1RecruitmentBase.html#a58c3f696931d7cca337aabdfcee502dd',1,'fims::RecruitmentBase::log_sigma_recruit()']]]
 ];

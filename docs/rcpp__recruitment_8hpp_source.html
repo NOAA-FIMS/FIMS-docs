@@ -76,7 +76,7 @@ $(function() {
 <div class="title">rcpp_recruitment.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; <span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * File:   rcpp_recruitment.hpp</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This File is part of the NOAA, National Marine Fisheries Service</span></div>
@@ -87,113 +87,111 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef FIMS_INTERFACE_RCPP_RCPP_OBJECTS_RCPP_RECRUITMENT_HPP</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define FIMS_INTERFACE_RCPP_RCPP_OBJECTS_RCPP_RECRUITMENT_HPP</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;../../../population_dynamics/recruitment/recruitment.hpp&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;rcpp_interface_base.hpp&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/****************************************************************</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * Recruitment Rcpp interface                                   *</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> ***************************************************************/</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a> : <span class="keyword">public</span> <a class="code" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd">   24</a></span>&#160;  <span class="keyword">static</span> uint32_t <a class="code" href="classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd">id_g</a>; </div>
-<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">   25</a></span>&#160;  uint32_t <a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>;          </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a">   26</a></span>&#160;  <span class="keyword">static</span> std::map&lt;uint32_t, RecruitmentInterfaceBase*&gt; <a class="code" href="classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a">live_objects</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a>() {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    this-&gt;<span class="keywordtype">id</span> = <a class="code" href="classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd">RecruitmentInterfaceBase::id_g</a>++;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a">RecruitmentInterfaceBase::live_objects</a>[this-&gt;<a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>] = <span class="keyword">this</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515">FIMSRcppInterfaceBase::fims_interface_objects</a>.push_back(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a>() {}</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html#a4bc18067795f5503eecc72ef13a9802a">   39</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classRecruitmentInterfaceBase.html#a4bc18067795f5503eecc72ef13a9802a">get_id</a>() = 0;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;../../../population_dynamics/recruitment/recruitment.hpp&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;rcpp_interface_base.hpp&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/****************************************************************</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * Recruitment Rcpp interface                                   *</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> ***************************************************************/</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a> : <span class="keyword">public</span> <a class="code" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a> {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd">   25</a></span>&#160;  <span class="keyword">static</span> uint32_t <a class="code" href="classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd">id_g</a>; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">   26</a></span>&#160;  uint32_t <a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>;          </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a">   27</a></span>&#160;  <span class="keyword">static</span> std::map&lt;uint32_t, RecruitmentInterfaceBase*&gt; <a class="code" href="classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a">live_objects</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="comment">//static std::vector&lt;double&gt; recruit_deviations; /**&lt; vector of recruitment deviations*/</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span>  <span class="comment">//static std::vector&lt;double&gt; rec_bias_adj; /**&lt; a vector of bias adjustment values*/</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html#ad2cdb57b7cb0fa9bab4a3f036821872e">   34</a></span>&#160;  <a class="code" href="classRecruitmentInterfaceBase.html#ad2cdb57b7cb0fa9bab4a3f036821872e">RecruitmentInterfaceBase</a>() {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    this-&gt;<span class="keywordtype">id</span> = <a class="code" href="classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd">RecruitmentInterfaceBase::id_g</a>++;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a">RecruitmentInterfaceBase::live_objects</a>[this-&gt;<a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>] = <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515">FIMSRcppInterfaceBase::fims_interface_objects</a>.push_back(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a>() {}</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;uint32_t <a class="code" href="classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd">RecruitmentInterfaceBase::id_g</a> = 1;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;std::map&lt;uint32_t, RecruitmentInterfaceBase*&gt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a">RecruitmentInterfaceBase::live_objects</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html#a4bc18067795f5503eecc72ef13a9802a">   44</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classRecruitmentInterfaceBase.html#a4bc18067795f5503eecc72ef13a9802a">get_id</a>() = 0;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html">   51</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a> : <span class="keyword">public</span> <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a> {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">   53</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">steep</a>;   </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">   54</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">rzero</a>;   </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#ab7fc071b4bf0eda6eb2f3218eb7cec6d">   55</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classBevertonHoltRecruitmentInterface.html#ab7fc071b4bf0eda6eb2f3218eb7cec6d">phizero</a>; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a>() : <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a>() {}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a>() {}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#aca73a10cce5316257a27744622cd4e13">   61</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classBevertonHoltRecruitmentInterface.html#aca73a10cce5316257a27744622cd4e13">get_id</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>; }</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#a9d85e6ae1cb0df4b7d460df4ccf20c84">   65</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classBevertonHoltRecruitmentInterface.html#a9d85e6ae1cb0df4b7d460df4ccf20c84">add_to_fims_tmb</a>() {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// base model</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_REAL_TYPE&gt; &gt; d0 =</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_REAL_TYPE&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classRecruitmentInterfaceBase.html#a9e94c45bffb2275caa0a097b516d6155">   47</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classRecruitmentInterfaceBase.html#a9e94c45bffb2275caa0a097b516d6155">evaluate</a>(<span class="keywordtype">double</span> spawners, <span class="keywordtype">double</span> ssbzero) = 0;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;uint32_t <a class="code" href="classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd">RecruitmentInterfaceBase::id_g</a> = 1;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;std::map&lt;uint32_t, RecruitmentInterfaceBase*&gt;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a">RecruitmentInterfaceBase::live_objects</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html">   59</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a> : <span class="keyword">public</span> <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">   61</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">steep</a>;   </div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">   62</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">rzero</a>;   </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a>() : <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a>() {}</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a>() {}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#aca73a10cce5316257a27744622cd4e13">   68</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classBevertonHoltRecruitmentInterface.html#aca73a10cce5316257a27744622cd4e13">get_id</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>; }</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::shared_ptr&lt;fims::SRBevertonHolt&lt;TMB_FIMS_REAL_TYPE&gt; &gt; b0 =</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        std::make_shared&lt;fims::SRBevertonHolt&lt;TMB_FIMS_REAL_TYPE&gt; &gt;();</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#a769423d2ff84105da200df7ccdb12593">   70</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classBevertonHoltRecruitmentInterface.html#a769423d2ff84105da200df7ccdb12593">evaluate</a>(<span class="keywordtype">double</span> spawners, <span class="keywordtype">double</span> ssbzero){</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="structfims_1_1SRBevertonHolt.html">fims::SRBevertonHolt&lt;double&gt;</a> BevHolt;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="comment">// set relative info</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    b0-&gt;id = this-&gt;<a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    b0-&gt;steep = this-&gt;steep.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        d0-&gt;RegisterRandomEffect(b0-&gt;steep);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        d0-&gt;RegisterParameter(b0-&gt;steep);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    b0-&gt;rzero = this-&gt;rzero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        d0-&gt;RegisterRandomEffect(b0-&gt;rzero);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        d0-&gt;RegisterParameter(b0-&gt;rzero);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;      }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    b0-&gt;phizero = this-&gt;phizero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">if</span> (this-&gt;phizero.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      <span class="keywordflow">if</span> (this-&gt;phizero.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        d0-&gt;RegisterRandomEffect(b0-&gt;phizero);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        d0-&gt;RegisterParameter(b0-&gt;phizero);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      }</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    d0-&gt;recruitment_models[b0-&gt;id] = b0;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">// first-order derivative</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt; &gt; d1 =</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::shared_ptr&lt;fims::SRBevertonHolt&lt;TMB_FIMS_FIRST_ORDER&gt; &gt; b1 =</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        std::make_shared&lt;fims::SRBevertonHolt&lt;TMB_FIMS_FIRST_ORDER&gt; &gt;();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    BevHolt.<a class="code" href="structfims_1_1SRBevertonHolt.html#a9725bfb881e36b3c53b1d64e1a28e02d">steep</a> = this-&gt;steep.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    BevHolt.<a class="code" href="structfims_1_1RecruitmentBase.html#a2e26d74ff3698c8df7f9f80ab53f8b21">rzero</a> = this-&gt;rzero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> BevHolt.<a class="code" href="structfims_1_1SRBevertonHolt.html#a7c51f4a245a9b789f6753ef8d26a9b7c">evaluate</a>(spawners, ssbzero);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#a9d85e6ae1cb0df4b7d460df4ccf20c84">   80</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classBevertonHoltRecruitmentInterface.html#a9d85e6ae1cb0df4b7d460df4ccf20c84">add_to_fims_tmb</a>() {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="comment">// base model</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_REAL_TYPE&gt; &gt; d0 =</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_REAL_TYPE&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::shared_ptr&lt;fims::SRBevertonHolt&lt;TMB_FIMS_REAL_TYPE&gt; &gt; b0 =</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        std::make_shared&lt;fims::SRBevertonHolt&lt;TMB_FIMS_REAL_TYPE&gt; &gt;();</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// set relative info</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    b0-&gt;id = this-&gt;<a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    b0-&gt;steep = this-&gt;steep.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        d0-&gt;RegisterRandomEffect(b0-&gt;steep);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        d0-&gt;RegisterParameter(b0-&gt;steep);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      }</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    b0-&gt;rzero = this-&gt;rzero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        d0-&gt;RegisterRandomEffect(b0-&gt;rzero);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        d0-&gt;RegisterParameter(b0-&gt;rzero);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;      }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    }</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    d0-&gt;recruitment_models[b0-&gt;id] = b0;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// set relative info</span></div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    b1-&gt;id = this-&gt;<a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    b1-&gt;steep = this-&gt;steep.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        d1-&gt;RegisterRandomEffect(b1-&gt;steep);</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        d1-&gt;RegisterParameter(b1-&gt;steep);</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;      }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    b1-&gt;rzero = this-&gt;rzero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        d1-&gt;RegisterRandomEffect(b1-&gt;rzero);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        d1-&gt;RegisterParameter(b1-&gt;rzero);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      }</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    b1-&gt;phizero = this-&gt;phizero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">if</span> (this-&gt;phizero.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;      <span class="keywordflow">if</span> (this-&gt;phizero.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        d1-&gt;RegisterRandomEffect(b1-&gt;phizero);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        d1-&gt;RegisterParameter(b1-&gt;phizero);</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="comment">// first-order derivative</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt; &gt; d1 =</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::shared_ptr&lt;fims::SRBevertonHolt&lt;TMB_FIMS_FIRST_ORDER&gt; &gt; b1 =</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        std::make_shared&lt;fims::SRBevertonHolt&lt;TMB_FIMS_FIRST_ORDER&gt; &gt;();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">// set relative info</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    b1-&gt;id = this-&gt;<a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    b1-&gt;steep = this-&gt;steep.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;      <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        d1-&gt;RegisterRandomEffect(b1-&gt;steep);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        d1-&gt;RegisterParameter(b1-&gt;steep);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;      }</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    b1-&gt;rzero = this-&gt;rzero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;      <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        d1-&gt;RegisterRandomEffect(b1-&gt;rzero);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        d1-&gt;RegisterParameter(b1-&gt;rzero);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;      }</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    </div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="comment">// add to Information</span></div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    d1-&gt;recruitment_models[b1-&gt;id] = b1;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
@@ -222,76 +220,70 @@ $(function() {
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        d2-&gt;RegisterParameter(b2-&gt;rzero);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      }</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    b2-&gt;phizero = this-&gt;phizero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordflow">if</span> (this-&gt;phizero.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;      <span class="keywordflow">if</span> (this-&gt;phizero.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        d2-&gt;RegisterRandomEffect(b2-&gt;phizero);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        d2-&gt;RegisterParameter(b2-&gt;phizero);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    d2-&gt;recruitment_models[b2-&gt;id] = b2;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    d2-&gt;recruitment_models[b2-&gt;id] = b2;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <span class="comment">// third-order derivative</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt; &gt; d3 =</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    std::shared_ptr&lt;fims::SRBevertonHolt&lt;TMB_FIMS_THIRD_ORDER&gt; &gt; b3 =</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        std::make_shared&lt;fims::SRBevertonHolt&lt;TMB_FIMS_THIRD_ORDER&gt; &gt;();</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// third-order derivative</span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt; &gt; d3 =</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    std::shared_ptr&lt;fims::SRBevertonHolt&lt;TMB_FIMS_THIRD_ORDER&gt; &gt; b3 =</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        std::make_shared&lt;fims::SRBevertonHolt&lt;TMB_FIMS_THIRD_ORDER&gt; &gt;();</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="comment">// set relative info</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    b3-&gt;id = this-&gt;<a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    b3-&gt;steep = this-&gt;steep.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;      <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        d3-&gt;RegisterRandomEffect(b3-&gt;steep);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        d3-&gt;RegisterParameter(b3-&gt;steep);</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      }</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    b3-&gt;rzero = this-&gt;rzero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;      <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        d3-&gt;RegisterRandomEffect(b3-&gt;rzero);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        d3-&gt;RegisterParameter(b3-&gt;rzero);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;      }</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    b3-&gt;phizero = this-&gt;phizero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">if</span> (this-&gt;phizero.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <span class="keywordflow">if</span> (this-&gt;phizero.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        d3-&gt;RegisterRandomEffect(b3-&gt;phizero);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        d3-&gt;RegisterParameter(b3-&gt;phizero);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      }</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    }</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    d3-&gt;recruitment_models[b3-&gt;id] = b3;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;  }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;};</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a></div><div class="ttdoc">Rcpp interface for Beverton-Holt as an S4 object. To instantiate from R: beverton_holt &lt;- new(fims$be...</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:51</div></div>
-<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html_a182bad1d3365885939438e14fade01af"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">BevertonHoltRecruitmentInterface::rzero</a></div><div class="ttdeci">Parameter rzero</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:54</div></div>
-<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html_a9d85e6ae1cb0df4b7d460df4ccf20c84"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html#a9d85e6ae1cb0df4b7d460df4ccf20c84">BevertonHoltRecruitmentInterface::add_to_fims_tmb</a></div><div class="ttdeci">virtual bool add_to_fims_tmb()</div><div class="ttdoc">this adds the parameter values and derivatives to the TMB model object</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:65</div></div>
-<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html_ab7fc071b4bf0eda6eb2f3218eb7cec6d"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html#ab7fc071b4bf0eda6eb2f3218eb7cec6d">BevertonHoltRecruitmentInterface::phizero</a></div><div class="ttdeci">Parameter phizero</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:55</div></div>
-<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html_ac2a21e3d552fb5f3c04a53d02f3369cd"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">BevertonHoltRecruitmentInterface::steep</a></div><div class="ttdeci">Parameter steep</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:53</div></div>
-<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html_aca73a10cce5316257a27744622cd4e13"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html#aca73a10cce5316257a27744622cd4e13">BevertonHoltRecruitmentInterface::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()</div><div class="ttdoc">get the ID of the interface base object</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:61</div></div>
-<div class="ttc" id="aclassFIMSRcppInterfaceBase_html"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></div><div class="ttdoc">Base class for all interface objects.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:83</div></div>
-<div class="ttc" id="aclassFIMSRcppInterfaceBase_html_a27f6c0a9860f56c17951872fe26b1515"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515">FIMSRcppInterfaceBase::fims_interface_objects</a></div><div class="ttdeci">static std::vector&lt; FIMSRcppInterfaceBase * &gt; fims_interface_objects</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:86</div></div>
-<div class="ttc" id="aclassParameter_html"><div class="ttname"><a href="classParameter.html">Parameter</a></div><div class="ttdoc">RcppInterface class that defines the interface between R and C++ for parameter types.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:48</div></div>
-<div class="ttc" id="aclassParameter_html_a48e21d83cbd2310c2738f85036b589ab"><div class="ttname"><a href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">Parameter::value</a></div><div class="ttdeci">double value</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:50</div></div>
-<div class="ttc" id="aclassParameter_html_ac9349a0b5905bfbcc522a34e179a084f"><div class="ttname"><a href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">Parameter::is_random_effect</a></div><div class="ttdeci">bool is_random_effect</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:55</div></div>
-<div class="ttc" id="aclassParameter_html_ae80893b5a7df6bb489c7aa314f15204b"><div class="ttname"><a href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">Parameter::estimated</a></div><div class="ttdeci">bool estimated</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:57</div></div>
-<div class="ttc" id="aclassRecruitmentInterfaceBase_html"><div class="ttname"><a href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a></div><div class="ttdoc">RecruitmentInterfaceBase class should be inherited to define different Rcpp interfaces for each possi...</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:22</div></div>
-<div class="ttc" id="aclassRecruitmentInterfaceBase_html_a37028a265deac1c36cdc879d5d6ac18a"><div class="ttname"><a href="classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a">RecruitmentInterfaceBase::live_objects</a></div><div class="ttdeci">static std::map&lt; uint32_t, RecruitmentInterfaceBase * &gt; live_objects</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:26</div></div>
-<div class="ttc" id="aclassRecruitmentInterfaceBase_html_a3edf8070f5555b4868b429f7ef1b41be"><div class="ttname"><a href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">RecruitmentInterfaceBase::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:25</div></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// set relative info</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    b3-&gt;id = this-&gt;<a class="code" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    b3-&gt;steep = this-&gt;steep.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;      <span class="keywordflow">if</span> (this-&gt;steep.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        d3-&gt;RegisterRandomEffect(b3-&gt;steep);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        d3-&gt;RegisterParameter(b3-&gt;steep);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      }</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    b3-&gt;rzero = this-&gt;rzero.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;      <span class="keywordflow">if</span> (this-&gt;rzero.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        d3-&gt;RegisterRandomEffect(b3-&gt;rzero);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        d3-&gt;RegisterParameter(b3-&gt;rzero);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;   </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    d3-&gt;recruitment_models[b3-&gt;id] = b3;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;  }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;};</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a></div><div class="ttdoc">Rcpp interface for Beverton-Holt as an S4 object. To instantiate from R: beverton_holt &lt;- new(fims$be...</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:59</div></div>
+<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html_a182bad1d3365885939438e14fade01af"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">BevertonHoltRecruitmentInterface::rzero</a></div><div class="ttdeci">Parameter rzero</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:62</div></div>
+<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html_a769423d2ff84105da200df7ccdb12593"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html#a769423d2ff84105da200df7ccdb12593">BevertonHoltRecruitmentInterface::evaluate</a></div><div class="ttdeci">virtual double evaluate(double spawners, double ssbzero)</div><div class="ttdoc">evaluate method for child recruitment interface objects to inherit</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:70</div></div>
+<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html_a9d85e6ae1cb0df4b7d460df4ccf20c84"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html#a9d85e6ae1cb0df4b7d460df4ccf20c84">BevertonHoltRecruitmentInterface::add_to_fims_tmb</a></div><div class="ttdeci">virtual bool add_to_fims_tmb()</div><div class="ttdoc">this adds the parameter values and derivatives to the TMB model object</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:80</div></div>
+<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html_ac2a21e3d552fb5f3c04a53d02f3369cd"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">BevertonHoltRecruitmentInterface::steep</a></div><div class="ttdeci">Parameter steep</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:61</div></div>
+<div class="ttc" id="aclassBevertonHoltRecruitmentInterface_html_aca73a10cce5316257a27744622cd4e13"><div class="ttname"><a href="classBevertonHoltRecruitmentInterface.html#aca73a10cce5316257a27744622cd4e13">BevertonHoltRecruitmentInterface::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()</div><div class="ttdoc">get the ID of the interface base object</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:68</div></div>
+<div class="ttc" id="aclassFIMSRcppInterfaceBase_html"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></div><div class="ttdoc">Base class for all interface objects.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:61</div></div>
+<div class="ttc" id="aclassFIMSRcppInterfaceBase_html_a27f6c0a9860f56c17951872fe26b1515"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515">FIMSRcppInterfaceBase::fims_interface_objects</a></div><div class="ttdeci">static std::vector&lt; FIMSRcppInterfaceBase * &gt; fims_interface_objects</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:64</div></div>
+<div class="ttc" id="aclassParameter_html"><div class="ttname"><a href="classParameter.html">Parameter</a></div><div class="ttdoc">RcppInterface class that defines the interface between R and C++ for parameter types.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:26</div></div>
+<div class="ttc" id="aclassParameter_html_a48e21d83cbd2310c2738f85036b589ab"><div class="ttname"><a href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">Parameter::value</a></div><div class="ttdeci">double value</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:28</div></div>
+<div class="ttc" id="aclassParameter_html_ac9349a0b5905bfbcc522a34e179a084f"><div class="ttname"><a href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">Parameter::is_random_effect</a></div><div class="ttdeci">bool is_random_effect</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:33</div></div>
+<div class="ttc" id="aclassParameter_html_ae80893b5a7df6bb489c7aa314f15204b"><div class="ttname"><a href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">Parameter::estimated</a></div><div class="ttdeci">bool estimated</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:35</div></div>
+<div class="ttc" id="aclassRecruitmentInterfaceBase_html"><div class="ttname"><a href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a></div><div class="ttdoc">RecruitmentInterfaceBase class should be inherited to define different Rcpp interfaces for each possi...</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:23</div></div>
+<div class="ttc" id="aclassRecruitmentInterfaceBase_html_a37028a265deac1c36cdc879d5d6ac18a"><div class="ttname"><a href="classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a">RecruitmentInterfaceBase::live_objects</a></div><div class="ttdeci">static std::map&lt; uint32_t, RecruitmentInterfaceBase * &gt; live_objects</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:27</div></div>
+<div class="ttc" id="aclassRecruitmentInterfaceBase_html_a3edf8070f5555b4868b429f7ef1b41be"><div class="ttname"><a href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">RecruitmentInterfaceBase::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:26</div></div>
 <div class="ttc" id="aclassRecruitmentInterfaceBase_html_a4bc18067795f5503eecc72ef13a9802a"><div class="ttname"><a href="classRecruitmentInterfaceBase.html#a4bc18067795f5503eecc72ef13a9802a">RecruitmentInterfaceBase::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()=0</div><div class="ttdoc">get the ID of the interface base object</div></div>
-<div class="ttc" id="aclassRecruitmentInterfaceBase_html_add97b934e6c02e4c768d71d2d50bc2fd"><div class="ttname"><a href="classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd">RecruitmentInterfaceBase::id_g</a></div><div class="ttdeci">static uint32_t id_g</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:24</div></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:102</div></div>
+<div class="ttc" id="aclassRecruitmentInterfaceBase_html_a9e94c45bffb2275caa0a097b516d6155"><div class="ttname"><a href="classRecruitmentInterfaceBase.html#a9e94c45bffb2275caa0a097b516d6155">RecruitmentInterfaceBase::evaluate</a></div><div class="ttdeci">virtual double evaluate(double spawners, double ssbzero)=0</div><div class="ttdoc">evaluate method for child recruitment interface objects to inherit</div></div>
+<div class="ttc" id="aclassRecruitmentInterfaceBase_html_ad2cdb57b7cb0fa9bab4a3f036821872e"><div class="ttname"><a href="classRecruitmentInterfaceBase.html#ad2cdb57b7cb0fa9bab4a3f036821872e">RecruitmentInterfaceBase::RecruitmentInterfaceBase</a></div><div class="ttdeci">RecruitmentInterfaceBase()</div><div class="ttdoc">static bool constrain_deviations; /‍**&lt; whether or not the rec devs are constrained*‍/</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:34</div></div>
+<div class="ttc" id="aclassRecruitmentInterfaceBase_html_add97b934e6c02e4c768d71d2d50bc2fd"><div class="ttname"><a href="classRecruitmentInterfaceBase.html#add97b934e6c02e4c768d71d2d50bc2fd">RecruitmentInterfaceBase::id_g</a></div><div class="ttdeci">static uint32_t id_g</div><div class="ttdef"><b>Definition:</b> rcpp_recruitment.hpp:25</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:100</div></div>
+<div class="ttc" id="astructfims_1_1RecruitmentBase_html_a2e26d74ff3698c8df7f9f80ab53f8b21"><div class="ttname"><a href="structfims_1_1RecruitmentBase.html#a2e26d74ff3698c8df7f9f80ab53f8b21">fims::RecruitmentBase::rzero</a></div><div class="ttdeci">Type rzero</div><div class="ttdef"><b>Definition:</b> recruitment_base.hpp:49</div></div>
+<div class="ttc" id="astructfims_1_1SRBevertonHolt_html"><div class="ttname"><a href="structfims_1_1SRBevertonHolt.html">fims::SRBevertonHolt</a></div><div class="ttdoc">BevertonHolt class that returns the Beverton Holt SR from fims_math.</div><div class="ttdef"><b>Definition:</b> sr_beverton_holt.hpp:27</div></div>
+<div class="ttc" id="astructfims_1_1SRBevertonHolt_html_a7c51f4a245a9b789f6753ef8d26a9b7c"><div class="ttname"><a href="structfims_1_1SRBevertonHolt.html#a7c51f4a245a9b789f6753ef8d26a9b7c">fims::SRBevertonHolt::evaluate</a></div><div class="ttdeci">virtual const Type evaluate(const Type &amp;spawners, const Type &amp;ssbzero)</div><div class="ttdoc">Beverton Holt implementation of the stock recruitment function.</div><div class="ttdef"><b>Definition:</b> sr_beverton_holt.hpp:48</div></div>
+<div class="ttc" id="astructfims_1_1SRBevertonHolt_html_a9725bfb881e36b3c53b1d64e1a28e02d"><div class="ttname"><a href="structfims_1_1SRBevertonHolt.html#a9725bfb881e36b3c53b1d64e1a28e02d">fims::SRBevertonHolt::steep</a></div><div class="ttdeci">Type steep</div><div class="ttdef"><b>Definition:</b> sr_beverton_holt.hpp:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

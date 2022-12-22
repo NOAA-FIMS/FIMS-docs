@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['selectivitybase_152',['SelectivityBase',['../structfims_1_1SelectivityBase.html',1,'fims']]],
-  ['selectivityinterfacebase_153',['SelectivityInterfaceBase',['../classSelectivityInterfaceBase.html',1,'']]],
-  ['srbevertonholt_154',['SRBevertonHolt',['../structfims_1_1SRBevertonHolt.html',1,'fims']]],
-  ['subpopulation_155',['Subpopulation',['../classfims_1_1Subpopulation.html',1,'fims']]]
+  ['recruitmentbase_240',['RecruitmentBase',['../structfims_1_1RecruitmentBase.html',1,'fims']]],
+  ['recruitmentinterfacebase_241',['RecruitmentInterfaceBase',['../classRecruitmentInterfaceBase.html',1,'']]],
+  ['recruitmentnllinterface_242',['RecruitmentNLLInterface',['../classRecruitmentNLLInterface.html',1,'']]]
 ];
