@@ -148,7 +148,7 @@ $(function() {
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
 <div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classLogisticSelectivityInterface.html#ab293bd02d59b6672317a3b3b6b979fb3">   89</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classLogisticSelectivityInterface.html#ab293bd02d59b6672317a3b3b6b979fb3">get_id</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>; }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classLogisticSelectivityInterface.html#af10a57e448b0a9c9a5394ce5f8da6ee1">   95</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classLogisticSelectivityInterface.html#af10a57e448b0a9c9a5394ce5f8da6ee1">evaluate</a>(<span class="keywordtype">double</span> x){</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="classLogisticSelectivityInterface.html#af10a57e448b0a9c9a5394ce5f8da6ee1">   95</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classLogisticSelectivityInterface.html#af10a57e448b0a9c9a5394ce5f8da6ee1">evaluate</a>(<span class="keywordtype">double</span> x) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="structfims_1_1LogisticSelectivity.html">fims::LogisticSelectivity&lt;double&gt;</a> LogisticSel;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    LogisticSel.<a class="code" href="structfims_1_1LogisticSelectivity.html#a125a146a56820b8f3bc83179ff070f0e">median</a> = this-&gt;median.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
@@ -277,216 +277,221 @@ $(function() {
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00228"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#a6fdbb02e7bdf37e0c3af7072b21eb7ec">  228</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classDoubleLogisticSelectivityInterface.html#a6fdbb02e7bdf37e0c3af7072b21eb7ec">median_asc</a>; </div>
 <div class="line"><a name="l00229"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#a721b50d40b85992bcce1a9c7e87e422c">  229</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classDoubleLogisticSelectivityInterface.html#a721b50d40b85992bcce1a9c7e87e422c">slope_asc</a>;  </div>
-<div class="line"><a name="l00230"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">  230</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>; </div>
-<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#aafdd9c6474eb158b52d6086326fb6706">  231</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classDoubleLogisticSelectivityInterface.html#aafdd9c6474eb158b52d6086326fb6706">slope_desc</a>;  </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;  <a class="code" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a>() : <a class="code" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a>() {}</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a>() {}</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#a59dc01d2779fd81152156a19dae62fcf">  238</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classDoubleLogisticSelectivityInterface.html#a59dc01d2779fd81152156a19dae62fcf">get_id</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>; }</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#a46f7ef01f5c8e07568d38499a9f66245">  244</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classDoubleLogisticSelectivityInterface.html#a46f7ef01f5c8e07568d38499a9f66245">evaluate</a>(<span class="keywordtype">double</span> x){</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    <a class="code" href="structfims_1_1DoubleLogisticSelectivity.html">fims::DoubleLogisticSelectivity&lt;double&gt;</a> DoubleLogisticSel;</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    DoubleLogisticSel.<a class="code" href="structfims_1_1DoubleLogisticSelectivity.html#a6c39680a5dbf78e688b5282b8690058b">median_asc</a> = this-&gt;median_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    DoubleLogisticSel.<a class="code" href="structfims_1_1DoubleLogisticSelectivity.html#ad2dcfad2f1dc39ae26cad3b1ee101388">slope_asc</a> = this-&gt;slope_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    DoubleLogisticSel.<a class="code" href="structfims_1_1DoubleLogisticSelectivity.html#a5c6c7be249b421344ed50536633702f7">median_desc</a> = this-&gt;median_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    DoubleLogisticSel.<a class="code" href="structfims_1_1DoubleLogisticSelectivity.html#a6088669dc4c3b639e914e00e44e2c0d3">slope_desc</a> = this-&gt;slope_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordflow">return</span> DoubleLogisticSel.<a class="code" href="structfims_1_1DoubleLogisticSelectivity.html#a4934e209221929995d14fee13c8aa28a">evaluate</a>(x);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;  }</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#a5a225e3b1c13fb05bd424d51dee93b15">  256</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classDoubleLogisticSelectivityInterface.html#a5a225e3b1c13fb05bd424d51dee93b15">add_to_fims_tmb</a>() {</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_REAL_TYPE&gt; &gt; d0 =</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_REAL_TYPE&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    std::shared_ptr&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_REAL_TYPE&gt; &gt; ls0 =</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        std::make_shared&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_REAL_TYPE&gt; &gt;();</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="comment">// set relative info</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    ls0-&gt;id = this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>;</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    ls0-&gt;median_asc = this-&gt;median_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;        d0-&gt;RegisterRandomEffect(ls0-&gt;median_asc);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        d0-&gt;RegisterParameter(ls0-&gt;median_asc);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      }</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    }</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    ls0-&gt;slope_asc = this-&gt;slope_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        d0-&gt;RegisterRandomEffect(ls0-&gt;slope_asc);</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        d0-&gt;RegisterParameter(ls0-&gt;slope_asc);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    ls0-&gt;median_desc = this-&gt;median_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        d0-&gt;RegisterRandomEffect(ls0-&gt;median_desc);</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        d0-&gt;RegisterParameter(ls0-&gt;median_desc);</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      }</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    ls0-&gt;slope_desc = this-&gt;slope_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        d0-&gt;RegisterRandomEffect(ls0-&gt;slope_desc);</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        d0-&gt;RegisterParameter(ls0-&gt;slope_desc);</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      }</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    }</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    d0-&gt;selectivity_models[ls0-&gt;id] = ls0;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt; &gt; d1 =</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    std::shared_ptr&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_FIRST_ORDER&gt; &gt; ls1 =</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        std::make_shared&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_FIRST_ORDER&gt; &gt;();</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="comment">// set relative info</span></div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    ls1-&gt;id = this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>;</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    ls1-&gt;median_asc = this-&gt;median_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        d1-&gt;RegisterRandomEffect(ls1-&gt;median_asc);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        d1-&gt;RegisterParameter(ls1-&gt;median_asc);</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;      }</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    }</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    ls1-&gt;slope_asc = this-&gt;slope_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        d1-&gt;RegisterRandomEffect(ls1-&gt;slope_asc);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        d1-&gt;RegisterParameter(ls1-&gt;slope_asc);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;      }</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    ls1-&gt;median_desc = this-&gt;median_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        d1-&gt;RegisterRandomEffect(ls1-&gt;median_desc);</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        d1-&gt;RegisterParameter(ls1-&gt;median_desc);</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    }</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    ls1-&gt;slope_desc = this-&gt;slope_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        d1-&gt;RegisterRandomEffect(ls1-&gt;slope_desc);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        d1-&gt;RegisterParameter(ls1-&gt;slope_desc);</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;      }</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    d1-&gt;selectivity_models[ls1-&gt;id] = ls1;</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;  <a class="code" href="classParameter.html">Parameter</a></div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">  231</a></span>&#160;      <a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>;      </div>
+<div class="line"><a name="l00232"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#aafdd9c6474eb158b52d6086326fb6706">  232</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classDoubleLogisticSelectivityInterface.html#aafdd9c6474eb158b52d6086326fb6706">slope_desc</a>; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;  <a class="code" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a>() : <a class="code" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a>() {}</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a>() {}</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
+<div class="line"><a name="l00239"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#a59dc01d2779fd81152156a19dae62fcf">  239</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classDoubleLogisticSelectivityInterface.html#a59dc01d2779fd81152156a19dae62fcf">get_id</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>; }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#a46f7ef01f5c8e07568d38499a9f66245">  245</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classDoubleLogisticSelectivityInterface.html#a46f7ef01f5c8e07568d38499a9f66245">evaluate</a>(<span class="keywordtype">double</span> x) {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <a class="code" href="structfims_1_1DoubleLogisticSelectivity.html">fims::DoubleLogisticSelectivity&lt;double&gt;</a> DoubleLogisticSel;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    DoubleLogisticSel.<a class="code" href="structfims_1_1DoubleLogisticSelectivity.html#a6c39680a5dbf78e688b5282b8690058b">median_asc</a> = this-&gt;median_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    DoubleLogisticSel.<a class="code" href="structfims_1_1DoubleLogisticSelectivity.html#ad2dcfad2f1dc39ae26cad3b1ee101388">slope_asc</a> = this-&gt;slope_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    DoubleLogisticSel.<a class="code" href="structfims_1_1DoubleLogisticSelectivity.html#a5c6c7be249b421344ed50536633702f7">median_desc</a> = this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    DoubleLogisticSel.<a class="code" href="structfims_1_1DoubleLogisticSelectivity.html#a6088669dc4c3b639e914e00e44e2c0d3">slope_desc</a> = this-&gt;slope_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordflow">return</span> DoubleLogisticSel.<a class="code" href="structfims_1_1DoubleLogisticSelectivity.html#a4934e209221929995d14fee13c8aa28a">evaluate</a>(x);</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;  }</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno"><a class="line" href="classDoubleLogisticSelectivityInterface.html#a5a225e3b1c13fb05bd424d51dee93b15">  257</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classDoubleLogisticSelectivityInterface.html#a5a225e3b1c13fb05bd424d51dee93b15">add_to_fims_tmb</a>() {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_REAL_TYPE&gt; &gt; d0 =</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_REAL_TYPE&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    std::shared_ptr&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_REAL_TYPE&gt; &gt; ls0 =</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        std::make_shared&lt;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <a class="code" href="structfims_1_1DoubleLogisticSelectivity.html">fims::DoubleLogisticSelectivity&lt;TMB_FIMS_REAL_TYPE&gt;</a> &gt;();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="comment">// set relative info</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    ls0-&gt;<a class="code" href="structfims_1_1FIMSObject.html#a971b2bf344a2662e578407b324b831bc">id</a> = this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    ls0-&gt;median_asc = this-&gt;median_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        d0-&gt;RegisterRandomEffect(ls0-&gt;median_asc);</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        d0-&gt;RegisterParameter(ls0-&gt;median_asc);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      }</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    ls0-&gt;slope_asc = this-&gt;slope_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;        d0-&gt;RegisterRandomEffect(ls0-&gt;slope_asc);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        d0-&gt;RegisterParameter(ls0-&gt;slope_asc);</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    }</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    ls0-&gt;median_desc = this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        d0-&gt;RegisterRandomEffect(ls0-&gt;median_desc);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;        d0-&gt;RegisterParameter(ls0-&gt;median_desc);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;      }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    }</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    ls0-&gt;slope_desc = this-&gt;slope_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        d0-&gt;RegisterRandomEffect(ls0-&gt;slope_desc);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        d0-&gt;RegisterParameter(ls0-&gt;slope_desc);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    d0-&gt;selectivity_models[ls0-&gt;id] = ls0;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt; &gt; d1 =</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    std::shared_ptr&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_FIRST_ORDER&gt; &gt;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        ls1 = std::make_shared&lt;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <a class="code" href="structfims_1_1DoubleLogisticSelectivity.html">fims::DoubleLogisticSelectivity&lt;TMB_FIMS_FIRST_ORDER&gt;</a> &gt;();</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">// set relative info</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    ls1-&gt;<a class="code" href="structfims_1_1FIMSObject.html#a971b2bf344a2662e578407b324b831bc">id</a> = this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    ls1-&gt;median_asc = this-&gt;median_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        d1-&gt;RegisterRandomEffect(ls1-&gt;median_asc);</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;        d1-&gt;RegisterParameter(ls1-&gt;median_asc);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;      }</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    }</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    ls1-&gt;slope_asc = this-&gt;slope_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        d1-&gt;RegisterRandomEffect(ls1-&gt;slope_asc);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        d1-&gt;RegisterParameter(ls1-&gt;slope_asc);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;      }</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    }</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    ls1-&gt;median_desc = this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        d1-&gt;RegisterRandomEffect(ls1-&gt;median_desc);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        d1-&gt;RegisterParameter(ls1-&gt;median_desc);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;      }</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    }</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    ls1-&gt;slope_desc = this-&gt;slope_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        d1-&gt;RegisterRandomEffect(ls1-&gt;slope_desc);</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        d1-&gt;RegisterParameter(ls1-&gt;slope_desc);</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;      }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    }</div>
 <div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt; &gt; d2 =</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    d1-&gt;selectivity_models[ls1-&gt;id] = ls1;</div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160; </div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    std::shared_ptr&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_SECOND_ORDER&gt; &gt; ls2 =</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        std::make_shared&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_SECOND_ORDER&gt; &gt;();</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt; &gt; d2 =</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt;::GetInstance</a>();</div>
 <div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="comment">// set relative info</span></div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    ls2-&gt;id = this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>;</div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    ls2-&gt;median_asc = this-&gt;median_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        d2-&gt;RegisterRandomEffect(ls2-&gt;median_asc);</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        d2-&gt;RegisterParameter(ls2-&gt;median_asc);</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      }</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    }</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    ls2-&gt;slope_asc = this-&gt;slope_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        d2-&gt;RegisterRandomEffect(ls2-&gt;slope_asc);</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;        d2-&gt;RegisterParameter(ls2-&gt;slope_asc);</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    }</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    </div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;    ls2-&gt;median_desc = this-&gt;median_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;        d2-&gt;RegisterRandomEffect(ls2-&gt;median_desc);</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        d2-&gt;RegisterParameter(ls2-&gt;median_desc);</div>
-<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      }</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;    }</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;    ls2-&gt;slope_desc = this-&gt;slope_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;        d2-&gt;RegisterRandomEffect(ls2-&gt;slope_desc);</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        d2-&gt;RegisterParameter(ls2-&gt;slope_desc);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      }</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;    }</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160; </div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    d2-&gt;selectivity_models[ls2-&gt;id] = ls2;</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160; </div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt; &gt; d3 =</div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160; </div>
-<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;    std::shared_ptr&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_THIRD_ORDER&gt; &gt; ls3 =</div>
-<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        std::make_shared&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_THIRD_ORDER&gt; &gt;();</div>
-<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160; </div>
-<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;    <span class="comment">// set relative info</span></div>
-<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    ls3-&gt;id = this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>;</div>
-<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;    ls3-&gt;median_asc = this-&gt;median_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        d3-&gt;RegisterRandomEffect(ls3-&gt;median_asc);</div>
-<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        d3-&gt;RegisterParameter(ls3-&gt;median_asc);</div>
-<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;      }</div>
-<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    }</div>
-<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    ls3-&gt;slope_asc = this-&gt;slope_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        d3-&gt;RegisterRandomEffect(ls3-&gt;slope_asc);</div>
-<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        d3-&gt;RegisterParameter(ls3-&gt;slope_asc);</div>
-<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;      }</div>
-<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;    }</div>
-<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160; </div>
-<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;    ls3-&gt;median_desc = this-&gt;median_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;        d3-&gt;RegisterRandomEffect(ls3-&gt;median_desc);</div>
-<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        d3-&gt;RegisterParameter(ls3-&gt;median_desc);</div>
-<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;      }</div>
-<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;    }</div>
-<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;    ls3-&gt;slope_desc = this-&gt;slope_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
-<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;        d3-&gt;RegisterRandomEffect(ls3-&gt;slope_desc);</div>
-<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        d3-&gt;RegisterParameter(ls3-&gt;slope_desc);</div>
-<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;      }</div>
-<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;    }</div>
-<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160; </div>
-<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    d3-&gt;selectivity_models[ls3-&gt;id] = ls3;</div>
-<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160; </div>
-<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;  }</div>
-<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;};</div>
-<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160; </div>
-<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    std::shared_ptr&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_SECOND_ORDER&gt; &gt;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        ls2 = std::make_shared&lt;</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            <a class="code" href="structfims_1_1DoubleLogisticSelectivity.html">fims::DoubleLogisticSelectivity&lt;TMB_FIMS_SECOND_ORDER&gt;</a> &gt;();</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160; </div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    <span class="comment">// set relative info</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    ls2-&gt;<a class="code" href="structfims_1_1FIMSObject.html#a971b2bf344a2662e578407b324b831bc">id</a> = this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>;</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    ls2-&gt;median_asc = this-&gt;median_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;        d2-&gt;RegisterRandomEffect(ls2-&gt;median_asc);</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        d2-&gt;RegisterParameter(ls2-&gt;median_asc);</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;      }</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    }</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    ls2-&gt;slope_asc = this-&gt;slope_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        d2-&gt;RegisterRandomEffect(ls2-&gt;slope_asc);</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        d2-&gt;RegisterParameter(ls2-&gt;slope_asc);</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;      }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160; </div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    ls2-&gt;median_desc = this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        d2-&gt;RegisterRandomEffect(ls2-&gt;median_desc);</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        d2-&gt;RegisterParameter(ls2-&gt;median_desc);</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;      }</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;    }</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;    ls2-&gt;slope_desc = this-&gt;slope_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        d2-&gt;RegisterRandomEffect(ls2-&gt;slope_desc);</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        d2-&gt;RegisterParameter(ls2-&gt;slope_desc);</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;      }</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;    }</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160; </div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;    d2-&gt;selectivity_models[ls2-&gt;id] = ls2;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160; </div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt; &gt; d3 =</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160; </div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;    std::shared_ptr&lt;fims::DoubleLogisticSelectivity&lt;TMB_FIMS_THIRD_ORDER&gt; &gt;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        ls3 = std::make_shared&lt;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;            <a class="code" href="structfims_1_1DoubleLogisticSelectivity.html">fims::DoubleLogisticSelectivity&lt;TMB_FIMS_THIRD_ORDER&gt;</a> &gt;();</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160; </div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;    <span class="comment">// set relative info</span></div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;    ls3-&gt;<a class="code" href="structfims_1_1FIMSObject.html#a971b2bf344a2662e578407b324b831bc">id</a> = this-&gt;<a class="code" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a>;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    ls3-&gt;median_asc = this-&gt;median_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        d3-&gt;RegisterRandomEffect(ls3-&gt;median_asc);</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        d3-&gt;RegisterParameter(ls3-&gt;median_asc);</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;      }</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;    }</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    ls3-&gt;slope_asc = this-&gt;slope_asc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_asc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        d3-&gt;RegisterRandomEffect(ls3-&gt;slope_asc);</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;        d3-&gt;RegisterParameter(ls3-&gt;slope_asc);</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;      }</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    }</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160; </div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;    ls3-&gt;median_desc = this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">median_desc</a>.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;        d3-&gt;RegisterRandomEffect(ls3-&gt;median_desc);</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;        d3-&gt;RegisterParameter(ls3-&gt;median_desc);</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;      }</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;    }</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;    ls3-&gt;slope_desc = this-&gt;slope_desc.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope_desc.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;        d3-&gt;RegisterRandomEffect(ls3-&gt;slope_desc);</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;        d3-&gt;RegisterParameter(ls3-&gt;slope_desc);</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;      }</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    }</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160; </div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    d3-&gt;selectivity_models[ls3-&gt;id] = ls3;</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160; </div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;  }</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;};</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160; </div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html">DoubleLogisticSelectivityInterface</a></div><div class="ttdoc">Rcpp interface for logistic selectivity as an S4 object. To instantiate from R: logistic_selectivity ...</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:226</div></div>
-<div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_a3c3d9df4799a3f0597df16631be7bfa5"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">DoubleLogisticSelectivityInterface::median_desc</a></div><div class="ttdeci">Parameter median_desc</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:230</div></div>
-<div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_a46f7ef01f5c8e07568d38499a9f66245"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#a46f7ef01f5c8e07568d38499a9f66245">DoubleLogisticSelectivityInterface::evaluate</a></div><div class="ttdeci">virtual double evaluate(double x)</div><div class="ttdoc">evaluate the double logistic selectivity function</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:244</div></div>
-<div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_a59dc01d2779fd81152156a19dae62fcf"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#a59dc01d2779fd81152156a19dae62fcf">DoubleLogisticSelectivityInterface::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()</div><div class="ttdoc">returns the id for the double logistic selectivity interface</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:238</div></div>
-<div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_a5a225e3b1c13fb05bd424d51dee93b15"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#a5a225e3b1c13fb05bd424d51dee93b15">DoubleLogisticSelectivityInterface::add_to_fims_tmb</a></div><div class="ttdeci">virtual bool add_to_fims_tmb()</div><div class="ttdoc">this adds the parameter values and derivatives to the TMB model object</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:256</div></div>
+<div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_a3c3d9df4799a3f0597df16631be7bfa5"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#a3c3d9df4799a3f0597df16631be7bfa5">DoubleLogisticSelectivityInterface::median_desc</a></div><div class="ttdeci">Parameter median_desc</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:231</div></div>
+<div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_a46f7ef01f5c8e07568d38499a9f66245"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#a46f7ef01f5c8e07568d38499a9f66245">DoubleLogisticSelectivityInterface::evaluate</a></div><div class="ttdeci">virtual double evaluate(double x)</div><div class="ttdoc">evaluate the double logistic selectivity function</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:245</div></div>
+<div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_a59dc01d2779fd81152156a19dae62fcf"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#a59dc01d2779fd81152156a19dae62fcf">DoubleLogisticSelectivityInterface::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()</div><div class="ttdoc">returns the id for the double logistic selectivity interface</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:239</div></div>
+<div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_a5a225e3b1c13fb05bd424d51dee93b15"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#a5a225e3b1c13fb05bd424d51dee93b15">DoubleLogisticSelectivityInterface::add_to_fims_tmb</a></div><div class="ttdeci">virtual bool add_to_fims_tmb()</div><div class="ttdoc">this adds the parameter values and derivatives to the TMB model object</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:257</div></div>
 <div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_a6fdbb02e7bdf37e0c3af7072b21eb7ec"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#a6fdbb02e7bdf37e0c3af7072b21eb7ec">DoubleLogisticSelectivityInterface::median_asc</a></div><div class="ttdeci">Parameter median_asc</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:228</div></div>
 <div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_a721b50d40b85992bcce1a9c7e87e422c"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#a721b50d40b85992bcce1a9c7e87e422c">DoubleLogisticSelectivityInterface::slope_asc</a></div><div class="ttdeci">Parameter slope_asc</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:229</div></div>
-<div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_aafdd9c6474eb158b52d6086326fb6706"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#aafdd9c6474eb158b52d6086326fb6706">DoubleLogisticSelectivityInterface::slope_desc</a></div><div class="ttdeci">Parameter slope_desc</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:231</div></div>
+<div class="ttc" id="aclassDoubleLogisticSelectivityInterface_html_aafdd9c6474eb158b52d6086326fb6706"><div class="ttname"><a href="classDoubleLogisticSelectivityInterface.html#aafdd9c6474eb158b52d6086326fb6706">DoubleLogisticSelectivityInterface::slope_desc</a></div><div class="ttdeci">Parameter slope_desc</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:232</div></div>
 <div class="ttc" id="aclassFIMSRcppInterfaceBase_html"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></div><div class="ttdoc">Base class for all interface objects.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:61</div></div>
 <div class="ttc" id="aclassFIMSRcppInterfaceBase_html_a27f6c0a9860f56c17951872fe26b1515"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515">FIMSRcppInterfaceBase::fims_interface_objects</a></div><div class="ttdeci">static std::vector&lt; FIMSRcppInterfaceBase * &gt; fims_interface_objects</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:64</div></div>
 <div class="ttc" id="aclassLogisticSelectivityInterface_html"><div class="ttname"><a href="classLogisticSelectivityInterface.html">LogisticSelectivityInterface</a></div><div class="ttdoc">Rcpp interface for logistic selectivity as an S4 object. To instantiate from R: logistic_selectivity ...</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:79</div></div>
@@ -505,13 +510,14 @@ $(function() {
 <div class="ttc" id="aclassSelectivityInterfaceBase_html_ad00e0a11844faa3aba5950ee634354fb"><div class="ttname"><a href="classSelectivityInterfaceBase.html#ad00e0a11844faa3aba5950ee634354fb">SelectivityInterfaceBase::id_g</a></div><div class="ttdeci">static uint32_t id_g</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:46</div></div>
 <div class="ttc" id="aclassSelectivityInterfaceBase_html_ad0ba72196e6a15591504a3f4c774d189"><div class="ttname"><a href="classSelectivityInterfaceBase.html#ad0ba72196e6a15591504a3f4c774d189">SelectivityInterfaceBase::evaluate</a></div><div class="ttdeci">virtual double evaluate(double x)=0</div><div class="ttdoc">evaluate the function</div></div>
 <div class="ttc" id="aclassSelectivityInterfaceBase_html_ad75482256de49ee97eb312ac8fa6fb17"><div class="ttname"><a href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">SelectivityInterfaceBase::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> rcpp_selectivity.hpp:47</div></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:100</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:126</div></div>
 <div class="ttc" id="astructfims_1_1DoubleLogisticSelectivity_html"><div class="ttname"><a href="structfims_1_1DoubleLogisticSelectivity.html">fims::DoubleLogisticSelectivity</a></div><div class="ttdoc">DoubleLogisticSelectivity class that returns the double logistic function value from fims_math.</div><div class="ttdef"><b>Definition:</b> double_logistic.hpp:21</div></div>
 <div class="ttc" id="astructfims_1_1DoubleLogisticSelectivity_html_a4934e209221929995d14fee13c8aa28a"><div class="ttname"><a href="structfims_1_1DoubleLogisticSelectivity.html#a4934e209221929995d14fee13c8aa28a">fims::DoubleLogisticSelectivity::evaluate</a></div><div class="ttdeci">virtual const T evaluate(const T &amp;x)</div><div class="ttdoc">Method of the double logistic selectivity class that implements the double logistic function from FIM...</div><div class="ttdef"><b>Definition:</b> double_logistic.hpp:49</div></div>
 <div class="ttc" id="astructfims_1_1DoubleLogisticSelectivity_html_a5c6c7be249b421344ed50536633702f7"><div class="ttname"><a href="structfims_1_1DoubleLogisticSelectivity.html#a5c6c7be249b421344ed50536633702f7">fims::DoubleLogisticSelectivity::median_desc</a></div><div class="ttdeci">T median_desc</div><div class="ttdef"><b>Definition:</b> double_logistic.hpp:28</div></div>
 <div class="ttc" id="astructfims_1_1DoubleLogisticSelectivity_html_a6088669dc4c3b639e914e00e44e2c0d3"><div class="ttname"><a href="structfims_1_1DoubleLogisticSelectivity.html#a6088669dc4c3b639e914e00e44e2c0d3">fims::DoubleLogisticSelectivity::slope_desc</a></div><div class="ttdeci">T slope_desc</div><div class="ttdef"><b>Definition:</b> double_logistic.hpp:31</div></div>
 <div class="ttc" id="astructfims_1_1DoubleLogisticSelectivity_html_a6c39680a5dbf78e688b5282b8690058b"><div class="ttname"><a href="structfims_1_1DoubleLogisticSelectivity.html#a6c39680a5dbf78e688b5282b8690058b">fims::DoubleLogisticSelectivity::median_asc</a></div><div class="ttdeci">T median_asc</div><div class="ttdef"><b>Definition:</b> double_logistic.hpp:22</div></div>
 <div class="ttc" id="astructfims_1_1DoubleLogisticSelectivity_html_ad2dcfad2f1dc39ae26cad3b1ee101388"><div class="ttname"><a href="structfims_1_1DoubleLogisticSelectivity.html#ad2dcfad2f1dc39ae26cad3b1ee101388">fims::DoubleLogisticSelectivity::slope_asc</a></div><div class="ttdeci">T slope_asc</div><div class="ttdef"><b>Definition:</b> double_logistic.hpp:25</div></div>
+<div class="ttc" id="astructfims_1_1FIMSObject_html_a971b2bf344a2662e578407b324b831bc"><div class="ttname"><a href="structfims_1_1FIMSObject.html#a971b2bf344a2662e578407b324b831bc">fims::FIMSObject::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> model_object.hpp:26</div></div>
 <div class="ttc" id="astructfims_1_1LogisticSelectivity_html"><div class="ttname"><a href="structfims_1_1LogisticSelectivity.html">fims::LogisticSelectivity</a></div><div class="ttdoc">LogisticSelectivity class that returns the logistic function value from fims_math.</div><div class="ttdef"><b>Definition:</b> logistic.hpp:24</div></div>
 <div class="ttc" id="astructfims_1_1LogisticSelectivity_html_a125a146a56820b8f3bc83179ff070f0e"><div class="ttname"><a href="structfims_1_1LogisticSelectivity.html#a125a146a56820b8f3bc83179ff070f0e">fims::LogisticSelectivity::median</a></div><div class="ttdeci">T median</div><div class="ttdef"><b>Definition:</b> logistic.hpp:25</div></div>
 <div class="ttc" id="astructfims_1_1LogisticSelectivity_html_a16ce601199f70289aeac984adce53e24"><div class="ttname"><a href="structfims_1_1LogisticSelectivity.html#a16ce601199f70289aeac984adce53e24">fims::LogisticSelectivity::slope</a></div><div class="ttdeci">T slope</div><div class="ttdef"><b>Definition:</b> logistic.hpp:27</div></div>

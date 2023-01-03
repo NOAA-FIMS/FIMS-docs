@@ -187,57 +187,56 @@ $(function() {
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    std::shared_ptr&lt;fims::Fleet&lt;TMB_FIMS_FIRST_ORDER&gt;&gt; f1 =</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        std::make_shared&lt;fims::Fleet&lt;TMB_FIMS_FIRST_ORDER&gt;&gt;();</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    f1-&gt;id = this-&gt;<a class="code" href="classFleetInterface.html#a64cd9557b98fed84b275684ead7cb043">id</a>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    f1-&gt;agecomp_likelihood_id = this-&gt;agecomp_likelihood_id;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    f1-&gt;index_likelihood_id = this-&gt;index_likelihood_id;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    f1-&gt;observed_agecomp_data_id = this-&gt;observed_agecomp_data_id;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    f1-&gt;observed_index_data_id = this-&gt;observed_index_data_id;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    f1-&gt;selectivity_id = this-&gt;selectivity_id;</div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    d1-&gt;fleets[f1-&gt;id] = f1;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// 2nd derivative model</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt;&gt; d2 =</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    std::shared_ptr&lt;fims::Fleet&lt;TMB_FIMS_SECOND_ORDER&gt;&gt; f2 =</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        std::make_shared&lt;fims::Fleet&lt;TMB_FIMS_SECOND_ORDER&gt;&gt;();</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160; </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    f2-&gt;id = this-&gt;<a class="code" href="classFleetInterface.html#a64cd9557b98fed84b275684ead7cb043">id</a>;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    f2-&gt;agecomp_likelihood_id = this-&gt;agecomp_likelihood_id;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    f2-&gt;index_likelihood_id = this-&gt;index_likelihood_id;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    f2-&gt;observed_agecomp_data_id = this-&gt;observed_agecomp_data_id;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    f2-&gt;observed_index_data_id = this-&gt;observed_index_data_id;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    f2-&gt;selectivity_id = this-&gt;selectivity_id;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    </div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    d2-&gt;fleets[f2-&gt;id] = f2;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// 3rd derivative model</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;&gt; d3 =</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160; </div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    std::shared_ptr&lt;fims::Fleet&lt;TMB_FIMS_THIRD_ORDER&gt;&gt; f3 =</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        std::make_shared&lt;fims::Fleet&lt;TMB_FIMS_THIRD_ORDER&gt;&gt;();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    f3-&gt;id = this-&gt;<a class="code" href="classFleetInterface.html#a64cd9557b98fed84b275684ead7cb043">id</a>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    f3-&gt;agecomp_likelihood_id = this-&gt;agecomp_likelihood_id;</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    f3-&gt;index_likelihood_id = this-&gt;index_likelihood_id;</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    f3-&gt;observed_agecomp_data_id = this-&gt;observed_agecomp_data_id;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    f3-&gt;observed_index_data_id = this-&gt;observed_index_data_id;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    f3-&gt;selectivity_id = this-&gt;selectivity_id;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    d3-&gt;fleets[f3-&gt;id] = f3;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;  }</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;};</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;uint32_t <a class="code" href="classFleetInterface.html#acb2ed94ec9f31746abac02bba979deef">FleetInterface::id_g</a> = 1;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    f1-&gt;id = this-&gt;<a class="code" href="classFleetInterface.html#a64cd9557b98fed84b275684ead7cb043">id</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    f1-&gt;agecomp_likelihood_id = this-&gt;agecomp_likelihood_id;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    f1-&gt;index_likelihood_id = this-&gt;index_likelihood_id;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    f1-&gt;observed_agecomp_data_id = this-&gt;observed_agecomp_data_id;</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    f1-&gt;observed_index_data_id = this-&gt;observed_index_data_id;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    f1-&gt;selectivity_id = this-&gt;selectivity_id;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    d1-&gt;fleets[f1-&gt;id] = f1;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="comment">// 2nd derivative model</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt;&gt; d2 =</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    std::shared_ptr&lt;fims::Fleet&lt;TMB_FIMS_SECOND_ORDER&gt;&gt; f2 =</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        std::make_shared&lt;fims::Fleet&lt;TMB_FIMS_SECOND_ORDER&gt;&gt;();</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    f2-&gt;id = this-&gt;<a class="code" href="classFleetInterface.html#a64cd9557b98fed84b275684ead7cb043">id</a>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    f2-&gt;agecomp_likelihood_id = this-&gt;agecomp_likelihood_id;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    f2-&gt;index_likelihood_id = this-&gt;index_likelihood_id;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    f2-&gt;observed_agecomp_data_id = this-&gt;observed_agecomp_data_id;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    f2-&gt;observed_index_data_id = this-&gt;observed_index_data_id;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    f2-&gt;selectivity_id = this-&gt;selectivity_id;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    d2-&gt;fleets[f2-&gt;id] = f2;</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// 3rd derivative model</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;&gt; d3 =</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160; </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    std::shared_ptr&lt;fims::Fleet&lt;TMB_FIMS_THIRD_ORDER&gt;&gt; f3 =</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        std::make_shared&lt;fims::Fleet&lt;TMB_FIMS_THIRD_ORDER&gt;&gt;();</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    f3-&gt;id = this-&gt;<a class="code" href="classFleetInterface.html#a64cd9557b98fed84b275684ead7cb043">id</a>;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    f3-&gt;agecomp_likelihood_id = this-&gt;agecomp_likelihood_id;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    f3-&gt;index_likelihood_id = this-&gt;index_likelihood_id;</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    f3-&gt;observed_agecomp_data_id = this-&gt;observed_agecomp_data_id;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    f3-&gt;observed_index_data_id = this-&gt;observed_index_data_id;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    f3-&gt;selectivity_id = this-&gt;selectivity_id;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    d3-&gt;fleets[f3-&gt;id] = f3;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;  }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;};</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;uint32_t <a class="code" href="classFleetInterface.html#acb2ed94ec9f31746abac02bba979deef">FleetInterface::id_g</a> = 1;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassFIMSRcppInterfaceBase_html"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></div><div class="ttdoc">Base class for all interface objects.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:61</div></div>
 <div class="ttc" id="aclassFleetInterface_html"><div class="ttname"><a href="classFleetInterface.html">FleetInterface</a></div><div class="ttdoc">Rcpp interface for Fleet as an S4 object. To instantiate from R: fleet &lt;- new(fims$Fleet)</div><div class="ttdef"><b>Definition:</b> rcpp_fleet.hpp:20</div></div>
 <div class="ttc" id="aclassFleetInterface_html_a0b0ffd5f734cdab9286a4551b4e5e7ae"><div class="ttname"><a href="classFleetInterface.html#a0b0ffd5f734cdab9286a4551b4e5e7ae">FleetInterface::SetSelectivity</a></div><div class="ttdeci">void SetSelectivity(int selectivity_id)</div><div class="ttdoc">Set the unique id for the Selectivity object.</div><div class="ttdef"><b>Definition:</b> rcpp_fleet.hpp:109</div></div>
@@ -248,7 +247,7 @@ $(function() {
 <div class="ttc" id="aclassFleetInterface_html_a9f347c1dcdc320ccf3a717e3cf8e094b"><div class="ttname"><a href="classFleetInterface.html#a9f347c1dcdc320ccf3a717e3cf8e094b">FleetInterface::SetIndexLikelihood</a></div><div class="ttdeci">void SetIndexLikelihood(int index_likelihood_id)</div><div class="ttdoc">Set the unique id for the Index Likelihood object.</div><div class="ttdef"><b>Definition:</b> rcpp_fleet.hpp:57</div></div>
 <div class="ttc" id="aclassFleetInterface_html_acb2ed94ec9f31746abac02bba979deef"><div class="ttname"><a href="classFleetInterface.html#acb2ed94ec9f31746abac02bba979deef">FleetInterface::id_g</a></div><div class="ttdeci">static uint32_t id_g</div><div class="ttdef"><b>Definition:</b> rcpp_fleet.hpp:28</div></div>
 <div class="ttc" id="aclassFleetInterface_html_aea37db0978bb0c29503cc37764348b53"><div class="ttname"><a href="classFleetInterface.html#aea37db0978bb0c29503cc37764348b53">FleetInterface::SetObservedAgeCompData</a></div><div class="ttdeci">void SetObservedAgeCompData(int observed_agecomp_data_id)</div><div class="ttdoc">Set the unique id for the Observed Age Comp Data object.</div><div class="ttdef"><b>Definition:</b> rcpp_fleet.hpp:75</div></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:100</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:126</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
