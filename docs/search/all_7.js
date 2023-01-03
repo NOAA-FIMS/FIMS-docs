@@ -9,5 +9,6 @@ var searchData=
   ['information_2ehpp_102',['information.hpp',['../information_8hpp.html',1,'']]],
   ['initialize_103',['Initialize',['../structfims_1_1Fleet.html#ac4e0f31ac0e3d613b787db6ca484ed95',1,'fims::Fleet::Initialize()'],['../structfims_1_1Population.html#aa2d93844fec90a492ef86d8282bf507f',1,'fims::Population::Initialize()']]],
   ['initialized_104',['initialized',['../classEWAAGrowthInterface.html#a9cc2d5f9d01adeacf478f938be9c688a',1,'EWAAGrowthInterface']]],
-  ['is_5frandom_5feffect_105',['is_random_effect',['../classParameter.html#ac9349a0b5905bfbcc522a34e179a084f',1,'Parameter']]]
+  ['inv_5flogit_105',['inv_logit',['../fims__math_8hpp.html#afb91050c6b8ce1bff0eaade59b4f351a',1,'fims']]],
+  ['is_5frandom_5feffect_106',['is_random_effect',['../classParameter.html#ac9349a0b5905bfbcc522a34e179a084f',1,'Parameter']]]
 ];
