@@ -82,8 +82,8 @@ $(function() {
 </li>
 <li>ages
 : <a class="el" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">EWAAGrowthInterface</a>
-, <a class="el" href="classfims_1_1Information.html#a332d7d8771003629ffb3244ecdfc6afa">fims::Information&lt; T &gt;</a>
-, <a class="el" href="structfims_1_1Population.html#a425b33fa4300bbbef707791ca947828a">fims::Population&lt; Type &gt;</a>
+, <a class="el" href="classfims_1_1Information.html#aa5963a4ebd6c739fecd1180fb464fae5">fims::Information&lt; T &gt;</a>
+, <a class="el" href="structfims_1_1Population.html#a24d72dd70fb273a22a798a0d70f7237a">fims::Population&lt; Type &gt;</a>
 </li>
 </ul>
 
@@ -110,10 +110,9 @@ $(function() {
 </li>
 <li>catch_numbers_at_age
 : <a class="el" href="structfims_1_1Fleet.html#a0f6c26e3540ce1bb43f4b0f7f63facba">fims::Fleet&lt; Type &gt;</a>
-, <a class="el" href="structfims_1_1Population.html#afb6a1dc59736141d0682cc9c417eee55">fims::Population&lt; Type &gt;</a>
 </li>
 <li>catch_weight_at_age
-: <a class="el" href="structfims_1_1Population.html#a7955e92c1c96d0bc3a9c118a848f1921">fims::Population&lt; Type &gt;</a>
+: <a class="el" href="structfims_1_1Fleet.html#a31873919c067d63d36f0c3fed16f70b8">fims::Fleet&lt; Type &gt;</a>
 </li>
 <li>constrain_deviations
 : <a class="el" href="structfims_1_1RecruitmentBase.html#aaacf15e2130559a79407b876646598ef">fims::RecruitmentBase&lt; Type &gt;</a>
@@ -158,7 +157,6 @@ $(function() {
 </li>
 <li>expected_index
 : <a class="el" href="structfims_1_1Fleet.html#a0f56549ad521b2a69b0230b9048b2b3d">fims::Fleet&lt; Type &gt;</a>
-, <a class="el" href="structfims_1_1Population.html#ac72dd555cc318082e26e3f79512ed05a">fims::Population&lt; Type &gt;</a>
 </li>
 <li>expected_numbers_at_age
 : <a class="el" href="structfims_1_1Population.html#aca3e503174a50a2fd999eb5a00d021df">fims::Population&lt; Type &gt;</a>
@@ -244,6 +242,9 @@ $(function() {
 <li>index_likelihood_id
 : <a class="el" href="structfims_1_1Fleet.html#aa3081acebbaa075c8a2e7425a7f5aa4c">fims::Fleet&lt; Type &gt;</a>
 </li>
+<li>init_naa
+: <a class="el" href="structfims_1_1Population.html#a669d380739fbd0b07a9f45367f66de5f">fims::Population&lt; Type &gt;</a>
+</li>
 <li>initialized
 : <a class="el" href="classEWAAGrowthInterface.html#a9cc2d5f9d01adeacf478f938be9c688a">EWAAGrowthInterface</a>
 </li>
@@ -281,11 +282,11 @@ $(function() {
 <li>log_Fmort
 : <a class="el" href="structfims_1_1Fleet.html#a8ff30c9ad1cd9fd4131b770ee5662615">fims::Fleet&lt; Type &gt;</a>
 </li>
+<li>log_init_naa
+: <a class="el" href="structfims_1_1Population.html#a617aba342ecbdc921231281dc245fa65">fims::Population&lt; Type &gt;</a>
+</li>
 <li>log_M
 : <a class="el" href="structfims_1_1Population.html#a0e0b683ba310a5d34d6342340d44e4fa">fims::Population&lt; Type &gt;</a>
-</li>
-<li>log_naa
-: <a class="el" href="structfims_1_1Population.html#a099b804138b7f3c1e01e8eb5b80e2bad">fims::Population&lt; Type &gt;</a>
 </li>
 <li>log_q
 : <a class="el" href="structfims_1_1Fleet.html#ac946797f0ddb46606986526040d27522">fims::Fleet&lt; Type &gt;</a>
@@ -345,9 +346,6 @@ $(function() {
 
 
 <h3><a id="index_n"></a>- n -</h3><ul>
-<li>naa
-: <a class="el" href="structfims_1_1Population.html#ab8eaaa80a98b7579208dfc1e0026c7f3">fims::Population&lt; Type &gt;</a>
-</li>
 <li>nages
 : <a class="el" href="structfims_1_1Fleet.html#a8a81de06e87320303de61a48cf7c6ce1">fims::Fleet&lt; Type &gt;</a>
 , <a class="el" href="classfims_1_1Information.html#a58177520f53b3d518c37c9fc1ef2be8e">fims::Information&lt; T &gt;</a>
@@ -496,6 +494,9 @@ $(function() {
 
 
 <h3><a id="index_u"></a>- u -</h3><ul>
+<li>unfished_biomass
+: <a class="el" href="structfims_1_1Population.html#ab60a6df4dda8ff94988d1f6fc664489e">fims::Population&lt; Type &gt;</a>
+</li>
 <li>unfished_numbers_at_age
 : <a class="el" href="structfims_1_1Population.html#ac969af738b0049fea58f68a3106d193d">fims::Population&lt; Type &gt;</a>
 </li>
@@ -531,6 +532,13 @@ $(function() {
 : <a class="el" href="classDlnormDistributionsInterface.html#ad06d7fb7cebfd89d7de57a669bdd2190">DlnormDistributionsInterface</a>
 , <a class="el" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">DmultinomDistributionsInterface</a>
 , <a class="el" href="classDnormDistributionsInterface.html#a548824b92bedb476bc50826c4ca1c476">DnormDistributionsInterface</a>
+</li>
+</ul>
+
+
+<h3><a id="index_y"></a>- y -</h3><ul>
+<li>years
+: <a class="el" href="structfims_1_1Population.html#aa916517aab83e194876a487c804157bb">fims::Population&lt; Type &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

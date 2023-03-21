@@ -1,16 +1,19 @@
 var searchData=
 [
-  ['calculatecatch_261',['CalculateCatch',['../structfims_1_1Population.html#a352bf3060e15b2ba6fbbec32a423e63d',1,'fims::Population']]],
-  ['calculatecatchnumbersaa_262',['CalculateCatchNumbersAA',['../structfims_1_1Population.html#afd7c23f7bd4ae939ee232f9bd2f9d615',1,'fims::Population']]],
-  ['calculatecatchweightaa_263',['CalculateCatchWeightAA',['../structfims_1_1Population.html#ab18d95768f8e8c89c75260b74bbcbb11',1,'fims::Population']]],
-  ['calculateindex_264',['CalculateIndex',['../structfims_1_1Population.html#a2459a12b340925272bb808d571187612',1,'fims::Population']]],
-  ['calculateinitialnumbersaa_265',['CalculateInitialNumbersAA',['../structfims_1_1Population.html#a0dad36fa8bd0fba0aaa848c3ba070168',1,'fims::Population']]],
-  ['calculatematurityaa_266',['CalculateMaturityAA',['../structfims_1_1Population.html#ad4f03965044eb5c49bd7c77131274477',1,'fims::Population']]],
-  ['calculatemortality_267',['CalculateMortality',['../structfims_1_1Population.html#acb5f3171d0414c4e12a4c2c657a18883',1,'fims::Population']]],
-  ['calculatenumbersaa_268',['CalculateNumbersAA',['../structfims_1_1Population.html#a078ea2a7a6bca5b20ece76990938d6f3',1,'fims::Population']]],
-  ['calculaterecruitment_269',['CalculateRecruitment',['../structfims_1_1Population.html#a2e24ca19353eba63ed356db84223ca93',1,'fims::Population']]],
-  ['calculatespawningbiomass_270',['CalculateSpawningBiomass',['../structfims_1_1Population.html#a2f1224771808f196edcec7cf0a5d81e5',1,'fims::Population']]],
-  ['calculateunfishednumbersaa_271',['CalculateUnfishedNumbersAA',['../structfims_1_1Population.html#a0cd63c98c013a2798541067efd7c2903',1,'fims::Population']]],
-  ['calculateunfishedspawningbiomass_272',['CalculateUnfishedSpawningBiomass',['../structfims_1_1Population.html#a265cd549dc51c0b02ef7ef9c97c46d48',1,'fims::Population']]],
-  ['createmodel_273',['CreateModel',['../classfims_1_1Information.html#a736ba30994a8c2b3a3c5093f3e692d49',1,'fims::Information']]]
+  ['calculatebiomass_266',['CalculateBiomass',['../structfims_1_1Population.html#aa99d3a12832981bde02ec6209b8bb8f3',1,'fims::Population']]],
+  ['calculatecatch_267',['CalculateCatch',['../structfims_1_1Population.html#a42ae74167edbd0c33c3631dd53a098bf',1,'fims::Population']]],
+  ['calculatecatchnumbersaa_268',['CalculateCatchNumbersAA',['../structfims_1_1Population.html#a52659a5dd17dd5e4037baf8d5a2c3b03',1,'fims::Population']]],
+  ['calculatecatchweightaa_269',['CalculateCatchWeightAA',['../structfims_1_1Population.html#a0c1dbf679cd29f6feaa086ffc05d5448',1,'fims::Population']]],
+  ['calculateindex_270',['CalculateIndex',['../structfims_1_1Population.html#a51ecf9f79d9c1dc1f518429e1f9428cd',1,'fims::Population']]],
+  ['calculateinitialnumbersaa_271',['CalculateInitialNumbersAA',['../structfims_1_1Population.html#a03ccdec7810da08b0f2ab01f83e24b21',1,'fims::Population']]],
+  ['calculatematurityaa_272',['CalculateMaturityAA',['../structfims_1_1Population.html#a76fdbc84a14ec45b45b3c0dcc4181dca',1,'fims::Population']]],
+  ['calculatemortality_273',['CalculateMortality',['../structfims_1_1Population.html#aeb128a695221f8dedb2e03bca4e02cd3',1,'fims::Population']]],
+  ['calculatenumbersaa_274',['CalculateNumbersAA',['../structfims_1_1Population.html#aef69a0ce476738d9d8d7bf67ca080478',1,'fims::Population']]],
+  ['calculaterecruitment_275',['CalculateRecruitment',['../structfims_1_1Population.html#aed32c40be2379d05825dcb659b6c6bbc',1,'fims::Population']]],
+  ['calculatesbpr0_276',['CalculateSBPR0',['../structfims_1_1Population.html#aec0f5f622bf1504b7a16f0f33731b966',1,'fims::Population']]],
+  ['calculatespawningbiomass_277',['CalculateSpawningBiomass',['../structfims_1_1Population.html#a0dfd20d074e80ec9538df0c3cd9087d5',1,'fims::Population']]],
+  ['calculateunfishedbiomass_278',['CalculateUnfishedBiomass',['../structfims_1_1Population.html#a2c5bc92d6a9a2ae8eff2a8c9d14e0c35',1,'fims::Population']]],
+  ['calculateunfishednumbersaa_279',['CalculateUnfishedNumbersAA',['../structfims_1_1Population.html#af8c7871660e49a568d5a3592ed798efa',1,'fims::Population']]],
+  ['calculateunfishedspawningbiomass_280',['CalculateUnfishedSpawningBiomass',['../structfims_1_1Population.html#a9372f8eb17ddfdce1456fdd368b3c1d6',1,'fims::Population']]],
+  ['createmodel_281',['CreateModel',['../classfims_1_1Information.html#a736ba30994a8c2b3a3c5093f3e692d49',1,'fims::Information']]]
 ];
