@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['logisticmaturity_238',['LogisticMaturity',['../structfims_1_1LogisticMaturity.html',1,'fims']]],
-  ['logisticselectivity_239',['LogisticSelectivity',['../structfims_1_1LogisticSelectivity.html',1,'fims']]],
-  ['logisticselectivityinterface_240',['LogisticSelectivityInterface',['../classLogisticSelectivityInterface.html',1,'']]]
+  ['indexdatainterface_259',['IndexDataInterface',['../classIndexDataInterface.html',1,'']]],
+  ['information_260',['Information',['../classfims_1_1Information.html',1,'fims']]]
 ];

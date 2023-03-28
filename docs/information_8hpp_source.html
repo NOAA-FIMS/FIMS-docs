@@ -227,8 +227,8 @@ $(function() {
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <span class="keywordflow">if</span> (f-&gt;selectivity_id != -999) {</div>
 <div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        uint32_t sel_id = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            f-&gt;selectivity_id);  <span class="comment">// cast as unsigned integer</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        <a class="code" href="classfims_1_1Information.html#a75f0d05716472ff4ab44b70d97b77f43">selectivity_models_iterator</a> it = this-&gt;<a class="code" href="classfims_1_1Information.html#a22c808bcce23f5e7cb0be263dd3ebb91">selectivity_models</a>.find(</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            sel_id);  <span class="comment">// if find, set it, otherwise invalid</span></div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;     <span class="comment">//   selectivity_models_iterator it = this-&gt;selectivity_models.find(</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;       <span class="comment">//     sel_id);  // if find, set it, otherwise invalid</span></div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;Information: Initializing fleet objects.\n&quot;</span>;</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        <span class="keywordflow">for</span> (<a class="code" href="classfims_1_1Information.html#a9d51720d64f3652c98a75e46e2e3c8c2">fleet_iterator</a> it = this-&gt;<a class="code" href="classfims_1_1Information.html#a036cdd955befc6268243d81b188c849b">fleets</a>.begin(); it != this-&gt;<a class="code" href="classfims_1_1Information.html#a036cdd955befc6268243d81b188c849b">fleets</a>.end();</div>
@@ -241,24 +241,24 @@ $(function() {
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;          f-&gt;Initialize(<a class="code" href="classfims_1_1Information.html#a6b249de2fd3878b024f28862eb3001b0">nyears</a>, <a class="code" href="classfims_1_1Information.html#a58177520f53b3d518c37c9fc1ef2be8e">nages</a>);</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;          <span class="comment">// set catch data</span></div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;          <span class="keywordflow">if</span> (f-&gt;observed_catch_data_id != -999) {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            uint32_t catch_id =</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(f-&gt;observed_catch_data_id);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <a class="code" href="classfims_1_1Information.html#a4dc67e5a9e1772380552dda9334ed5ff">data_iterator</a> it = this-&gt;<a class="code" href="classfims_1_1Information.html#a8137d76c5bc36f647e9ed6144d072494">data_objects</a>.find(catch_id);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <span class="keywordflow">if</span> (it != this-&gt;<a class="code" href="classfims_1_1Information.html#a8137d76c5bc36f647e9ed6144d072494">data_objects</a>.end()) {</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;              f-&gt;observed_catch_data = (*it).second;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;              valid_model = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;              <span class="comment">// log error</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;              <a class="code" href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a> &lt;&lt; <span class="stringliteral">&quot;Error: observed catch data not defined for fleet&quot;</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                       &lt;&lt; f-&gt;id &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            }</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;          } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            valid_model = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="comment">// log error</span></div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;          }</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;         <span class="comment">// if (f-&gt;observed_catch_data_id != -999) {</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;         <span class="comment">//   uint32_t catch_id =</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;         <span class="comment">//       static_cast&lt;uint32_t&gt;(f-&gt;observed_catch_data_id);</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;         <span class="comment">//   data_iterator it = this-&gt;data_objects.find(catch_id);</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;         <span class="comment">//   if (it != this-&gt;data_objects.end()) {</span></div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;         <span class="comment">//     f-&gt;observed_catch_data = (*it).second;</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;         <span class="comment">//   } else {</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;         <span class="comment">//     valid_model = false;</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;         <span class="comment">//     // log error</span></div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;         <span class="comment">//     FIMS_LOG &lt;&lt; &quot;Error: observed catch data not defined for fleet&quot;</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;         <span class="comment">//              &lt;&lt; f-&gt;id &lt;&lt; std::endl;</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;         <span class="comment">//   }</span></div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;         <span class="comment">// } else {</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;         <span class="comment">//   valid_model = false;</span></div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;         <span class="comment">//   // log error</span></div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;         <span class="comment">// }</span></div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;          <span class="comment">// set index data</span></div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;          <span class="keywordflow">if</span> (f-&gt;observed_index_data_id != -999) {</div>
@@ -343,26 +343,26 @@ $(function() {
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;          }</div>
 <div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
 <div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;          <span class="comment">// set catch likelihood</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;          <span class="keywordflow">if</span> (f-&gt;catch_likelihood_id != -999) {</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;            uint32_t catch_like_id = <span class="keyword">static_cast&lt;</span>uint32_t<span class="keyword">&gt;</span>(</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;                f-&gt;catch_likelihood_id);  <span class="comment">// cast as unsigned integer</span></div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;            <a class="code" href="classfims_1_1Information.html#a9d3890af83e112b0a8773150ccd19b8a">distribution_models_iterator</a> it = this-&gt;<a class="code" href="classfims_1_1Information.html#a3e25f22a2d5bd4a19506ba68dbb65860">distribution_models</a>.find(</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;                catch_like_id);  <span class="comment">// if find, set it, otherwise invalid</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160; </div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;            <span class="keywordflow">if</span> (it != this-&gt;<a class="code" href="classfims_1_1Information.html#a3e25f22a2d5bd4a19506ba68dbb65860">distribution_models</a>.end()) {</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;              f-&gt;catch_likelihood =</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;                  (*it).second;  <span class="comment">// elements in container held in pair (first is</span></div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                                 <span class="comment">// id, second is object - shared pointer to</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;                                 <span class="comment">// distribution)</span></div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;            } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;              valid_model = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;              <span class="comment">// log error</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;            }</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;          } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;            valid_model = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;            <span class="comment">// log error</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;          }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;          <span class="comment">//if (f-&gt;catch_likelihood_id != -999) {</span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;          <span class="comment">//  uint32_t catch_like_id = static_cast&lt;uint32_t&gt;(</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;          <span class="comment">//      f-&gt;catch_likelihood_id);  // cast as unsigned integer</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;          <span class="comment">//  distribution_models_iterator it = this-&gt;distribution_models.find(</span></div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;          <span class="comment">//      catch_like_id);  // if find, set it, otherwise invalid</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;          <span class="comment">//  if (it != this-&gt;distribution_models.end()) {</span></div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;          <span class="comment">//    f-&gt;catch_likelihood =</span></div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;          <span class="comment">//        (*it).second;  // elements in container held in pair (first is</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;          <span class="comment">//                       // id, second is object - shared pointer to</span></div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;          <span class="comment">//                       // distribution)</span></div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;          <span class="comment">//  } else {</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;          <span class="comment">//    valid_model = false;</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;          <span class="comment">//    // log error</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;          <span class="comment">//  }</span></div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;          <span class="comment">//} else {</span></div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;          <span class="comment">//  valid_model = false;</span></div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;          <span class="comment">//  // log error</span></div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;          <span class="comment">//}</span></div>
 <div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160; </div>
 <div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;          <span class="comment">// set agecomp likelihood</span></div>
 <div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;          <span class="keywordflow">if</span> (f-&gt;agecomp_likelihood_id != -999) {</div>
