@@ -76,7 +76,7 @@ $(function() {
 <div class="title">rcpp_recruitment.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; <span class="comment">/*</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * File:   rcpp_recruitment.hpp</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * This File is part of the NOAA, National Marine Fisheries Service</span></div>
@@ -122,8 +122,8 @@ $(function() {
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html">   62</a></span>&#160;<span class="keyword">class </span><a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a> : <span class="keyword">public</span> <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a> {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">   64</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">steep</a>;   </div>
-<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">   65</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">rzero</a>;   </div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">   64</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">steep</a>;             </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">   65</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">rzero</a>;             </div>
 <div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classBevertonHoltRecruitmentInterface.html#ae9f46c25b71b73595850e6d24f91d1ea">   66</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classBevertonHoltRecruitmentInterface.html#ae9f46c25b71b73595850e6d24f91d1ea">log_sigma_recruit</a>; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <a class="code" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a>() : <a class="code" href="classRecruitmentInterfaceBase.html">RecruitmentInterfaceBase</a>() {}</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
@@ -165,7 +165,7 @@ $(function() {
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        d0-&gt;RegisterParameter(b0-&gt;rzero);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      }</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;       b0-&gt;log_sigma_recruit = this-&gt;log_sigma_recruit.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    b0-&gt;log_sigma_recruit = this-&gt;log_sigma_recruit.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">if</span> (this-&gt;log_sigma_recruit.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      <span class="keywordflow">if</span> (this-&gt;log_sigma_recruit.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        d0-&gt;RegisterRandomEffect(b0-&gt;log_sigma_recruit);</div>
