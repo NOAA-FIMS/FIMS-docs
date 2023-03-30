@@ -8,7 +8,7 @@ var searchData=
   ['population_5fiterator_171',['population_iterator',['../classfims_1_1Information.html#a7ddc22f42f53dc645b53b7992b981723',1,'fims::Information']]],
   ['populationinterface_172',['PopulationInterface',['../classPopulationInterface.html',1,'']]],
   ['populationinterfacebase_173',['PopulationInterfaceBase',['../classPopulationInterfaceBase.html',1,'']]],
-  ['populations_174',['populations',['../classfims_1_1Information.html#a7b4ea0c11a79b62555dc9c799757fd3a',1,'fims::Information::populations()'],['../classfims_1_1Model.html#a0f37c126e631a89af9ab93a90e3a6c5d',1,'fims::Model::populations()']]],
+  ['populations_174',['populations',['../classfims_1_1Information.html#a7b4ea0c11a79b62555dc9c799757fd3a',1,'fims::Information']]],
   ['prepare_175',['Prepare',['../structfims_1_1Fleet.html#ae0af5f02a0186ae6ddd88b2da3f770f7',1,'fims::Fleet::Prepare()'],['../structfims_1_1Population.html#aaeec2aba0608e4045846f27ce44fcf5c',1,'fims::Population::Prepare()']]],
   ['preparebiasadjustment_176',['PrepareBiasAdjustment',['../structfims_1_1RecruitmentBase.html#a40fa55df6d7bda29acdd999aa10e2e93',1,'fims::RecruitmentBase']]],
   ['prepareconstraineddeviations_177',['PrepareConstrainedDeviations',['../structfims_1_1RecruitmentBase.html#a3fdcdb3d61e8218ff24a5aca8369f75c',1,'fims::RecruitmentBase']]],

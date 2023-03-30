@@ -8,7 +8,7 @@ var searchData=
   ['get_5flmax_325',['get_lmax',['../structfims_1_1DataObject.html#aa303da1c1059922cf6d5b51770ae2f0f',1,'fims::DataObject']]],
   ['getfixedeffectsparameters_326',['GetFixedEffectsParameters',['../classfims_1_1Information.html#a45eeed2726e1909b6a85ec0afaac6a5f',1,'fims::Information']]],
   ['getid_327',['GetId',['../structfims_1_1FIMSObject.html#a711658401af3d645c33905e80df14f42',1,'fims::FIMSObject']]],
-  ['getinstance_328',['GetInstance',['../classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2',1,'fims::Information']]],
+  ['getinstance_328',['GetInstance',['../classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2',1,'fims::Information::GetInstance()'],['../classfims_1_1Model.html#a454e90bea0a0f8fa3abf72456875ba5b',1,'fims::Model::GetInstance()']]],
   ['getnages_329',['GetNages',['../classfims_1_1Information.html#a990168a0365f217443f2a88a6d41b23f',1,'fims::Information']]],
   ['getnseasons_330',['GetNseasons',['../classfims_1_1Information.html#aa0a53eeec5796957494825459cf48873',1,'fims::Information']]],
   ['getnyears_331',['GetNyears',['../classfims_1_1Information.html#a69d2f8394815c6b2400f77fb9bfc1801',1,'fims::Information']]],
