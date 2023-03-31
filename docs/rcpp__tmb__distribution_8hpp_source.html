@@ -296,93 +296,97 @@ $(function() {
 <div class="line"><a name="l00285"></a><span class="lineno"><a class="line" href="classDmultinomDistributionsInterface.html#a406f549e6e0f55441e1fe53b958e991a">  285</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classDmultinomDistributionsInterface.html#a406f549e6e0f55441e1fe53b958e991a">evaluate</a>(<span class="keywordtype">bool</span> do_log) {</div>
 <div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;    fims::Dmultinom&lt;double&gt; dmultinom;</div>
 <div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="comment">// Decale TMBVector in this scope</span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_REAL_TYPE&gt;::EigenVector TMBVector;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    dmultinom.x = TMBVector(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());  <span class="comment">// Vector from TMB</span></div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    dmultinom.p = TMBVector(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());  <span class="comment">// Vector from TMB</span></div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size(); i++) {</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;      dmultinom.x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>[i];</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      dmultinom.p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    }</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordflow">return</span> dmultinom.evaluate(do_log);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;  }</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno"><a class="line" href="classDmultinomDistributionsInterface.html#af3b9b1f0363d06676ab451a3fbe6c837">  298</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classDmultinomDistributionsInterface.html#af3b9b1f0363d06676ab451a3fbe6c837">add_to_fims_tmb</a>() {</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_REAL_TYPE&gt;::EigenVector Vector0;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_REAL_TYPE&gt;&gt; d0 =</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_REAL_TYPE&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160; </div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;TMB_FIMS_REAL_TYPE&gt;&gt; model0 =</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;TMB_FIMS_REAL_TYPE&gt;&gt;();</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160; </div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    model0-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    model0-&gt;x = Vector0(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    model0-&gt;p = Vector0(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size(); i++) {</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;      model0-&gt;x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>[i];</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      model0-&gt;p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    }</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    d0-&gt;distribution_models[model0-&gt;id] = model0;</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160; </div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_FIRST_ORDER&gt;::EigenVector Vector1;</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt;&gt; d1 =</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160; </div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;TMB_FIMS_FIRST_ORDER&gt;&gt; model1 =</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;TMB_FIMS_FIRST_ORDER&gt;&gt;();</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160; </div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    model1-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    model1-&gt;x = Vector1(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    model1-&gt;p = Vector1(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size(); i++) {</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;      model1-&gt;x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>[i];</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;      model1-&gt;p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    }</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160; </div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    d1-&gt;distribution_models[model1-&gt;id] = model1;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    <span class="keyword">typedef</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;        <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_REAL_TYPE&gt;::EigenVector TMBVector;</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;    dmultinom.x = TMBVector(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());  <span class="comment">// Vector from TMB</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    dmultinom.p = TMBVector(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());  <span class="comment">// Vector from TMB</span></div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size(); i++) {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;      dmultinom.x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>[i];</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;      dmultinom.p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordflow">return</span> dmultinom.evaluate(do_log);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;  }</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno"><a class="line" href="classDmultinomDistributionsInterface.html#af3b9b1f0363d06676ab451a3fbe6c837">  299</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classDmultinomDistributionsInterface.html#af3b9b1f0363d06676ab451a3fbe6c837">add_to_fims_tmb</a>() {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_REAL_TYPE&gt;::EigenVector Vector0;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_REAL_TYPE&gt;&gt; d0 =</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_REAL_TYPE&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160; </div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;TMB_FIMS_REAL_TYPE&gt;&gt; model0 =</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;TMB_FIMS_REAL_TYPE&gt;&gt;();</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160; </div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    model0-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    model0-&gt;x = Vector0(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    model0-&gt;p = Vector0(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size(); i++) {</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;      model0-&gt;x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>[i];</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;      model0-&gt;p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;    }</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    d0-&gt;distribution_models[model0-&gt;id] = model0;</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160; </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keyword">typedef</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_FIRST_ORDER&gt;::EigenVector Vector1;</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt;&gt; d1 =</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_FIRST_ORDER&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;TMB_FIMS_FIRST_ORDER&gt;&gt; model1 =</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;TMB_FIMS_FIRST_ORDER&gt;&gt;();</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    model1-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    model1-&gt;x = Vector1(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    model1-&gt;p = Vector1(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size(); i++) {</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;      model1-&gt;x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>[i];</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;      model1-&gt;p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    }</div>
 <div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160; </div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_SECOND_ORDER&gt;::EigenVector Vector2;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt;&gt; d2 =</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160; </div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;TMB_FIMS_SECOND_ORDER&gt;&gt; model2 =</div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;TMB_FIMS_SECOND_ORDER&gt;&gt;();</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;    d1-&gt;distribution_models[model1-&gt;id] = model1;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160; </div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keyword">typedef</span></div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_SECOND_ORDER&gt;::EigenVector Vector2;</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt;&gt; d2 =</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_SECOND_ORDER&gt;::GetInstance</a>();</div>
 <div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160; </div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    model2-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;    model2-&gt;x = Vector2(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());</div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    model2-&gt;p = Vector2(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());</div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160; </div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size(); i++) {</div>
-<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;      model2-&gt;x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>[i];</div>
-<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;      model2-&gt;p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
-<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    }</div>
-<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160; </div>
-<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    d2-&gt;distribution_models[model2-&gt;id] = model2;</div>
-<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160; </div>
-<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_THIRD_ORDER&gt;::EigenVector Vector3;</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;&gt; d3 =</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160; </div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;TMB_FIMS_THIRD_ORDER&gt;&gt; model3 =</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;TMB_FIMS_THIRD_ORDER&gt;&gt;();</div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160; </div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    model3-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    model3-&gt;x = Vector3(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    model3-&gt;p = Vector3(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;TMB_FIMS_SECOND_ORDER&gt;&gt; model2 =</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;TMB_FIMS_SECOND_ORDER&gt;&gt;();</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160; </div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    model2-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    model2-&gt;x = Vector2(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;    model2-&gt;p = Vector2(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160; </div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size(); i++) {</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;      model2-&gt;x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>[i];</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;      model2-&gt;p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    }</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160; </div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    d2-&gt;distribution_models[model2-&gt;id] = model2;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160; </div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    <span class="keyword">typedef</span></div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;        <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_THIRD_ORDER&gt;::EigenVector Vector3;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    std::shared_ptr&lt;fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;&gt; d3 =</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;TMB_FIMS_THIRD_ORDER&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160; </div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;TMB_FIMS_THIRD_ORDER&gt;&gt; model3 =</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;TMB_FIMS_THIRD_ORDER&gt;&gt;();</div>
 <div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160; </div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size(); i++) {</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;      model3-&gt;x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>[i];</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;      model3-&gt;p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    }</div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160; </div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;    d3-&gt;distribution_models[model3-&gt;id] = model3;</div>
-<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160; </div>
-<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;  }</div>
-<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;};</div>
-<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;    model3-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    model3-&gt;x = Vector3(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;    model3-&gt;p = Vector3(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160; </div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size(); i++) {</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;      model3-&gt;x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>[i];</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;      model3-&gt;p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;    }</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160; </div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;    d3-&gt;distribution_models[model3-&gt;id] = model3;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160; </div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;  }</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;};</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassDistributionsInterfaceBase_html"><div class="ttname"><a href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a></div><div class="ttdoc">Distributions Rcpp Interface.</div><div class="ttdef"><b>Definition:</b> rcpp_tmb_distribution.hpp:20</div></div>
 <div class="ttc" id="aclassDistributionsInterfaceBase_html_a5d9993ff1cc28507b609920dfd7e9d44"><div class="ttname"><a href="classDistributionsInterfaceBase.html#a5d9993ff1cc28507b609920dfd7e9d44">DistributionsInterfaceBase::evaluate</a></div><div class="ttdeci">virtual double evaluate(bool do_log)=0</div><div class="ttdoc">evaluate method for child distribution interface objects to inherit</div></div>
 <div class="ttc" id="aclassDistributionsInterfaceBase_html_ac2c9fafbff23443ff4b5d9a9bee56c08"><div class="ttname"><a href="classDistributionsInterfaceBase.html#ac2c9fafbff23443ff4b5d9a9bee56c08">DistributionsInterfaceBase::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()=0</div><div class="ttdoc">get_id method for child distribution interface objects to inherit</div></div>
@@ -402,7 +406,7 @@ $(function() {
 <div class="ttc" id="aclassDmultinomDistributionsInterface_html_a406f549e6e0f55441e1fe53b958e991a"><div class="ttname"><a href="classDmultinomDistributionsInterface.html#a406f549e6e0f55441e1fe53b958e991a">DmultinomDistributionsInterface::evaluate</a></div><div class="ttdeci">virtual double evaluate(bool do_log)</div><div class="ttdoc">Evaluate multinom probability density function, default returns the log of the pdf.</div><div class="ttdef"><b>Definition:</b> rcpp_tmb_distribution.hpp:285</div></div>
 <div class="ttc" id="aclassDmultinomDistributionsInterface_html_a40dc05d944bab718c046a56b8496fc48"><div class="ttname"><a href="classDmultinomDistributionsInterface.html#a40dc05d944bab718c046a56b8496fc48">DmultinomDistributionsInterface::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()</div><div class="ttdoc">get_id method for child distribution interface objects to inherit</div><div class="ttdef"><b>Definition:</b> rcpp_tmb_distribution.hpp:276</div></div>
 <div class="ttc" id="aclassDmultinomDistributionsInterface_html_a563a86aac155b9a5477bb405e5d31b6a"><div class="ttname"><a href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">DmultinomDistributionsInterface::p</a></div><div class="ttdeci">Rcpp::NumericVector p</div><div class="ttdef"><b>Definition:</b> rcpp_tmb_distribution.hpp:269</div></div>
-<div class="ttc" id="aclassDmultinomDistributionsInterface_html_af3b9b1f0363d06676ab451a3fbe6c837"><div class="ttname"><a href="classDmultinomDistributionsInterface.html#af3b9b1f0363d06676ab451a3fbe6c837">DmultinomDistributionsInterface::add_to_fims_tmb</a></div><div class="ttdeci">virtual bool add_to_fims_tmb()</div><div class="ttdoc">virtual method to inherit to add objects to the TMB model</div><div class="ttdef"><b>Definition:</b> rcpp_tmb_distribution.hpp:298</div></div>
+<div class="ttc" id="aclassDmultinomDistributionsInterface_html_af3b9b1f0363d06676ab451a3fbe6c837"><div class="ttname"><a href="classDmultinomDistributionsInterface.html#af3b9b1f0363d06676ab451a3fbe6c837">DmultinomDistributionsInterface::add_to_fims_tmb</a></div><div class="ttdeci">virtual bool add_to_fims_tmb()</div><div class="ttdoc">virtual method to inherit to add objects to the TMB model</div><div class="ttdef"><b>Definition:</b> rcpp_tmb_distribution.hpp:299</div></div>
 <div class="ttc" id="aclassDnormDistributionsInterface_html"><div class="ttname"><a href="classDnormDistributionsInterface.html">DnormDistributionsInterface</a></div><div class="ttdoc">Rcpp interface for Dnorm as an S4 object. To instantiate from R: dnorm_ &lt;- new(fims$TMBDnormDistribut...</div><div class="ttdef"><b>Definition:</b> rcpp_tmb_distribution.hpp:61</div></div>
 <div class="ttc" id="aclassDnormDistributionsInterface_html_a0a7b0532100eb957dad1ed5093e70ce3"><div class="ttname"><a href="classDnormDistributionsInterface.html#a0a7b0532100eb957dad1ed5093e70ce3">DnormDistributionsInterface::evaluate</a></div><div class="ttdeci">virtual double evaluate(bool do_log)</div><div class="ttdoc">Evaluate normal probability density function, default returns the log of the pdf.</div><div class="ttdef"><b>Definition:</b> rcpp_tmb_distribution.hpp:80</div></div>
 <div class="ttc" id="aclassDnormDistributionsInterface_html_a157057ff78054cfe7ae32d257b93ac9d"><div class="ttname"><a href="classDnormDistributionsInterface.html#a157057ff78054cfe7ae32d257b93ac9d">DnormDistributionsInterface::mean</a></div><div class="ttdeci">Parameter mean</div><div class="ttdef"><b>Definition:</b> rcpp_tmb_distribution.hpp:64</div></div>
