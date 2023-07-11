@@ -115,10 +115,17 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="s
 <tr class="memitem:ac4e0f31ac0e3d613b787db6ca484ed95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#ac4e0f31ac0e3d613b787db6ca484ed95">Initialize</a> (int <a class="el" href="structfims_1_1Fleet.html#ab7922cb44e65badedbe4eeb4486add79">nyears</a>, int <a class="el" href="structfims_1_1Fleet.html#a8a81de06e87320303de61a48cf7c6ce1">nages</a>)</td></tr>
 <tr class="memdesc:ac4e0f31ac0e3d613b787db6ca484ed95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Intialize <a class="el" href="structfims_1_1Fleet.html" title="Base class for all fleets.">Fleet</a> Class.  <a href="structfims_1_1Fleet.html#ac4e0f31ac0e3d613b787db6ca484ed95">More...</a><br /></td></tr>
 <tr class="separator:ac4e0f31ac0e3d613b787db6ca484ed95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0af5f02a0186ae6ddd88b2da3f770f7"><td class="memItemLeft" align="right" valign="top"><a id="ae0af5f02a0186ae6ddd88b2da3f770f7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#ae0af5f02a0186ae6ddd88b2da3f770f7">Prepare</a> ()</td></tr>
-<tr class="memdesc:ae0af5f02a0186ae6ddd88b2da3f770f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare to run the fleet module. Called at each model itartion, and used to exponentiate the log q and Fmort parameters prior to evaluation. <br /></td></tr>
+<tr class="memitem:ae0af5f02a0186ae6ddd88b2da3f770f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#ae0af5f02a0186ae6ddd88b2da3f770f7">Prepare</a> ()</td></tr>
+<tr class="memdesc:ae0af5f02a0186ae6ddd88b2da3f770f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare to run the fleet module. Called at each model itartion, and used to exponentiate the log q and Fmort parameters prior to evaluation.  <a href="structfims_1_1Fleet.html#ae0af5f02a0186ae6ddd88b2da3f770f7">More...</a><br /></td></tr>
 <tr class="separator:ae0af5f02a0186ae6ddd88b2da3f770f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24f101859c28e128115d8f97449e4c2"><td class="memItemLeft" align="right" valign="top"><a id="af24f101859c28e128115d8f97449e4c2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#af24f101859c28e128115d8f97449e4c2">ReportFleet</a> ()</td></tr>
+<tr class="memdesc:af24f101859c28e128115d8f97449e4c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to report out the fleet-specific derived quantities. <br /></td></tr>
+<tr class="separator:af24f101859c28e128115d8f97449e4c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af432234e61b552ffd7c2f59785a89452"><td class="memItemLeft" align="right" valign="top">virtual const Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#af432234e61b552ffd7c2f59785a89452">evaluate_age_comp_nll</a> ()</td></tr>
+<tr class="separator:af432234e61b552ffd7c2f59785a89452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbf2f33003304452cb4d59c255a6bbcf"><td class="memItemLeft" align="right" valign="top">virtual const Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#acbf2f33003304452cb4d59c255a6bbcf">evaluate_index_nll</a> ()</td></tr>
+<tr class="separator:acbf2f33003304452cb4d59c255a6bbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_structfims_1_1FIMSObject"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_structfims_1_1FIMSObject')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="structfims_1_1FIMSObject.html">fims::FIMSObject&lt; Type &gt;</a></td></tr>
 <tr class="memitem:a711658401af3d645c33905e80df14f42 inherit pub_methods_structfims_1_1FIMSObject"><td class="memItemLeft" align="right" valign="top"><a id="a711658401af3d645c33905e80df14f42"></a>
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1FIMSObject.html#a711658401af3d645c33905e80df14f42">GetId</a> () const</td></tr>
@@ -153,14 +160,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1fcf95f3fbe97fbad3e79032d03cb63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24dc112a3f32dc0a92804f3146e7119e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfims_1_1Fleet.html#ae7a50f575e83b6d84af10011c3ee1724">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#a24dc112a3f32dc0a92804f3146e7119e">log_Fmort</a></td></tr>
 <tr class="separator:a24dc112a3f32dc0a92804f3146e7119e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaba3120c247633df2e4d7f15cf84977a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfims_1_1Fleet.html#ae7a50f575e83b6d84af10011c3ee1724">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#aaba3120c247633df2e4d7f15cf84977a">log_q</a></td></tr>
-<tr class="separator:aaba3120c247633df2e4d7f15cf84977a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3336115e62437cc0ec39cfc1e909df8"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#aa3336115e62437cc0ec39cfc1e909df8">log_q</a></td></tr>
+<tr class="separator:aa3336115e62437cc0ec39cfc1e909df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32d04e3094f0d4026870e501f249aa58"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#a32d04e3094f0d4026870e501f249aa58">log_obs_error</a></td></tr>
 <tr class="separator:a32d04e3094f0d4026870e501f249aa58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2bf9c2ce578618dce1bcb78aac6c245"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#ad2bf9c2ce578618dce1bcb78aac6c245">Fmort</a></td></tr>
-<tr class="separator:ad2bf9c2ce578618dce1bcb78aac6c245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05a6f8ff76e44880787f082b54009f45"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#a05a6f8ff76e44880787f082b54009f45">q</a></td></tr>
-<tr class="separator:a05a6f8ff76e44880787f082b54009f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4676f828da34fe0a3baab44263c3d888"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structfims_1_1Fleet.html#ae7a50f575e83b6d84af10011c3ee1724">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#a4676f828da34fe0a3baab44263c3d888">Fmort</a></td></tr>
+<tr class="separator:a4676f828da34fe0a3baab44263c3d888"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f228a0756981b92ad43393d083981e6"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#a9f228a0756981b92ad43393d083981e6">q</a></td></tr>
+<tr class="separator:a9f228a0756981b92ad43393d083981e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a35e648c97bb303d6c57bac942c7a8c41"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#a35e648c97bb303d6c57bac942c7a8c41">catch_at_age</a></td></tr>
 <tr class="separator:a35e648c97bb303d6c57bac942c7a8c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a789ddb5d78ceb1bf4cef94e13ca09c12"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#a789ddb5d78ceb1bf4cef94e13ca09c12">catch_index</a></td></tr>
@@ -175,6 +182,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0f6c26e3540ce1bb43f4b0f7f63facba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31873919c067d63d36f0c3fed16f70b8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#a31873919c067d63d36f0c3fed16f70b8">catch_weight_at_age</a></td></tr>
 <tr class="separator:a31873919c067d63d36f0c3fed16f70b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027419e0dca2d6efcb2129ce71073253"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1Fleet.html#a027419e0dca2d6efcb2129ce71073253">is_survey</a> = false</td></tr>
+<tr class="separator:a027419e0dca2d6efcb2129ce71073253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structfims_1_1FIMSObject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structfims_1_1FIMSObject')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structfims_1_1FIMSObject.html">fims::FIMSObject&lt; Type &gt;</a></td></tr>
 <tr class="memitem:a971b2bf344a2662e578407b324b831bc inherit pub_attribs_structfims_1_1FIMSObject"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1FIMSObject.html#a971b2bf344a2662e578407b324b831bc">id</a></td></tr>
 <tr class="separator:a971b2bf344a2662e578407b324b831bc inherit pub_attribs_structfims_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,6 +229,62 @@ template&lt;class Type &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af432234e61b552ffd7c2f59785a89452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af432234e61b552ffd7c2f59785a89452">&#9670;&nbsp;</a></span>evaluate_age_comp_nll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const Type <a class="el" href="structfims_1_1Fleet.html">fims::Fleet</a>&lt; Type &gt;::evaluate_age_comp_nll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>&lt; The negative log likelihood value</p>
+
+</div>
+</div>
+<a id="acbf2f33003304452cb4d59c255a6bbcf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbf2f33003304452cb4d59c255a6bbcf">&#9670;&nbsp;</a></span>evaluate_index_nll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const Type <a class="el" href="structfims_1_1Fleet.html">fims::Fleet</a>&lt; Type &gt;::evaluate_index_nll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>&lt; The negative log likelihood value</p>
+
+</div>
+</div>
 <a id="ac4e0f31ac0e3d613b787db6ca484ed95"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac4e0f31ac0e3d613b787db6ca484ed95">&#9670;&nbsp;</a></span>Initialize()</h2>
 
@@ -264,6 +329,41 @@ template&lt;class Type &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ae0af5f02a0186ae6ddd88b2da3f770f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0af5f02a0186ae6ddd88b2da3f770f7">&#9670;&nbsp;</a></span>Prepare()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="structfims_1_1Fleet.html">fims::Fleet</a>&lt; Type &gt;::Prepare </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Prepare to run the fleet module. Called at each model itartion, and used to exponentiate the log q and Fmort parameters prior to evaluation. </p>
+<p>&lt;derived quantity catch at age</p>
+<p>&lt;derived quantity catch index</p>
+<p>&lt;model expected total catch</p>
+<p>&lt;model expected index of abundance</p>
+<p>&lt;model expected catch at age</p>
+<p>&lt;model expected weight at age</p>
 
 </div>
 </div>
@@ -421,8 +521,8 @@ template&lt;class Type &gt; </div>
 
 </div>
 </div>
-<a id="ad2bf9c2ce578618dce1bcb78aac6c245"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2bf9c2ce578618dce1bcb78aac6c245">&#9670;&nbsp;</a></span>Fmort</h2>
+<a id="a4676f828da34fe0a3baab44263c3d888"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4676f828da34fe0a3baab44263c3d888">&#9670;&nbsp;</a></span>Fmort</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -430,7 +530,7 @@ template&lt;class Type &gt; </div>
 template&lt;class Type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;Type&gt; <a class="el" href="structfims_1_1Fleet.html">fims::Fleet</a>&lt; Type &gt;::Fmort</td>
+          <td class="memname"><a class="el" href="structfims_1_1Fleet.html#ae7a50f575e83b6d84af10011c3ee1724">ParameterVector</a> <a class="el" href="structfims_1_1Fleet.html">fims::Fleet</a>&lt; Type &gt;::Fmort</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -497,6 +597,23 @@ template&lt;class Type &gt; </div>
 
 </div>
 </div>
+<a id="a027419e0dca2d6efcb2129ce71073253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a027419e0dca2d6efcb2129ce71073253">&#9670;&nbsp;</a></span>is_survey</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="structfims_1_1Fleet.html">fims::Fleet</a>&lt; Type &gt;::is_survey = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>is this fleet object a survey </p>
+
+</div>
+</div>
 <a id="a24dc112a3f32dc0a92804f3146e7119e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a24dc112a3f32dc0a92804f3146e7119e">&#9670;&nbsp;</a></span>log_Fmort</h2>
 
@@ -531,8 +648,8 @@ template&lt;class Type &gt; </div>
 
 </div>
 </div>
-<a id="aaba3120c247633df2e4d7f15cf84977a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaba3120c247633df2e4d7f15cf84977a">&#9670;&nbsp;</a></span>log_q</h2>
+<a id="aa3336115e62437cc0ec39cfc1e909df8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3336115e62437cc0ec39cfc1e909df8">&#9670;&nbsp;</a></span>log_q</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -540,7 +657,7 @@ template&lt;class Type &gt; </div>
 template&lt;class Type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="structfims_1_1Fleet.html#ae7a50f575e83b6d84af10011c3ee1724">ParameterVector</a> <a class="el" href="structfims_1_1Fleet.html">fims::Fleet</a>&lt; Type &gt;::log_q</td>
+          <td class="memname">Type <a class="el" href="structfims_1_1Fleet.html">fims::Fleet</a>&lt; Type &gt;::log_q</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -650,8 +767,8 @@ template&lt;class Type &gt; </div>
 
 </div>
 </div>
-<a id="a05a6f8ff76e44880787f082b54009f45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05a6f8ff76e44880787f082b54009f45">&#9670;&nbsp;</a></span>q</h2>
+<a id="a9f228a0756981b92ad43393d083981e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f228a0756981b92ad43393d083981e6">&#9670;&nbsp;</a></span>q</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -659,7 +776,7 @@ template&lt;class Type &gt; </div>
 template&lt;class Type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;Type&gt; <a class="el" href="structfims_1_1Fleet.html">fims::Fleet</a>&lt; Type &gt;::q</td>
+          <td class="memname">Type <a class="el" href="structfims_1_1Fleet.html">fims::Fleet</a>&lt; Type &gt;::q</td>
         </tr>
       </table>
 </div><div class="memdoc">

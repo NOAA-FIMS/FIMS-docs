@@ -85,8 +85,8 @@ $(function() {
 </li>
 <li>ages
 : <a class="el" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">EWAAGrowthInterface</a>
-, <a class="el" href="classfims_1_1Information.html#aa5963a4ebd6c739fecd1180fb464fae5">fims::Information&lt; T &gt;</a>
 , <a class="el" href="structfims_1_1Population.html#a24d72dd70fb273a22a798a0d70f7237a">fims::Population&lt; Type &gt;</a>
+, <a class="el" href="classPopulationInterface.html#abc30d815840cacf4357e6c8022085eb4">PopulationInterface</a>
 </li>
 <li>amax
 : <a class="el" href="classAgeCompDataInterface.html#ab4bea155960215f368f55fc226d11020">AgeCompDataInterface</a>
@@ -127,6 +127,9 @@ $(function() {
 <li>data_objects
 : <a class="el" href="classfims_1_1Information.html#a8137d76c5bc36f647e9ed6144d072494">fims::Information&lt; T &gt;</a>
 </li>
+<li>deviations
+: <a class="el" href="classBevertonHoltRecruitmentInterface.html#a51865c7f4a0290a642b01d7aad4b764c">BevertonHoltRecruitmentInterface</a>
+</li>
 <li>dimensions
 : <a class="el" href="structfims_1_1DataObject.html#a71c8bfa0e72cb2400fec6644cf8300b8">fims::DataObject&lt; Type &gt;</a>
 </li>
@@ -140,15 +143,23 @@ $(function() {
 
 
 <h3><a id="index_e"></a>- e -</h3><ul>
+<li>estimate_deviations
+: <a class="el" href="classBevertonHoltRecruitmentInterface.html#ad2943e80132926b04ba61a340016c5ff">BevertonHoltRecruitmentInterface</a>
+</li>
 <li>estimate_F
 : <a class="el" href="classFleetInterface.html#ae840183f3f6166985c94948788cb3020">FleetInterface</a>
+</li>
+<li>estimate_initNAA
+: <a class="el" href="classPopulationInterface.html#ab389fa2195c30c3e7d1e00f0b16c30bc">PopulationInterface</a>
+</li>
+<li>estimate_M
+: <a class="el" href="classPopulationInterface.html#add9e9148642502f037879b1028e9f627">PopulationInterface</a>
 </li>
 <li>estimate_q
 : <a class="el" href="classFleetInterface.html#a1358c0ae2f7e96e057567875c0849042">FleetInterface</a>
 </li>
 <li>estimate_recruit_deviations
 : <a class="el" href="structfims_1_1RecruitmentBase.html#ad105c4b06dd0d0a1e531d2c2cd7ef716">fims::RecruitmentBase&lt; Type &gt;</a>
-, <a class="el" href="classRecruitmentNLLInterface.html#a8cf3eed60f768d1177a9f831731e7c88">RecruitmentNLLInterface</a>
 </li>
 <li>estimated
 : <a class="el" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">Parameter</a>
@@ -167,6 +178,9 @@ $(function() {
 <li>expected_numbers_at_age
 : <a class="el" href="structfims_1_1Population.html#aca3e503174a50a2fd999eb5a00d021df">fims::Population&lt; Type &gt;</a>
 </li>
+<li>expected_recruitment
+: <a class="el" href="structfims_1_1Population.html#a0972ea2d53905d59def3117d7eff24ff">fims::Population&lt; Type &gt;</a>
+</li>
 </ul>
 
 
@@ -177,6 +191,9 @@ $(function() {
 </li>
 <li>fims_interface_objects
 : <a class="el" href="classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515">FIMSRcppInterfaceBase</a>
+</li>
+<li>FIMS_LOGS
+: <a class="el" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims::fims_log</a>
 </li>
 <li>fims_model
 : <a class="el" href="classfims_1_1Model.html#a73e22a73bde8079e0a9151a5712420af">fims::Model&lt; T &gt;</a>
@@ -193,7 +210,7 @@ $(function() {
 , <a class="el" href="structfims_1_1Population.html#a53071ae69f2cb883bd40f4c44e1f9b9c">fims::Population&lt; Type &gt;</a>
 </li>
 <li>Fmort
-: <a class="el" href="structfims_1_1Fleet.html#ad2bf9c2ce578618dce1bcb78aac6c245">fims::Fleet&lt; Type &gt;</a>
+: <a class="el" href="structfims_1_1Fleet.html#a4676f828da34fe0a3baab44263c3d888">fims::Fleet&lt; Type &gt;</a>
 </li>
 </ul>
 
@@ -204,6 +221,7 @@ $(function() {
 </li>
 <li>growth_id
 : <a class="el" href="structfims_1_1Population.html#a58e0691f8b670f498cf045b2f392a0c0">fims::Population&lt; Type &gt;</a>
+, <a class="el" href="classPopulationInterface.html#a6fb2eeeb7e66dd534b38f8bb7c2801dc">PopulationInterface</a>
 </li>
 <li>growth_models
 : <a class="el" href="classfims_1_1Information.html#a5114b1064b83064f9685a1b82a1fb0ce">fims::Information&lt; T &gt;</a>
@@ -264,6 +282,10 @@ $(function() {
 <li>is_random_effect
 : <a class="el" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">Parameter</a>
 </li>
+<li>is_survey
+: <a class="el" href="structfims_1_1Fleet.html#a027419e0dca2d6efcb2129ce71073253">fims::Fleet&lt; Type &gt;</a>
+, <a class="el" href="classFleetInterface.html#a7ae805aa463983024010a368061b1da0">FleetInterface</a>
+</li>
 </ul>
 
 
@@ -283,7 +305,8 @@ $(function() {
 
 <h3><a id="index_l"></a>- l -</h3><ul>
 <li>live_objects
-: <a class="el" href="classDistributionsInterfaceBase.html#ae285ae2cd00da6eddbabf2c090ffa9fc">DistributionsInterfaceBase</a>
+: <a class="el" href="classDataInterface.html#a30a7a2a93bf4b5d870aaec7ec49b67fc">DataInterface</a>
+, <a class="el" href="classDistributionsInterfaceBase.html#ae285ae2cd00da6eddbabf2c090ffa9fc">DistributionsInterfaceBase</a>
 , <a class="el" href="classGrowthInterfaceBase.html#a5a6704a5b7c2e7d63d6183136d6fb48e">GrowthInterfaceBase</a>
 , <a class="el" href="classNLLInterfaceBase.html#a017e42351e74f8077f1f7cd09a16bb2a">NLLInterfaceBase</a>
 , <a class="el" href="classPopulationInterfaceBase.html#a99fc4b0a5a0f572f9bf46670a996d3e9">PopulationInterfaceBase</a>
@@ -298,23 +321,31 @@ $(function() {
 </li>
 <li>log_init_naa
 : <a class="el" href="structfims_1_1Population.html#a617aba342ecbdc921231281dc245fa65">fims::Population&lt; Type &gt;</a>
-, <a class="el" href="classPopulationInterface.html#ac8b15e1bb8a9c89b4345fadc1c3ce307">PopulationInterface</a>
+, <a class="el" href="classPopulationInterface.html#a2d07c734a9e7bf65b3b9e1216ea8df77">PopulationInterface</a>
 </li>
 <li>log_M
 : <a class="el" href="structfims_1_1Population.html#a68eff9e169cca23905d09af0ba500158">fims::Population&lt; Type &gt;</a>
-, <a class="el" href="classPopulationInterface.html#ab4bcd3b036ae843c08fd97b45b9407db">PopulationInterface</a>
+, <a class="el" href="classPopulationInterface.html#afae0d90281be3207c796a6051ed3bff9">PopulationInterface</a>
 </li>
 <li>log_obs_error
 : <a class="el" href="structfims_1_1Fleet.html#a32d04e3094f0d4026870e501f249aa58">fims::Fleet&lt; Type &gt;</a>
+, <a class="el" href="classFleetInterface.html#aa07a0830c4ef48d4cfc83e98809f3f29">FleetInterface</a>
 </li>
 <li>log_q
-: <a class="el" href="structfims_1_1Fleet.html#aaba3120c247633df2e4d7f15cf84977a">fims::Fleet&lt; Type &gt;</a>
-, <a class="el" href="classFleetInterface.html#af7d7938d9e686784a6ed304c00a01a79">FleetInterface</a>
+: <a class="el" href="structfims_1_1Fleet.html#aa3336115e62437cc0ec39cfc1e909df8">fims::Fleet&lt; Type &gt;</a>
+, <a class="el" href="classFleetInterface.html#aa95122830a47e48154234fd477b55a0a">FleetInterface</a>
+</li>
+<li>log_rzero
+: <a class="el" href="classBevertonHoltRecruitmentInterface.html#aef43664185856d401935a02eef1ebbba">BevertonHoltRecruitmentInterface</a>
+, <a class="el" href="structfims_1_1RecruitmentBase.html#a425528f69190af1fac5eea969f36b51a">fims::RecruitmentBase&lt; Type &gt;</a>
 </li>
 <li>log_sigma_recruit
 : <a class="el" href="classBevertonHoltRecruitmentInterface.html#ae9f46c25b71b73595850e6d24f91d1ea">BevertonHoltRecruitmentInterface</a>
 , <a class="el" href="structfims_1_1RecruitmentBase.html#a58c3f696931d7cca337aabdfcee502dd">fims::RecruitmentBase&lt; Type &gt;</a>
-, <a class="el" href="classRecruitmentNLLInterface.html#a3210cb2ffc51313dd938067c91ee8fff">RecruitmentNLLInterface</a>
+</li>
+<li>logit_steep
+: <a class="el" href="classBevertonHoltRecruitmentInterface.html#a1d3c3a96a3ff9a872aeeb57e343e1073">BevertonHoltRecruitmentInterface</a>
+, <a class="el" href="structfims_1_1SRBevertonHolt.html#a330af37665ba65b38b80852b31d2063b">fims::SRBevertonHolt&lt; Type &gt;</a>
 </li>
 </ul>
 
@@ -328,6 +359,7 @@ $(function() {
 </li>
 <li>maturity_id
 : <a class="el" href="structfims_1_1Population.html#a283e8453880a5e8f46475b7cd4aff04f">fims::Population&lt; Type &gt;</a>
+, <a class="el" href="classPopulationInterface.html#adb1038e8bac456cb85a1a6c913b16e9d">PopulationInterface</a>
 </li>
 <li>maturity_models
 : <a class="el" href="classfims_1_1Information.html#a25b18b5c979c6302931d6eb298c7cdd8">fims::Information&lt; T &gt;</a>
@@ -434,7 +466,7 @@ $(function() {
 : <a class="el" href="classPopulationInterface.html#a38728d527e6320c4770c853af48bca2b">PopulationInterface</a>
 </li>
 <li>proportion_female
-: <a class="el" href="structfims_1_1Population.html#aacbd72ab3bf53f864ff0f7cd7849cc8a">fims::Population&lt; Type &gt;</a>
+: <a class="el" href="structfims_1_1Population.html#a31163c18e16b49cce971d728dec629c2">fims::Population&lt; Type &gt;</a>
 </li>
 <li>proportion_mature_at_age
 : <a class="el" href="structfims_1_1Population.html#a5d67ea12ec3252c6f6afe2a6866929ad">fims::Population&lt; Type &gt;</a>
@@ -444,7 +476,7 @@ $(function() {
 
 <h3><a id="index_q"></a>- q -</h3><ul>
 <li>q
-: <a class="el" href="structfims_1_1Fleet.html#a05a6f8ff76e44880787f082b54009f45">fims::Fleet&lt; Type &gt;</a>
+: <a class="el" href="structfims_1_1Fleet.html#a9f228a0756981b92ad43393d083981e6">fims::Fleet&lt; Type &gt;</a>
 </li>
 </ul>
 
@@ -461,28 +493,24 @@ $(function() {
 : <a class="el" href="classFleetInterface.html#a26773d862ef5f583529bb3fc4002f584">FleetInterface</a>
 </li>
 <li>recruit_bias_adjustment
-: <a class="el" href="structfims_1_1RecruitmentBase.html#a0a0295742c69979b0d66b40e12fdd4f9">fims::RecruitmentBase&lt; Type &gt;</a>
-, <a class="el" href="classRecruitmentNLLInterface.html#aa82708ee7eb681135c8a6dbbae1f4b44">RecruitmentNLLInterface</a>
+: <a class="el" href="classBevertonHoltRecruitmentInterface.html#ab0bbc5b184dff3523d0da306a406e210">BevertonHoltRecruitmentInterface</a>
+, <a class="el" href="structfims_1_1RecruitmentBase.html#ab3bd04915a97002b4149367b57e8ac0f">fims::RecruitmentBase&lt; Type &gt;</a>
 </li>
 <li>recruit_bias_adjustment_fraction
-: <a class="el" href="structfims_1_1RecruitmentBase.html#a23cda8ea540407d06d2b59167166db2f">fims::RecruitmentBase&lt; Type &gt;</a>
+: <a class="el" href="structfims_1_1RecruitmentBase.html#adb0d82cd253e0d2fcb0c07048624776b">fims::RecruitmentBase&lt; Type &gt;</a>
 </li>
 <li>recruit_deviations
-: <a class="el" href="structfims_1_1RecruitmentBase.html#ac65d0fbc23e87f8987f47c1fb6fed74d">fims::RecruitmentBase&lt; Type &gt;</a>
-, <a class="el" href="classRecruitmentNLLInterface.html#a9feed201f71e6e51f2cdc70740e058a6">RecruitmentNLLInterface</a>
+: <a class="el" href="structfims_1_1RecruitmentBase.html#a6c1eb650a8b2e7518fd171a55d54fa32">fims::RecruitmentBase&lt; Type &gt;</a>
 </li>
 <li>recruitment
 : <a class="el" href="structfims_1_1Population.html#a1dc71807ae85f00da7f8ff9996aff092">fims::Population&lt; Type &gt;</a>
 </li>
 <li>recruitment_id
 : <a class="el" href="structfims_1_1Population.html#af30ca978bb75101002a43c71aff8c4e6">fims::Population&lt; Type &gt;</a>
+, <a class="el" href="classPopulationInterface.html#a172829a46fcd6ec5b033b5c7cfd25174">PopulationInterface</a>
 </li>
 <li>recruitment_models
 : <a class="el" href="classfims_1_1Information.html#a948f4364ac05690919821bcce7c3cfdb">fims::Information&lt; T &gt;</a>
-</li>
-<li>rzero
-: <a class="el" href="classBevertonHoltRecruitmentInterface.html#a182bad1d3365885939438e14fade01af">BevertonHoltRecruitmentInterface</a>
-, <a class="el" href="structfims_1_1RecruitmentBase.html#a2e26d74ff3698c8df7f9f80ab53f8b21">fims::RecruitmentBase&lt; Type &gt;</a>
 </li>
 </ul>
 
@@ -523,10 +551,6 @@ $(function() {
 <li>spawning_biomass
 : <a class="el" href="structfims_1_1Population.html#ad5f507417b5ce3bf381f2f3b5abde6ce">fims::Population&lt; Type &gt;</a>
 </li>
-<li>steep
-: <a class="el" href="classBevertonHoltRecruitmentInterface.html#ac2a21e3d552fb5f3c04a53d02f3369cd">BevertonHoltRecruitmentInterface</a>
-, <a class="el" href="structfims_1_1SRBevertonHolt.html#a9725bfb881e36b3c53b1d64e1a28e02d">fims::SRBevertonHolt&lt; Type &gt;</a>
-</li>
 </ul>
 
 
@@ -540,9 +564,11 @@ $(function() {
 <li>unfished_spawning_biomass
 : <a class="el" href="structfims_1_1Population.html#a424fe08083c93eecd2863a66e674ab5a">fims::Population&lt; Type &gt;</a>
 </li>
+<li>use_bias_correction
+: <a class="el" href="classBevertonHoltRecruitmentInterface.html#ae6849dc38bedfdae516506f0df34eb39">BevertonHoltRecruitmentInterface</a>
+</li>
 <li>use_recruit_bias_adjustment
 : <a class="el" href="structfims_1_1RecruitmentBase.html#aad9a38352b090f82d6d72594f6028e1b">fims::RecruitmentBase&lt; Type &gt;</a>
-, <a class="el" href="classRecruitmentNLLInterface.html#a897bd190efa96892aa778049d868923a">RecruitmentNLLInterface</a>
 </li>
 </ul>
 
