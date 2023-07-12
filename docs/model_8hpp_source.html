@@ -125,68 +125,67 @@ $(function() {
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="classfims_1_1Model.html#a9b05798cca8ef84aeb27066b7c604da7">   62</a></span>&#160;  <span class="keyword">const</span> T <a class="code" href="classfims_1_1Model.html#a9b05798cca8ef84aeb27066b7c604da7">Evaluate</a>() {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// jnll = negative-log-likelihood (the objective function)</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    T jnll = 0.0;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    T rec_nll = 0.0; <span class="comment">//recrutiment nll</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    T age_comp_nll = 0.0; <span class="comment">//age composition nll</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    T index_nll = 0.0; <span class="comment">//survey and fishery cacth nll</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">//Loop over populations, evaluate, and sum up the recruitment likelihood component</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// jnll = negative-log-likelihood (the objective function)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    T jnll = 0.0;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    T rec_nll = 0.0;       <span class="comment">// recrutiment nll</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    T age_comp_nll = 0.0;  <span class="comment">// age composition nll</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    T index_nll = 0.0;     <span class="comment">// survey and fishery cacth nll</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// Loop over populations, evaluate, and sum up the recruitment likelihood</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="comment">// component</span></div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">typename</span> <a class="code" href="classfims_1_1Information.html#a7ddc22f42f53dc645b53b7992b981723">fims::Information&lt;T&gt;::population_iterator</a> it;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">for</span> (it = this-&gt;<a class="code" href="classfims_1_1Model.html#a3c21bfe49b2f03f83c4bd5e3f6801bb1">fims_information</a>-&gt;populations.begin();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      it != this-&gt;<a class="code" href="classfims_1_1Information.html#aa33a45dc0d82669b04a2944118958f27">fims_information</a>-&gt;populations.end(); ++it) {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;         it != this-&gt;<a class="code" href="classfims_1_1Information.html#aa33a45dc0d82669b04a2944118958f27">fims_information</a>-&gt;populations.end(); ++it) {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      <span class="comment">//(*it).second points to the Population module</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <a class="code" href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a> &lt;&lt; <span class="stringliteral">&quot;inside pop loop&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="comment">//Prepare recruitment</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <span class="comment">// Prepare recruitment</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      (*it).second-&gt;recruitment-&gt;Prepare();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      <a class="code" href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a> &lt;&lt; <span class="stringliteral">&quot;recruitment prepare works&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="comment">//link to TMB objective function</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">      #ifdef TMB_MODEL</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        (*it).second-&gt;of = this-&gt;of;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="comment">//Evaluate population</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// link to TMB objective function</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      (*it).second-&gt;of = this-&gt;of;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      <span class="comment">// Evaluate population</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;      (*it).second-&gt;Evaluate();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="comment">//Recrtuiment negative log-likelihood</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      <span class="comment">// Recrtuiment negative log-likelihood</span></div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      rec_nll += (*it).second-&gt;recruitment-&gt;evaluate_nll();</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <a class="code" href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a> &lt;&lt; <span class="stringliteral">&quot;rec nll: &quot;</span> &lt;&lt; rec_nll &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">typename</span> <a class="code" href="classfims_1_1Information.html#a9d51720d64f3652c98a75e46e2e3c8c2">fims::Information&lt;T&gt;::fleet_iterator</a> jt;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">for</span>(jt = this-&gt;<a class="code" href="classfims_1_1Model.html#a3c21bfe49b2f03f83c4bd5e3f6801bb1">fims_information</a>-&gt;fleets.begin(); jt !=</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;      this-&gt;<a class="code" href="classfims_1_1Information.html#aa33a45dc0d82669b04a2944118958f27">fims_information</a>-&gt;fleets.end(); ++jt ){</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="preprocessor">      #ifdef TMB_MODEL</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        (*jt).second-&gt;of = this-&gt;of;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="preprocessor">      #endif</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      age_comp_nll += (*jt).second-&gt;evaluate_age_comp_nll();</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      <a class="code" href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a> &lt;&lt; <span class="stringliteral">&quot;survey and fleet age comp nll sum: &quot;</span> &lt;&lt; age_comp_nll &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">typename</span> <a class="code" href="classfims_1_1Information.html#a9d51720d64f3652c98a75e46e2e3c8c2">fims::Information&lt;T&gt;::fleet_iterator</a> jt;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordflow">for</span> (jt = this-&gt;<a class="code" href="classfims_1_1Model.html#a3c21bfe49b2f03f83c4bd5e3f6801bb1">fims_information</a>-&gt;fleets.begin();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;         jt != this-&gt;<a class="code" href="classfims_1_1Information.html#aa33a45dc0d82669b04a2944118958f27">fims_information</a>-&gt;fleets.end(); ++jt) {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;      (*jt).second-&gt;of = this-&gt;of;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      age_comp_nll += (*jt).second-&gt;evaluate_age_comp_nll();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      <a class="code" href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a> &lt;&lt; <span class="stringliteral">&quot;survey and fleet age comp nll sum: &quot;</span> &lt;&lt; age_comp_nll</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;               &lt;&lt; std::endl;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      index_nll += (*jt).second-&gt;evaluate_index_nll();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <a class="code" href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a> &lt;&lt; <span class="stringliteral">&quot;survey and fleet index nll sum: &quot;</span> &lt;&lt; index_nll &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">if</span>((*jt).second-&gt;is_survey == <span class="keyword">false</span>){</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">      #ifdef TMB_MODEL</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <span class="keywordflow">if</span> ((*jt).second-&gt;is_survey == <span class="keyword">false</span>) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        (*jt).second-&gt;of = this-&gt;of;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">      #endif</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        (*jt).second-&gt;ReportFleet();</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      }</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    jnll = rec_nll + age_comp_nll + index_nll;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordflow">return</span> jnll;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  }</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="comment">// Create singleton instance of Model class</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;std::shared_ptr&lt;Model&lt;T&gt; &gt; <a class="code" href="classfims_1_1Model.html#a73e22a73bde8079e0a9151a5712420af">Model&lt;T&gt;::fims_model</a> =</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keyword">nullptr</span>;  <span class="comment">// singleton instance</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;}  <span class="comment">// namespace fims</span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_COMMON_MODEL_HPP */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a7ddc22f42f53dc645b53b7992b981723"><div class="ttname"><a href="classfims_1_1Information.html#a7ddc22f42f53dc645b53b7992b981723">fims::Information::population_iterator</a></div><div class="ttdeci">std::map&lt; uint32_t, std::shared_ptr&lt; fims::Population&lt; T &gt; &gt; &gt;::iterator population_iterator</div><div class="ttdef"><b>Definition:</b> information.hpp:104</div></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:126</div></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a9d51720d64f3652c98a75e46e2e3c8c2"><div class="ttname"><a href="classfims_1_1Information.html#a9d51720d64f3652c98a75e46e2e3c8c2">fims::Information::fleet_iterator</a></div><div class="ttdeci">std::map&lt; uint32_t, std::shared_ptr&lt; fims::Fleet&lt; T &gt; &gt; &gt;::iterator fleet_iterator</div><div class="ttdef"><b>Definition:</b> information.hpp:95</div></div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    jnll = rec_nll + age_comp_nll + index_nll;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> jnll;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;};</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">// Create singleton instance of Model class</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;std::shared_ptr&lt;Model&lt;T&gt; &gt; <a class="code" href="classfims_1_1Model.html#a73e22a73bde8079e0a9151a5712420af">Model&lt;T&gt;::fims_model</a> =</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keyword">nullptr</span>;  <span class="comment">// singleton instance</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;}  <span class="comment">// namespace fims</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_COMMON_MODEL_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a7ddc22f42f53dc645b53b7992b981723"><div class="ttname"><a href="classfims_1_1Information.html#a7ddc22f42f53dc645b53b7992b981723">fims::Information::population_iterator</a></div><div class="ttdeci">std::map&lt; uint32_t, std::shared_ptr&lt; fims::Population&lt; T &gt; &gt; &gt;::iterator population_iterator</div><div class="ttdef"><b>Definition:</b> information.hpp:103</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:125</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a9d51720d64f3652c98a75e46e2e3c8c2"><div class="ttname"><a href="classfims_1_1Information.html#a9d51720d64f3652c98a75e46e2e3c8c2">fims::Information::fleet_iterator</a></div><div class="ttdeci">std::map&lt; uint32_t, std::shared_ptr&lt; fims::Fleet&lt; T &gt; &gt; &gt;::iterator fleet_iterator</div><div class="ttdef"><b>Definition:</b> information.hpp:94</div></div>
 <div class="ttc" id="aclassfims_1_1Information_html_aa33a45dc0d82669b04a2944118958f27"><div class="ttname"><a href="classfims_1_1Information.html#aa33a45dc0d82669b04a2944118958f27">fims::Information::fims_information</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; fims_information</div><div class="ttdef"><b>Definition:</b> information.hpp:39</div></div>
 <div class="ttc" id="aclassfims_1_1Model_html"><div class="ttname"><a href="classfims_1_1Model.html">fims::Model</a></div><div class="ttdoc">Model class. FIMS objective function.</div><div class="ttdef"><b>Definition:</b> model.hpp:30</div></div>
 <div class="ttc" id="aclassfims_1_1Model_html_a3c21bfe49b2f03f83c4bd5e3f6801bb1"><div class="ttname"><a href="classfims_1_1Model.html#a3c21bfe49b2f03f83c4bd5e3f6801bb1">fims::Model::fims_information</a></div><div class="ttdeci">std::shared_ptr&lt; Information&lt; T &gt; &gt; fims_information</div><div class="ttdef"><b>Definition:</b> model.hpp:35</div></div>

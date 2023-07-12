@@ -122,7 +122,7 @@ $(function() {
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <a class="code" href="classEWAAGrowthInterface.html">EWAAGrowthInterface</a>() : <a class="code" href="classGrowthInterfaceBase.html">GrowthInterfaceBase</a>() {}</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classEWAAGrowthInterface.html">EWAAGrowthInterface</a>() {}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classEWAAGrowthInterface.html#a4724c0195fe5e66c957fed02eee23ce2">   69</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classEWAAGrowthInterface.html#a4724c0195fe5e66c957fed02eee23ce2">get_id</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classGrowthInterfaceBase.html#aedcf584aed8f0401ebb0b2bb99c3394a">id</a>; }</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">   78</a></span>&#160;  <span class="keyword">inline</span> std::map&lt;double, double&gt; <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(std::vector&lt;double&gt; <a class="code" href="classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510">ages</a>,</div>
@@ -161,7 +161,7 @@ $(function() {
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// set relative info</span></div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    b0-&gt;id = this-&gt;<a class="code" href="classGrowthInterfaceBase.html#aedcf584aed8f0401ebb0b2bb99c3394a">id</a>;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    b0-&gt;ewaa =  <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;ages, this-&gt;weights);<span class="comment">//this-&gt;ewaa;</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    b0-&gt;ewaa = <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;ages, this-&gt;weights);  <span class="comment">// this-&gt;ewaa;</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">// add to Information</span></div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    d0-&gt;growth_models[b0-&gt;id] = b0;</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
@@ -174,7 +174,7 @@ $(function() {
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="comment">// set relative info</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    b1-&gt;id = this-&gt;<a class="code" href="classGrowthInterfaceBase.html#aedcf584aed8f0401ebb0b2bb99c3394a">id</a>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    b1-&gt;ewaa =  <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;ages, this-&gt;weights);<span class="comment">//this-&gt;ewaa;</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    b1-&gt;ewaa = <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;ages, this-&gt;weights);  <span class="comment">// this-&gt;ewaa;</span></div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="comment">// add to Information</span></div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    d1-&gt;growth_models[b0-&gt;id] = b1;</div>
@@ -188,7 +188,7 @@ $(function() {
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160; </div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="comment">// set relative info</span></div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    b2-&gt;id = this-&gt;<a class="code" href="classGrowthInterfaceBase.html#aedcf584aed8f0401ebb0b2bb99c3394a">id</a>;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    b2-&gt;ewaa =  <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;ages, this-&gt;weights);<span class="comment">//this-&gt;ewaa;</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    b2-&gt;ewaa = <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;ages, this-&gt;weights);  <span class="comment">// this-&gt;ewaa;</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="comment">// add to Information</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    d2-&gt;growth_models[b2-&gt;id] = b2;</div>
@@ -202,7 +202,7 @@ $(function() {
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="comment">// set relative info</span></div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    b3-&gt;id = this-&gt;<a class="code" href="classGrowthInterfaceBase.html#aedcf584aed8f0401ebb0b2bb99c3394a">id</a>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    b3-&gt;ewaa =  <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;ages, this-&gt;weights);<span class="comment">//this-&gt;ewaa;</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    b3-&gt;ewaa = <a class="code" href="classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860">make_map</a>(this-&gt;ages, this-&gt;weights);  <span class="comment">// this-&gt;ewaa;</span></div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="comment">// add to Information</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    d3-&gt;growth_models[b3-&gt;id] = b3;</div>
@@ -229,7 +229,7 @@ $(function() {
 <div class="ttc" id="aclassGrowthInterfaceBase_html_ac76907326cf02002a0c370c4d3cd13b2"><div class="ttname"><a href="classGrowthInterfaceBase.html#ac76907326cf02002a0c370c4d3cd13b2">GrowthInterfaceBase::id_g</a></div><div class="ttdeci">static uint32_t id_g</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:25</div></div>
 <div class="ttc" id="aclassGrowthInterfaceBase_html_aedcf584aed8f0401ebb0b2bb99c3394a"><div class="ttname"><a href="classGrowthInterfaceBase.html#aedcf584aed8f0401ebb0b2bb99c3394a">GrowthInterfaceBase::id</a></div><div class="ttdeci">uint32_t id</div><div class="ttdef"><b>Definition:</b> rcpp_growth.hpp:26</div></div>
 <div class="ttc" id="aclassGrowthInterfaceBase_html_afbc10434dde3a23d19f74af494fff34c"><div class="ttname"><a href="classGrowthInterfaceBase.html#afbc10434dde3a23d19f74af494fff34c">GrowthInterfaceBase::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()=0</div><div class="ttdoc">get_id method for child growth interface objects to inherit</div></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:126</div></div>
+<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:125</div></div>
 <div class="ttc" id="astructfims_1_1EWAAgrowth_html"><div class="ttname"><a href="structfims_1_1EWAAgrowth.html">fims::EWAAgrowth</a></div><div class="ttdoc">EWAAgrowth class that returns the EWAA function value.</div><div class="ttdef"><b>Definition:</b> ewaa.hpp:23</div></div>
 <div class="ttc" id="astructfims_1_1EWAAgrowth_html_a2229a8a240827aa2d31fcd245b45dae2"><div class="ttname"><a href="structfims_1_1EWAAgrowth.html#a2229a8a240827aa2d31fcd245b45dae2">fims::EWAAgrowth::ewaa</a></div><div class="ttdeci">std::map&lt; double, double &gt; ewaa</div><div class="ttdef"><b>Definition:</b> ewaa.hpp:29</div></div>
 <div class="ttc" id="astructfims_1_1EWAAgrowth_html_a9bb4a8ef7cc48786a4155b105cc83591"><div class="ttname"><a href="structfims_1_1EWAAgrowth.html#a9bb4a8ef7cc48786a4155b105cc83591">fims::EWAAgrowth::evaluate</a></div><div class="ttdeci">virtual const T evaluate(const double &amp;a)</div><div class="ttdoc">Returns the weight at age a (in kg) from the input vector.</div><div class="ttdef"><b>Definition:</b> ewaa.hpp:41</div></div>
