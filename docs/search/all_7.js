@@ -9,10 +9,9 @@ var searchData=
   ['indexdatainterface_120',['IndexDataInterface',['../classIndexDataInterface.html#a3cf28fb4c8210b1829f0cf0db42593dd',1,'IndexDataInterface::IndexDataInterface()'],['../classIndexDataInterface.html',1,'IndexDataInterface']]],
   ['information_121',['Information',['../classfims_1_1Information.html',1,'fims']]],
   ['information_2ehpp_122',['information.hpp',['../information_8hpp.html',1,'']]],
-  ['init_5fnaa_123',['init_naa',['../structfims_1_1Population.html#a669d380739fbd0b07a9f45367f66de5f',1,'fims::Population']]],
-  ['initialize_124',['Initialize',['../structfims_1_1Fleet.html#ac4e0f31ac0e3d613b787db6ca484ed95',1,'fims::Fleet::Initialize()'],['../structfims_1_1Population.html#aa2d93844fec90a492ef86d8282bf507f',1,'fims::Population::Initialize()']]],
-  ['initialized_125',['initialized',['../classEWAAGrowthInterface.html#a9cc2d5f9d01adeacf478f938be9c688a',1,'EWAAGrowthInterface']]],
-  ['inv_5flogit_126',['inv_logit',['../fims__math_8hpp.html#afb91050c6b8ce1bff0eaade59b4f351a',1,'fims']]],
-  ['is_5frandom_5feffect_127',['is_random_effect',['../classParameter.html#ac9349a0b5905bfbcc522a34e179a084f',1,'Parameter']]],
-  ['is_5fsurvey_128',['is_survey',['../classFleetInterface.html#a7ae805aa463983024010a368061b1da0',1,'FleetInterface::is_survey()'],['../structfims_1_1Fleet.html#a027419e0dca2d6efcb2129ce71073253',1,'fims::Fleet::is_survey()']]]
+  ['initialize_123',['Initialize',['../structfims_1_1Fleet.html#ac4e0f31ac0e3d613b787db6ca484ed95',1,'fims::Fleet::Initialize()'],['../structfims_1_1Population.html#aa2d93844fec90a492ef86d8282bf507f',1,'fims::Population::Initialize()']]],
+  ['initialized_124',['initialized',['../classEWAAGrowthInterface.html#a9cc2d5f9d01adeacf478f938be9c688a',1,'EWAAGrowthInterface']]],
+  ['inv_5flogit_125',['inv_logit',['../fims__math_8hpp.html#afb91050c6b8ce1bff0eaade59b4f351a',1,'fims']]],
+  ['is_5frandom_5feffect_126',['is_random_effect',['../classParameter.html#ac9349a0b5905bfbcc522a34e179a084f',1,'Parameter']]],
+  ['is_5fsurvey_127',['is_survey',['../classFleetInterface.html#a7ae805aa463983024010a368061b1da0',1,'FleetInterface::is_survey()'],['../structfims_1_1Fleet.html#a027419e0dca2d6efcb2129ce71073253',1,'fims::Fleet::is_survey()']]]
 ];
