@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['make_5fmap_355',['make_map',['../classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860',1,'EWAAGrowthInterface']]],
-  ['maturitybase_356',['MaturityBase',['../structfims_1_1MaturityBase.html#a3c091ce642d497c5fd5313e24792a9cc',1,'fims::MaturityBase']]]
+  ['logistic_386',['logistic',['../fims__math_8hpp.html#a4d48e30e355c7dcda1897f413e2d179f',1,'fims']]],
+  ['logit_387',['logit',['../fims__math_8hpp.html#a5d19b86b88e4e025879a42798ed79336',1,'fims']]]
 ];

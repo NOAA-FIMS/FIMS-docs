@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['maturitybase_279',['MaturityBase',['../structfims_1_1MaturityBase.html',1,'fims']]],
-  ['maturityinterfacebase_280',['MaturityInterfaceBase',['../classMaturityInterfaceBase.html',1,'']]],
-  ['model_281',['Model',['../classfims_1_1Model.html',1,'fims']]]
+  ['logisticmaturity_298',['LogisticMaturity',['../structfims_1_1LogisticMaturity.html',1,'fims']]],
+  ['logisticmaturityinterface_299',['LogisticMaturityInterface',['../classLogisticMaturityInterface.html',1,'']]],
+  ['logisticselectivity_300',['LogisticSelectivity',['../structfims_1_1LogisticSelectivity.html',1,'fims']]],
+  ['logisticselectivityinterface_301',['LogisticSelectivityInterface',['../classLogisticSelectivityInterface.html',1,'']]]
 ];
