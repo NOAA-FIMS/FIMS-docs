@@ -107,16 +107,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9da05e4608f7ce171d9a673c106c2b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa58a115f624f9a0f72d9519d1c4a35d3"><td class="memItemLeft" align="right" valign="top">Type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1DataObject.html#aa58a115f624f9a0f72d9519d1c4a35d3">at</a> (size_t i)</td></tr>
 <tr class="separator:aa58a115f624f9a0f72d9519d1c4a35d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea25928bc4f3114ecac39bcdcbf63fbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1DataObject.html#aea25928bc4f3114ecac39bcdcbf63fbc">set</a> (size_t i, Type x)</td></tr>
-<tr class="memdesc:aea25928bc4f3114ecac39bcdcbf63fbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set value of element.  <a href="structfims_1_1DataObject.html#aea25928bc4f3114ecac39bcdcbf63fbc">More...</a><br /></td></tr>
-<tr class="separator:aea25928bc4f3114ecac39bcdcbf63fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe1e0c4eddbe32d9cb46c0afa4401280"><td class="memItemLeft" align="right" valign="top">const Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1DataObject.html#abe1e0c4eddbe32d9cb46c0afa4401280">operator()</a> (size_t i, size_t j)</td></tr>
 <tr class="separator:abe1e0c4eddbe32d9cb46c0afa4401280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b0f3c7e9adfdbe27456703e04d4c9ad"><td class="memItemLeft" align="right" valign="top">Type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1DataObject.html#a2b0f3c7e9adfdbe27456703e04d4c9ad">at</a> (size_t i, size_t j)</td></tr>
 <tr class="separator:a2b0f3c7e9adfdbe27456703e04d4c9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b49d5383ff66535dbe5fdb1ffd31151"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1DataObject.html#a8b49d5383ff66535dbe5fdb1ffd31151">set</a> (size_t i, size_t j, Type x)</td></tr>
-<tr class="memdesc:a8b49d5383ff66535dbe5fdb1ffd31151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set value of element.  <a href="structfims_1_1DataObject.html#a8b49d5383ff66535dbe5fdb1ffd31151">More...</a><br /></td></tr>
-<tr class="separator:a8b49d5383ff66535dbe5fdb1ffd31151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d4dcb8369f76b111a818f4d5b1caeeb"><td class="memItemLeft" align="right" valign="top">const Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1DataObject.html#a1d4dcb8369f76b111a818f4d5b1caeeb">operator()</a> (size_t i, size_t j, size_t k)</td></tr>
 <tr class="separator:a1d4dcb8369f76b111a818f4d5b1caeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ed03f923c46dc3ca0d60ca3aa42210d"><td class="memItemLeft" align="right" valign="top">Type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1DataObject.html#a4ed03f923c46dc3ca0d60ca3aa42210d">at</a> (size_t i, size_t j, size_t k)</td></tr>
@@ -871,7 +865,7 @@ template&lt;typename Type &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Retrieve element from 3d data set. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Retrieve element from 4d data set. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">i</td><td>1st dimension of 4d data set </td></tr>
     <tr><td class="paramname">j</td><td>2nd dimension of 4d data set </td></tr>
@@ -881,107 +875,6 @@ template&lt;typename Type &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the value of the array at position i, j, k, l </dd></dl>
-
-</div>
-</div>
-<a id="a8b49d5383ff66535dbe5fdb1ffd31151"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b49d5383ff66535dbe5fdb1ffd31151">&#9670;&nbsp;</a></span>set() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Type &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structfims_1_1DataObject.html">fims::DataObject</a>&lt; Type &gt;::set </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>j</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Type&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set value of element. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td></td></tr>
-    <tr><td class="paramname">j</td><td></td></tr>
-    <tr><td class="paramname">x</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aea25928bc4f3114ecac39bcdcbf63fbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aea25928bc4f3114ecac39bcdcbf63fbc">&#9670;&nbsp;</a></span>set() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Type &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="structfims_1_1DataObject.html">fims::DataObject</a>&lt; Type &gt;::set </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Type&#160;</td>
-          <td class="paramname"><em>x</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set value of element. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td></td></tr>
-    <tr><td class="paramname">x</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
