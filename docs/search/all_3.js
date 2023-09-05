@@ -16,8 +16,7 @@ var searchData=
   ['dlnormdistributionsinterface_50',['DlnormDistributionsInterface',['../classDlnormDistributionsInterface.html',1,'']]],
   ['dmultinomdistributionsinterface_51',['DmultinomDistributionsInterface',['../classDmultinomDistributionsInterface.html',1,'']]],
   ['dnormdistributionsinterface_52',['DnormDistributionsInterface',['../classDnormDistributionsInterface.html',1,'']]],
-  ['do_5fbias_5fcorrection_53',['do_bias_correction',['../classDlnormDistributionsInterface.html#a672306331b8218b99a6bca19ade7bb4e',1,'DlnormDistributionsInterface']]],
-  ['double_5flogistic_54',['double_logistic',['../fims__math_8hpp.html#af366ee018ee5051cd427f25cb7ed0552',1,'fims']]],
-  ['doublelogisticselectivity_55',['DoubleLogisticSelectivity',['../structfims_1_1DoubleLogisticSelectivity.html',1,'fims']]],
-  ['doublelogisticselectivityinterface_56',['DoubleLogisticSelectivityInterface',['../classDoubleLogisticSelectivityInterface.html',1,'']]]
+  ['double_5flogistic_53',['double_logistic',['../fims__math_8hpp.html#af366ee018ee5051cd427f25cb7ed0552',1,'fims']]],
+  ['doublelogisticselectivity_54',['DoubleLogisticSelectivity',['../structfims_1_1DoubleLogisticSelectivity.html',1,'fims']]],
+  ['doublelogisticselectivityinterface_55',['DoubleLogisticSelectivityInterface',['../classDoubleLogisticSelectivityInterface.html',1,'']]]
 ];
