@@ -130,8 +130,8 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classLogisticMaturityInterface.html#aed4a368f3a145c633711bfd5a3ae2d7a">   74</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classLogisticMaturityInterface.html#aed4a368f3a145c633711bfd5a3ae2d7a">evaluate</a>(<span class="keywordtype">double</span> x) {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="structfims_1_1LogisticMaturity.html">fims::LogisticMaturity&lt;double&gt;</a> LogisticMat;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    LogisticMat.<a class="code" href="structfims_1_1LogisticMaturity.html#a899f289dffa1242604794a85cf6e33f7">median</a> = this-&gt;median.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    LogisticMat.<a class="code" href="structfims_1_1LogisticMaturity.html#aab43d748416982aba2470667e9fb4f60">slope</a> = this-&gt;slope.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    LogisticMat.<a class="code" href="structfims_1_1LogisticMaturity.html#a899f289dffa1242604794a85cf6e33f7">median</a> = this-&gt;median.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    LogisticMat.<a class="code" href="structfims_1_1LogisticMaturity.html#aab43d748416982aba2470667e9fb4f60">slope</a> = this-&gt;slope.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> LogisticMat.<a class="code" href="structfims_1_1LogisticMaturity.html#a6466073e1ec51d8b88abbce7f567dd32">evaluate</a>(x);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  }</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
@@ -144,17 +144,17 @@ $(function() {
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// set relative info</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    lm0-&gt;id = this-&gt;<a class="code" href="classMaturityInterfaceBase.html#a9e437596bb8a8805a1106e850def8bbf">id</a>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    lm0-&gt;median = this-&gt;median.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    lm0-&gt;median = this-&gt;median.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        d0-&gt;RegisterRandomEffect(lm0-&gt;median);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        d0-&gt;RegisterParameter(lm0-&gt;median);</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      }</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    lm0-&gt;slope = this-&gt;slope.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    lm0-&gt;slope = this-&gt;slope.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        d0-&gt;RegisterRandomEffect(lm0-&gt;slope);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        d0-&gt;RegisterParameter(lm0-&gt;slope);</div>
@@ -172,17 +172,17 @@ $(function() {
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="comment">// set relative info</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    lm1-&gt;id = this-&gt;<a class="code" href="classMaturityInterfaceBase.html#a9e437596bb8a8805a1106e850def8bbf">id</a>;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    lm1-&gt;median = this-&gt;median.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    lm1-&gt;median = this-&gt;median.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        d1-&gt;RegisterRandomEffect(lm1-&gt;median);</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        d1-&gt;RegisterParameter(lm1-&gt;median);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;      }</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    lm1-&gt;slope = this-&gt;slope.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    lm1-&gt;slope = this-&gt;slope.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        d1-&gt;RegisterRandomEffect(lm1-&gt;slope);</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        d1-&gt;RegisterParameter(lm1-&gt;slope);</div>
@@ -200,17 +200,17 @@ $(function() {
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="comment">// set relative info</span></div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    lm2-&gt;id = this-&gt;<a class="code" href="classMaturityInterfaceBase.html#a9e437596bb8a8805a1106e850def8bbf">id</a>;</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    lm2-&gt;median = this-&gt;median.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    lm2-&gt;median = this-&gt;median.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        d2-&gt;RegisterRandomEffect(lm2-&gt;median);</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        d2-&gt;RegisterParameter(lm2-&gt;median);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;      }</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    lm2-&gt;slope = this-&gt;slope.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    lm2-&gt;slope = this-&gt;slope.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        d2-&gt;RegisterRandomEffect(lm2-&gt;slope);</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        d2-&gt;RegisterParameter(lm2-&gt;slope);</div>
@@ -228,17 +228,17 @@ $(function() {
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160; </div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// set relative info</span></div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    lm3-&gt;id = this-&gt;<a class="code" href="classMaturityInterfaceBase.html#a9e437596bb8a8805a1106e850def8bbf">id</a>;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    lm3-&gt;median = this-&gt;median.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    lm3-&gt;median = this-&gt;median.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;      <span class="keywordflow">if</span> (this-&gt;median.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        d3-&gt;RegisterRandomEffect(lm3-&gt;median);</div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        d3-&gt;RegisterParameter(lm3-&gt;median);</div>
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      }</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    lm3-&gt;slope = this-&gt;slope.<a class="code" href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">value</a>;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">estimated</a>) {</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">is_random_effect</a>) {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    lm3-&gt;slope = this-&gt;slope.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        d3-&gt;RegisterRandomEffect(lm3-&gt;slope);</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        d3-&gt;RegisterParameter(lm3-&gt;slope);</div>
@@ -268,9 +268,9 @@ $(function() {
 <div class="ttc" id="aclassMaturityInterfaceBase_html_aa2cdba876879099e42d79280fe9cd3ad"><div class="ttname"><a href="classMaturityInterfaceBase.html#aa2cdba876879099e42d79280fe9cd3ad">MaturityInterfaceBase::maturity_objects</a></div><div class="ttdeci">static std::map&lt; uint32_t, MaturityInterfaceBase * &gt; maturity_objects</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:28</div></div>
 <div class="ttc" id="aclassMaturityInterfaceBase_html_af28b36002fd4e5e21e8515df10be733a"><div class="ttname"><a href="classMaturityInterfaceBase.html#af28b36002fd4e5e21e8515df10be733a">MaturityInterfaceBase::id_g</a></div><div class="ttdeci">static uint32_t id_g</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:25</div></div>
 <div class="ttc" id="aclassParameter_html"><div class="ttname"><a href="classParameter.html">Parameter</a></div><div class="ttdoc">RcppInterface class that defines the interface between R and C++ for parameter types.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:26</div></div>
-<div class="ttc" id="aclassParameter_html_a48e21d83cbd2310c2738f85036b589ab"><div class="ttname"><a href="classParameter.html#a48e21d83cbd2310c2738f85036b589ab">Parameter::value</a></div><div class="ttdeci">double value</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:28</div></div>
-<div class="ttc" id="aclassParameter_html_ac9349a0b5905bfbcc522a34e179a084f"><div class="ttname"><a href="classParameter.html#ac9349a0b5905bfbcc522a34e179a084f">Parameter::is_random_effect</a></div><div class="ttdeci">bool is_random_effect</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:33</div></div>
-<div class="ttc" id="aclassParameter_html_ae80893b5a7df6bb489c7aa314f15204b"><div class="ttname"><a href="classParameter.html#ae80893b5a7df6bb489c7aa314f15204b">Parameter::estimated</a></div><div class="ttdeci">bool estimated</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:35</div></div>
+<div class="ttc" id="aclassParameter_html_a868b6b52383d2808f693c75e9303d173"><div class="ttname"><a href="classParameter.html#a868b6b52383d2808f693c75e9303d173">Parameter::estimated_m</a></div><div class="ttdeci">bool estimated_m</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:35</div></div>
+<div class="ttc" id="aclassParameter_html_a90a6f51aff9ea524cc34b83965392c41"><div class="ttname"><a href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">Parameter::value_m</a></div><div class="ttdeci">double value_m</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:28</div></div>
+<div class="ttc" id="aclassParameter_html_ab1982e622b732589036b47f0696d2f5c"><div class="ttname"><a href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">Parameter::is_random_effect_m</a></div><div class="ttdeci">bool is_random_effect_m</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:33</div></div>
 <div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:125</div></div>
 <div class="ttc" id="astructfims_1_1LogisticMaturity_html"><div class="ttname"><a href="structfims_1_1LogisticMaturity.html">fims::LogisticMaturity</a></div><div class="ttdoc">LogisticMaturity class that returns the logistic function value from fims_math.</div><div class="ttdef"><b>Definition:</b> logistic.hpp:23</div></div>
 <div class="ttc" id="astructfims_1_1LogisticMaturity_html_a6466073e1ec51d8b88abbce7f567dd32"><div class="ttname"><a href="structfims_1_1LogisticMaturity.html#a6466073e1ec51d8b88abbce7f567dd32">fims::LogisticMaturity::evaluate</a></div><div class="ttdeci">virtual const T evaluate(const T &amp;x)</div><div class="ttdoc">Method of the logistic maturity class that implements the logistic function from FIMS math.</div><div class="ttdef"><b>Definition:</b> logistic.hpp:40</div></div>

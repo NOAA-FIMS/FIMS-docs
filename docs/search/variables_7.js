@@ -7,6 +7,6 @@ var searchData=
   ['index_5flikelihood_455',['index_likelihood',['../structfims_1_1Fleet.html#abd151fe95b3f821291494ba7e564daf3',1,'fims::Fleet']]],
   ['index_5flikelihood_5fid_456',['index_likelihood_id',['../structfims_1_1Fleet.html#aa3081acebbaa075c8a2e7425a7f5aa4c',1,'fims::Fleet']]],
   ['initialized_457',['initialized',['../classEWAAGrowthInterface.html#a9cc2d5f9d01adeacf478f938be9c688a',1,'EWAAGrowthInterface']]],
-  ['is_5frandom_5feffect_458',['is_random_effect',['../classParameter.html#ac9349a0b5905bfbcc522a34e179a084f',1,'Parameter']]],
+  ['is_5frandom_5feffect_5fm_458',['is_random_effect_m',['../classParameter.html#ab1982e622b732589036b47f0696d2f5c',1,'Parameter']]],
   ['is_5fsurvey_459',['is_survey',['../classFleetInterface.html#a7ae805aa463983024010a368061b1da0',1,'FleetInterface::is_survey()'],['../structfims_1_1Fleet.html#a027419e0dca2d6efcb2129ce71073253',1,'fims::Fleet::is_survey()']]]
 ];

@@ -12,6 +12,6 @@ var searchData=
   ['initialize_132',['Initialize',['../structfims_1_1Fleet.html#ac4e0f31ac0e3d613b787db6ca484ed95',1,'fims::Fleet::Initialize()'],['../structfims_1_1Population.html#aa2d93844fec90a492ef86d8282bf507f',1,'fims::Population::Initialize()']]],
   ['initialized_133',['initialized',['../classEWAAGrowthInterface.html#a9cc2d5f9d01adeacf478f938be9c688a',1,'EWAAGrowthInterface']]],
   ['inv_5flogit_134',['inv_logit',['../fims__math_8hpp.html#afb91050c6b8ce1bff0eaade59b4f351a',1,'fims']]],
-  ['is_5frandom_5feffect_135',['is_random_effect',['../classParameter.html#ac9349a0b5905bfbcc522a34e179a084f',1,'Parameter']]],
+  ['is_5frandom_5feffect_5fm_135',['is_random_effect_m',['../classParameter.html#ab1982e622b732589036b47f0696d2f5c',1,'Parameter']]],
   ['is_5fsurvey_136',['is_survey',['../classFleetInterface.html#a7ae805aa463983024010a368061b1da0',1,'FleetInterface::is_survey()'],['../structfims_1_1Fleet.html#a027419e0dca2d6efcb2129ce71073253',1,'fims::Fleet::is_survey()']]]
 ];
