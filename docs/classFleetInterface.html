@@ -71,7 +71,6 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classFleetInterface-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">FleetInterface Class Reference</div>  </div>
@@ -88,12 +87,17 @@ Inheritance diagram for FleetInterface:</div>
  <div class="center">
   <img src="classFleetInterface.png" usemap="#FleetInterface_map" alt=""/>
   <map id="FleetInterface_map" name="FleetInterface_map">
+<area href="classFleetInterfaceBase.html" title="Rcpp interface that serves as the parent class for Rcpp fleet interfaces. This type should be inherit..." alt="FleetInterfaceBase" shape="rect" coords="0,56,149,80"/>
 <area href="classFIMSRcppInterfaceBase.html" title="Base class for all interface objects." alt="FIMSRcppInterfaceBase" shape="rect" coords="0,0,149,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a67ead41b510f7960a99a7a8697fb3cdd"><td class="memItemLeft" align="right" valign="top"><a id="a67ead41b510f7960a99a7a8697fb3cdd"></a>
+virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#a67ead41b510f7960a99a7a8697fb3cdd">get_id</a> ()</td></tr>
+<tr class="memdesc:a67ead41b510f7960a99a7a8697fb3cdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the id for the fleet interface <br /></td></tr>
+<tr class="separator:a67ead41b510f7960a99a7a8697fb3cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3560bbe035fb5bf35947cab27f4412f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#a3560bbe035fb5bf35947cab27f4412f1">SetAgeCompLikelihood</a> (int agecomp_likelihood_id)</td></tr>
 <tr class="memdesc:a3560bbe035fb5bf35947cab27f4412f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the unique id for the Age Comp Likelihood object.  <a href="classFleetInterface.html#a3560bbe035fb5bf35947cab27f4412f1">More...</a><br /></td></tr>
 <tr class="separator:a3560bbe035fb5bf35947cab27f4412f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,10 +113,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0b0ffd5f734cdab9286a4551b4e5e7ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#a0b0ffd5f734cdab9286a4551b4e5e7ae">SetSelectivity</a> (int selectivity_id)</td></tr>
 <tr class="memdesc:a0b0ffd5f734cdab9286a4551b4e5e7ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the unique id for the Selectivity object.  <a href="classFleetInterface.html#a0b0ffd5f734cdab9286a4551b4e5e7ae">More...</a><br /></td></tr>
 <tr class="separator:a0b0ffd5f734cdab9286a4551b4e5e7ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7eeae159c42a285695998432774c37d2"><td class="memItemLeft" align="right" valign="top"><a id="a7eeae159c42a285695998432774c37d2"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#a7eeae159c42a285695998432774c37d2">add_to_fims_tmb</a> ()</td></tr>
-<tr class="memdesc:a7eeae159c42a285695998432774c37d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">this adds the values to the TMB model object <br /></td></tr>
-<tr class="separator:a7eeae159c42a285695998432774c37d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
+<tr class="memitem:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="a9183d9379777d8be70ab66af1a07f94c"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>
+<tr class="memdesc:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual method to inherit to add objects to the TMB model <br /></td></tr>
+<tr class="separator:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -136,13 +141,17 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a03cf31c542e0c400933aa0a911c3d2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa07a0830c4ef48d4cfc83e98809f3f29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#aa07a0830c4ef48d4cfc83e98809f3f29">log_obs_error</a></td></tr>
 <tr class="separator:aa07a0830c4ef48d4cfc83e98809f3f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64cd9557b98fed84b275684ead7cb043"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#a64cd9557b98fed84b275684ead7cb043">id</a></td></tr>
-<tr class="separator:a64cd9557b98fed84b275684ead7cb043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classFleetInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classFleetInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classFleetInterfaceBase.html">FleetInterfaceBase</a></td></tr>
+<tr class="memitem:a65f53edf247ffd853afb80ff0d615494 inherit pub_attribs_classFleetInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterfaceBase.html#a65f53edf247ffd853afb80ff0d615494">id</a></td></tr>
+<tr class="separator:a65f53edf247ffd853afb80ff0d615494 inherit pub_attribs_classFleetInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:acb2ed94ec9f31746abac02bba979deef"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#acb2ed94ec9f31746abac02bba979deef">id_g</a> = 1</td></tr>
-<tr class="separator:acb2ed94ec9f31746abac02bba979deef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classFleetInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classFleetInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classFleetInterfaceBase.html">FleetInterfaceBase</a></td></tr>
+<tr class="memitem:a0c53dd713a9d01a8ba69172f1442a73f inherit pub_static_attribs_classFleetInterfaceBase"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterfaceBase.html#a0c53dd713a9d01a8ba69172f1442a73f">id_g</a> = 1</td></tr>
+<tr class="separator:a0c53dd713a9d01a8ba69172f1442a73f inherit pub_static_attribs_classFleetInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5605c3823e74602b62ed60ed2bae6847 inherit pub_static_attribs_classFleetInterfaceBase"><td class="memItemLeft" align="right" valign="top">static std::map&lt; uint32_t, <a class="el" href="classFleetInterfaceBase.html">FleetInterfaceBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterfaceBase.html#a5605c3823e74602b62ed60ed2bae6847">live_objects</a></td></tr>
+<tr class="separator:a5605c3823e74602b62ed60ed2bae6847 inherit pub_static_attribs_classFleetInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_attribs_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Static Public Attributes inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a27f6c0a9860f56c17951872fe26b1515 inherit pub_static_attribs_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top">static std::vector&lt; <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515">fims_interface_objects</a></td></tr>
 <tr class="separator:a27f6c0a9860f56c17951872fe26b1515 inherit pub_static_attribs_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,44 +357,6 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>whether the parameter q should be estimated </p>
-
-</div>
-</div>
-<a id="a64cd9557b98fed84b275684ead7cb043"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64cd9557b98fed84b275684ead7cb043">&#9670;&nbsp;</a></span>id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t FleetInterface::id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>local id of the <a class="el" href="classFleetInterface.html" title="Rcpp interface for Fleet as an S4 object. To instantiate from R: fleet &lt;- new(fims$Fleet)">FleetInterface</a> object </p>
-
-</div>
-</div>
-<a id="acb2ed94ec9f31746abac02bba979deef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb2ed94ec9f31746abac02bba979deef">&#9670;&nbsp;</a></span>id_g</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t FleetInterface::id_g = 1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>static id of the <a class="el" href="classFleetInterface.html" title="Rcpp interface for Fleet as an S4 object. To instantiate from R: fleet &lt;- new(fims$Fleet)">FleetInterface</a> object </p>
 
 </div>
 </div>

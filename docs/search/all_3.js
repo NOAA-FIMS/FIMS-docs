@@ -3,7 +3,7 @@ var searchData=
   ['data_37',['data',['../structfims_1_1DataObject.html#a8ebc2446e3b0bab26e4a6fbcd5c8b4bf',1,'fims::DataObject']]],
   ['data_5fiterator_38',['data_iterator',['../classfims_1_1Information.html#a4dc67e5a9e1772380552dda9334ed5ff',1,'fims::Information']]],
   ['data_5fobjects_39',['data_objects',['../classfims_1_1Information.html#a8137d76c5bc36f647e9ed6144d072494',1,'fims::Information']]],
-  ['datainterface_40',['DataInterface',['../classDataInterface.html',1,'DataInterface'],['../classDataInterface.html#a6c52feeda005b02d5172573c7c4d4a24',1,'DataInterface::DataInterface()']]],
+  ['datainterfacebase_40',['DataInterfaceBase',['../classDataInterfaceBase.html',1,'DataInterfaceBase'],['../classDataInterfaceBase.html#a440fbc882d52e8239332127f1ec041d3',1,'DataInterfaceBase::DataInterfaceBase()']]],
   ['dataobject_41',['DataObject',['../structfims_1_1DataObject.html#a01711793353c8482b9667efdb6b9d2d7',1,'fims::DataObject::DataObject(size_t imax, size_t jmax, size_t kmax, size_t lmax)'],['../structfims_1_1DataObject.html#a20507bc04b9b6769687d328aba2ace7c',1,'fims::DataObject::DataObject(size_t imax, size_t jmax, size_t kmax)'],['../structfims_1_1DataObject.html#a70577d53f8d77e265cf6ab24c4c71677',1,'fims::DataObject::DataObject(size_t imax, size_t jmax)'],['../structfims_1_1DataObject.html#a92053540c6dfdeb91786610caea99eb3',1,'fims::DataObject::DataObject(size_t imax)'],['../structfims_1_1DataObject.html',1,'fims::DataObject&lt; Type &gt;']]],
   ['def_2ehpp_42',['def.hpp',['../def_8hpp.html',1,'']]],
   ['deviations_43',['deviations',['../classBevertonHoltRecruitmentInterface.html#a51865c7f4a0290a642b01d7aad4b764c',1,'BevertonHoltRecruitmentInterface']]],

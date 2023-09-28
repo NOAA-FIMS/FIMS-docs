@@ -17,6 +17,7 @@ var searchData=
   ['fleet_5fid_90',['fleet_id',['../structfims_1_1Population.html#ad60443941bcc652dd1a0b81d17f3c94b',1,'fims::Population']]],
   ['fleet_5fiterator_91',['fleet_iterator',['../classfims_1_1Information.html#a9d51720d64f3652c98a75e46e2e3c8c2',1,'fims::Information']]],
   ['fleetinterface_92',['FleetInterface',['../classFleetInterface.html',1,'']]],
-  ['fleets_93',['fleets',['../classfims_1_1Information.html#a036cdd955befc6268243d81b188c849b',1,'fims::Information::fleets()'],['../structfims_1_1Population.html#a53071ae69f2cb883bd40f4c44e1f9b9c',1,'fims::Population::fleets()']]],
-  ['fmort_94',['Fmort',['../structfims_1_1Fleet.html#a4676f828da34fe0a3baab44263c3d888',1,'fims::Fleet']]]
+  ['fleetinterfacebase_93',['FleetInterfaceBase',['../classFleetInterfaceBase.html',1,'']]],
+  ['fleets_94',['fleets',['../classfims_1_1Information.html#a036cdd955befc6268243d81b188c849b',1,'fims::Information::fleets()'],['../structfims_1_1Population.html#a53071ae69f2cb883bd40f4c44e1f9b9c',1,'fims::Population::fleets()']]],
+  ['fmort_95',['Fmort',['../structfims_1_1Fleet.html#a4676f828da34fe0a3baab44263c3d888',1,'fims::Fleet']]]
 ];
