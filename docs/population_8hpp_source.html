@@ -614,64 +614,14 @@ $(function() {
 <div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        <a class="code" href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a> &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;      }</div>
 <div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;    }</div>
-<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    <span class="comment">// make an intermediate value in order to set multiple members (of</span></div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160; </div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;    <span class="comment">/*Report output*/</span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;    <span class="comment">// REPORT_F(int(this-&gt;nages), of); //REPORT error: call of overloaded is</span></div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;    <span class="comment">// ambiguous REPORT_F(int(this-&gt;nyears), of); REPORT_F(int(this-&gt;nfleets),</span></div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;    <span class="comment">// of); REPORT_F(this-&gt;numbers_at_age, of);</span></div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;    <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenVector naa = this-&gt;<a class="code" href="structfims_1_1Population.html#aa9abc81e811f15c05c2b92eedf52c2da">numbers_at_age</a>;</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;    <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenMatrix cnaa(this-&gt;nyears * this-&gt;nages,</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                                                 this-&gt;nfleets);</div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenMatrix cwaa(this-&gt;nyears * this-&gt;nages,</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;                                                 this-&gt;nfleets);</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160;    <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenVector ssb = this-&gt;<a class="code" href="structfims_1_1Population.html#ad5f507417b5ce3bf381f2f3b5abde6ce">spawning_biomass</a>;</div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;    <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenVector rec_dev =</div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        this-&gt;<a class="code" href="structfims_1_1Population.html#a1dc71807ae85f00da7f8ff9996aff092">recruitment</a>-&gt;recruit_deviations;</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;    <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenMatrix expected_index(this-&gt;nyears,</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;                                                           this-&gt;nfleets);</div>
-<div class="line"><a name="l00702"></a><span class="lineno">  702</span>&#160;    <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenVector <a class="code" href="structfims_1_1Population.html#a1dc71807ae85f00da7f8ff9996aff092">recruitment</a> =</div>
-<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        this-&gt;<a class="code" href="structfims_1_1Population.html#a0972ea2d53905d59def3117d7eff24ff">expected_recruitment</a>;</div>
-<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenVector <a class="code" href="structfims_1_1Population.html#a4cadebec466d605100ca3f7d680429c6">biomass</a> = this-&gt;<a class="code" href="structfims_1_1Population.html#a4cadebec466d605100ca3f7d680429c6">biomass</a>;</div>
-<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160; </div>
-<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> fleet_ = 0; fleet_ &lt; this-&gt;<a class="code" href="structfims_1_1Population.html#aef6c78d259c6c1f31091a7dcd41adbed">nfleets</a>; fleet_++) {</div>
-<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;      expected_index.col(fleet_) = <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenVector(</div>
-<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;          <a class="code" href="structfims_1_1Population.html#a53071ae69f2cb883bd40f4c44e1f9b9c">fleets</a>[fleet_]-&gt;expected_index);</div>
-<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;      cnaa.col(fleet_) = <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenVector(</div>
-<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;          <a class="code" href="structfims_1_1Population.html#a53071ae69f2cb883bd40f4c44e1f9b9c">fleets</a>[fleet_]-&gt;catch_numbers_at_age);</div>
-<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;      cwaa.col(fleet_) = <span class="keyword">typename</span> ModelTraits&lt;Type&gt;::EigenVector(</div>
-<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;          <a class="code" href="structfims_1_1Population.html#a53071ae69f2cb883bd40f4c44e1f9b9c">fleets</a>[fleet_]-&gt;catch_weight_at_age);</div>
-<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    }</div>
-<div class="line"><a name="l00714"></a><span class="lineno">  714</span>&#160; </div>
-<div class="line"><a name="l00715"></a><span class="lineno">  715</span>&#160;    REPORT_F(rec_dev, of);</div>
-<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    ADREPORT_F(rec_dev, of);</div>
-<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;    REPORT_F(naa, of);</div>
-<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;    ADREPORT_F(naa, of);</div>
-<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;    REPORT_F(cnaa, of);</div>
-<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;    REPORT_F(cwaa, of);</div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    REPORT_F(ssb, of);</div>
-<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;    ADREPORT_F(ssb, of);</div>
-<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    REPORT_F(expected_index, of);</div>
-<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    REPORT_F(<a class="code" href="structfims_1_1Population.html#a1dc71807ae85f00da7f8ff9996aff092">recruitment</a>, of);</div>
-<div class="line"><a name="l00725"></a><span class="lineno">  725</span>&#160;    REPORT_F(<a class="code" href="structfims_1_1Population.html#a4cadebec466d605100ca3f7d680429c6">biomass</a>, of);</div>
-<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160; </div>
-<div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;    <span class="comment">// ADREPORT_F(this-&gt;recruitment-&gt;rzero, of);</span></div>
-<div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    <span class="comment">// ADREPORT_F(this-&gt;recruitment-&gt;steep, of); can&#39;t access steep b/c not in</span></div>
-<div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;    <span class="comment">// recruitment_base ADREPORT_F(this-&gt;recruitment-&gt;log_sigma_recruit, of);</span></div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;    <span class="comment">// ADREPORT_F(this-&gt;M, of);</span></div>
-<div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;    <span class="comment">// ADREPORT_F(this-&gt;maturity-&gt;slope, of); can&#39;t access slope b/c not in</span></div>
-<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;    <span class="comment">// maturity base ADREPORT_F(this-&gt;maturity-&gt;median, of); can&#39;t access median</span></div>
-<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;    <span class="comment">// b/c not in maturity base</span></div>
-<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;  }</div>
-<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;};</div>
-<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;uint32_t <a class="code" href="structfims_1_1Population.html#ac2bc7c8b7cd5bf9d01180459c5c01208">Population&lt;Type&gt;::id_g</a> = 0;</div>
-<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160; </div>
-<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;}  <span class="comment">// namespace fims</span></div>
-<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160; </div>
-<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_POPULATION_DYNAMICS_POPULATION_HPP */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;  }</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;};</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;uint32_t <a class="code" href="structfims_1_1Population.html#ac2bc7c8b7cd5bf9d01180459c5c01208">Population&lt;Type&gt;::id_g</a> = 0;</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160; </div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;}  <span class="comment">// namespace fims</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160; </div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_POPULATION_DYNAMICS_POPULATION_HPP */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="adef_8hpp_html_a31231204b726b1a498a84321dc9f445f"><div class="ttname"><a href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a></div><div class="ttdeci">std::ofstream FIMS_LOG(&quot;fims.log&quot;)</div></div>
 <div class="ttc" id="astructfims_1_1FIMSObject_html"><div class="ttname"><a href="structfims_1_1FIMSObject.html">fims::FIMSObject</a></div><div class="ttdoc">FIMSObject struct that defines member types and returns the unique id.</div><div class="ttdef"><b>Definition:</b> model_object.hpp:25</div></div>
 <div class="ttc" id="astructfims_1_1Population_html"><div class="ttname"><a href="structfims_1_1Population.html">fims::Population</a></div><div class="ttdoc">Population class. Contains subpopulations that are divided into generic partitions (eg....</div><div class="ttdef"><b>Definition:</b> population.hpp:36</div></div>

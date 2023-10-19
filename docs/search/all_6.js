@@ -12,7 +12,7 @@ var searchData=
   ['getdouble_105',['GetDouble',['../classJsonValue.html#a0039bee8b0a434da5f7d2051052a7adf',1,'JsonValue']]],
   ['getfixedeffectsparameters_106',['GetFixedEffectsParameters',['../classfims_1_1Information.html#a45eeed2726e1909b6a85ec0afaac6a5f',1,'fims::Information']]],
   ['getid_107',['GetId',['../structfims_1_1FIMSObject.html#a711658401af3d645c33905e80df14f42',1,'fims::FIMSObject']]],
-  ['getinstance_108',['GetInstance',['../classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2',1,'fims::Information::GetInstance()'],['../classfims_1_1Model.html#a454e90bea0a0f8fa3abf72456875ba5b',1,'fims::Model::GetInstance()']]],
+  ['getinstance_108',['GetInstance',['../classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2',1,'fims::Information::GetInstance()'],['../classfims_1_1Model.html#ae96d00b92e829c938250053bb1849ec1',1,'fims::Model::GetInstance()']]],
   ['getint_109',['GetInt',['../classJsonValue.html#abf14ceaada6827217d3b01b4b1d5e549',1,'JsonValue']]],
   ['getnages_110',['GetNages',['../classfims_1_1Information.html#a990168a0365f217443f2a88a6d41b23f',1,'fims::Information']]],
   ['getnseasons_111',['GetNseasons',['../classfims_1_1Information.html#aa0a53eeec5796957494825459cf48873',1,'fims::Information']]],

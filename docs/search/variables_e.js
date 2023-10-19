@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['p_495',['p',['../classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a',1,'DmultinomDistributionsInterface']]],
-  ['parameters_496',['parameters',['../classfims_1_1Information.html#acc348133fcaf5d0863c945b045ceaf05',1,'fims::Information::parameters()'],['../structfims_1_1FIMSObject.html#a3c1320fa1468e2fad7369685c836710a',1,'fims::FIMSObject::parameters()']]],
-  ['populations_497',['populations',['../classfims_1_1Information.html#a7b4ea0c11a79b62555dc9c799757fd3a',1,'fims::Information']]],
-  ['prop_5ffemale_498',['prop_female',['../classPopulationInterface.html#a38728d527e6320c4770c853af48bca2b',1,'PopulationInterface']]],
-  ['proportion_5ffemale_499',['proportion_female',['../structfims_1_1Population.html#a31163c18e16b49cce971d728dec629c2',1,'fims::Population']]],
-  ['proportion_5fmature_5fat_5fage_500',['proportion_mature_at_age',['../structfims_1_1Population.html#a5d67ea12ec3252c6f6afe2a6866929ad',1,'fims::Population']]]
+  ['p_493',['p',['../classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a',1,'DmultinomDistributionsInterface']]],
+  ['parameters_494',['parameters',['../classfims_1_1Information.html#acc348133fcaf5d0863c945b045ceaf05',1,'fims::Information::parameters()'],['../structfims_1_1FIMSObject.html#a3c1320fa1468e2fad7369685c836710a',1,'fims::FIMSObject::parameters()']]],
+  ['populations_495',['populations',['../classfims_1_1Information.html#a7b4ea0c11a79b62555dc9c799757fd3a',1,'fims::Information']]],
+  ['prop_5ffemale_496',['prop_female',['../classPopulationInterface.html#a38728d527e6320c4770c853af48bca2b',1,'PopulationInterface']]],
+  ['proportion_5ffemale_497',['proportion_female',['../structfims_1_1Population.html#a31163c18e16b49cce971d728dec629c2',1,'fims::Population']]],
+  ['proportion_5fmature_5fat_5fage_498',['proportion_mature_at_age',['../structfims_1_1Population.html#a5d67ea12ec3252c6f6afe2a6866929ad',1,'fims::Population']]]
 ];
