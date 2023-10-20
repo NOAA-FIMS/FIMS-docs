@@ -26,6 +26,6 @@ var searchData=
   ['growth_5fid_119',['growth_id',['../classPopulationInterface.html#a6fb2eeeb7e66dd534b38f8bb7c2801dc',1,'PopulationInterface::growth_id()'],['../structfims_1_1Population.html#a58e0691f8b670f498cf045b2f392a0c0',1,'fims::Population::growth_id()']]],
   ['growth_5fmodels_120',['growth_models',['../classfims_1_1Information.html#a5114b1064b83064f9685a1b82a1fb0ce',1,'fims::Information']]],
   ['growth_5fmodels_5fiterator_121',['growth_models_iterator',['../classfims_1_1Information.html#a5c2460dcba15ef473ea90f058a5158a8',1,'fims::Information']]],
-  ['growthbase_122',['GrowthBase',['../structfims_1_1GrowthBase.html',1,'fims::GrowthBase&lt; T &gt;'],['../structfims_1_1GrowthBase.html#a199c82ee9f55c313b4a366eeb7fb4cc6',1,'fims::GrowthBase::GrowthBase()']]],
+  ['growthbase_122',['GrowthBase',['../structfims_1_1GrowthBase.html',1,'fims::GrowthBase&lt; Type &gt;'],['../structfims_1_1GrowthBase.html#a0b97e379e39569493ab5cf2e5a7ae338',1,'fims::GrowthBase::GrowthBase()']]],
   ['growthinterfacebase_123',['GrowthInterfaceBase',['../classGrowthInterfaceBase.html',1,'']]]
 ];

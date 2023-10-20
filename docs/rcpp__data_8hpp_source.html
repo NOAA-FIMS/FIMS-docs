@@ -175,10 +175,10 @@ $(function() {
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    std::shared_ptr&lt;fims::DataObject&lt;T&gt;&gt; data =</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        std::make_shared&lt;fims::DataObject&lt;T&gt;&gt;(this-&gt;<a class="code" href="classIndexDataInterface.html#a31c8efb7ef2c3a89ec7272101d3c03b1">ymax</a>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    std::shared_ptr&lt;fims::DataObject&lt;Type&gt;&gt; data =</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        std::make_shared&lt;fims::DataObject&lt;Type&gt;&gt;(this-&gt;<a class="code" href="classIndexDataInterface.html#a31c8efb7ef2c3a89ec7272101d3c03b1">ymax</a>);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    data-&gt;id = this-&gt;<a class="code" href="classDataInterfaceBase.html#a88e19c1bbcc54def5095ce57143ad484">id</a>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
@@ -186,8 +186,8 @@ $(function() {
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      data-&gt;at(y) = this-&gt;index_data[y];</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::shared_ptr&lt;fims::Information&lt;T&gt;&gt; info =</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;T&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::shared_ptr&lt;fims::Information&lt;Type&gt;&gt; info =</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;Type&gt;::GetInstance</a>();</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    info-&gt;data_objects[this-&gt;<a class="code" href="classDataInterfaceBase.html#a88e19c1bbcc54def5095ce57143ad484">id</a>] = data;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>

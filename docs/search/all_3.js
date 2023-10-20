@@ -11,7 +11,7 @@ var searchData=
   ['distribution_5fmodels_45',['distribution_models',['../classfims_1_1Information.html#a3e25f22a2d5bd4a19506ba68dbb65860',1,'fims::Information']]],
   ['distribution_5fmodels_5fiterator_46',['distribution_models_iterator',['../classfims_1_1Information.html#a9d3890af83e112b0a8773150ccd19b8a',1,'fims::Information']]],
   ['distributions_5fbase_2ehpp_47',['distributions_base.hpp',['../distributions__base_8hpp.html',1,'']]],
-  ['distributionsbase_48',['DistributionsBase',['../structfims_1_1DistributionsBase.html#a29411c657fc46831993f0f73919c97d2',1,'fims::DistributionsBase::DistributionsBase()'],['../structfims_1_1DistributionsBase.html',1,'fims::DistributionsBase&lt; T &gt;']]],
+  ['distributionsbase_48',['DistributionsBase',['../structfims_1_1DistributionsBase.html#a644c643f9db396380cd920d31e3f52a3',1,'fims::DistributionsBase::DistributionsBase()'],['../structfims_1_1DistributionsBase.html',1,'fims::DistributionsBase&lt; Type &gt;']]],
   ['distributionsinterfacebase_49',['DistributionsInterfaceBase',['../classDistributionsInterfaceBase.html',1,'']]],
   ['dlnormdistributionsinterface_50',['DlnormDistributionsInterface',['../classDlnormDistributionsInterface.html',1,'']]],
   ['dmultinomdistributionsinterface_51',['DmultinomDistributionsInterface',['../classDmultinomDistributionsInterface.html',1,'']]],

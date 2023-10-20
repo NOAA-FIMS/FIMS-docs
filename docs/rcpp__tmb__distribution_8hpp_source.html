@@ -224,7 +224,7 @@ $(function() {
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;};</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">// template &lt;typename T&gt;</span></div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;<span class="comment">// template &lt;typename Type&gt;</span></div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
 <div class="line"><a name="l00208"></a><span class="lineno"><a class="line" href="classDmultinomDistributionsInterface.html">  208</a></span>&#160;<span class="keyword">class </span><a class="code" href="classDmultinomDistributionsInterface.html">DmultinomDistributionsInterface</a> : <span class="keyword">public</span> <a class="code" href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a> {</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; <span class="keyword">public</span>:</div>
@@ -251,14 +251,14 @@ $(function() {
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160; </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> fims::ModelTraits&lt;T&gt;::EigenVector Vector;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    std::shared_ptr&lt;fims::Information&lt;T&gt;&gt; info =</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;T&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> fims::ModelTraits&lt;Type&gt;::EigenVector Vector;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    std::shared_ptr&lt;fims::Information&lt;Type&gt;&gt; info =</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;Type&gt;::GetInstance</a>();</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;T&gt;&gt; distribution =</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;T&gt;&gt;();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;Type&gt;&gt; distribution =</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;Type&gt;&gt;();</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    distribution-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    distribution-&gt;x = Vector(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());</div>
