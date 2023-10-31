@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['unfished_5fbiomass_516',['unfished_biomass',['../structfims_1_1Population.html#ab60a6df4dda8ff94988d1f6fc664489e',1,'fims::Population']]],
-  ['unfished_5fnumbers_5fat_5fage_517',['unfished_numbers_at_age',['../structfims_1_1Population.html#ac969af738b0049fea58f68a3106d193d',1,'fims::Population']]],
-  ['unfished_5fspawning_5fbiomass_518',['unfished_spawning_biomass',['../structfims_1_1Population.html#a424fe08083c93eecd2863a66e674ab5a',1,'fims::Population']]]
+  ['unfished_5fbiomass_514',['unfished_biomass',['../structfims__popdy_1_1Population.html#ac02c1843de81b0310c3c0b9122a5779a',1,'fims_popdy::Population']]],
+  ['unfished_5fnumbers_5fat_5fage_515',['unfished_numbers_at_age',['../structfims__popdy_1_1Population.html#a01d407373d32daa7a83e7d1cb328c8cc',1,'fims_popdy::Population']]],
+  ['unfished_5fspawning_5fbiomass_516',['unfished_spawning_biomass',['../structfims__popdy_1_1Population.html#a4de6ca0e3ae53d533706d43cda326a06',1,'fims_popdy::Population']]]
 ];

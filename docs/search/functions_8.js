@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['logistic_378',['logistic',['../fims__math_8hpp.html#a4d48e30e355c7dcda1897f413e2d179f',1,'fims']]],
-  ['logit_379',['logit',['../fims__math_8hpp.html#a5d19b86b88e4e025879a42798ed79336',1,'fims']]]
+  ['logistic_376',['logistic',['../fims__math_8hpp.html#a00e97c89a55e4ca1725a36437df03458',1,'fims_math']]],
+  ['logit_377',['logit',['../fims__math_8hpp.html#a0fef2c2ffd54b4d023d194653ebeb1f0',1,'fims_math']]]
 ];

@@ -132,8 +132,8 @@ $(function() {
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::shared_ptr&lt;fims::DataObject&lt;Type&gt;&gt; <a class="code" href="classAgeCompDataInterface.html#a0a4628a7c7af03102f354f62723d7070">age_comp_data</a> =</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::make_shared&lt;fims::DataObject&lt;Type&gt;&gt;(this-&gt;<a class="code" href="classAgeCompDataInterface.html#a065981c4d8dd880ce7f3892502e8b8fe">ymax</a>, this-&gt;<a class="code" href="classAgeCompDataInterface.html#ab4bea155960215f368f55fc226d11020">amax</a>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::shared_ptr&lt;fims_data_object::DataObject&lt;Type&gt;&gt; <a class="code" href="classAgeCompDataInterface.html#a0a4628a7c7af03102f354f62723d7070">age_comp_data</a> =</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        std::make_shared&lt;fims_data_object::DataObject&lt;Type&gt;&gt;(this-&gt;<a class="code" href="classAgeCompDataInterface.html#a065981c4d8dd880ce7f3892502e8b8fe">ymax</a>, this-&gt;<a class="code" href="classAgeCompDataInterface.html#ab4bea155960215f368f55fc226d11020">amax</a>);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    age_comp_data-&gt;id = this-&gt;<a class="code" href="classDataInterfaceBase.html#a88e19c1bbcc54def5095ce57143ad484">id</a>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> y = 0; y &lt; <a class="code" href="classAgeCompDataInterface.html#a065981c4d8dd880ce7f3892502e8b8fe">ymax</a>; y++) {</div>
@@ -143,8 +143,8 @@ $(function() {
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;      }</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::shared_ptr&lt;fims::Information&lt;Type&gt;&gt; info =</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;Type&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    std::shared_ptr&lt;fims_info::Information&lt;Type&gt;&gt; info =</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <a class="code" href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information&lt;Type&gt;::GetInstance</a>();</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    info-&gt;data_objects[this-&gt;<a class="code" href="classDataInterfaceBase.html#a88e19c1bbcc54def5095ce57143ad484">id</a>] = <a class="code" href="classAgeCompDataInterface.html#a0a4628a7c7af03102f354f62723d7070">age_comp_data</a>;</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
@@ -177,8 +177,8 @@ $(function() {
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160; </div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    std::shared_ptr&lt;fims::DataObject&lt;Type&gt;&gt; data =</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        std::make_shared&lt;fims::DataObject&lt;Type&gt;&gt;(this-&gt;<a class="code" href="classIndexDataInterface.html#a31c8efb7ef2c3a89ec7272101d3c03b1">ymax</a>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    std::shared_ptr&lt;fims_data_object::DataObject&lt;Type&gt;&gt; data =</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        std::make_shared&lt;fims_data_object::DataObject&lt;Type&gt;&gt;(this-&gt;<a class="code" href="classIndexDataInterface.html#a31c8efb7ef2c3a89ec7272101d3c03b1">ymax</a>);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160; </div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    data-&gt;id = this-&gt;<a class="code" href="classDataInterfaceBase.html#a88e19c1bbcc54def5095ce57143ad484">id</a>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
@@ -186,8 +186,8 @@ $(function() {
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;      data-&gt;at(y) = this-&gt;index_data[y];</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    }</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::shared_ptr&lt;fims::Information&lt;Type&gt;&gt; info =</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;Type&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    std::shared_ptr&lt;fims_info::Information&lt;Type&gt;&gt; info =</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information&lt;Type&gt;::GetInstance</a>();</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    info-&gt;data_objects[this-&gt;<a class="code" href="classDataInterfaceBase.html#a88e19c1bbcc54def5095ce57143ad484">id</a>] = data;</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
@@ -230,7 +230,7 @@ $(function() {
 <div class="ttc" id="aclassIndexDataInterface_html_a8521c3c74bc49acbd63555a08a93170f"><div class="ttname"><a href="classIndexDataInterface.html#a8521c3c74bc49acbd63555a08a93170f">IndexDataInterface::index_data</a></div><div class="ttdeci">Rcpp::NumericVector index_data</div><div class="ttdef"><b>Definition:</b> rcpp_data.hpp:130</div></div>
 <div class="ttc" id="aclassIndexDataInterface_html_a90e264b9bf1d857264196ec85477a786"><div class="ttname"><a href="classIndexDataInterface.html#a90e264b9bf1d857264196ec85477a786">IndexDataInterface::~IndexDataInterface</a></div><div class="ttdeci">virtual ~IndexDataInterface()</div><div class="ttdoc">destructor</div><div class="ttdef"><b>Definition:</b> rcpp_data.hpp:140</div></div>
 <div class="ttc" id="aclassIndexDataInterface_html_ad739a24893879a34146fa1d8bb217d00"><div class="ttname"><a href="classIndexDataInterface.html#ad739a24893879a34146fa1d8bb217d00">IndexDataInterface::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()</div><div class="ttdoc">get the ID of the interface base object</div><div class="ttdef"><b>Definition:</b> rcpp_data.hpp:144</div></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:125</div></div>
+<div class="ttc" id="aclassfims__info_1_1Information_html_aed263e9a248ca2ac421209b1bfe45c7b"><div class="ttname"><a href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; Type &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:125</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

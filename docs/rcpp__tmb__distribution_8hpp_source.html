@@ -131,7 +131,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classDnormDistributionsInterface.html">DnormDistributionsInterface</a>() {}</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
 <div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="classDnormDistributionsInterface.html#a0a7b0532100eb957dad1ed5093e70ce3">   83</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classDnormDistributionsInterface.html#a0a7b0532100eb957dad1ed5093e70ce3">evaluate</a>(<span class="keywordtype">bool</span> do_log) {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    fims::Dnorm&lt;double&gt; dnorm;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    fims_distributions::Dnorm&lt;double&gt; dnorm;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    dnorm.x = this-&gt;x.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    dnorm.mean = this-&gt;mean.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    dnorm.sd = this-&gt;sd.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
@@ -142,11 +142,11 @@ $(function() {
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::shared_ptr&lt;fims::Information&lt;Type&gt;&gt; info =</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;Type&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    std::shared_ptr&lt;fims_info::Information&lt;Type&gt;&gt; info =</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information&lt;Type&gt;::GetInstance</a>();</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::shared_ptr&lt;fims::Dnorm&lt;Type&gt;&gt; distribution =</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        std::make_shared&lt;fims::Dnorm&lt;Type&gt;&gt;();</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::shared_ptr&lt;fims_distributions::Dnorm&lt;Type&gt;&gt; distribution =</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        std::make_shared&lt;fims_distributions::Dnorm&lt;Type&gt;&gt;();</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="comment">// interface to data/parameter value</span></div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    distribution-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
@@ -184,7 +184,7 @@ $(function() {
 <div class="line"><a name="l00147"></a><span class="lineno"><a class="line" href="classDlnormDistributionsInterface.html#a411957c11ce877c2ed02cc4819e90275">  147</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classDlnormDistributionsInterface.html#a411957c11ce877c2ed02cc4819e90275">get_id</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>; }</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
 <div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classDlnormDistributionsInterface.html#a69d90f2d5dc082ad7be469ff7fb9648e">  156</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classDlnormDistributionsInterface.html#a69d90f2d5dc082ad7be469ff7fb9648e">evaluate</a>(<span class="keywordtype">bool</span> do_log) {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    fims::Dlnorm&lt;double&gt; dlnorm;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    fims_distributions::Dlnorm&lt;double&gt; dlnorm;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    dlnorm.x = this-&gt;x.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    dlnorm.meanlog = this-&gt;meanlog.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    dlnorm.sdlog = this-&gt;sdlog.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
@@ -195,11 +195,11 @@ $(function() {
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    std::shared_ptr&lt;fims::Information&lt;Type&gt;&gt; info =</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;Type&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    std::shared_ptr&lt;fims_info::Information&lt;Type&gt;&gt; info =</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        <a class="code" href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information&lt;Type&gt;::GetInstance</a>();</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160; </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    std::shared_ptr&lt;fims::Dlnorm&lt;Type&gt;&gt; distribution =</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        std::make_shared&lt;fims::Dlnorm&lt;Type&gt;&gt;();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    std::shared_ptr&lt;fims_distributions::Dlnorm&lt;Type&gt;&gt; distribution =</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        std::make_shared&lt;fims_distributions::Dlnorm&lt;Type&gt;&gt;();</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160; </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// set relative info</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    distribution-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
@@ -237,7 +237,7 @@ $(function() {
 <div class="line"><a name="l00218"></a><span class="lineno"><a class="line" href="classDmultinomDistributionsInterface.html#a40dc05d944bab718c046a56b8496fc48">  218</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classDmultinomDistributionsInterface.html#a40dc05d944bab718c046a56b8496fc48">get_id</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>; }</div>
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
 <div class="line"><a name="l00227"></a><span class="lineno"><a class="line" href="classDmultinomDistributionsInterface.html#a406f549e6e0f55441e1fe53b958e991a">  227</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classDmultinomDistributionsInterface.html#a406f549e6e0f55441e1fe53b958e991a">evaluate</a>(<span class="keywordtype">bool</span> do_log) {</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    fims::Dmultinom&lt;double&gt; dmultinom;</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    fims_distributions::Dmultinom&lt;double&gt; dmultinom;</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="comment">// Decale TMBVector in this scope</span></div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> fims::ModelTraits&lt;TMB_FIMS_REAL_TYPE&gt;::EigenVector Vector;</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    dmultinom.x = Vector(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());  <span class="comment">// Vector from TMB</span></div>
@@ -254,11 +254,11 @@ $(function() {
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> fims::ModelTraits&lt;Type&gt;::EigenVector Vector;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    std::shared_ptr&lt;fims::Information&lt;Type&gt;&gt; info =</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;Type&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    std::shared_ptr&lt;fims_info::Information&lt;Type&gt;&gt; info =</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <a class="code" href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information&lt;Type&gt;::GetInstance</a>();</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    std::shared_ptr&lt;fims::Dmultinom&lt;Type&gt;&gt; distribution =</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        std::make_shared&lt;fims::Dmultinom&lt;Type&gt;&gt;();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;    std::shared_ptr&lt;fims_distributions::Dmultinom&lt;Type&gt;&gt; distribution =</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        std::make_shared&lt;fims_distributions::Dmultinom&lt;Type&gt;&gt;();</div>
 <div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160; </div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    distribution-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    distribution-&gt;x = Vector(<a class="code" href="classDmultinomDistributionsInterface.html#a2596b936531b67b3c4586cfeeecc4578">x</a>.size());</div>
@@ -314,7 +314,7 @@ $(function() {
 <div class="ttc" id="aclassFIMSRcppInterfaceBase_html_a9183d9379777d8be70ab66af1a07f94c"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">FIMSRcppInterfaceBase::add_to_fims_tmb</a></div><div class="ttdeci">virtual bool add_to_fims_tmb()</div><div class="ttdoc">virtual method to inherit to add objects to the TMB model</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:67</div></div>
 <div class="ttc" id="aclassParameter_html"><div class="ttname"><a href="classParameter.html">Parameter</a></div><div class="ttdoc">RcppInterface class that defines the interface between R and C++ for parameter types.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:26</div></div>
 <div class="ttc" id="aclassParameter_html_a90a6f51aff9ea524cc34b83965392c41"><div class="ttname"><a href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">Parameter::value_m</a></div><div class="ttdeci">double value_m</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:28</div></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:125</div></div>
+<div class="ttc" id="aclassfims__info_1_1Information_html_aed263e9a248ca2ac421209b1bfe45c7b"><div class="ttname"><a href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; Type &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:125</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['data_5fiterator_525',['data_iterator',['../classfims_1_1Information.html#a4dc67e5a9e1772380552dda9334ed5ff',1,'fims::Information']]],
-  ['distribution_5fmodels_5fiterator_526',['distribution_models_iterator',['../classfims_1_1Information.html#a9d3890af83e112b0a8773150ccd19b8a',1,'fims::Information']]]
+  ['data_5fiterator_523',['data_iterator',['../classfims__info_1_1Information.html#aeb91bf812c2430848f017ec5bc4cc940',1,'fims_info::Information']]],
+  ['distribution_5fmodels_5fiterator_524',['distribution_models_iterator',['../classfims__info_1_1Information.html#a51c1e09d126735eae929777254f498ce',1,'fims_info::Information']]]
 ];

@@ -147,19 +147,19 @@ $(function() {
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
 <div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classPopulationInterface.html#a86d3756ee502b615d5f7055dcb28e637">  100</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classPopulationInterface.html#a86d3756ee502b615d5f7055dcb28e637">evaluate</a>() {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="structfims_1_1Population.html">fims::Population&lt;double&gt;</a> population;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> population.<a class="code" href="structfims_1_1Population.html#a0cd39d19872ecdb04567da1a8a4ebd1d">Evaluate</a>();</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="structfims__popdy_1_1Population.html">fims_popdy::Population&lt;double&gt;</a> population;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> population.<a class="code" href="structfims__popdy_1_1Population.html#a3f629b07b3632441da7f431bb6d6809a">Evaluate</a>();</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  }</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::shared_ptr&lt;fims::Information&lt;Type&gt; &gt; info =</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information&lt;Type&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::shared_ptr&lt;fims_info::Information&lt;Type&gt; &gt; info =</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <a class="code" href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information&lt;Type&gt;::GetInstance</a>();</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::shared_ptr&lt;fims::Population&lt;Type&gt; &gt; population =</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        std::make_shared&lt;fims::Population&lt;Type&gt; &gt;();</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::shared_ptr&lt;fims_popdy::Population&lt;Type&gt; &gt; population =</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        std::make_shared&lt;fims_popdy::Population&lt;Type&gt; &gt;();</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// set relative info</span></div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    population-&gt;id = this-&gt;<a class="code" href="classPopulationInterfaceBase.html#a52bc457332deb78a632d94d94764a2e5">id</a>;</div>
@@ -241,9 +241,9 @@ $(function() {
 <div class="ttc" id="aclassPopulationInterface_html_add9e9148642502f037879b1028e9f627"><div class="ttname"><a href="classPopulationInterface.html#add9e9148642502f037879b1028e9f627">PopulationInterface::estimate_M</a></div><div class="ttdeci">bool estimate_M</div><div class="ttdef"><b>Definition:</b> rcpp_population.hpp:67</div></div>
 <div class="ttc" id="aclassPopulationInterface_html_ae891516564b4ab4f1a073676b756fe35"><div class="ttname"><a href="classPopulationInterface.html#ae891516564b4ab4f1a073676b756fe35">PopulationInterface::SetGrowth</a></div><div class="ttdeci">void SetGrowth(uint32_t growth_id)</div><div class="ttdoc">Set the unique id for the growth object.</div><div class="ttdef"><b>Definition:</b> rcpp_population.hpp:88</div></div>
 <div class="ttc" id="aclassPopulationInterface_html_afae0d90281be3207c796a6051ed3bff9"><div class="ttname"><a href="classPopulationInterface.html#afae0d90281be3207c796a6051ed3bff9">PopulationInterface::log_M</a></div><div class="ttdeci">Rcpp::NumericVector log_M</div><div class="ttdef"><b>Definition:</b> rcpp_population.hpp:63</div></div>
-<div class="ttc" id="aclassfims_1_1Information_html_a9b2f1e25d42db8fb324eae9a7bcf8ac2"><div class="ttname"><a href="classfims_1_1Information.html#a9b2f1e25d42db8fb324eae9a7bcf8ac2">fims::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; T &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:125</div></div>
-<div class="ttc" id="astructfims_1_1Population_html"><div class="ttname"><a href="structfims_1_1Population.html">fims::Population</a></div><div class="ttdoc">Population class. Contains subpopulations that are divided into generic partitions (eg....</div><div class="ttdef"><b>Definition:</b> population.hpp:36</div></div>
-<div class="ttc" id="astructfims_1_1Population_html_a0cd39d19872ecdb04567da1a8a4ebd1d"><div class="ttname"><a href="structfims_1_1Population.html#a0cd39d19872ecdb04567da1a8a4ebd1d">fims::Population::Evaluate</a></div><div class="ttdeci">void Evaluate()</div><div class="ttdoc">Executes the population loop.</div><div class="ttdef"><b>Definition:</b> population.hpp:537</div></div>
+<div class="ttc" id="aclassfims__info_1_1Information_html_aed263e9a248ca2ac421209b1bfe45c7b"><div class="ttname"><a href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; Type &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:125</div></div>
+<div class="ttc" id="astructfims__popdy_1_1Population_html"><div class="ttname"><a href="structfims__popdy_1_1Population.html">fims_popdy::Population</a></div><div class="ttdoc">Population class. Contains subpopulations that are divided into generic partitions (eg....</div><div class="ttdef"><b>Definition:</b> population.hpp:36</div></div>
+<div class="ttc" id="astructfims__popdy_1_1Population_html_a3f629b07b3632441da7f431bb6d6809a"><div class="ttname"><a href="structfims__popdy_1_1Population.html#a3f629b07b3632441da7f431bb6d6809a">fims_popdy::Population::Evaluate</a></div><div class="ttdeci">void Evaluate()</div><div class="ttdoc">Executes the population loop.</div><div class="ttdef"><b>Definition:</b> population.hpp:538</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['weight_5fat_5fage_520',['weight_at_age',['../structfims_1_1Population.html#a1d9e40c75e68e0ba127c4b4af1a4697f',1,'fims::Population']]],
-  ['weights_521',['weights',['../classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86',1,'EWAAGrowthInterface']]]
+  ['weight_5fat_5fage_518',['weight_at_age',['../structfims__popdy_1_1Population.html#af47ce32958aabaca12839b657ab77acb',1,'fims_popdy::Population']]],
+  ['weights_519',['weights',['../classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86',1,'EWAAGrowthInterface']]]
 ];

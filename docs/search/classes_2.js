@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['datainterfacebase_266',['DataInterfaceBase',['../classDataInterfaceBase.html',1,'']]],
-  ['dataobject_267',['DataObject',['../structfims_1_1DataObject.html',1,'fims']]],
-  ['distributionsbase_268',['DistributionsBase',['../structfims_1_1DistributionsBase.html',1,'fims']]],
-  ['distributionsinterfacebase_269',['DistributionsInterfaceBase',['../classDistributionsInterfaceBase.html',1,'']]],
-  ['dlnormdistributionsinterface_270',['DlnormDistributionsInterface',['../classDlnormDistributionsInterface.html',1,'']]],
-  ['dmultinomdistributionsinterface_271',['DmultinomDistributionsInterface',['../classDmultinomDistributionsInterface.html',1,'']]],
-  ['dnormdistributionsinterface_272',['DnormDistributionsInterface',['../classDnormDistributionsInterface.html',1,'']]],
-  ['doublelogisticselectivity_273',['DoubleLogisticSelectivity',['../structfims_1_1DoubleLogisticSelectivity.html',1,'fims']]],
-  ['doublelogisticselectivityinterface_274',['DoubleLogisticSelectivityInterface',['../classDoubleLogisticSelectivityInterface.html',1,'']]]
+  ['datainterfacebase_265',['DataInterfaceBase',['../classDataInterfaceBase.html',1,'']]],
+  ['dataobject_266',['DataObject',['../structfims__data__object_1_1DataObject.html',1,'fims_data_object']]],
+  ['distributionsbase_267',['DistributionsBase',['../structfims__distributions_1_1DistributionsBase.html',1,'fims_distributions']]],
+  ['distributionsinterfacebase_268',['DistributionsInterfaceBase',['../classDistributionsInterfaceBase.html',1,'']]],
+  ['dlnormdistributionsinterface_269',['DlnormDistributionsInterface',['../classDlnormDistributionsInterface.html',1,'']]],
+  ['dmultinomdistributionsinterface_270',['DmultinomDistributionsInterface',['../classDmultinomDistributionsInterface.html',1,'']]],
+  ['dnormdistributionsinterface_271',['DnormDistributionsInterface',['../classDnormDistributionsInterface.html',1,'']]],
+  ['doublelogisticselectivity_272',['DoubleLogisticSelectivity',['../structfims__popdy_1_1DoubleLogisticSelectivity.html',1,'fims_popdy']]],
+  ['doublelogisticselectivityinterface_273',['DoubleLogisticSelectivityInterface',['../classDoubleLogisticSelectivityInterface.html',1,'']]]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['indexdatainterface_374',['IndexDataInterface',['../classIndexDataInterface.html#a3cf28fb4c8210b1829f0cf0db42593dd',1,'IndexDataInterface']]],
-  ['initialize_375',['Initialize',['../structfims_1_1Fleet.html#ac4e0f31ac0e3d613b787db6ca484ed95',1,'fims::Fleet::Initialize()'],['../structfims_1_1Population.html#aa2d93844fec90a492ef86d8282bf507f',1,'fims::Population::Initialize()']]],
-  ['inv_5flogit_376',['inv_logit',['../fims__math_8hpp.html#afb91050c6b8ce1bff0eaade59b4f351a',1,'fims']]]
+  ['indexdatainterface_372',['IndexDataInterface',['../classIndexDataInterface.html#a3cf28fb4c8210b1829f0cf0db42593dd',1,'IndexDataInterface']]],
+  ['initialize_373',['Initialize',['../structfims__popdy_1_1Fleet.html#a9b1f8ba0deff38edb50ed5a0698c444c',1,'fims_popdy::Fleet::Initialize()'],['../structfims__popdy_1_1Population.html#a765b3924679833e223dcda95c88d261c',1,'fims_popdy::Population::Initialize()']]],
+  ['inv_5flogit_374',['inv_logit',['../fims__math_8hpp.html#ab0329c7a64173d4612e7a1d0ddb3f3e6',1,'fims_math']]]
 ];

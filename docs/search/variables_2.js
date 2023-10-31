@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['catch_5fat_5fage_415',['catch_at_age',['../structfims_1_1Fleet.html#a35e648c97bb303d6c57bac942c7a8c41',1,'fims::Fleet']]],
-  ['catch_5findex_416',['catch_index',['../structfims_1_1Fleet.html#a789ddb5d78ceb1bf4cef94e13ca09c12',1,'fims::Fleet']]],
-  ['catch_5fnumbers_5fat_5fage_417',['catch_numbers_at_age',['../structfims_1_1Fleet.html#a0f6c26e3540ce1bb43f4b0f7f63facba',1,'fims::Fleet']]],
-  ['catch_5fweight_5fat_5fage_418',['catch_weight_at_age',['../structfims_1_1Fleet.html#a31873919c067d63d36f0c3fed16f70b8',1,'fims::Fleet']]],
-  ['constrain_5fdeviations_419',['constrain_deviations',['../structfims_1_1RecruitmentBase.html#aaacf15e2130559a79407b876646598ef',1,'fims::RecruitmentBase']]]
+  ['catch_5fat_5fage_413',['catch_at_age',['../structfims__popdy_1_1Fleet.html#a4954ecad1b71405199fe763c943a879f',1,'fims_popdy::Fleet']]],
+  ['catch_5findex_414',['catch_index',['../structfims__popdy_1_1Fleet.html#a16904e2107eca3523efeb4b108508305',1,'fims_popdy::Fleet']]],
+  ['catch_5fnumbers_5fat_5fage_415',['catch_numbers_at_age',['../structfims__popdy_1_1Fleet.html#a2e0060d1cc9cbfbe05e066942923c7b6',1,'fims_popdy::Fleet']]],
+  ['catch_5fweight_5fat_5fage_416',['catch_weight_at_age',['../structfims__popdy_1_1Fleet.html#a8e19ca87a539e16be37cfd6fd944abe0',1,'fims_popdy::Fleet']]],
+  ['constrain_5fdeviations_417',['constrain_deviations',['../structfims__popdy_1_1RecruitmentBase.html#a89cb23e1edcad304e74ded6bc97fe220',1,'fims_popdy::RecruitmentBase']]]
 ];
