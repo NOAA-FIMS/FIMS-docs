@@ -91,55 +91,80 @@ $(function() {
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">   18</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a>(<span class="stringliteral">&quot;fims.log&quot;</span>); </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// simplify access to singletons</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#define TMB_FIMS_REAL_TYPE double</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#define TMB_FIMS_FIRST_ORDER AD&lt;TMB_FIMS_REAL_TYPE&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define TMB_FIMS_SECOND_ORDER AD&lt;TMB_FIMS_FIRST_ORDER&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define TMB_FIMS_THIRD_ORDER AD&lt;TMB_FIMS_SECOND_ORDER&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">namespace </span>fims {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classfims_1_1fims__log.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfims_1_1fims__log.html">fims_log</a> {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">static</span> std::map&lt;std::string, std::ofstream&gt;</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">   37</a></span>&#160;      <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">FIMS_LOGS</a>; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classfims_1_1fims__log.html#acc6f120c2e7c81e9739668b3919141d8">   41</a></span>&#160;  <span class="keyword">static</span> std::ofstream&amp; <a class="code" href="classfims_1_1fims__log.html#acc6f120c2e7c81e9739668b3919141d8">get</a>(<span class="keyword">const</span> std::string&amp; l) {</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">typename</span> std::map&lt;std::string, std::ofstream&gt;::iterator it;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    it = <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims_log::FIMS_LOGS</a>.find(l);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (it == <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims_log::FIMS_LOGS</a>.end()) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      std::ofstream&amp; of = <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims_log::FIMS_LOGS</a>[l];</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      of.open(l.c_str());</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims_log::FIMS_LOGS</a>[l];</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;std::map&lt;std::string, std::ofstream&gt; <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims_log::FIMS_LOGS</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifdef STD_LIB</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">struct </span>ModelTraits {</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">double</span> real_t;                           </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">double</span> variable_t;                       </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;double&gt; DataVector; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;double&gt; ParameterVector; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;std::vector&lt;double&gt; &gt; DataMatrix;     </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;std::vector&lt;double&gt; &gt; VariableMatrix; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}  <span class="comment">// namespace fims</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TRAITS_HPP */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassfims_1_1fims__log_html"><div class="ttname"><a href="classfims_1_1fims__log.html">fims::fims_log</a></div><div class="ttdef"><b>Definition:</b> def.hpp:34</div></div>
-<div class="ttc" id="aclassfims_1_1fims__log_html_aa1cc598b84e999b7d60ebc9bf1b03ae8"><div class="ttname"><a href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims::fims_log::FIMS_LOGS</a></div><div class="ttdeci">static std::map&lt; std::string, std::ofstream &gt; FIMS_LOGS</div><div class="ttdef"><b>Definition:</b> def.hpp:37</div></div>
-<div class="ttc" id="aclassfims_1_1fims__log_html_acc6f120c2e7c81e9739668b3919141d8"><div class="ttname"><a href="classfims_1_1fims__log.html#acc6f120c2e7c81e9739668b3919141d8">fims::fims_log::get</a></div><div class="ttdeci">static std::ofstream &amp; get(const std::string &amp;l)</div><div class="ttdef"><b>Definition:</b> def.hpp:41</div></div>
-<div class="ttc" id="adef_8hpp_html_a31231204b726b1a498a84321dc9f445f"><div class="ttname"><a href="def_8hpp.html#a31231204b726b1a498a84321dc9f445f">FIMS_LOG</a></div><div class="ttdeci">std::ofstream FIMS_LOG(&quot;fims.log&quot;)</div></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//The following rows initialize default log files for outputing model progress </span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//comments used to assist in diagnosing model issues and tracking progress. These</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//files will only be created if a logs folder is added to the root model directory.</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="def_8hpp.html#aaed3fc4723e7e09782659df8e1ab7f3a">   21</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#aaed3fc4723e7e09782659df8e1ab7f3a">FIMS_LOG</a> (<span class="stringliteral">&quot;logs/fims.log&quot;</span>); </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="def_8hpp.html#ae4f929af3e95a7f70238f77a6a5cef5f">   22</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#ae4f929af3e95a7f70238f77a6a5cef5f">INFO_LOG</a>(<span class="stringliteral">&quot;logs/info.log&quot;</span>); </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="def_8hpp.html#a308fcf8394afe9b124fd6b8e3186fc9c">   23</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#a308fcf8394afe9b124fd6b8e3186fc9c">ERROR_LOG</a>(<span class="stringliteral">&quot;logs/error.log&quot;</span>); </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="def_8hpp.html#a58d95516b89b5a2da7fd4d8a6413a7c4">   24</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#a58d95516b89b5a2da7fd4d8a6413a7c4">DATA_LOG</a>(<span class="stringliteral">&quot;logs/data.log&quot;</span>); </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="def_8hpp.html#a0b04d9d9cdc2a06b215c92b40ddf0627">   25</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#a0b04d9d9cdc2a06b215c92b40ddf0627">MODEL_LOG</a>(<span class="stringliteral">&quot;logs/model.log&quot;</span>); </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="def_8hpp.html#a9da1e19e650fa7488f0d1d265e54beb9">   26</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#a9da1e19e650fa7488f0d1d265e54beb9">FLEET_LOG</a>(<span class="stringliteral">&quot;logs/fleet.log&quot;</span>); </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="def_8hpp.html#acad788028ec9b157659fdb0e83c973e0">   27</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#acad788028ec9b157659fdb0e83c973e0">POPULATION_LOG</a>(<span class="stringliteral">&quot;logs/population.log&quot;</span>); </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="def_8hpp.html#ab79e53c483ecf6594343d0b2d5108447">   28</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#ab79e53c483ecf6594343d0b2d5108447">RECRUITMENT_LOG</a>(<span class="stringliteral">&quot;logs/recruitment.log&quot;</span>); </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="def_8hpp.html#a0f8e17cb50cccb5773dc043d265f6343">   29</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#a0f8e17cb50cccb5773dc043d265f6343">GROWTH_LOG</a>(<span class="stringliteral">&quot;logs/growth.log&quot;</span>); </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="def_8hpp.html#aa51d87ef5189a685ef0f116757519abe">   30</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#aa51d87ef5189a685ef0f116757519abe">MATURITY_LOG</a>(<span class="stringliteral">&quot;logs/maturity.log&quot;</span>); </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="def_8hpp.html#a34afbc4af6ad36508ad3d2847da6b75c">   31</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#a34afbc4af6ad36508ad3d2847da6b75c">SELECTIVITY_LOG</a>(<span class="stringliteral">&quot;logs/selectivity.log&quot;</span>); </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="def_8hpp.html#a9dd6f7b6a012412894bea2d72974339b">   32</a></span>&#160;std::ofstream <a class="code" href="def_8hpp.html#a9dd6f7b6a012412894bea2d72974339b">DEBUG_LOG</a>(<span class="stringliteral">&quot;logs/debug/debug.log&quot;</span>); </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// simplify access to singletons</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#define TMB_FIMS_REAL_TYPE double</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#define TMB_FIMS_FIRST_ORDER AD&lt;TMB_FIMS_REAL_TYPE&gt;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define TMB_FIMS_SECOND_ORDER AD&lt;TMB_FIMS_FIRST_ORDER&gt;</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define TMB_FIMS_THIRD_ORDER AD&lt;TMB_FIMS_SECOND_ORDER&gt;</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">namespace </span>fims {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classfims_1_1fims__log.html">   48</a></span>&#160;<span class="keyword">class </span><a class="code" href="classfims_1_1fims__log.html">fims_log</a> {</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  <span class="keyword">static</span> std::map&lt;std::string, std::ofstream&gt;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">   51</a></span>&#160;      <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">FIMS_LOGS</a>; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classfims_1_1fims__log.html#acc6f120c2e7c81e9739668b3919141d8">   55</a></span>&#160;  <span class="keyword">static</span> std::ofstream&amp; <a class="code" href="classfims_1_1fims__log.html#acc6f120c2e7c81e9739668b3919141d8">get</a>(<span class="keyword">const</span> std::string&amp; l) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">typename</span> std::map&lt;std::string, std::ofstream&gt;::iterator it;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    it = <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims_log::FIMS_LOGS</a>.find(l);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">if</span> (it == <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims_log::FIMS_LOGS</a>.end()) {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      std::ofstream&amp; of = <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims_log::FIMS_LOGS</a>[l];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      of.open(l.c_str());</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims_log::FIMS_LOGS</a>[l];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;std::map&lt;std::string, std::ofstream&gt; <a class="code" href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims_log::FIMS_LOGS</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#ifdef STD_LIB</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">struct </span>ModelTraits {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">double</span> real_t;                           </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  <span class="keyword">typedef</span> <span class="keywordtype">double</span> variable_t;                       </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;double&gt; DataVector; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;double&gt; ParameterVector; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;std::vector&lt;double&gt; &gt; DataMatrix;     </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keyword">typedef</span> <span class="keyword">typename</span> std::vector&lt;std::vector&lt;double&gt; &gt; VariableMatrix; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;};</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}  <span class="comment">// namespace fims</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* TRAITS_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassfims_1_1fims__log_html"><div class="ttname"><a href="classfims_1_1fims__log.html">fims::fims_log</a></div><div class="ttdef"><b>Definition:</b> def.hpp:48</div></div>
+<div class="ttc" id="aclassfims_1_1fims__log_html_aa1cc598b84e999b7d60ebc9bf1b03ae8"><div class="ttname"><a href="classfims_1_1fims__log.html#aa1cc598b84e999b7d60ebc9bf1b03ae8">fims::fims_log::FIMS_LOGS</a></div><div class="ttdeci">static std::map&lt; std::string, std::ofstream &gt; FIMS_LOGS</div><div class="ttdef"><b>Definition:</b> def.hpp:51</div></div>
+<div class="ttc" id="aclassfims_1_1fims__log_html_acc6f120c2e7c81e9739668b3919141d8"><div class="ttname"><a href="classfims_1_1fims__log.html#acc6f120c2e7c81e9739668b3919141d8">fims::fims_log::get</a></div><div class="ttdeci">static std::ofstream &amp; get(const std::string &amp;l)</div><div class="ttdef"><b>Definition:</b> def.hpp:55</div></div>
+<div class="ttc" id="adef_8hpp_html_a0b04d9d9cdc2a06b215c92b40ddf0627"><div class="ttname"><a href="def_8hpp.html#a0b04d9d9cdc2a06b215c92b40ddf0627">MODEL_LOG</a></div><div class="ttdeci">std::ofstream MODEL_LOG(&quot;logs/model.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_a0f8e17cb50cccb5773dc043d265f6343"><div class="ttname"><a href="def_8hpp.html#a0f8e17cb50cccb5773dc043d265f6343">GROWTH_LOG</a></div><div class="ttdeci">std::ofstream GROWTH_LOG(&quot;logs/growth.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_a308fcf8394afe9b124fd6b8e3186fc9c"><div class="ttname"><a href="def_8hpp.html#a308fcf8394afe9b124fd6b8e3186fc9c">ERROR_LOG</a></div><div class="ttdeci">std::ofstream ERROR_LOG(&quot;logs/error.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_a34afbc4af6ad36508ad3d2847da6b75c"><div class="ttname"><a href="def_8hpp.html#a34afbc4af6ad36508ad3d2847da6b75c">SELECTIVITY_LOG</a></div><div class="ttdeci">std::ofstream SELECTIVITY_LOG(&quot;logs/selectivity.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_a58d95516b89b5a2da7fd4d8a6413a7c4"><div class="ttname"><a href="def_8hpp.html#a58d95516b89b5a2da7fd4d8a6413a7c4">DATA_LOG</a></div><div class="ttdeci">std::ofstream DATA_LOG(&quot;logs/data.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_a9da1e19e650fa7488f0d1d265e54beb9"><div class="ttname"><a href="def_8hpp.html#a9da1e19e650fa7488f0d1d265e54beb9">FLEET_LOG</a></div><div class="ttdeci">std::ofstream FLEET_LOG(&quot;logs/fleet.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_a9dd6f7b6a012412894bea2d72974339b"><div class="ttname"><a href="def_8hpp.html#a9dd6f7b6a012412894bea2d72974339b">DEBUG_LOG</a></div><div class="ttdeci">std::ofstream DEBUG_LOG(&quot;logs/debug/debug.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_aa51d87ef5189a685ef0f116757519abe"><div class="ttname"><a href="def_8hpp.html#aa51d87ef5189a685ef0f116757519abe">MATURITY_LOG</a></div><div class="ttdeci">std::ofstream MATURITY_LOG(&quot;logs/maturity.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_aaed3fc4723e7e09782659df8e1ab7f3a"><div class="ttname"><a href="def_8hpp.html#aaed3fc4723e7e09782659df8e1ab7f3a">FIMS_LOG</a></div><div class="ttdeci">std::ofstream FIMS_LOG(&quot;logs/fims.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_ab79e53c483ecf6594343d0b2d5108447"><div class="ttname"><a href="def_8hpp.html#ab79e53c483ecf6594343d0b2d5108447">RECRUITMENT_LOG</a></div><div class="ttdeci">std::ofstream RECRUITMENT_LOG(&quot;logs/recruitment.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_acad788028ec9b157659fdb0e83c973e0"><div class="ttname"><a href="def_8hpp.html#acad788028ec9b157659fdb0e83c973e0">POPULATION_LOG</a></div><div class="ttdeci">std::ofstream POPULATION_LOG(&quot;logs/population.log&quot;)</div></div>
+<div class="ttc" id="adef_8hpp_html_ae4f929af3e95a7f70238f77a6a5cef5f"><div class="ttname"><a href="def_8hpp.html#ae4f929af3e95a7f70238f77a6a5cef5f">INFO_LOG</a></div><div class="ttdeci">std::ofstream INFO_LOG(&quot;logs/info.log&quot;)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
