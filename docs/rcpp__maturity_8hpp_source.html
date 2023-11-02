@@ -122,77 +122,78 @@ $(function() {
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classLogisticMaturityInterface.html">   61</a></span>&#160;<span class="keyword">class </span><a class="code" href="classLogisticMaturityInterface.html">LogisticMaturityInterface</a> : <span class="keyword">public</span> <a class="code" href="classMaturityInterfaceBase.html">MaturityInterfaceBase</a> {</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="classLogisticMaturityInterface.html#a13a45ebb81a5b3b3b6a88ba0396cc53f">   63</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classLogisticMaturityInterface.html#a13a45ebb81a5b3b3b6a88ba0396cc53f">inflection_point</a>; </div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classLogisticMaturityInterface.html#a476265cd39238894ade16aad72ba1ccd">   64</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classLogisticMaturityInterface.html#a476265cd39238894ade16aad72ba1ccd">slope</a>;  </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <a class="code" href="classLogisticMaturityInterface.html">LogisticMaturityInterface</a>() : <a class="code" href="classMaturityInterfaceBase.html">MaturityInterfaceBase</a>() {}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classLogisticMaturityInterface.html">LogisticMaturityInterface</a>() {}</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classLogisticMaturityInterface.html#a9c9ab0ceda4ae98e6335e8a31b6ab6a0">   71</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classLogisticMaturityInterface.html#a9c9ab0ceda4ae98e6335e8a31b6ab6a0">get_id</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classMaturityInterfaceBase.html#a9e437596bb8a8805a1106e850def8bbf">id</a>; }</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classLogisticMaturityInterface.html#aed4a368f3a145c633711bfd5a3ae2d7a">   77</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classLogisticMaturityInterface.html#aed4a368f3a145c633711bfd5a3ae2d7a">evaluate</a>(<span class="keywordtype">double</span> x) {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="structfims__popdy_1_1LogisticMaturity.html">fims_popdy::LogisticMaturity&lt;double&gt;</a> LogisticMat;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    LogisticMat.<a class="code" href="structfims__popdy_1_1LogisticMaturity.html#a50aaced54b35469217798c9159fbd8eb">inflection_point</a> = this-&gt;inflection_point.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    LogisticMat.<a class="code" href="structfims__popdy_1_1LogisticMaturity.html#a252e4d371397f0621101b80fa869aa9e">slope</a> = this-&gt;slope.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordflow">return</span> LogisticMat.<a class="code" href="structfims__popdy_1_1LogisticMaturity.html#a8d2cd51bc769e5d6be77e26309d15f1e">evaluate</a>(x);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    std::shared_ptr&lt;fims_info::Information&lt;Type&gt; &gt; info =</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information&lt;Type&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    std::shared_ptr&lt;fims_popdy::LogisticMaturity&lt;Type&gt; &gt; maturity =</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        std::make_shared&lt;fims_popdy::LogisticMaturity&lt;Type&gt; &gt;();</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// set relative info</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    maturity-&gt;id = this-&gt;<a class="code" href="classMaturityInterfaceBase.html#a9e437596bb8a8805a1106e850def8bbf">id</a>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    maturity-&gt;inflection_point = this-&gt;inflection_point.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">if</span> (this-&gt;inflection_point.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;      <span class="keywordflow">if</span> (this-&gt;inflection_point.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        info-&gt;RegisterRandomEffect(maturity-&gt;inflection_point);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        info-&gt;RegisterParameter(maturity-&gt;inflection_point);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      }</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    maturity-&gt;slope = this-&gt;slope.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        info-&gt;RegisterRandomEffect(maturity-&gt;slope);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        info-&gt;RegisterParameter(maturity-&gt;slope);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;      }</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">// add to Information</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    info-&gt;maturity_models[maturity-&gt;id] = maturity;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;  }</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a>() {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_REAL_TYPE&gt;();</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_FIRST_ORDER&gt;();</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_SECOND_ORDER&gt;();</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_THIRD_ORDER&gt;();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;  }</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="classParameter.html">Parameter</a></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classLogisticMaturityInterface.html#a13a45ebb81a5b3b3b6a88ba0396cc53f">   64</a></span>&#160;      <a class="code" href="classLogisticMaturityInterface.html#a13a45ebb81a5b3b3b6a88ba0396cc53f">inflection_point</a>; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classLogisticMaturityInterface.html#a476265cd39238894ade16aad72ba1ccd">   65</a></span>&#160;  <a class="code" href="classParameter.html">Parameter</a> <a class="code" href="classLogisticMaturityInterface.html#a476265cd39238894ade16aad72ba1ccd">slope</a>;      </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  <a class="code" href="classLogisticMaturityInterface.html">LogisticMaturityInterface</a>() : <a class="code" href="classMaturityInterfaceBase.html">MaturityInterfaceBase</a>() {}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="classLogisticMaturityInterface.html">LogisticMaturityInterface</a>() {}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classLogisticMaturityInterface.html#a9c9ab0ceda4ae98e6335e8a31b6ab6a0">   72</a></span>&#160;  <span class="keyword">virtual</span> uint32_t <a class="code" href="classLogisticMaturityInterface.html#a9c9ab0ceda4ae98e6335e8a31b6ab6a0">get_id</a>() { <span class="keywordflow">return</span> this-&gt;<a class="code" href="classMaturityInterfaceBase.html#a9e437596bb8a8805a1106e850def8bbf">id</a>; }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="classLogisticMaturityInterface.html#aed4a368f3a145c633711bfd5a3ae2d7a">   78</a></span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">double</span> <a class="code" href="classLogisticMaturityInterface.html#aed4a368f3a145c633711bfd5a3ae2d7a">evaluate</a>(<span class="keywordtype">double</span> x) {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="structfims__popdy_1_1LogisticMaturity.html">fims_popdy::LogisticMaturity&lt;double&gt;</a> LogisticMat;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    LogisticMat.<a class="code" href="structfims__popdy_1_1LogisticMaturity.html#a50aaced54b35469217798c9159fbd8eb">inflection_point</a> = this-&gt;<a class="code" href="classLogisticMaturityInterface.html#a13a45ebb81a5b3b3b6a88ba0396cc53f">inflection_point</a>.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    LogisticMat.<a class="code" href="structfims__popdy_1_1LogisticMaturity.html#a252e4d371397f0621101b80fa869aa9e">slope</a> = this-&gt;slope.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> LogisticMat.<a class="code" href="structfims__popdy_1_1LogisticMaturity.html#a8d2cd51bc769e5d6be77e26309d15f1e">evaluate</a>(x);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::shared_ptr&lt;fims_info::Information&lt;Type&gt; &gt; info =</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <a class="code" href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information&lt;Type&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    std::shared_ptr&lt;fims_popdy::LogisticMaturity&lt;Type&gt; &gt; maturity =</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        std::make_shared&lt;fims_popdy::LogisticMaturity&lt;Type&gt; &gt;();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// set relative info</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    maturity-&gt;id = this-&gt;<a class="code" href="classMaturityInterfaceBase.html#a9e437596bb8a8805a1106e850def8bbf">id</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    maturity-&gt;inflection_point = this-&gt;<a class="code" href="classLogisticMaturityInterface.html#a13a45ebb81a5b3b3b6a88ba0396cc53f">inflection_point</a>.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classLogisticMaturityInterface.html#a13a45ebb81a5b3b3b6a88ba0396cc53f">inflection_point</a>.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;      <span class="keywordflow">if</span> (this-&gt;<a class="code" href="classLogisticMaturityInterface.html#a13a45ebb81a5b3b3b6a88ba0396cc53f">inflection_point</a>.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        info-&gt;RegisterRandomEffect(maturity-&gt;inflection_point);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        info-&gt;RegisterParameter(maturity-&gt;inflection_point);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    maturity-&gt;slope = this-&gt;slope.<a class="code" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a>) {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;      <span class="keywordflow">if</span> (this-&gt;slope.<a class="code" href="classParameter.html#ab1982e622b732589036b47f0696d2f5c">is_random_effect_m</a>) {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        info-&gt;RegisterRandomEffect(maturity-&gt;slope);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        info-&gt;RegisterParameter(maturity-&gt;slope);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="comment">// add to Information</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    info-&gt;maturity_models[maturity-&gt;id] = maturity;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;  }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a>() {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_REAL_TYPE&gt;();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_FIRST_ORDER&gt;();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_SECOND_ORDER&gt;();</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_THIRD_ORDER&gt;();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;  }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;};</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassFIMSRcppInterfaceBase_html"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></div><div class="ttdoc">Base class for all interface objects.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:61</div></div>
 <div class="ttc" id="aclassFIMSRcppInterfaceBase_html_a27f6c0a9860f56c17951872fe26b1515"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html#a27f6c0a9860f56c17951872fe26b1515">FIMSRcppInterfaceBase::fims_interface_objects</a></div><div class="ttdeci">static std::vector&lt; FIMSRcppInterfaceBase * &gt; fims_interface_objects</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:64</div></div>
 <div class="ttc" id="aclassFIMSRcppInterfaceBase_html_a9183d9379777d8be70ab66af1a07f94c"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">FIMSRcppInterfaceBase::add_to_fims_tmb</a></div><div class="ttdeci">virtual bool add_to_fims_tmb()</div><div class="ttdoc">virtual method to inherit to add objects to the TMB model</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:67</div></div>
 <div class="ttc" id="aclassLogisticMaturityInterface_html"><div class="ttname"><a href="classLogisticMaturityInterface.html">LogisticMaturityInterface</a></div><div class="ttdoc">Rcpp interface for logistic maturity as an S4 object. To instantiate from R: logistic_maturity &lt;- new...</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:61</div></div>
-<div class="ttc" id="aclassLogisticMaturityInterface_html_a13a45ebb81a5b3b3b6a88ba0396cc53f"><div class="ttname"><a href="classLogisticMaturityInterface.html#a13a45ebb81a5b3b3b6a88ba0396cc53f">LogisticMaturityInterface::inflection_point</a></div><div class="ttdeci">Parameter inflection_point</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:63</div></div>
-<div class="ttc" id="aclassLogisticMaturityInterface_html_a476265cd39238894ade16aad72ba1ccd"><div class="ttname"><a href="classLogisticMaturityInterface.html#a476265cd39238894ade16aad72ba1ccd">LogisticMaturityInterface::slope</a></div><div class="ttdeci">Parameter slope</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:64</div></div>
-<div class="ttc" id="aclassLogisticMaturityInterface_html_a9c9ab0ceda4ae98e6335e8a31b6ab6a0"><div class="ttname"><a href="classLogisticMaturityInterface.html#a9c9ab0ceda4ae98e6335e8a31b6ab6a0">LogisticMaturityInterface::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()</div><div class="ttdoc">returns the id for the logistic maturity interface</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:71</div></div>
-<div class="ttc" id="aclassLogisticMaturityInterface_html_aed4a368f3a145c633711bfd5a3ae2d7a"><div class="ttname"><a href="classLogisticMaturityInterface.html#aed4a368f3a145c633711bfd5a3ae2d7a">LogisticMaturityInterface::evaluate</a></div><div class="ttdeci">virtual double evaluate(double x)</div><div class="ttdoc">evaluate the logistic maturity function</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:77</div></div>
+<div class="ttc" id="aclassLogisticMaturityInterface_html_a13a45ebb81a5b3b3b6a88ba0396cc53f"><div class="ttname"><a href="classLogisticMaturityInterface.html#a13a45ebb81a5b3b3b6a88ba0396cc53f">LogisticMaturityInterface::inflection_point</a></div><div class="ttdeci">Parameter inflection_point</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:64</div></div>
+<div class="ttc" id="aclassLogisticMaturityInterface_html_a476265cd39238894ade16aad72ba1ccd"><div class="ttname"><a href="classLogisticMaturityInterface.html#a476265cd39238894ade16aad72ba1ccd">LogisticMaturityInterface::slope</a></div><div class="ttdeci">Parameter slope</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:65</div></div>
+<div class="ttc" id="aclassLogisticMaturityInterface_html_a9c9ab0ceda4ae98e6335e8a31b6ab6a0"><div class="ttname"><a href="classLogisticMaturityInterface.html#a9c9ab0ceda4ae98e6335e8a31b6ab6a0">LogisticMaturityInterface::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()</div><div class="ttdoc">returns the id for the logistic maturity interface</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:72</div></div>
+<div class="ttc" id="aclassLogisticMaturityInterface_html_aed4a368f3a145c633711bfd5a3ae2d7a"><div class="ttname"><a href="classLogisticMaturityInterface.html#aed4a368f3a145c633711bfd5a3ae2d7a">LogisticMaturityInterface::evaluate</a></div><div class="ttdeci">virtual double evaluate(double x)</div><div class="ttdoc">evaluate the logistic maturity function</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:78</div></div>
 <div class="ttc" id="aclassMaturityInterfaceBase_html"><div class="ttname"><a href="classMaturityInterfaceBase.html">MaturityInterfaceBase</a></div><div class="ttdoc">MaturityInterfaceBase class should be inherited to define different Rcpp interfaces for each possible...</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:24</div></div>
 <div class="ttc" id="aclassMaturityInterfaceBase_html_a1652288f0784bcc4cbf6359d4a94a705"><div class="ttname"><a href="classMaturityInterfaceBase.html#a1652288f0784bcc4cbf6359d4a94a705">MaturityInterfaceBase::evaluate</a></div><div class="ttdeci">virtual double evaluate(double x)=0</div><div class="ttdoc">evaluate the function</div></div>
 <div class="ttc" id="aclassMaturityInterfaceBase_html_a2ddeb5cd2b04611601843e342d23f2a4"><div class="ttname"><a href="classMaturityInterfaceBase.html#a2ddeb5cd2b04611601843e342d23f2a4">MaturityInterfaceBase::live_objects</a></div><div class="ttdeci">static std::map&lt; uint32_t, MaturityInterfaceBase * &gt; live_objects</div><div class="ttdef"><b>Definition:</b> rcpp_maturity.hpp:30</div></div>
