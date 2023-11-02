@@ -114,12 +114,12 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a6f78111ee952704380ad798599f78ea2"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html#a6f78111ee952704380ad798599f78ea2">median_asc</a></td></tr>
-<tr class="separator:a6f78111ee952704380ad798599f78ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a93896a3d3e0e3c636b31b0633d0235"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html#a3a93896a3d3e0e3c636b31b0633d0235">inflection_point_asc</a></td></tr>
+<tr class="separator:a3a93896a3d3e0e3c636b31b0633d0235"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77cfd79f03c72b3a50d32f78a38be732"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html#a77cfd79f03c72b3a50d32f78a38be732">slope_asc</a></td></tr>
 <tr class="separator:a77cfd79f03c72b3a50d32f78a38be732"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a741c149dc012fe45ac2ed8ffb8822ae4"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html#a741c149dc012fe45ac2ed8ffb8822ae4">median_desc</a></td></tr>
-<tr class="separator:a741c149dc012fe45ac2ed8ffb8822ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a597fe7673e4fed7809371070e8694bc5"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html#a597fe7673e4fed7809371070e8694bc5">inflection_point_desc</a></td></tr>
+<tr class="separator:a597fe7673e4fed7809371070e8694bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa329450525891317d94b1105851b5d83"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html#aa329450525891317d94b1105851b5d83">slope_desc</a></td></tr>
 <tr class="separator:aa329450525891317d94b1105851b5d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structfims__model__object_1_1FIMSObject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structfims__model__object_1_1FIMSObject')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structfims__model__object_1_1FIMSObject.html">fims_model_object::FIMSObject&lt; Type &gt;</a></td></tr>
@@ -171,7 +171,7 @@ template&lt;typename Type &gt; </div>
 </div><div class="memdoc">
 
 <p>Method of the double logistic selectivity class that implements the double logistic function from FIMS math. </p>
-<p>\( \frac{1.0}{ 1.0 + exp(-1.0 * slope_{asc} (x - median_{asc}))} \left(1.0-\frac{1.0}{ 1.0 + exp(-1.0 * slope_{desc} (x - median_{desc}))} \right)\)</p>
+<p>\( \frac{1.0}{ 1.0 + exp(-1.0 * slope_{asc} (x - inflection_point_{asc}))} \left(1.0-\frac{1.0}{ 1.0 + exp(-1.0 * slope_{desc} (x - inflection_point_{desc}))} \right)\)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">x</td><td>The independent variable in the double logistic function (e.g., age or size in selectivity). </td></tr>
@@ -184,8 +184,8 @@ template&lt;typename Type &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a6f78111ee952704380ad798599f78ea2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f78111ee952704380ad798599f78ea2">&#9670;&nbsp;</a></span>median_asc</h2>
+<a id="a3a93896a3d3e0e3c636b31b0633d0235"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a93896a3d3e0e3c636b31b0633d0235">&#9670;&nbsp;</a></span>inflection_point_asc</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -193,7 +193,7 @@ template&lt;typename Type &gt; </div>
 template&lt;typename Type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Type <a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html">fims_popdy::DoubleLogisticSelectivity</a>&lt; Type &gt;::median_asc</td>
+          <td class="memname">Type <a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html">fims_popdy::DoubleLogisticSelectivity</a>&lt; Type &gt;::inflection_point_asc</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -201,8 +201,8 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<a id="a741c149dc012fe45ac2ed8ffb8822ae4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a741c149dc012fe45ac2ed8ffb8822ae4">&#9670;&nbsp;</a></span>median_desc</h2>
+<a id="a597fe7673e4fed7809371070e8694bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a597fe7673e4fed7809371070e8694bc5">&#9670;&nbsp;</a></span>inflection_point_desc</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +210,7 @@ template&lt;typename Type &gt; </div>
 template&lt;typename Type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Type <a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html">fims_popdy::DoubleLogisticSelectivity</a>&lt; Type &gt;::median_desc</td>
+          <td class="memname">Type <a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html">fims_popdy::DoubleLogisticSelectivity</a>&lt; Type &gt;::inflection_point_desc</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -231,7 +231,7 @@ template&lt;typename Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>scalar multiplier of difference between quantity of interest value (x) and median on the ascending limb of the double logistic curve </p>
+<p>scalar multiplier of difference between quantity of interest value (x) and inflection_point on the ascending limb of the double logistic curve </p>
 
 </div>
 </div>
@@ -248,7 +248,7 @@ template&lt;typename Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>scalar multiplier of difference between quantity of interest value (x) and median on the descending limb of the double logistic curve </p>
+<p>scalar multiplier of difference between quantity of interest value (x) and inflection_point on the descending limb of the double logistic curve </p>
 
 </div>
 </div>

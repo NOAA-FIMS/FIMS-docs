@@ -114,8 +114,8 @@ uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a16ebb4c90f2ddf912a81d26bd0fd6d39"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1LogisticSelectivity.html#a16ebb4c90f2ddf912a81d26bd0fd6d39">median</a></td></tr>
-<tr class="separator:a16ebb4c90f2ddf912a81d26bd0fd6d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a8122ebf1e430edb9d455b508f95972"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1LogisticSelectivity.html#a5a8122ebf1e430edb9d455b508f95972">inflection_point</a></td></tr>
+<tr class="separator:a5a8122ebf1e430edb9d455b508f95972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a35c5b3cf3b4bd8e8b3febc965fc75a"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1LogisticSelectivity.html#a4a35c5b3cf3b4bd8e8b3febc965fc75a">slope</a></td></tr>
 <tr class="separator:a4a35c5b3cf3b4bd8e8b3febc965fc75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structfims__model__object_1_1FIMSObject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structfims__model__object_1_1FIMSObject')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structfims__model__object_1_1FIMSObject.html">fims_model_object::FIMSObject&lt; Type &gt;</a></td></tr>
@@ -168,7 +168,7 @@ template&lt;typename Type &gt; </div>
 
 <p>Method of the logistic selectivity class that implements the logistic function from FIMS math. </p>
 <p class="formulaDsp">
-\[ \frac{1.0}{ 1.0 + exp(-1.0 * slope (x - median))} \]
+\[ \frac{1.0}{ 1.0 + exp(-1.0 * slope (x - inflection_point))} \]
 </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -182,8 +182,8 @@ template&lt;typename Type &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a16ebb4c90f2ddf912a81d26bd0fd6d39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16ebb4c90f2ddf912a81d26bd0fd6d39">&#9670;&nbsp;</a></span>median</h2>
+<a id="a5a8122ebf1e430edb9d455b508f95972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a8122ebf1e430edb9d455b508f95972">&#9670;&nbsp;</a></span>inflection_point</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -191,7 +191,7 @@ template&lt;typename Type &gt; </div>
 template&lt;typename Type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Type <a class="el" href="structfims__popdy_1_1LogisticSelectivity.html">fims_popdy::LogisticSelectivity</a>&lt; Type &gt;::median</td>
+          <td class="memname">Type <a class="el" href="structfims__popdy_1_1LogisticSelectivity.html">fims_popdy::LogisticSelectivity</a>&lt; Type &gt;::inflection_point</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -212,7 +212,7 @@ template&lt;typename Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>scalar multiplier of difference between quantity of interest value (x) and median </p>
+<p>scalar multiplier of difference between quantity of interest value (x) and inflection_point </p>
 
 </div>
 </div>
