@@ -138,9 +138,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="memitem:aed84b8996bb09055129b95409f85a29b"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#aed84b8996bb09055129b95409f85a29b">CalculateSBPR0</a> ()</td></tr>
 <tr class="memdesc:aed84b8996bb09055129b95409f85a29b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates equilibrium spawning biomass per recruit.  <a href="structfims__popdy_1_1Population.html#aed84b8996bb09055129b95409f85a29b">More...</a><br /></td></tr>
 <tr class="separator:aed84b8996bb09055129b95409f85a29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62ed1881de8f8735e6014035684f85eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#a62ed1881de8f8735e6014035684f85eb">CalculateRecruitment</a> (size_t i_age_year, size_t year)</td></tr>
-<tr class="memdesc:a62ed1881de8f8735e6014035684f85eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates expected recruitment for a given year.  <a href="structfims__popdy_1_1Population.html#a62ed1881de8f8735e6014035684f85eb">More...</a><br /></td></tr>
-<tr class="separator:a62ed1881de8f8735e6014035684f85eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b6310d8a1633fd9d8a66471be9dcd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#a70b6310d8a1633fd9d8a66471be9dcd2">CalculateRecruitment</a> (size_t i_age_year, size_t year, size_t i_dev)</td></tr>
+<tr class="memdesc:a70b6310d8a1633fd9d8a66471be9dcd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates expected recruitment for a given year.  <a href="structfims__popdy_1_1Population.html#a70b6310d8a1633fd9d8a66471be9dcd2">More...</a><br /></td></tr>
+<tr class="separator:a70b6310d8a1633fd9d8a66471be9dcd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae999d0677d2d76cc843befc1cd66ef73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#ae999d0677d2d76cc843befc1cd66ef73">CalculateCatch</a> (size_t year, size_t age)</td></tr>
 <tr class="memdesc:ae999d0677d2d76cc843befc1cd66ef73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds to exiting expected total catch by fleet in weight.  <a href="structfims__popdy_1_1Population.html#ae999d0677d2d76cc843befc1cd66ef73">More...</a><br /></td></tr>
 <tr class="separator:ae999d0677d2d76cc843befc1cd66ef73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -728,8 +728,8 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<a id="a62ed1881de8f8735e6014035684f85eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a62ed1881de8f8735e6014035684f85eb">&#9670;&nbsp;</a></span>CalculateRecruitment()</h2>
+<a id="a70b6310d8a1633fd9d8a66471be9dcd2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70b6310d8a1633fd9d8a66471be9dcd2">&#9670;&nbsp;</a></span>CalculateRecruitment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -749,7 +749,13 @@ template&lt;typename Type &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>year</em>&#160;</td>
+          <td class="paramname"><em>year</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>i_dev</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -769,6 +775,7 @@ template&lt;typename Type &gt; </div>
   <table class="params">
     <tr><td class="paramname">i_age_year</td><td>dimension folded index for age and year </td></tr>
     <tr><td class="paramname">year</td><td>the year recruitment is being calculated for </td></tr>
+    <tr><td class="paramname">i_dev</td><td>index to log_recruit_dev of vector length nyears-1 </td></tr>
   </table>
   </dd>
 </dl>
