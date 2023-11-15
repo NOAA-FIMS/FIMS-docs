@@ -76,21 +76,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Parses JSON strings and generates JSON values.  
- <a href="classJsonParser.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="fims__json_8hpp_source.html">fims_json.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1235f9548b6424f04fe7071c5d04a425"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classJsonValue.html">JsonValue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonParser.html#a1235f9548b6424f04fe7071c5d04a425">Parse</a> (const std::string &amp;json)</td></tr>
-<tr class="memdesc:a1235f9548b6424f04fe7071c5d04a425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a JSON string and return the corresponding JSON value.  <a href="classJsonParser.html#a1235f9548b6424f04fe7071c5d04a425">More...</a><br /></td></tr>
 <tr class="separator:a1235f9548b6424f04fe7071c5d04a425"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ffc15c33b35e9efea97829fadbb5cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonParser.html#ad8ffc15c33b35e9efea97829fadbb5cb">WriteToFile</a> (const std::string &amp;filename, <a class="el" href="classJsonValue.html">JsonValue</a> jsonValue)</td></tr>
-<tr class="memdesc:ad8ffc15c33b35e9efea97829fadbb5cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a JSON value to a file.  <a href="classJsonParser.html#ad8ffc15c33b35e9efea97829fadbb5cb">More...</a><br /></td></tr>
 <tr class="separator:ad8ffc15c33b35e9efea97829fadbb5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acccfd891551f614d40d7320dd6ae943e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJsonParser.html#acccfd891551f614d40d7320dd6ae943e">Show</a> (<a class="el" href="classJsonValue.html">JsonValue</a> jsonValue)</td></tr>
-<tr class="memdesc:acccfd891551f614d40d7320dd6ae943e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Display a JSON value to the standard output.  <a href="classJsonParser.html#acccfd891551f614d40d7320dd6ae943e">More...</a><br /></td></tr>
 <tr class="separator:acccfd891551f614d40d7320dd6ae943e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -111,8 +105,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Parse a JSON string and return the corresponding JSON value. </p>
+<p>Parse a JSON string and return the corresponding JSON value.</p>
 <p>Parse a JSON string and return the corresponding JSON value. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">json</td><td>The JSON string to parse. </td></tr>
@@ -138,8 +131,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Display a JSON value to the standard output. </p>
+<p>Display a JSON value to the standard output.</p>
 <p>Display a JSON value to the standard output. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">jsonValue</td><td>The JSON value to display. </td></tr>
@@ -174,8 +166,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Write a JSON value to a file. </p>
+<p>Write a JSON value to a file.</p>
 <p>Write a JSON value to an output file. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">filename</td><td>The name of the output file. </td></tr>
@@ -183,6 +174,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<p>Call a private helper function to write JSON values recursively</p>
 
 </div>
 </div>
