@@ -135,12 +135,14 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ae840183f3f6166985c94948788cb3020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1358c0ae2f7e96e057567875c0849042"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#a1358c0ae2f7e96e057567875c0849042">estimate_q</a> = false</td></tr>
 <tr class="separator:a1358c0ae2f7e96e057567875c0849042"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f25f9a3d4af20cfe2812eb11ee5a3fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#a5f25f9a3d4af20cfe2812eb11ee5a3fc">estimate_obs_error</a> = false</td></tr>
+<tr class="separator:a5f25f9a3d4af20cfe2812eb11ee5a3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26773d862ef5f583529bb3fc4002f584"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#a26773d862ef5f583529bb3fc4002f584">random_q</a> = false</td></tr>
 <tr class="separator:a26773d862ef5f583529bb3fc4002f584"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03cf31c542e0c400933aa0a911c3d2ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#a03cf31c542e0c400933aa0a911c3d2ae">random_F</a> = false</td></tr>
 <tr class="separator:a03cf31c542e0c400933aa0a911c3d2ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa07a0830c4ef48d4cfc83e98809f3f29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#aa07a0830c4ef48d4cfc83e98809f3f29">log_obs_error</a></td></tr>
-<tr class="separator:aa07a0830c4ef48d4cfc83e98809f3f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9764d4c02805916f62e7c53cac47375c"><td class="memItemLeft" align="right" valign="top">Rcpp::NumericVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterface.html#a9764d4c02805916f62e7c53cac47375c">log_obs_error</a></td></tr>
+<tr class="separator:a9764d4c02805916f62e7c53cac47375c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classFleetInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classFleetInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classFleetInterfaceBase.html">FleetInterfaceBase</a></td></tr>
 <tr class="memitem:a65f53edf247ffd853afb80ff0d615494 inherit pub_attribs_classFleetInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFleetInterfaceBase.html#a65f53edf247ffd853afb80ff0d615494">id</a></td></tr>
 <tr class="separator:a65f53edf247ffd853afb80ff0d615494 inherit pub_attribs_classFleetInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,6 +347,21 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a5f25f9a3d4af20cfe2812eb11ee5a3fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f25f9a3d4af20cfe2812eb11ee5a3fc">&#9670;&nbsp;</a></span>estimate_obs_error</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FleetInterface::estimate_obs_error = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>whether the parameter log_obs_error should be estimated </p>
+
+</div>
+</div>
 <a id="a1358c0ae2f7e96e057567875c0849042"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1358c0ae2f7e96e057567875c0849042">&#9670;&nbsp;</a></span>estimate_q</h2>
 
@@ -390,14 +407,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aa07a0830c4ef48d4cfc83e98809f3f29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa07a0830c4ef48d4cfc83e98809f3f29">&#9670;&nbsp;</a></span>log_obs_error</h2>
+<a id="a9764d4c02805916f62e7c53cac47375c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9764d4c02805916f62e7c53cac47375c">&#9670;&nbsp;</a></span>log_obs_error</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> FleetInterface::log_obs_error</td>
+          <td class="memname">Rcpp::NumericVector FleetInterface::log_obs_error</td>
         </tr>
       </table>
 </div><div class="memdoc">

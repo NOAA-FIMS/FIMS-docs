@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['recruitment_5fmodels_5fiterator_554',['recruitment_models_iterator',['../classfims__info_1_1Information.html#a300ab12f1ce828f0a686fe5db38693d7',1,'fims_info::Information']]]
+  ['jsonarray_619',['JsonArray',['../fims__json_8hpp.html#a3a8c60ac21b2f8e8618d134d8570616a',1,'fims_json.hpp']]],
+  ['jsonobject_620',['JsonObject',['../fims__json_8hpp.html#aa23153da961543d4c9ed092cf12eb4fc',1,'fims_json.hpp']]]
 ];
