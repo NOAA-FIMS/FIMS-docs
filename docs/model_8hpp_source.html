@@ -139,11 +139,11 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">// vector&lt; vector&lt;Type&gt; &gt; creates a nested vector structure where</span></div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// each vector can be a different dimension. Does not work with ADREPORT</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// fleets</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;      vector&lt;vector&lt;Type&gt; &gt; exp_index(n_fleets);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      vector&lt;vector&lt;Type&gt; &gt; exp_catch(n_fleets);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      vector&lt;vector&lt;Type&gt; &gt; cnaa(n_fleets);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      vector&lt;vector&lt;Type&gt; &gt; cwaa(n_fleets);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      vector&lt;vector&lt;Type&gt; &gt; F_mort(n_fleets);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    vector&lt;vector&lt;Type&gt; &gt; exp_index(n_fleets);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    vector&lt;vector&lt;Type&gt; &gt; exp_catch(n_fleets);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    vector&lt;vector&lt;Type&gt; &gt; cnaa(n_fleets);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    vector&lt;vector&lt;Type&gt; &gt; cwaa(n_fleets);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    vector&lt;vector&lt;Type&gt; &gt; F_mort(n_fleets);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// populations</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    vector&lt;vector&lt;Type&gt; &gt; naa(n_pops);</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    vector&lt;vector&lt;Type&gt; &gt; ssb(n_pops);</div>
@@ -228,11 +228,11 @@ $(function() {
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">for</span> (jt = this-&gt;<a class="code" href="classfims__model_1_1Model.html#addfa06809f60c7b5ef64c03c4cd204a9">fims_information</a>-&gt;fleets.begin();</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;         jt != this-&gt;<a class="code" href="classfims__info_1_1Information.html#af21bebe91662251ada5ac37feaac1af5">fims_information</a>-&gt;fleets.end(); ++jt) {</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        exp_index(fleet_idx) = (*jt).second-&gt;expected_index;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        exp_catch(fleet_idx) = (*jt).second-&gt;expected_catch;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        F_mort(fleet_idx) = (*jt).second-&gt;Fmort;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        cnaa(fleet_idx) = (*jt).second-&gt;catch_numbers_at_age;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        cwaa(fleet_idx) = (*jt).second-&gt;catch_weight_at_age;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;      exp_index(fleet_idx) = (*jt).second-&gt;expected_index;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;      exp_catch(fleet_idx) = (*jt).second-&gt;expected_catch;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;      F_mort(fleet_idx) = (*jt).second-&gt;Fmort;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;      cnaa(fleet_idx) = (*jt).second-&gt;catch_numbers_at_age;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;      cwaa(fleet_idx) = (*jt).second-&gt;catch_weight_at_age;</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;      fleet_idx += 1;</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    }</div>
@@ -280,20 +280,19 @@ $(function() {
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <span class="keywordflow">return</span> jnll;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;  }</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    </div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;};</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="comment">// Create singleton instance of Model class</span></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;std::shared_ptr&lt;Model&lt;Type&gt; &gt; <a class="code" href="classfims__model_1_1Model.html#a9b1e4383331085750c40db5bbc5590e6">Model&lt;Type&gt;::fims_model</a> =</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keyword">nullptr</span>;  <span class="comment">// singleton instance</span></div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;}  <span class="comment">// namespace fims_model</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160; </div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_COMMON_MODEL_HPP */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassfims__info_1_1Information_html_a6f5178e8fb0a1b696d221bdc6378efa5"><div class="ttname"><a href="classfims__info_1_1Information.html#a6f5178e8fb0a1b696d221bdc6378efa5">fims_info::Information::fleet_iterator</a></div><div class="ttdeci">std::map&lt; uint32_t, std::shared_ptr&lt; fims_popdy::Fleet&lt; Type &gt; &gt; &gt;::iterator fleet_iterator</div><div class="ttdef"><b>Definition:</b> information.hpp:95</div></div>
-<div class="ttc" id="aclassfims__info_1_1Information_html_a759706b890cca0bb7b43ff5d7fbb9f47"><div class="ttname"><a href="classfims__info_1_1Information.html#a759706b890cca0bb7b43ff5d7fbb9f47">fims_info::Information::population_iterator</a></div><div class="ttdeci">std::map&lt; uint32_t, std::shared_ptr&lt; fims_popdy::Population&lt; Type &gt; &gt; &gt;::iterator population_iterator</div><div class="ttdef"><b>Definition:</b> information.hpp:104</div></div>
-<div class="ttc" id="aclassfims__info_1_1Information_html_aed263e9a248ca2ac421209b1bfe45c7b"><div class="ttname"><a href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; Type &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:127</div></div>
-<div class="ttc" id="aclassfims__info_1_1Information_html_af21bebe91662251ada5ac37feaac1af5"><div class="ttname"><a href="classfims__info_1_1Information.html#af21bebe91662251ada5ac37feaac1af5">fims_info::Information::fims_information</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; Type &gt; &gt; fims_information</div><div class="ttdef"><b>Definition:</b> information.hpp:41</div></div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;};</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160; </div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;<span class="comment">// Create singleton instance of Model class</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;std::shared_ptr&lt;Model&lt;Type&gt; &gt; <a class="code" href="classfims__model_1_1Model.html#a9b1e4383331085750c40db5bbc5590e6">Model&lt;Type&gt;::fims_model</a> =</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    <span class="keyword">nullptr</span>;  <span class="comment">// singleton instance</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;}  <span class="comment">// namespace fims_model</span></div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_COMMON_MODEL_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassfims__info_1_1Information_html_a6f5178e8fb0a1b696d221bdc6378efa5"><div class="ttname"><a href="classfims__info_1_1Information.html#a6f5178e8fb0a1b696d221bdc6378efa5">fims_info::Information::fleet_iterator</a></div><div class="ttdeci">std::map&lt; uint32_t, std::shared_ptr&lt; fims_popdy::Fleet&lt; Type &gt; &gt; &gt;::iterator fleet_iterator</div><div class="ttdef"><b>Definition:</b> information.hpp:94</div></div>
+<div class="ttc" id="aclassfims__info_1_1Information_html_a759706b890cca0bb7b43ff5d7fbb9f47"><div class="ttname"><a href="classfims__info_1_1Information.html#a759706b890cca0bb7b43ff5d7fbb9f47">fims_info::Information::population_iterator</a></div><div class="ttdeci">std::map&lt; uint32_t, std::shared_ptr&lt; fims_popdy::Population&lt; Type &gt; &gt; &gt;::iterator population_iterator</div><div class="ttdef"><b>Definition:</b> information.hpp:103</div></div>
+<div class="ttc" id="aclassfims__info_1_1Information_html_aed263e9a248ca2ac421209b1bfe45c7b"><div class="ttname"><a href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; Type &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:126</div></div>
+<div class="ttc" id="aclassfims__info_1_1Information_html_af21bebe91662251ada5ac37feaac1af5"><div class="ttname"><a href="classfims__info_1_1Information.html#af21bebe91662251ada5ac37feaac1af5">fims_info::Information::fims_information</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; Type &gt; &gt; fims_information</div><div class="ttdef"><b>Definition:</b> information.hpp:40</div></div>
 <div class="ttc" id="aclassfims__model_1_1Model_html"><div class="ttname"><a href="classfims__model_1_1Model.html">fims_model::Model</a></div><div class="ttdoc">Model class. FIMS objective function.</div><div class="ttdef"><b>Definition:</b> model.hpp:30</div></div>
 <div class="ttc" id="aclassfims__model_1_1Model_html_a9b1e4383331085750c40db5bbc5590e6"><div class="ttname"><a href="classfims__model_1_1Model.html#a9b1e4383331085750c40db5bbc5590e6">fims_model::Model::fims_model</a></div><div class="ttdeci">static std::shared_ptr&lt; Model&lt; Type &gt; &gt; fims_model</div><div class="ttdef"><b>Definition:</b> model.hpp:33</div></div>
 <div class="ttc" id="aclassfims__model_1_1Model_html_ad90b8d1d3de83cd359cca7982518f28d"><div class="ttname"><a href="classfims__model_1_1Model.html#ad90b8d1d3de83cd359cca7982518f28d">fims_model::Model::Evaluate</a></div><div class="ttdeci">const Type Evaluate()</div><div class="ttdoc">Evaluate. Calculates the joint negative log-likelihood function.</div><div class="ttdef"><b>Definition:</b> model.hpp:62</div></div>

@@ -252,39 +252,38 @@ $(function() {
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160; </div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;  <span class="keywordtype">bool</span> add_to_fims_tmb_internal() {</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    std::shared_ptr&lt;fims_info::Information&lt;Type&gt;&gt; info =</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <a class="code" href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information&lt;Type&gt;::GetInstance</a>();</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160; </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    std::shared_ptr&lt;fims_distributions::Dmultinom&lt;Type&gt;&gt; distribution =</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        std::make_shared&lt;fims_distributions::Dmultinom&lt;Type&gt;&gt;();</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    distribution-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    distribution-&gt;x.resize(<a class="code" href="classDmultinomDistributionsInterface.html#ac5d3d6d3a8d5fc74ebb2377b7756f6be">x</a>.size());</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    distribution-&gt;p.resize(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#ac5d3d6d3a8d5fc74ebb2377b7756f6be">x</a>.size(); i++) {</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      distribution-&gt;x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#ac5d3d6d3a8d5fc74ebb2377b7756f6be">x</a>[i];</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      distribution-&gt;p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    }</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    info-&gt;distribution_models[distribution-&gt;id] = distribution;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;  }</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a>() {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_REAL_TYPE&gt;();</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_FIRST_ORDER&gt;();</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_SECOND_ORDER&gt;();</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_THIRD_ORDER&gt;();</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;  }</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;};</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    std::shared_ptr&lt;fims_info::Information&lt;Type&gt;&gt; info =</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <a class="code" href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information&lt;Type&gt;::GetInstance</a>();</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    std::shared_ptr&lt;fims_distributions::Dmultinom&lt;Type&gt;&gt; distribution =</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        std::make_shared&lt;fims_distributions::Dmultinom&lt;Type&gt;&gt;();</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    distribution-&gt;id = this-&gt;<a class="code" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a>;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    distribution-&gt;x.resize(<a class="code" href="classDmultinomDistributionsInterface.html#ac5d3d6d3a8d5fc74ebb2377b7756f6be">x</a>.size());</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    distribution-&gt;p.resize(<a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>.size());</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classDmultinomDistributionsInterface.html#ac5d3d6d3a8d5fc74ebb2377b7756f6be">x</a>.size(); i++) {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;      distribution-&gt;x[i] = <a class="code" href="classDmultinomDistributionsInterface.html#ac5d3d6d3a8d5fc74ebb2377b7756f6be">x</a>[i];</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;      distribution-&gt;p[i] = <a class="code" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a>[i];</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    }</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160; </div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    info-&gt;distribution_models[distribution-&gt;id] = distribution;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;  }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a>() {</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_REAL_TYPE&gt;();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_FIRST_ORDER&gt;();</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_SECOND_ORDER&gt;();</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    this-&gt;add_to_fims_tmb_internal&lt;TMB_FIMS_THIRD_ORDER&gt;();</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;  }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;};</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassDistributionsInterfaceBase_html"><div class="ttname"><a href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a></div><div class="ttdoc">Distributions Rcpp Interface.</div><div class="ttdef"><b>Definition:</b> rcpp_tmb_distribution.hpp:20</div></div>
 <div class="ttc" id="aclassDistributionsInterfaceBase_html_a5d9993ff1cc28507b609920dfd7e9d44"><div class="ttname"><a href="classDistributionsInterfaceBase.html#a5d9993ff1cc28507b609920dfd7e9d44">DistributionsInterfaceBase::evaluate</a></div><div class="ttdeci">virtual double evaluate(bool do_log)=0</div><div class="ttdoc">evaluate method for child distribution interface objects to inherit</div></div>
 <div class="ttc" id="aclassDistributionsInterfaceBase_html_ac2c9fafbff23443ff4b5d9a9bee56c08"><div class="ttname"><a href="classDistributionsInterfaceBase.html#ac2c9fafbff23443ff4b5d9a9bee56c08">DistributionsInterfaceBase::get_id</a></div><div class="ttdeci">virtual uint32_t get_id()=0</div><div class="ttdoc">get_id method for child distribution interface objects to inherit</div></div>
@@ -313,7 +312,7 @@ $(function() {
 <div class="ttc" id="aclassFIMSRcppInterfaceBase_html_a9183d9379777d8be70ab66af1a07f94c"><div class="ttname"><a href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">FIMSRcppInterfaceBase::add_to_fims_tmb</a></div><div class="ttdeci">virtual bool add_to_fims_tmb()</div><div class="ttdoc">virtual method to inherit to add objects to the TMB model</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:67</div></div>
 <div class="ttc" id="aclassParameter_html"><div class="ttname"><a href="classParameter.html">Parameter</a></div><div class="ttdoc">RcppInterface class that defines the interface between R and C++ for parameter types.</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:26</div></div>
 <div class="ttc" id="aclassParameter_html_a90a6f51aff9ea524cc34b83965392c41"><div class="ttname"><a href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">Parameter::value_m</a></div><div class="ttdeci">double value_m</div><div class="ttdef"><b>Definition:</b> rcpp_interface_base.hpp:28</div></div>
-<div class="ttc" id="aclassfims__info_1_1Information_html_aed263e9a248ca2ac421209b1bfe45c7b"><div class="ttname"><a href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; Type &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:127</div></div>
+<div class="ttc" id="aclassfims__info_1_1Information_html_aed263e9a248ca2ac421209b1bfe45c7b"><div class="ttname"><a href="classfims__info_1_1Information.html#aed263e9a248ca2ac421209b1bfe45c7b">fims_info::Information::GetInstance</a></div><div class="ttdeci">static std::shared_ptr&lt; Information&lt; Type &gt; &gt; GetInstance()</div><div class="ttdef"><b>Definition:</b> information.hpp:126</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
