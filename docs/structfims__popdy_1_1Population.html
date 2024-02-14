@@ -170,12 +170,12 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab74ad2aebad2eb0250cf51a63f26a2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a311f680a45f2bfb93b0b78695c381e3b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#a311f680a45f2bfb93b0b78695c381e3b">nfleets</a></td></tr>
 <tr class="separator:a311f680a45f2bfb93b0b78695c381e3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c5bd13516893e11f093fdfaa8638303"><td class="memItemLeft" align="right" valign="top">const Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#a0c5bd13516893e11f093fdfaa8638303">proportion_female</a></td></tr>
-<tr class="separator:a0c5bd13516893e11f093fdfaa8638303"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2e49be95ab9db4d7d071ff3291305a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#af2e49be95ab9db4d7d071ff3291305a7">log_init_naa</a></td></tr>
 <tr class="separator:af2e49be95ab9db4d7d071ff3291305a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fb02df8e3851a4d956c94e47d01b8f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#a3fb02df8e3851a4d956c94e47d01b8f8">log_M</a></td></tr>
 <tr class="separator:a3fb02df8e3851a4d956c94e47d01b8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae47bb5ebf7a3f1b14f69b9cfd7ad8ecf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#ae47bb5ebf7a3f1b14f69b9cfd7ad8ecf">proportion_female</a></td></tr>
+<tr class="separator:ae47bb5ebf7a3f1b14f69b9cfd7ad8ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade6aeb9c5d0f96985c1b4409112e2d1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#ade6aeb9c5d0f96985c1b4409112e2d1c">M</a></td></tr>
 <tr class="separator:ade6aeb9c5d0f96985c1b4409112e2d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23a683cac81c7ed67ac6a13cf129dfde"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1Population.html#a23a683cac81c7ed67ac6a13cf129dfde">ages</a></td></tr>
@@ -1442,8 +1442,8 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<a id="a0c5bd13516893e11f093fdfaa8638303"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c5bd13516893e11f093fdfaa8638303">&#9670;&nbsp;</a></span>proportion_female</h2>
+<a id="ae47bb5ebf7a3f1b14f69b9cfd7ad8ecf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae47bb5ebf7a3f1b14f69b9cfd7ad8ecf">&#9670;&nbsp;</a></span>proportion_female</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1451,13 +1451,11 @@ template&lt;typename Type &gt; </div>
 template&lt;typename Type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const Type <a class="el" href="structfims__popdy_1_1Population.html">fims_popdy::Population</a>&lt; Type &gt;::proportion_female</td>
+          <td class="memname"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt;Type&gt; <a class="el" href="structfims__popdy_1_1Population.html">fims_popdy::Population</a>&lt; Type &gt;::proportion_female</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      0.5</div>
-</div><!-- fragment --><p>Sex proportion fixed at 50/50 for M1 </p>
+<p>estimated parameter: proportion female by age </p>
 
 </div>
 </div>
@@ -1474,7 +1472,7 @@ template&lt;typename Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Derived quantity: Proportion matura at age </p>
+<p>Derived quantity: Proportion mature at age </p>
 
 </div>
 </div>
