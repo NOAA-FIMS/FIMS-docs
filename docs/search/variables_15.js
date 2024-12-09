@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['wd_937',['wd',['../structfims_1_1LogEntry.html#a035f661c2f0a1c9d0b0f50b1ff01c394',1,'fims::LogEntry']]],
-  ['weight_5fat_5fage_938',['weight_at_age',['../structfims__popdy_1_1Population.html#aa6b0b2a00411f9c5a7dbdc4bb4c45095',1,'fims_popdy::Population']]],
-  ['weights_939',['weights',['../classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86',1,'EWAAGrowthInterface']]],
-  ['write_5fon_5fexit_940',['write_on_exit',['../classfims_1_1FIMSLog.html#a1f92030e24364caa377ca4ba1174a1be',1,'fims::FIMSLog']]]
+  ['x_609',['x',['../classDnormDistributionsInterface.html#a548824b92bedb476bc50826c4ca1c476',1,'DnormDistributionsInterface::x()'],['../classDlnormDistributionsInterface.html#ad06d7fb7cebfd89d7de57a669bdd2190',1,'DlnormDistributionsInterface::x()'],['../classDmultinomDistributionsInterface.html#ac5d3d6d3a8d5fc74ebb2377b7756f6be',1,'DmultinomDistributionsInterface::x()']]]
 ];

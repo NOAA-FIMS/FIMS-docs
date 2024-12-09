@@ -76,20 +76,28 @@ $(function() {
 <div class="title">distributions.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="distributions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef FIMS_DISTRIBUTIONS_HPP</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define FIMS_DISTRIBUTIONS_HPP</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="density__components__base_8hpp.html">functors/density_components_base.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lognormal__lpdf_8hpp.html">functors/lognormal_lpdf.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="multinomial__lpmf_8hpp.html">functors/multinomial_lpmf.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="normal__lpdf_8hpp.html">functors/normal_lpdf.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_DISTRIBUTIONS_HPP */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="adensity__components__base_8hpp_html"><div class="ttname"><a href="density__components__base_8hpp.html">density_components_base.hpp</a></div><div class="ttdoc">Declares the DensityComponentBase class, which is the base class for all distribution functors.</div></div>
-<div class="ttc" id="alognormal__lpdf_8hpp_html"><div class="ttname"><a href="lognormal__lpdf_8hpp.html">lognormal_lpdf.hpp</a></div><div class="ttdoc">Lognormal Log Probability Density Function (LPDF) defines the Lognormal LPDF class and its fields and...</div></div>
-<div class="ttc" id="amultinomial__lpmf_8hpp_html"><div class="ttname"><a href="multinomial__lpmf_8hpp.html">multinomial_lpmf.hpp</a></div><div class="ttdoc">Multinomial Log Probability Mass Function (LPMF) module file defines the Multinomial LPMF class and i...</div></div>
-<div class="ttc" id="anormal__lpdf_8hpp_html"><div class="ttname"><a href="normal__lpdf_8hpp.html">normal_lpdf.hpp</a></div><div class="ttdoc">Normal Log Probability Density Function (LPDF) module file defines the Normal LPDF class and its fiel...</div></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This File is part of the NOAA, National Marine Fisheries Service</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Fisheries Integrated Modeling System project. See LICENSE in the</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * source folder for reuse information.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Distributions module file</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * The purpose of this file is to include any .hpp files within the</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * subfolders so that only this file needs to included in the model.hpp file.</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * DEFINE guards for distributions module outline to define the</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * distributions hpp file if not already defined.</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef FIMS_DISTRIBUTIONS_HPP</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define FIMS_DISTRIBUTIONS_HPP</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="distributions__base_8hpp.html">functors/distributions_base.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="tmb__distributions_8hpp.html">functors/tmb_distributions.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_DISTRIBUTIONS_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="adistributions__base_8hpp_html"><div class="ttname"><a href="distributions__base_8hpp.html">distributions_base.hpp</a></div></div>
+<div class="ttc" id="atmb__distributions_8hpp_html"><div class="ttname"><a href="tmb__distributions_8hpp.html">tmb_distributions.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

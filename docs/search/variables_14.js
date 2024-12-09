@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['variable_5fmap_936',['variable_map',['../classfims__info_1_1Information.html#a739655fc151e6ebc5b48a25386e13700',1,'fims_info::Information']]]
+  ['weight_5fat_5fage_607',['weight_at_age',['../structfims__popdy_1_1Population.html#aa6b0b2a00411f9c5a7dbdc4bb4c45095',1,'fims_popdy::Population']]],
+  ['weights_608',['weights',['../classEWAAGrowthInterface.html#ac64ebcacc22bb5b546194626dfe46b86',1,'EWAAGrowthInterface']]]
 ];

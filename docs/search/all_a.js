@@ -1,6 +1,21 @@
 var searchData=
 [
-  ['key_256',['key',['../structfims__distributions_1_1DensityComponentBase.html#a0232bd6e20b7b48685534e3d804178ac',1,'fims_distributions::DensityComponentBase']]],
-  ['key_5fm_257',['key_m',['../classDistributionsInterfaceBase.html#a28b76709fb1ca00c6fa390c344f2dc26',1,'DistributionsInterfaceBase']]],
-  ['kmax_258',['kmax',['../structfims__data__object_1_1DataObject.html#a1f224a8a381eddc0286f044dc087c686',1,'fims_data_object::DataObject']]]
+  ['live_5fobjects_175',['live_objects',['../classDataInterfaceBase.html#a193b46f3002eda7eaef25e2106104fbf',1,'DataInterfaceBase::live_objects()'],['../classFleetInterfaceBase.html#a5605c3823e74602b62ed60ed2bae6847',1,'FleetInterfaceBase::live_objects()'],['../classGrowthInterfaceBase.html#a5a6704a5b7c2e7d63d6183136d6fb48e',1,'GrowthInterfaceBase::live_objects()'],['../classMaturityInterfaceBase.html#a2ddeb5cd2b04611601843e342d23f2a4',1,'MaturityInterfaceBase::live_objects()'],['../classNLLInterfaceBase.html#a017e42351e74f8077f1f7cd09a16bb2a',1,'NLLInterfaceBase::live_objects()'],['../classPopulationInterfaceBase.html#a99fc4b0a5a0f572f9bf46670a996d3e9',1,'PopulationInterfaceBase::live_objects()'],['../classRecruitmentInterfaceBase.html#a37028a265deac1c36cdc879d5d6ac18a',1,'RecruitmentInterfaceBase::live_objects()'],['../classSelectivityInterfaceBase.html#a73e2366d975093bd8fc22beeb45049df',1,'SelectivityInterfaceBase::live_objects()'],['../classDistributionsInterfaceBase.html#ae285ae2cd00da6eddbabf2c090ffa9fc',1,'DistributionsInterfaceBase::live_objects()']]],
+  ['lmax_176',['lmax',['../structfims__data__object_1_1DataObject.html#a0f1903e29547d7e716c6a6c3300b2480',1,'fims_data_object::DataObject']]],
+  ['log_5fdevs_177',['log_devs',['../classBevertonHoltRecruitmentInterface.html#a82ef977b840ba6c2881eee57178861cd',1,'BevertonHoltRecruitmentInterface']]],
+  ['log_5ffmort_178',['log_Fmort',['../structfims__popdy_1_1Fleet.html#ac572ee8c2fc48c99544ed01ae284c6e7',1,'fims_popdy::Fleet::log_Fmort()'],['../classFleetInterface.html#a94438e7b6470900e6d90dff442b9c2c9',1,'FleetInterface::log_Fmort()']]],
+  ['log_5finit_5fnaa_179',['log_init_naa',['../classPopulationInterface.html#a2d07c734a9e7bf65b3b9e1216ea8df77',1,'PopulationInterface::log_init_naa()'],['../structfims__popdy_1_1Population.html#af2e49be95ab9db4d7d071ff3291305a7',1,'fims_popdy::Population::log_init_naa()']]],
+  ['log_5fm_180',['log_M',['../classPopulationInterface.html#afae0d90281be3207c796a6051ed3bff9',1,'PopulationInterface::log_M()'],['../structfims__popdy_1_1Population.html#a3fb02df8e3851a4d956c94e47d01b8f8',1,'fims_popdy::Population::log_M()']]],
+  ['log_5fobs_5ferror_181',['log_obs_error',['../classFleetInterface.html#a9764d4c02805916f62e7c53cac47375c',1,'FleetInterface::log_obs_error()'],['../structfims__popdy_1_1Fleet.html#aa004cbdb4d4dabcf587ce08937459544',1,'fims_popdy::Fleet::log_obs_error()']]],
+  ['log_5fq_182',['log_q',['../classFleetInterface.html#aa95122830a47e48154234fd477b55a0a',1,'FleetInterface::log_q()'],['../structfims__popdy_1_1Fleet.html#a5b3f8cf2f7c774fa1fa835e80661054a',1,'fims_popdy::Fleet::log_q()']]],
+  ['log_5frecruit_5fdevs_183',['log_recruit_devs',['../structfims__popdy_1_1RecruitmentBase.html#af1151687013ce34c91144260da6ed8c6',1,'fims_popdy::RecruitmentBase']]],
+  ['log_5frzero_184',['log_rzero',['../classBevertonHoltRecruitmentInterface.html#aef43664185856d401935a02eef1ebbba',1,'BevertonHoltRecruitmentInterface::log_rzero()'],['../structfims__popdy_1_1RecruitmentBase.html#aa020783765196f6028f267006e340bc9',1,'fims_popdy::RecruitmentBase::log_rzero()']]],
+  ['log_5fsigma_5frecruit_185',['log_sigma_recruit',['../classBevertonHoltRecruitmentInterface.html#ae9f46c25b71b73595850e6d24f91d1ea',1,'BevertonHoltRecruitmentInterface::log_sigma_recruit()'],['../structfims__popdy_1_1RecruitmentBase.html#a83318ec2a3032d33a90defeb399e95b8',1,'fims_popdy::RecruitmentBase::log_sigma_recruit()']]],
+  ['logistic_186',['logistic',['../fims__math_8hpp.html#ae8d003754148800ba87fbf228bc7d062',1,'fims_math']]],
+  ['logisticmaturity_187',['LogisticMaturity',['../structfims__popdy_1_1LogisticMaturity.html',1,'fims_popdy']]],
+  ['logisticmaturityinterface_188',['LogisticMaturityInterface',['../classLogisticMaturityInterface.html',1,'']]],
+  ['logisticselectivity_189',['LogisticSelectivity',['../structfims__popdy_1_1LogisticSelectivity.html',1,'fims_popdy']]],
+  ['logisticselectivityinterface_190',['LogisticSelectivityInterface',['../classLogisticSelectivityInterface.html',1,'']]],
+  ['logit_191',['logit',['../fims__math_8hpp.html#a0fef2c2ffd54b4d023d194653ebeb1f0',1,'fims_math']]],
+  ['logit_5fsteep_192',['logit_steep',['../classBevertonHoltRecruitmentInterface.html#a1d3c3a96a3ff9a872aeeb57e343e1073',1,'BevertonHoltRecruitmentInterface::logit_steep()'],['../structfims__popdy_1_1SRBevertonHolt.html#a441ad312c069227e5912faa32c6ec4bf',1,'fims_popdy::SRBevertonHolt::logit_steep()']]]
 ];

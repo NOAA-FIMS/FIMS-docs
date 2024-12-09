@@ -1,25 +1,10 @@
 var searchData=
 [
-  ['calculatebiomass_585',['CalculateBiomass',['../structfims__popdy_1_1Population.html#a7f81ed326ec02015bacc072805d9a4dc',1,'fims_popdy::Population']]],
-  ['calculatecatch_586',['CalculateCatch',['../structfims__popdy_1_1Population.html#ae999d0677d2d76cc843befc1cd66ef73',1,'fims_popdy::Population']]],
-  ['calculatecatchnumbersaa_587',['CalculateCatchNumbersAA',['../structfims__popdy_1_1Population.html#ad727fb0d716d7486f18fd45f002f6105',1,'fims_popdy::Population']]],
-  ['calculatecatchweightaa_588',['CalculateCatchWeightAA',['../structfims__popdy_1_1Population.html#ab9418dea961dc17c7a1cca847f06eb6d',1,'fims_popdy::Population']]],
-  ['calculateindex_589',['CalculateIndex',['../structfims__popdy_1_1Population.html#ae181698b53fe343dbe9bd0cf015562c7',1,'fims_popdy::Population']]],
-  ['calculateinitialnumbersaa_590',['CalculateInitialNumbersAA',['../structfims__popdy_1_1Population.html#aed5a4499df4ef9ff701d67fc7484cacb',1,'fims_popdy::Population']]],
-  ['calculatematurityaa_591',['CalculateMaturityAA',['../structfims__popdy_1_1Population.html#a57bd343c709abf114a5d4c5e379a7346',1,'fims_popdy::Population']]],
-  ['calculatemortality_592',['CalculateMortality',['../structfims__popdy_1_1Population.html#ae980249b2fb477d871a18277fbc8fc52',1,'fims_popdy::Population']]],
-  ['calculatenumbersaa_593',['CalculateNumbersAA',['../structfims__popdy_1_1Population.html#a3a84516a4095787904b4c51a011e843c',1,'fims_popdy::Population']]],
-  ['calculaterecruitment_594',['CalculateRecruitment',['../structfims__popdy_1_1Population.html#a70b6310d8a1633fd9d8a66471be9dcd2',1,'fims_popdy::Population']]],
-  ['calculatesbpr0_595',['CalculateSBPR0',['../structfims__popdy_1_1Population.html#aed84b8996bb09055129b95409f85a29b',1,'fims_popdy::Population']]],
-  ['calculatespawningbiomass_596',['CalculateSpawningBiomass',['../structfims__popdy_1_1Population.html#a3a9a401050be4587e5dc175760610212',1,'fims_popdy::Population']]],
-  ['calculateunfishedbiomass_597',['CalculateUnfishedBiomass',['../structfims__popdy_1_1Population.html#a967f4825dbe8de1c743113d01853b711',1,'fims_popdy::Population']]],
-  ['calculateunfishednumbersaa_598',['CalculateUnfishedNumbersAA',['../structfims__popdy_1_1Population.html#acf0c9c180d843e0b7046dc55b8fa89b7',1,'fims_popdy::Population']]],
-  ['calculateunfishedspawningbiomass_599',['CalculateUnfishedSpawningBiomass',['../structfims__popdy_1_1Population.html#a3802503b7df7787cee22504cc0d9997c',1,'fims_popdy::Population']]],
-  ['capacity_600',['capacity',['../classfims_1_1Vector.html#a4199a5050a85e9bd6e530f5af1846514',1,'fims::Vector']]],
-  ['checkdimensions_601',['CheckDimensions',['../structfims__model__object_1_1FIMSObject.html#a81239daf538745bbb96c56f627edc781',1,'fims_model_object::FIMSObject']]],
-  ['clear_602',['clear',['../classfims_1_1FIMSLog.html#a1bd3de73d5a5a6727e3f2b3bd8d4c43c',1,'fims::FIMSLog::clear()'],['../classfims_1_1Vector.html#aee67983e5dafc3b081d3777220cb3c99',1,'fims::Vector::clear()'],['../rcpp__interface_8hpp.html#ac8bb3912a3ce86b15842e79d0b421204',1,'clear():&#160;rcpp_interface.hpp']]],
-  ['clear_5finternal_603',['clear_internal',['../rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d',1,'rcpp_interface.hpp']]],
-  ['compois_5fcalc_5fvar_604',['compois_calc_var',['../init_8hpp.html#a8190061e4fa4ebe4914e754c8b430847',1,'init.hpp']]],
-  ['createmodel_605',['CreateModel',['../classfims__info_1_1Information.html#a87a3d2d9a1575dbba625398e7cadd904',1,'fims_info::Information']]],
-  ['createtmbmodel_606',['CreateTMBModel',['../rcpp__interface_8hpp.html#a1d0c303c2c44fcb296368608a5f2ff1a',1,'rcpp_interface.hpp']]]
+  ['data_393',['data',['../classfims_1_1Vector.html#a7e1dc8a5671358ba56f52b5fa4c0598e',1,'fims::Vector::data()'],['../classfims_1_1Vector.html#abb8aa693fa992b944d17fd144ca4c40a',1,'fims::Vector::data() const']]],
+  ['data_5flog_394',['DATA_LOG',['../def_8hpp.html#a58d95516b89b5a2da7fd4d8a6413a7c4',1,'def.hpp']]],
+  ['datainterfacebase_395',['DataInterfaceBase',['../classDataInterfaceBase.html#a440fbc882d52e8239332127f1ec041d3',1,'DataInterfaceBase']]],
+  ['dataobject_396',['DataObject',['../structfims__data__object_1_1DataObject.html#a6c63a636143aa724ed44992ff3866464',1,'fims_data_object::DataObject::DataObject(size_t imax)'],['../structfims__data__object_1_1DataObject.html#a9564db3e53b2c512b80342c6ae62c46d',1,'fims_data_object::DataObject::DataObject(size_t imax, size_t jmax)'],['../structfims__data__object_1_1DataObject.html#a22b405d140971c50550a83156e0b0739',1,'fims_data_object::DataObject::DataObject(size_t imax, size_t jmax, size_t kmax)'],['../structfims__data__object_1_1DataObject.html#a93307f3a1c9995c39a9ca51a03d50b65',1,'fims_data_object::DataObject::DataObject(size_t imax, size_t jmax, size_t kmax, size_t lmax)']]],
+  ['debug_5flog_397',['DEBUG_LOG',['../def_8hpp.html#a9dd6f7b6a012412894bea2d72974339b',1,'def.hpp']]],
+  ['distributionsbase_398',['DistributionsBase',['../structfims__distributions_1_1DistributionsBase.html#a7b3ca8e2e037bafa544cf3f23ca59ffc',1,'fims_distributions::DistributionsBase']]],
+  ['double_5flogistic_399',['double_logistic',['../fims__math_8hpp.html#a4f55d4bf901b546a57ed3a626a445e52',1,'fims_math']]]
 ];

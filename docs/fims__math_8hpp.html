@@ -78,14 +78,8 @@ $(function() {
 <div class="title">fims_math.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>TODO: provide a brief description.  
-<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;random&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
-<code>#include &quot;<a class="el" href="interface_8hpp_source.html">../interface/interface.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="fims__vector_8hpp_source.html">fims_vector.hpp</a>&quot;</code><br />
+<code>#include &quot;../interface/interface.hpp&quot;</code><br />
 </div>
 <p><a href="fims__math_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -116,17 +110,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a54cfbb09833fa0de10e18203526e8321"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
 <tr class="memitem:a54cfbb09833fa0de10e18203526e8321"><td class="memTemplItemLeft" align="right" valign="top">const Type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fims__math_8hpp.html#a54cfbb09833fa0de10e18203526e8321">fims_math::ad_max</a> (const Type &amp;a, const Type &amp;b, Type C=1e-5)</td></tr>
 <tr class="separator:a54cfbb09833fa0de10e18203526e8321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f6d3a9290062d44590350c1bc739217"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a2f6d3a9290062d44590350c1bc739217"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fims__math_8hpp.html#a2f6d3a9290062d44590350c1bc739217">fims_math::sum</a> (const std::vector&lt; T &gt; &amp;v)</td></tr>
-<tr class="separator:a2f6d3a9290062d44590350c1bc739217"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60f8fb42e9a4786ca5e30b9fad43afed"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
-<tr class="memitem:a60f8fb42e9a4786ca5e30b9fad43afed"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="fims__math_8hpp.html#a60f8fb42e9a4786ca5e30b9fad43afed">fims_math::sum</a> (const <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; T &gt; &amp;v)</td></tr>
-<tr class="separator:a60f8fb42e9a4786ca5e30b9fad43afed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>TODO: provide a brief description. </p>
-<dl class="section copyright"><dt>Copyright</dt><dd>This file is part of the NOAA, National Marine Fisheries Service Fisheries Integrated Modeling System project. See LICENSE in the source folder for reuse information. </dd></dl>
-</div><h2 class="groupheader">Function Documentation</h2>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="abda4b1b8b7ea34fcde2a05e78217d522"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abda4b1b8b7ea34fcde2a05e78217d522">&#9670;&nbsp;</a></span>ad_fabs()</h2>
 
@@ -512,62 +497,6 @@ template&lt;class Type &gt; </div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the parameter in real space </dd></dl>
-
-</div>
-</div>
-<a id="a60f8fb42e9a4786ca5e30b9fad43afed"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60f8fb42e9a4786ca5e30b9fad43afed">&#9670;&nbsp;</a></span>sum() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T fims_math::sum </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sum elements of a vector</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>A vector of constants. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A single numeric value. </dd></dl>
-
-</div>
-</div>
-<a id="a2f6d3a9290062d44590350c1bc739217"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f6d3a9290062d44590350c1bc739217">&#9670;&nbsp;</a></span>sum() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">T fims_math::sum </td>
-          <td>(</td>
-          <td class="paramtype">const std::vector&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sum elements of a vector</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td>A vector of constants. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A single numeric value. </dd></dl>
 
 </div>
 </div>

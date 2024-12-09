@@ -74,212 +74,276 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">def.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>TODO: provide a brief description.  
-<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;fstream&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &lt;cstdlib&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;sstream&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;filesystem&gt;</code><br />
-<code>#include &lt;stdlib.h&gt;</code><br />
-<code>#include &lt;signal.h&gt;</code><br />
-<code>#include &lt;csignal&gt;</code><br />
-<code>#include &lt;cstring&gt;</code><br />
-<code>#include &lt;stdexcept&gt;</code><br />
 </div>
 <p><a href="def_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims_1_1LogEntry.html">fims::LogEntry</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims_1_1fims__log.html">fims::fims_log</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims_1_1FIMSLog.html">fims::FIMSLog</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a288313ea80171ae7591b0aef7fe448f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a288313ea80171ae7591b0aef7fe448f3">FIMS_DEBUG_LOG</a>(MESSAGE)</td></tr>
-<tr class="separator:a288313ea80171ae7591b0aef7fe448f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b168389ac8c99d4f1bcdae5a9532c65"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a2b168389ac8c99d4f1bcdae5a9532c65">FIMS_INFO_LOG</a>(MESSAGE)&#160;&#160;&#160;<a class="el" href="classfims_1_1FIMSLog.html#a942fd5b6d134573af288c0a986831ffd">fims::FIMSLog::fims_log</a>-&gt;info_message(MESSAGE, __LINE__, __FILE__, __PRETTY_FUNCTION__);</td></tr>
-<tr class="separator:a2b168389ac8c99d4f1bcdae5a9532c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f743e7dd7460099a9580e3f24ced6df"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a1f743e7dd7460099a9580e3f24ced6df">FIMS_WARNING_LOG</a>(MESSAGE)&#160;&#160;&#160;<a class="el" href="classfims_1_1FIMSLog.html#a942fd5b6d134573af288c0a986831ffd">fims::FIMSLog::fims_log</a>-&gt;warning_message(MESSAGE, __LINE__, __FILE__, __PRETTY_FUNCTION__);</td></tr>
-<tr class="separator:a1f743e7dd7460099a9580e3f24ced6df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4ff8b8279af8e71e4459d586b695ebd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#ae4ff8b8279af8e71e4459d586b695ebd">FIMS_ERROR_LOG</a>(MESSAGE)&#160;&#160;&#160;<a class="el" href="classfims_1_1FIMSLog.html#a942fd5b6d134573af288c0a986831ffd">fims::FIMSLog::fims_log</a>-&gt;error_message(MESSAGE, __LINE__, __FILE__, __PRETTY_FUNCTION__);</td></tr>
-<tr class="separator:ae4ff8b8279af8e71e4459d586b695ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5d50460624b44c727e53d30026fb9c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#ac5d50460624b44c727e53d30026fb9c6">FIMS_STR</a>(s)&#160;&#160;&#160;#s</td></tr>
-<tr class="separator:ac5d50460624b44c727e53d30026fb9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a20c928a94e4d697a650545313de414b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a20c928a94e4d697a650545313de414b8">fims::WriteAtExit</a> (int sig)</td></tr>
-<tr class="separator:a20c928a94e4d697a650545313de414b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad28f97734d58355a40d01801bca1e2bf"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ad28f97734d58355a40d01801bca1e2bf"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="def_8hpp.html#ad28f97734d58355a40d01801bca1e2bf">fims::to_string</a> (T v)</td></tr>
-<tr class="separator:ad28f97734d58355a40d01801bca1e2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaed3fc4723e7e09782659df8e1ab7f3a"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#aaed3fc4723e7e09782659df8e1ab7f3a">FIMS_LOG</a> (&quot;logs/fims.log&quot;)</td></tr>
+<tr class="separator:aaed3fc4723e7e09782659df8e1ab7f3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4f929af3e95a7f70238f77a6a5cef5f"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#ae4f929af3e95a7f70238f77a6a5cef5f">INFO_LOG</a> (&quot;logs/info.log&quot;)</td></tr>
+<tr class="separator:ae4f929af3e95a7f70238f77a6a5cef5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a308fcf8394afe9b124fd6b8e3186fc9c"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a308fcf8394afe9b124fd6b8e3186fc9c">ERROR_LOG</a> (&quot;logs/error.log&quot;)</td></tr>
+<tr class="separator:a308fcf8394afe9b124fd6b8e3186fc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58d95516b89b5a2da7fd4d8a6413a7c4"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a58d95516b89b5a2da7fd4d8a6413a7c4">DATA_LOG</a> (&quot;logs/data.log&quot;)</td></tr>
+<tr class="separator:a58d95516b89b5a2da7fd4d8a6413a7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b04d9d9cdc2a06b215c92b40ddf0627"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a0b04d9d9cdc2a06b215c92b40ddf0627">MODEL_LOG</a> (&quot;logs/model.log&quot;)</td></tr>
+<tr class="separator:a0b04d9d9cdc2a06b215c92b40ddf0627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da1e19e650fa7488f0d1d265e54beb9"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a9da1e19e650fa7488f0d1d265e54beb9">FLEET_LOG</a> (&quot;logs/fleet.log&quot;)</td></tr>
+<tr class="separator:a9da1e19e650fa7488f0d1d265e54beb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad788028ec9b157659fdb0e83c973e0"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#acad788028ec9b157659fdb0e83c973e0">POPULATION_LOG</a> (&quot;logs/population.log&quot;)</td></tr>
+<tr class="separator:acad788028ec9b157659fdb0e83c973e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab79e53c483ecf6594343d0b2d5108447"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#ab79e53c483ecf6594343d0b2d5108447">RECRUITMENT_LOG</a> (&quot;logs/recruitment.log&quot;)</td></tr>
+<tr class="separator:ab79e53c483ecf6594343d0b2d5108447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f8e17cb50cccb5773dc043d265f6343"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a0f8e17cb50cccb5773dc043d265f6343">GROWTH_LOG</a> (&quot;logs/growth.log&quot;)</td></tr>
+<tr class="separator:a0f8e17cb50cccb5773dc043d265f6343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa51d87ef5189a685ef0f116757519abe"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#aa51d87ef5189a685ef0f116757519abe">MATURITY_LOG</a> (&quot;logs/maturity.log&quot;)</td></tr>
+<tr class="separator:aa51d87ef5189a685ef0f116757519abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34afbc4af6ad36508ad3d2847da6b75c"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a34afbc4af6ad36508ad3d2847da6b75c">SELECTIVITY_LOG</a> (&quot;logs/selectivity.log&quot;)</td></tr>
+<tr class="separator:a34afbc4af6ad36508ad3d2847da6b75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9dd6f7b6a012412894bea2d72974339b"><td class="memItemLeft" align="right" valign="top">std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="def_8hpp.html#a9dd6f7b6a012412894bea2d72974339b">DEBUG_LOG</a> (&quot;logs/debug/debug.log&quot;)</td></tr>
+<tr class="separator:a9dd6f7b6a012412894bea2d72974339b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>TODO: provide a brief description. </p>
-<dl class="section copyright"><dt>Copyright</dt><dd>This file is part of the NOAA, National Marine Fisheries Service Fisheries Integrated Modeling System project. See LICENSE in the source folder for reuse information. </dd></dl>
-</div><h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a288313ea80171ae7591b0aef7fe448f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a288313ea80171ae7591b0aef7fe448f3">&#9670;&nbsp;</a></span>FIMS_DEBUG_LOG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FIMS_DEBUG_LOG</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">MESSAGE</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Print MESSAGE to debug log </p>
-
-</div>
-</div>
-<a id="ae4ff8b8279af8e71e4459d586b695ebd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4ff8b8279af8e71e4459d586b695ebd">&#9670;&nbsp;</a></span>FIMS_ERROR_LOG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FIMS_ERROR_LOG</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">MESSAGE</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="classfims_1_1FIMSLog.html#a942fd5b6d134573af288c0a986831ffd">fims::FIMSLog::fims_log</a>-&gt;error_message(MESSAGE, __LINE__, __FILE__, __PRETTY_FUNCTION__);</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Print MESSAGE to error log </p>
-
-</div>
-</div>
-<a id="a2b168389ac8c99d4f1bcdae5a9532c65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b168389ac8c99d4f1bcdae5a9532c65">&#9670;&nbsp;</a></span>FIMS_INFO_LOG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FIMS_INFO_LOG</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">MESSAGE</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="classfims_1_1FIMSLog.html#a942fd5b6d134573af288c0a986831ffd">fims::FIMSLog::fims_log</a>-&gt;info_message(MESSAGE, __LINE__, __FILE__, __PRETTY_FUNCTION__);</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Print MESSAGE to info log </p>
-
-</div>
-</div>
-<a id="ac5d50460624b44c727e53d30026fb9c6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5d50460624b44c727e53d30026fb9c6">&#9670;&nbsp;</a></span>FIMS_STR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FIMS_STR</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">s</td><td>)</td>
-          <td>&#160;&#160;&#160;#s</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>String of s </p>
-
-</div>
-</div>
-<a id="a1f743e7dd7460099a9580e3f24ced6df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f743e7dd7460099a9580e3f24ced6df">&#9670;&nbsp;</a></span>FIMS_WARNING_LOG</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define FIMS_WARNING_LOG</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">MESSAGE</td><td>)</td>
-          <td>&#160;&#160;&#160;<a class="el" href="classfims_1_1FIMSLog.html#a942fd5b6d134573af288c0a986831ffd">fims::FIMSLog::fims_log</a>-&gt;warning_message(MESSAGE, __LINE__, __FILE__, __PRETTY_FUNCTION__);</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Print MESSAGE to warning log </p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ad28f97734d58355a40d01801bca1e2bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad28f97734d58355a40d01801bca1e2bf">&#9670;&nbsp;</a></span>to_string()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string fims::to_string </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>v</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Converts an object T to a string.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">v</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
-</div>
-</div>
-<a id="a20c928a94e4d697a650545313de414b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20c928a94e4d697a650545313de414b8">&#9670;&nbsp;</a></span>WriteAtExit()</h2>
+<a id="a58d95516b89b5a2da7fd4d8a6413a7c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58d95516b89b5a2da7fd4d8a6413a7c4">&#9670;&nbsp;</a></span>DATA_LOG()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void fims::WriteAtExit </td>
+          <td class="memname">std::ofstream DATA_LOG </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sig</em></td><td>)</td>
+          <td class="paramtype">&quot;logs/data.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Signal intercept function. Writes the log to the disk before a crash occurs.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">sig</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Data input tracking log file </p>
+
+</div>
+</div>
+<a id="a9dd6f7b6a012412894bea2d72974339b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9dd6f7b6a012412894bea2d72974339b">&#9670;&nbsp;</a></span>DEBUG_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream DEBUG_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/debug/debug.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Development debugging log file </p>
+
+</div>
+</div>
+<a id="a308fcf8394afe9b124fd6b8e3186fc9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a308fcf8394afe9b124fd6b8e3186fc9c">&#9670;&nbsp;</a></span>ERROR_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream ERROR_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/error.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Error tracking log file </p>
+
+</div>
+</div>
+<a id="aaed3fc4723e7e09782659df8e1ab7f3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaed3fc4723e7e09782659df8e1ab7f3a">&#9670;&nbsp;</a></span>FIMS_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream FIMS_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/fims.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generic log file </p>
+
+</div>
+</div>
+<a id="a9da1e19e650fa7488f0d1d265e54beb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da1e19e650fa7488f0d1d265e54beb9">&#9670;&nbsp;</a></span>FLEET_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream FLEET_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/fleet.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fleet module log file </p>
+
+</div>
+</div>
+<a id="a0f8e17cb50cccb5773dc043d265f6343"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f8e17cb50cccb5773dc043d265f6343">&#9670;&nbsp;</a></span>GROWTH_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream GROWTH_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/growth.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Growth module log file </p>
+
+</div>
+</div>
+<a id="ae4f929af3e95a7f70238f77a6a5cef5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4f929af3e95a7f70238f77a6a5cef5f">&#9670;&nbsp;</a></span>INFO_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream INFO_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/info.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Information.hpp log file </p>
+
+</div>
+</div>
+<a id="aa51d87ef5189a685ef0f116757519abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51d87ef5189a685ef0f116757519abe">&#9670;&nbsp;</a></span>MATURITY_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream MATURITY_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/maturity.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Maturity module log file </p>
+
+</div>
+</div>
+<a id="a0b04d9d9cdc2a06b215c92b40ddf0627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b04d9d9cdc2a06b215c92b40ddf0627">&#9670;&nbsp;</a></span>MODEL_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream MODEL_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/model.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Model.hpp log file </p>
+
+</div>
+</div>
+<a id="acad788028ec9b157659fdb0e83c973e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad788028ec9b157659fdb0e83c973e0">&#9670;&nbsp;</a></span>POPULATION_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream POPULATION_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/population.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Populations module log file </p>
+
+</div>
+</div>
+<a id="ab79e53c483ecf6594343d0b2d5108447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab79e53c483ecf6594343d0b2d5108447">&#9670;&nbsp;</a></span>RECRUITMENT_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream RECRUITMENT_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/recruitment.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Recruitment module log file </p>
+
+</div>
+</div>
+<a id="a34afbc4af6ad36508ad3d2847da6b75c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34afbc4af6ad36508ad3d2847da6b75c">&#9670;&nbsp;</a></span>SELECTIVITY_LOG()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ofstream SELECTIVITY_LOG </td>
+          <td>(</td>
+          <td class="paramtype">&quot;logs/selectivity.log&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Selectivity module log file </p>
 
 </div>
 </div>

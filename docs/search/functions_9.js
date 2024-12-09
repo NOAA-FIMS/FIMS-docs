@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['jsonvalue_687',['JsonValue',['../classfims_1_1JsonValue.html#a11e289892b986b0e6c111474b8f37cbf',1,'fims::JsonValue::JsonValue()'],['../classfims_1_1JsonValue.html#ad466d26c56af3b6e6cbd31466e54ff81',1,'fims::JsonValue::JsonValue(int num)'],['../classfims_1_1JsonValue.html#a3f0e877e32d8bbc4213a022dbd403fd6',1,'fims::JsonValue::JsonValue(double num)'],['../classfims_1_1JsonValue.html#ab905365bc5c8291f0e5509bcdc08ab7e',1,'fims::JsonValue::JsonValue(const std::string &amp;str)'],['../classfims_1_1JsonValue.html#a098e3d06382f388202efa1dc8ef0928b',1,'fims::JsonValue::JsonValue(bool b)'],['../classfims_1_1JsonValue.html#a3d034e3577f33cb18b0e975d5d374951',1,'fims::JsonValue::JsonValue(const JsonObject &amp;obj)'],['../classfims_1_1JsonValue.html#a18fa8c13f30854452f43abc225c88fb0',1,'fims::JsonValue::JsonValue(const JsonArray &amp;arr)']]]
+  ['logistic_446',['logistic',['../fims__math_8hpp.html#ae8d003754148800ba87fbf228bc7d062',1,'fims_math']]],
+  ['logit_447',['logit',['../fims__math_8hpp.html#a0fef2c2ffd54b4d023d194653ebeb1f0',1,'fims_math']]]
 ];

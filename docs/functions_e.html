@@ -86,8 +86,11 @@ $(function() {
 <li>erase()
 : <a class="el" href="classfims_1_1Vector.html#a6877cca7b037e6a62996d2c8b558d9db">fims::Vector&lt; Type &gt;</a>
 </li>
-<li>error_message()
-: <a class="el" href="classfims_1_1FIMSLog.html#a18a705c8e1094b56390a7dd9f441d724">fims::FIMSLog</a>
+<li>estimate_F
+: <a class="el" href="classFleetInterface.html#ae840183f3f6166985c94948788cb3020">FleetInterface</a>
+</li>
+<li>estimate_initNAA
+: <a class="el" href="classPopulationInterface.html#ab389fa2195c30c3e7d1e00f0b16c30bc">PopulationInterface</a>
 </li>
 <li>estimate_log_devs
 : <a class="el" href="classBevertonHoltRecruitmentInterface.html#afe2980ec7c59a65a74d9d94ff47a6d41">BevertonHoltRecruitmentInterface</a>
@@ -95,55 +98,40 @@ $(function() {
 <li>estimate_log_recruit_devs
 : <a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a847ffa3b1acbb5b5fe44d6816e67cd1b">fims_popdy::RecruitmentBase&lt; Type &gt;</a>
 </li>
+<li>estimate_M
+: <a class="el" href="classPopulationInterface.html#add9e9148642502f037879b1028e9f627">PopulationInterface</a>
+</li>
+<li>estimate_obs_error
+: <a class="el" href="classFleetInterface.html#a5f25f9a3d4af20cfe2812eb11ee5a3fc">FleetInterface</a>
+</li>
 <li>estimate_prop_female
 : <a class="el" href="classPopulationInterface.html#a44a70b9309648da5a9ac3f6ffb9ea334">PopulationInterface</a>
 </li>
 <li>estimate_q
 : <a class="el" href="classFleetInterface.html#a1358c0ae2f7e96e057567875c0849042">FleetInterface</a>
 </li>
-<li>estimated_log_devs
-: <a class="el" href="classBevertonHoltRecruitmentInterface.html#a8180838808f9c5d9f6840e7694218b07">BevertonHoltRecruitmentInterface</a>
-</li>
-<li>estimated_log_init_naa
-: <a class="el" href="classPopulationInterface.html#a7a62afce7fade5aa383176e08eff435a">PopulationInterface</a>
-</li>
-<li>estimated_log_M
-: <a class="el" href="classPopulationInterface.html#adcc9537df9cc793a2ec634cc5e4b9b17">PopulationInterface</a>
-</li>
-<li>estimated_log_rzero
-: <a class="el" href="classBevertonHoltRecruitmentInterface.html#a785f95507532e23b39bb9a2f10258e5c">BevertonHoltRecruitmentInterface</a>
-</li>
-<li>estimated_logit_steep
-: <a class="el" href="classBevertonHoltRecruitmentInterface.html#a4a34dc749e25e4466829e567a4495243">BevertonHoltRecruitmentInterface</a>
-</li>
 <li>estimated_m
 : <a class="el" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">Parameter</a>
 </li>
-<li>estimated_proportion_female
-: <a class="el" href="classPopulationInterface.html#aae8a7e06ec9167435a0607c3686989fb">PopulationInterface</a>
-</li>
 <li>evaluate()
 : <a class="el" href="classBevertonHoltRecruitmentInterface.html#a769423d2ff84105da200df7ccdb12593">BevertonHoltRecruitmentInterface</a>
-, <a class="el" href="classDistributionsInterfaceBase.html#a09877510b57140479092bcacb0843703">DistributionsInterfaceBase</a>
-, <a class="el" href="classDlnormDistributionsInterface.html#a68777a22e7fe70b95ad7738f682a5284">DlnormDistributionsInterface</a>
-, <a class="el" href="classDmultinomDistributionsInterface.html#a77bbdfb9f8849ca0288a76a88d1fdf2b">DmultinomDistributionsInterface</a>
-, <a class="el" href="classDnormDistributionsInterface.html#a51741d62c5fef4c1ba89d6f9a40584aa">DnormDistributionsInterface</a>
+, <a class="el" href="classDistributionsInterfaceBase.html#a5d9993ff1cc28507b609920dfd7e9d44">DistributionsInterfaceBase</a>
+, <a class="el" href="classDlnormDistributionsInterface.html#a69d90f2d5dc082ad7be469ff7fb9648e">DlnormDistributionsInterface</a>
+, <a class="el" href="classDmultinomDistributionsInterface.html#a406f549e6e0f55441e1fe53b958e991a">DmultinomDistributionsInterface</a>
+, <a class="el" href="classDnormDistributionsInterface.html#a0a7b0532100eb957dad1ed5093e70ce3">DnormDistributionsInterface</a>
 , <a class="el" href="classDoubleLogisticSelectivityInterface.html#a46f7ef01f5c8e07568d38499a9f66245">DoubleLogisticSelectivityInterface</a>
 , <a class="el" href="classEWAAGrowthInterface.html#a79ab161d68d4d2c5b2854cb43775483c">EWAAGrowthInterface</a>
-, <a class="el" href="structfims__distributions_1_1DensityComponentBase.html#a7b7536012f1fca930b11f7035aee8940">fims_distributions::DensityComponentBase&lt; Type &gt;</a>
-, <a class="el" href="structfims__distributions_1_1LogNormalLPDF.html#aee168050b533cc95002f3abbf630b794">fims_distributions::LogNormalLPDF&lt; Type &gt;</a>
-, <a class="el" href="structfims__distributions_1_1MultinomialLPMF.html#a12da6014205d15deb9768985f56da979">fims_distributions::MultinomialLPMF&lt; Type &gt;</a>
-, <a class="el" href="structfims__distributions_1_1NormalLPDF.html#aafca7eccc439ba541a4c7b3b29e03f3e">fims_distributions::NormalLPDF&lt; Type &gt;</a>
+, <a class="el" href="structfims__distributions_1_1DistributionsBase.html#a6fc5590e1fe3e2b0489c75733077ded7">fims_distributions::DistributionsBase&lt; Type &gt;</a>
 </li>
 <li>Evaluate()
 : <a class="el" href="classfims__model_1_1Model.html#ad90b8d1d3de83cd359cca7982518f28d">fims_model::Model&lt; Type &gt;</a>
 </li>
 <li>evaluate()
-: <a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html#a1e7bb5aec1ea0f33d34a45a21668504f">fims_popdy::DoubleLogisticSelectivity&lt; Type &gt;</a>
+: <a class="el" href="structfims__popdy_1_1DoubleLogisticSelectivity.html#aede0b00bd179b32cce3c4f4a72eb8906">fims_popdy::DoubleLogisticSelectivity&lt; Type &gt;</a>
 , <a class="el" href="structfims__popdy_1_1EWAAgrowth.html#ab180a93cfd58ca678583e3791660ab8c">fims_popdy::EWAAgrowth&lt; Type &gt;</a>
 , <a class="el" href="structfims__popdy_1_1GrowthBase.html#a7d10fe2d721be7e0fe3fc217490d8ef1">fims_popdy::GrowthBase&lt; Type &gt;</a>
-, <a class="el" href="structfims__popdy_1_1LogisticMaturity.html#ab72445a1475fb37ee56e1ae81790446c">fims_popdy::LogisticMaturity&lt; Type &gt;</a>
-, <a class="el" href="structfims__popdy_1_1LogisticSelectivity.html#a9abf9caf9ba8c003ebb2dfa9c2184207">fims_popdy::LogisticSelectivity&lt; Type &gt;</a>
+, <a class="el" href="structfims__popdy_1_1LogisticMaturity.html#a8d2cd51bc769e5d6be77e26309d15f1e">fims_popdy::LogisticMaturity&lt; Type &gt;</a>
+, <a class="el" href="structfims__popdy_1_1LogisticSelectivity.html#a7e5e73a7689cefb1949cb844d12307b8">fims_popdy::LogisticSelectivity&lt; Type &gt;</a>
 , <a class="el" href="structfims__popdy_1_1MaturityBase.html#a787fb48e92d430f9cd5d3314ee98988d">fims_popdy::MaturityBase&lt; Type &gt;</a>
 </li>
 <li>Evaluate()
@@ -161,17 +149,17 @@ $(function() {
 , <a class="el" href="classRecruitmentInterfaceBase.html#a9e94c45bffb2275caa0a097b516d6155">RecruitmentInterfaceBase</a>
 , <a class="el" href="classSelectivityInterfaceBase.html#ad0ba72196e6a15591504a3f4c774d189">SelectivityInterfaceBase</a>
 </li>
-<li>evaluate_age_comp()
-: <a class="el" href="structfims__popdy_1_1Fleet.html#a70f6b3741eb9840e3d246da1ce46b1dc">fims_popdy::Fleet&lt; Type &gt;</a>
+<li>evaluate_age_comp_nll()
+: <a class="el" href="structfims__popdy_1_1Fleet.html#a7eb6a41d71bb7cbe62856875c8c48d6a">fims_popdy::Fleet&lt; Type &gt;</a>
 </li>
-<li>evaluate_index()
-: <a class="el" href="structfims__popdy_1_1Fleet.html#a792d1eb1e6d318769c6c1a7176108124">fims_popdy::Fleet&lt; Type &gt;</a>
+<li>evaluate_index_nll()
+: <a class="el" href="structfims__popdy_1_1Fleet.html#a3a9155284e6c0173e99f43d3216e5241">fims_popdy::Fleet&lt; Type &gt;</a>
 </li>
-<li>evaluate_length_comp()
-: <a class="el" href="structfims__popdy_1_1Fleet.html#ad5f69e99a81800ae0d5b904192eb2ab7">fims_popdy::Fleet&lt; Type &gt;</a>
-</li>
-<li>evaluate_lpdf()
-: <a class="el" href="classLPDFInterfaceBase.html#a4e88a6c30a21669eae9360ab20d38995">LPDFInterfaceBase</a>
+<li>evaluate_nll()
+: <a class="el" href="classBevertonHoltRecruitmentInterface.html#a0c22b325e9d6afa6d9d1ccf140a75ad1">BevertonHoltRecruitmentInterface</a>
+, <a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a63efde8b8bfc9a1bebd4c1d0c9439d5f">fims_popdy::RecruitmentBase&lt; Type &gt;</a>
+, <a class="el" href="classNLLInterfaceBase.html#a9ec978cfb6e93cbef7fcbbfcd5f46b21">NLLInterfaceBase</a>
+, <a class="el" href="classRecruitmentInterfaceBase.html#adf19d3728880426b5dc9625c8a47dd0d">RecruitmentInterfaceBase</a>
 </li>
 <li>ewaa
 : <a class="el" href="classEWAAGrowthInterface.html#a56a134796f622557d6bbd2b1ec3754e7">EWAAGrowthInterface</a>
@@ -181,26 +169,14 @@ $(function() {
 : <a class="el" href="structfims__popdy_1_1Fleet.html#a3a6b40091b3f96014360b8eeccf37c45">fims_popdy::Fleet&lt; Type &gt;</a>
 , <a class="el" href="structfims__popdy_1_1Population.html#a783ad63f1ed33d8e71ce6ce70a174bbe">fims_popdy::Population&lt; Type &gt;</a>
 </li>
-<li>expected_catch_lpdf
-: <a class="el" href="structfims__popdy_1_1Fleet.html#a72ccf262c2dc8d59285b2b25992f760d">fims_popdy::Fleet&lt; Type &gt;</a>
-</li>
 <li>expected_index
 : <a class="el" href="structfims__popdy_1_1Fleet.html#aa4fc3d6b0e8f4cd7959e8120458b1208">fims_popdy::Fleet&lt; Type &gt;</a>
-</li>
-<li>expected_index_lpdf
-: <a class="el" href="structfims__popdy_1_1Fleet.html#ab1138e8c166113691e8054fd0cea7d5d">fims_popdy::Fleet&lt; Type &gt;</a>
 </li>
 <li>expected_numbers_at_age
 : <a class="el" href="structfims__popdy_1_1Population.html#a9193dfd67a7ec62b0d7bf25a7c5cd7cb">fims_popdy::Population&lt; Type &gt;</a>
 </li>
 <li>expected_recruitment
 : <a class="el" href="structfims__popdy_1_1Population.html#ab511a48f536af2b22e6a18a2220fe615">fims_popdy::Population&lt; Type &gt;</a>
-</li>
-<li>expected_values
-: <a class="el" href="classDlnormDistributionsInterface.html#a34ff4c41bc72eab179e3a8b617354cba">DlnormDistributionsInterface</a>
-, <a class="el" href="classDmultinomDistributionsInterface.html#a63619adb012ab0dd45742eb125654b06">DmultinomDistributionsInterface</a>
-, <a class="el" href="classDnormDistributionsInterface.html#a52b505e82789482f43f8be3462cf73d0">DnormDistributionsInterface</a>
-, <a class="el" href="structfims__distributions_1_1DensityComponentBase.html#aaad587f3651db4acddf855ca8d217c5d">fims_distributions::DensityComponentBase&lt; Type &gt;</a>
 </li>
 </ul>
 </div><!-- contents -->

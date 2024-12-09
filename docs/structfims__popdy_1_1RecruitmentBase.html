@@ -110,6 +110,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 <tr class="memitem:a7e4489a7b00845eec0e5a6c3ef34d3a0"><td class="memItemLeft" align="right" valign="top">virtual const Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a7e4489a7b00845eec0e5a6c3ef34d3a0">evaluate</a> (const Type &amp;spawners, const Type &amp;ssbzero)=0</td></tr>
 <tr class="memdesc:a7e4489a7b00845eec0e5a6c3ef34d3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the expected recruitment for a given spawning input.  <a href="structfims__popdy_1_1RecruitmentBase.html#a7e4489a7b00845eec0e5a6c3ef34d3a0">More...</a><br /></td></tr>
 <tr class="separator:a7e4489a7b00845eec0e5a6c3ef34d3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63efde8b8bfc9a1bebd4c1d0c9439d5f"><td class="memItemLeft" align="right" valign="top">virtual const Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a63efde8b8bfc9a1bebd4c1d0c9439d5f">evaluate_nll</a> ()</td></tr>
+<tr class="memdesc:a63efde8b8bfc9a1bebd4c1d0c9439d5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the negative log likelihood of recruitment deviations.  <a href="structfims__popdy_1_1RecruitmentBase.html#a63efde8b8bfc9a1bebd4c1d0c9439d5f">More...</a><br /></td></tr>
+<tr class="separator:a63efde8b8bfc9a1bebd4c1d0c9439d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b5b378ec529600bf29803017641d042"><td class="memItemLeft" align="right" valign="top"><a id="a5b5b378ec529600bf29803017641d042"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a5b5b378ec529600bf29803017641d042">PrepareConstrainedDeviations</a> ()</td></tr>
 <tr class="memdesc:a5b5b378ec529600bf29803017641d042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare constrained recruitment deviations. Based on ADMB sum-to-zero constraint implementation. We still need to adde an additional penalty to the PrepareConstrainedDeviations method. More discussion can be found here: <a href="https://groups.google.com/a/admb-project.org/g/users/c/63YJmYGEPuE">https://groups.google.com/a/admb-project.org/g/users/c/63YJmYGEPuE</a>. <br /></td></tr>
@@ -119,9 +122,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="stru
 uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__model__object_1_1FIMSObject.html#a7f1a6d1474f8ad7d8b460ce889ee6ebd">GetId</a> () const</td></tr>
 <tr class="memdesc:a7f1a6d1474f8ad7d8b460ce889ee6ebd inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter that returns the unique id for parameters in the model. <br /></td></tr>
 <tr class="separator:a7f1a6d1474f8ad7d8b460ce889ee6ebd inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a81239daf538745bbb96c56f627edc781 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__model__object_1_1FIMSObject.html#a81239daf538745bbb96c56f627edc781">CheckDimensions</a> (size_t actual, size_t expected)</td></tr>
-<tr class="memdesc:a81239daf538745bbb96c56f627edc781 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check the dimensions of an object.  <a href="structfims__model__object_1_1FIMSObject.html#a81239daf538745bbb96c56f627edc781">More...</a><br /></td></tr>
-<tr class="separator:a81239daf538745bbb96c56f627edc781 inherit pub_methods_structfims__model__object_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -129,8 +129,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:af1151687013ce34c91144260da6ed8c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89cb23e1edcad304e74ded6bc97fe220"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a89cb23e1edcad304e74ded6bc97fe220">constrain_deviations</a> = false</td></tr>
 <tr class="separator:a89cb23e1edcad304e74ded6bc97fe220"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c07fb1ecfbe727ccf2659585597c56d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; Type &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a0c07fb1ecfbe727ccf2659585597c56d">log_rzero</a></td></tr>
-<tr class="separator:a0c07fb1ecfbe727ccf2659585597c56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83318ec2a3032d33a90defeb399e95b8"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a83318ec2a3032d33a90defeb399e95b8">log_sigma_recruit</a></td></tr>
+<tr class="separator:a83318ec2a3032d33a90defeb399e95b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa020783765196f6028f267006e340bc9"><td class="memItemLeft" align="right" valign="top">Type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#aa020783765196f6028f267006e340bc9">log_rzero</a></td></tr>
+<tr class="separator:aa020783765196f6028f267006e340bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a847ffa3b1acbb5b5fe44d6816e67cd1b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a847ffa3b1acbb5b5fe44d6816e67cd1b">estimate_log_recruit_devs</a> = true</td></tr>
 <tr class="separator:a847ffa3b1acbb5b5fe44d6816e67cd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structfims__model__object_1_1FIMSObject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structfims__model__object_1_1FIMSObject')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structfims__model__object_1_1FIMSObject.html">fims_model_object::FIMSObject&lt; Type &gt;</a></td></tr>
@@ -206,6 +208,36 @@ template&lt;class Type &gt; </div>
 </dl>
 
 <p>Implemented in <a class="el" href="structfims__popdy_1_1SRBevertonHolt.html#a555efe558976d502cf0c2bf858344356">fims_popdy::SRBevertonHolt&lt; Type &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a63efde8b8bfc9a1bebd4c1d0c9439d5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63efde8b8bfc9a1bebd4c1d0c9439d5f">&#9670;&nbsp;</a></span>evaluate_nll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual const Type <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; Type &gt;::evaluate_nll </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculates the negative log likelihood of recruitment deviations. </p>
+<p>&lt; The negative log likelihood value</p>
 
 </div>
 </div>
@@ -286,8 +318,8 @@ template&lt;class Type &gt; </div>
 
 </div>
 </div>
-<a id="a0c07fb1ecfbe727ccf2659585597c56d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c07fb1ecfbe727ccf2659585597c56d">&#9670;&nbsp;</a></span>log_rzero</h2>
+<a id="aa020783765196f6028f267006e340bc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa020783765196f6028f267006e340bc9">&#9670;&nbsp;</a></span>log_rzero</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -295,11 +327,28 @@ template&lt;class Type &gt; </div>
 template&lt;class Type &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt;Type&gt; <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; Type &gt;::log_rzero</td>
+          <td class="memname">Type <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; Type &gt;::log_rzero</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Log of unexploited recruitment. </p>
+
+</div>
+</div>
+<a id="a83318ec2a3032d33a90defeb399e95b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83318ec2a3032d33a90defeb399e95b8">&#9670;&nbsp;</a></span>log_sigma_recruit</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Type <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; Type &gt;::log_sigma_recruit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Log standard deviation of log recruitment deviations </p>
 
 </div>
 </div>

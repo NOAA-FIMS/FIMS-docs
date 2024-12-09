@@ -77,177 +77,117 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="fims__math_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef FIMS_MATH_HPP</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define FIMS_MATH_HPP</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// note: this is modeling platform specific, must be controlled by</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// preprocessing macros</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//#include &quot;def.hpp&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;../interface/interface.hpp&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="fims__vector_8hpp.html">fims_vector.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">namespace </span>fims_math {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#ifdef STD_LIB</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// note: To document a global C function, typedef, enum or preprocessor</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// definition you must first document the file that contains it</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * File:   fims_math.hpp</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * This File is part of the NOAA, National Marine Fisheries Service</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * Fisheries Integrated Modeling System project. See LICENSE in the</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * source folder for reuse information.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef FIMS_MATH_HPP</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define FIMS_MATH_HPP</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// note: this is modeling platform specific, must be controlled by</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// preprocessing macros</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//#include &quot;def.hpp&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;../interface/interface.hpp&quot;</span></div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type exp(<span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  <span class="keywordflow">return</span> std::exp(x);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type log(<span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">return</span> std::log(x);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type cos(<span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> std::cos(x);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type sqrt(<span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keywordflow">return</span> std::sqrt(x);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type pow(<span class="keyword">const</span> Type &amp;x, <span class="keyword">const</span> Type &amp;y) {</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  <span class="keywordflow">return</span> std::pow(x, y);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// #include &lt;TMB.hpp&gt;</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type exp(<span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  using ::exp;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keywordflow">return</span> exp(x);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">double</span> exp(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;x) {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">return</span> std::exp(x);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>fims_math {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifdef STD_LIB</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type exp(<span class="keyword">const</span> Type &amp;x) {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  <span class="keywordflow">return</span> std::exp(x);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type log(<span class="keyword">const</span> Type &amp;x) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> std::log(x);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#ifdef TMB_MODEL</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// #include &lt;TMB.hpp&gt;</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type exp(<span class="keyword">const</span> Type &amp;x) {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  using ::exp;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> exp(x);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">double</span> exp(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;x) {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> std::exp(x);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type log(<span class="keyword">const</span> Type &amp;x) {</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  <span class="keywordflow">return</span> log(x);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type log(<span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;  <span class="keywordflow">return</span> log(x);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">double</span> log(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;x) {</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;  <span class="keywordflow">return</span> std::log(x);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;}</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type cos(<span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordflow">return</span> cos(x);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">double</span> log(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;x) {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  <span class="keywordflow">return</span> std::log(x);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;}</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#ae8d003754148800ba87fbf228bc7d062">  103</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#ae8d003754148800ba87fbf228bc7d062">logistic</a>(<span class="keyword">const</span> Type &amp;inflection_point, <span class="keyword">const</span> Type &amp;slope,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                           <span class="keyword">const</span> Type &amp;x) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">return</span> (1.0) / (1.0 + exp(-1.0 * slope * (x - inflection_point)));</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">double</span> cos(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;x) {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordflow">return</span> std::cos(x);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;}</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type sqrt(<span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> sqrt(x);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160; </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">double</span> sqrt(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;x) {</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> std::sqrt(x);</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a0fef2c2ffd54b4d023d194653ebeb1f0">  119</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#a0fef2c2ffd54b4d023d194653ebeb1f0">logit</a>(<span class="keyword">const</span> Type &amp;a, <span class="keyword">const</span> Type &amp;b, <span class="keyword">const</span> Type &amp;x) {</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;  <span class="keywordflow">return</span> -fims_math::log(b - x) + fims_math::log(x - a);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type pow(<span class="keyword">const</span> Type &amp;x, <span class="keyword">const</span> Type &amp;y) {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordflow">return</span> pow(x, y);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;}</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> <span class="keywordtype">double</span> pow(<span class="keyword">const</span> <span class="keywordtype">double</span> &amp;x, <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;y) {</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordflow">return</span> std::pow(x, y);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;}</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00146"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#ae8d003754148800ba87fbf228bc7d062">  146</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#ae8d003754148800ba87fbf228bc7d062">logistic</a>(<span class="keyword">const</span> Type &amp;inflection_point, <span class="keyword">const</span> Type &amp;slope,</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                           <span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;  <span class="keywordflow">return</span> (1.0) / (1.0 + exp(-1.0 * slope * (x - inflection_point)));</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;}</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00162"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a0fef2c2ffd54b4d023d194653ebeb1f0">  162</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#a0fef2c2ffd54b4d023d194653ebeb1f0">logit</a>(<span class="keyword">const</span> Type &amp;a, <span class="keyword">const</span> Type &amp;b, <span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordflow">return</span> -fims_math::log(b - x) + fims_math::log(x - a);</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;}</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00177"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#ab0329c7a64173d4612e7a1d0ddb3f3e6">  177</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#ab0329c7a64173d4612e7a1d0ddb3f3e6">inv_logit</a>(<span class="keyword">const</span> Type &amp;a, <span class="keyword">const</span> Type &amp;b, <span class="keyword">const</span> Type &amp;logit_x) {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;  <span class="keywordflow">return</span> a + (b - a) / (1.0 + fims_math::exp(-logit_x));</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;}</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a4f55d4bf901b546a57ed3a626a445e52">  202</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#a4f55d4bf901b546a57ed3a626a445e52">double_logistic</a>(<span class="keyword">const</span> Type &amp;inflection_point_asc,</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                                  <span class="keyword">const</span> Type &amp;slope_asc,</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                  <span class="keyword">const</span> Type &amp;inflection_point_desc,</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                  <span class="keyword">const</span> Type &amp;slope_desc, <span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;  <span class="keywordflow">return</span> (1.0) / (1.0 + exp(-1.0 * slope_asc * (x - inflection_point_asc))) *</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;         (1.0 -</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;          (1.0) / (1.0 + exp(-1.0 * slope_desc * (x - inflection_point_desc))));</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;}</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
-<div class="line"><a name="l00225"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">  225</a></span>&#160;<span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">ad_fabs</a>(<span class="keyword">const</span> Type &amp;x, Type C = 1e-5) {</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;  <span class="keywordflow">return</span> sqrt((x * x) + C);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;}</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00245"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a4c3897f03cbc7860a4b73b21f58558f6">  245</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#a4c3897f03cbc7860a4b73b21f58558f6">ad_min</a>(<span class="keyword">const</span> Type &amp;a, <span class="keyword">const</span> Type &amp;b, Type C = 1e-5) {</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;  <span class="keywordflow">return</span> (a + b - <a class="code" href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">fims_math::ad_fabs</a>(a - b, C)) * 0.5;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;}</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00262"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a54cfbb09833fa0de10e18203526e8321">  262</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#a54cfbb09833fa0de10e18203526e8321">ad_max</a>(<span class="keyword">const</span> Type &amp;a, <span class="keyword">const</span> Type &amp;b, Type C = 1e-5) {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;  <span class="keywordflow">return</span> (a + b + <a class="code" href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">fims_math::ad_fabs</a>(a - b, C)) * <span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(.5);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;}</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00275"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a2f6d3a9290062d44590350c1bc739217">  275</a></span>&#160;    T <a class="code" href="fims__math_8hpp.html#a2f6d3a9290062d44590350c1bc739217">sum</a>(<span class="keyword">const</span> std::vector&lt;T&gt;&amp; v) {</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        T ret = 0.0;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; v.size(); i++) {</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            ret += v[i];</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;        }</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    }</div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a name="l00292"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a60f8fb42e9a4786ca5e30b9fad43afed">  292</a></span>&#160;    T <a class="code" href="fims__math_8hpp.html#a2f6d3a9290062d44590350c1bc739217">sum</a>(<span class="keyword">const</span> <a class="code" href="classfims_1_1Vector.html">fims::Vector&lt;T&gt;</a>&amp; v) {</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        T ret = 0.0;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; v.<a class="code" href="classfims_1_1Vector.html#abe2abae6275f702ce15a62f6a63c7062">size</a>(); i++) {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            ret += v[i];</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;        }</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    }</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;}  <span class="comment">// namespace fims_math</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160; </div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_MATH_HPP */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="aclassfims_1_1Vector_html"><div class="ttname"><a href="classfims_1_1Vector.html">fims::Vector</a></div><div class="ttdef"><b>Definition:</b> fims_vector.hpp:25</div></div>
-<div class="ttc" id="aclassfims_1_1Vector_html_abe2abae6275f702ce15a62f6a63c7062"><div class="ttname"><a href="classfims_1_1Vector.html#abe2abae6275f702ce15a62f6a63c7062">fims::Vector::size</a></div><div class="ttdeci">size_type size() const</div><div class="ttdoc">Returns the number of elements.</div><div class="ttdef"><b>Definition:</b> fims_vector.hpp:295</div></div>
-<div class="ttc" id="afims__math_8hpp_html_a0fef2c2ffd54b4d023d194653ebeb1f0"><div class="ttname"><a href="fims__math_8hpp.html#a0fef2c2ffd54b4d023d194653ebeb1f0">fims_math::logit</a></div><div class="ttdeci">const Type logit(const Type &amp;a, const Type &amp;b, const Type &amp;x)</div><div class="ttdoc">A logit function for bounding of parameters.</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:162</div></div>
-<div class="ttc" id="afims__math_8hpp_html_a2f6d3a9290062d44590350c1bc739217"><div class="ttname"><a href="fims__math_8hpp.html#a2f6d3a9290062d44590350c1bc739217">fims_math::sum</a></div><div class="ttdeci">T sum(const std::vector&lt; T &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:275</div></div>
-<div class="ttc" id="afims__math_8hpp_html_a4c3897f03cbc7860a4b73b21f58558f6"><div class="ttname"><a href="fims__math_8hpp.html#a4c3897f03cbc7860a4b73b21f58558f6">fims_math::ad_min</a></div><div class="ttdeci">const Type ad_min(const Type &amp;a, const Type &amp;b, Type C=1e-5)</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:245</div></div>
-<div class="ttc" id="afims__math_8hpp_html_a4f55d4bf901b546a57ed3a626a445e52"><div class="ttname"><a href="fims__math_8hpp.html#a4f55d4bf901b546a57ed3a626a445e52">fims_math::double_logistic</a></div><div class="ttdeci">const Type double_logistic(const Type &amp;inflection_point_asc, const Type &amp;slope_asc, const Type &amp;inflection_point_desc, const Type &amp;slope_desc, const Type &amp;x)</div><div class="ttdoc">The general double logistic function.</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:202</div></div>
-<div class="ttc" id="afims__math_8hpp_html_a54cfbb09833fa0de10e18203526e8321"><div class="ttname"><a href="fims__math_8hpp.html#a54cfbb09833fa0de10e18203526e8321">fims_math::ad_max</a></div><div class="ttdeci">const Type ad_max(const Type &amp;a, const Type &amp;b, Type C=1e-5)</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:262</div></div>
-<div class="ttc" id="afims__math_8hpp_html_ab0329c7a64173d4612e7a1d0ddb3f3e6"><div class="ttname"><a href="fims__math_8hpp.html#ab0329c7a64173d4612e7a1d0ddb3f3e6">fims_math::inv_logit</a></div><div class="ttdeci">const Type inv_logit(const Type &amp;a, const Type &amp;b, const Type &amp;logit_x)</div><div class="ttdoc">An inverse logit function for bounding of parameters.</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:177</div></div>
-<div class="ttc" id="afims__math_8hpp_html_abda4b1b8b7ea34fcde2a05e78217d522"><div class="ttname"><a href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">fims_math::ad_fabs</a></div><div class="ttdeci">const Type ad_fabs(const Type &amp;x, Type C=1e-5)</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:225</div></div>
-<div class="ttc" id="afims__math_8hpp_html_ae8d003754148800ba87fbf228bc7d062"><div class="ttname"><a href="fims__math_8hpp.html#ae8d003754148800ba87fbf228bc7d062">fims_math::logistic</a></div><div class="ttdeci">const Type logistic(const Type &amp;inflection_point, const Type &amp;slope, const Type &amp;x)</div><div class="ttdoc">The general logistic function.</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:146</div></div>
-<div class="ttc" id="afims__vector_8hpp_html"><div class="ttname"><a href="fims__vector_8hpp.html">fims_vector.hpp</a></div><div class="ttdoc">TODO: provide a brief description.</div></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#ab0329c7a64173d4612e7a1d0ddb3f3e6">  134</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#ab0329c7a64173d4612e7a1d0ddb3f3e6">inv_logit</a>(<span class="keyword">const</span> Type &amp;a, <span class="keyword">const</span> Type &amp;b, <span class="keyword">const</span> Type &amp;logit_x) {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">return</span> a + (b - a) / (1.0 + fims_math::exp(-logit_x));</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00159"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a4f55d4bf901b546a57ed3a626a445e52">  159</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#a4f55d4bf901b546a57ed3a626a445e52">double_logistic</a>(<span class="keyword">const</span> Type &amp;inflection_point_asc,</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                                  <span class="keyword">const</span> Type &amp;slope_asc,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                                  <span class="keyword">const</span> Type &amp;inflection_point_desc,</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                                  <span class="keyword">const</span> Type &amp;slope_desc, <span class="keyword">const</span> Type &amp;x) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;  <span class="keywordflow">return</span> (1.0) / (1.0 + exp(-1.0 * slope_asc * (x - inflection_point_asc))) *</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;         (1.0 -</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;          (1.0) / (1.0 + exp(-1.0 * slope_desc * (x - inflection_point_desc))));</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;}</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
+<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">  182</a></span>&#160;<span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">ad_fabs</a>(<span class="keyword">const</span> Type &amp;x, Type C = 1e-5) {</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;  <span class="keywordflow">return</span> sqrt((x * x) + C);  <span class="comment">//, .5);</span></div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;}</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00202"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a4c3897f03cbc7860a4b73b21f58558f6">  202</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#a4c3897f03cbc7860a4b73b21f58558f6">ad_min</a>(<span class="keyword">const</span> Type &amp;a, <span class="keyword">const</span> Type &amp;b, Type C = 1e-5) {</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;  <span class="keywordflow">return</span> (a + b - <a class="code" href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">fims_math::ad_fabs</a>(a - b, C)) * 0.5;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;}</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00219"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a54cfbb09833fa0de10e18203526e8321">  219</a></span>&#160;<span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code" href="fims__math_8hpp.html#a54cfbb09833fa0de10e18203526e8321">ad_max</a>(<span class="keyword">const</span> Type &amp;a, <span class="keyword">const</span> Type &amp;b, Type C = 1e-5) {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;  <span class="keywordflow">return</span> (a + b + <a class="code" href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">fims_math::ad_fabs</a>(a - b, C)) * <span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(.5);</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;}</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160; </div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;}  <span class="comment">// namespace fims_math</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_MATH_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="afims__math_8hpp_html_a0fef2c2ffd54b4d023d194653ebeb1f0"><div class="ttname"><a href="fims__math_8hpp.html#a0fef2c2ffd54b4d023d194653ebeb1f0">fims_math::logit</a></div><div class="ttdeci">const Type logit(const Type &amp;a, const Type &amp;b, const Type &amp;x)</div><div class="ttdoc">A logit function for bounding of parameters.</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:119</div></div>
+<div class="ttc" id="afims__math_8hpp_html_a4c3897f03cbc7860a4b73b21f58558f6"><div class="ttname"><a href="fims__math_8hpp.html#a4c3897f03cbc7860a4b73b21f58558f6">fims_math::ad_min</a></div><div class="ttdeci">const Type ad_min(const Type &amp;a, const Type &amp;b, Type C=1e-5)</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:202</div></div>
+<div class="ttc" id="afims__math_8hpp_html_a4f55d4bf901b546a57ed3a626a445e52"><div class="ttname"><a href="fims__math_8hpp.html#a4f55d4bf901b546a57ed3a626a445e52">fims_math::double_logistic</a></div><div class="ttdeci">const Type double_logistic(const Type &amp;inflection_point_asc, const Type &amp;slope_asc, const Type &amp;inflection_point_desc, const Type &amp;slope_desc, const Type &amp;x)</div><div class="ttdoc">The general double logistic function.</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:159</div></div>
+<div class="ttc" id="afims__math_8hpp_html_a54cfbb09833fa0de10e18203526e8321"><div class="ttname"><a href="fims__math_8hpp.html#a54cfbb09833fa0de10e18203526e8321">fims_math::ad_max</a></div><div class="ttdeci">const Type ad_max(const Type &amp;a, const Type &amp;b, Type C=1e-5)</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:219</div></div>
+<div class="ttc" id="afims__math_8hpp_html_ab0329c7a64173d4612e7a1d0ddb3f3e6"><div class="ttname"><a href="fims__math_8hpp.html#ab0329c7a64173d4612e7a1d0ddb3f3e6">fims_math::inv_logit</a></div><div class="ttdeci">const Type inv_logit(const Type &amp;a, const Type &amp;b, const Type &amp;logit_x)</div><div class="ttdoc">An inverse logit function for bounding of parameters.</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:134</div></div>
+<div class="ttc" id="afims__math_8hpp_html_abda4b1b8b7ea34fcde2a05e78217d522"><div class="ttname"><a href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">fims_math::ad_fabs</a></div><div class="ttdeci">const Type ad_fabs(const Type &amp;x, Type C=1e-5)</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:182</div></div>
+<div class="ttc" id="afims__math_8hpp_html_ae8d003754148800ba87fbf228bc7d062"><div class="ttname"><a href="fims__math_8hpp.html#ae8d003754148800ba87fbf228bc7d062">fims_math::logistic</a></div><div class="ttdeci">const Type logistic(const Type &amp;inflection_point, const Type &amp;slope, const Type &amp;x)</div><div class="ttdoc">The general logistic function.</div><div class="ttdef"><b>Definition:</b> fims_math.hpp:103</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

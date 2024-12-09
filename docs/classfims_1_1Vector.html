@@ -142,9 +142,6 @@ Type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 const Type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims_1_1Vector.html#a3d185e3f67653d5048f98c07871e8645">at</a> (size_t n) const</td></tr>
 <tr class="memdesc:a3d185e3f67653d5048f98c07871e8645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a constant reference to the element at specified location pos. Bounds checking is performed. <br /></td></tr>
 <tr class="separator:a3d185e3f67653d5048f98c07871e8645"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a472c3f2f738f786ef43f9caa139f9a06"><td class="memItemLeft" align="right" valign="top">Type &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims_1_1Vector.html#a472c3f2f738f786ef43f9caa139f9a06">get_force_scalar</a> (size_t pos)</td></tr>
-<tr class="memdesc:a472c3f2f738f786ef43f9caa139f9a06"><td class="mdescLeft">&#160;</td><td class="mdescRight">If this vector is size 1 and pos is greater than zero, the first index is returned. If this vector has size greater than 1 and pos is greater than size, a invalid_argument exception is thrown. Otherwise, the value at index pos is returned.  <a href="classfims_1_1Vector.html#a472c3f2f738f786ef43f9caa139f9a06">More...</a><br /></td></tr>
-<tr class="separator:a472c3f2f738f786ef43f9caa139f9a06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50b58c7402c75b14d1dfbfba85e08bbd"><td class="memItemLeft" align="right" valign="top"><a id="a50b58c7402c75b14d1dfbfba85e08bbd"></a>
 <a class="el" href="classfims_1_1Vector.html#a2c822b39eaad468f2e61cca61956fb85">reference</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfims_1_1Vector.html#a50b58c7402c75b14d1dfbfba85e08bbd">front</a> ()</td></tr>
 <tr class="memdesc:a50b58c7402c75b14d1dfbfba85e08bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the first element in the container. <br /></td></tr>
@@ -551,43 +548,6 @@ template&lt;typename Type &gt; </div>
 
 <p>Returns a constant reference to the last element in the container. </p>
 <p>&#x2401;* </p>
-
-</div>
-</div>
-<a id="a472c3f2f738f786ef43f9caa139f9a06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a472c3f2f738f786ef43f9caa139f9a06">&#9670;&nbsp;</a></span>get_force_scalar()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Type &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Type&amp; <a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; Type &gt;::get_force_scalar </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>pos</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>If this vector is size 1 and pos is greater than zero, the first index is returned. If this vector has size greater than 1 and pos is greater than size, a invalid_argument exception is thrown. Otherwise, the value at index pos is returned. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pos</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>a constant reference to the element at specified location </dd></dl>
 
 </div>
 </div>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['throw_5fon_5ferror_930',['throw_on_error',['../classfims_1_1FIMSLog.html#a26d3d3b190fb352e3c4d8cd03c57397f',1,'fims::FIMSLog']]],
-  ['timestamp_931',['timestamp',['../structfims_1_1LogEntry.html#aecbb278a89207626d3b379f1bce9fffc',1,'fims::LogEntry']]]
+  ['unfished_5fbiomass_603',['unfished_biomass',['../structfims__popdy_1_1Population.html#ad2539a574c8959c8d2404a18e6d1e18c',1,'fims_popdy::Population']]],
+  ['unfished_5fnumbers_5fat_5fage_604',['unfished_numbers_at_age',['../structfims__popdy_1_1Population.html#a8b061fb7270fee912f17ccec44b04ba9',1,'fims_popdy::Population']]],
+  ['unfished_5fspawning_5fbiomass_605',['unfished_spawning_biomass',['../structfims__popdy_1_1Population.html#ab5743f2e2705d6502f5f5af913e262e3',1,'fims_popdy::Population']]]
 ];
