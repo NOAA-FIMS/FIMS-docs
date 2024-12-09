@@ -101,6 +101,14 @@ virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="memitem:a46f7ef01f5c8e07568d38499a9f66245"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a46f7ef01f5c8e07568d38499a9f66245">evaluate</a> (double x)</td></tr>
 <tr class="memdesc:a46f7ef01f5c8e07568d38499a9f66245"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluate the double logistic selectivity function  <a href="classDoubleLogisticSelectivityInterface.html#a46f7ef01f5c8e07568d38499a9f66245">More...</a><br /></td></tr>
 <tr class="separator:a46f7ef01f5c8e07568d38499a9f66245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae35e641acb050c1311154539e16ecdf3"><td class="memItemLeft" align="right" valign="top"><a id="ae35e641acb050c1311154539e16ecdf3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#ae35e641acb050c1311154539e16ecdf3">finalize</a> ()</td></tr>
+<tr class="memdesc:ae35e641acb050c1311154539e16ecdf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">finalize function. Extracts derived quantities back to the Rcpp interface object from the Information object. <br /></td></tr>
+<tr class="separator:ae35e641acb050c1311154539e16ecdf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99e6d2a07db1738ad10e33b7c786a881"><td class="memItemLeft" align="right" valign="top"><a id="a99e6d2a07db1738ad10e33b7c786a881"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a99e6d2a07db1738ad10e33b7c786a881">to_json</a> ()</td></tr>
+<tr class="memdesc:a99e6d2a07db1738ad10e33b7c786a881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the data to json representation for the output. <br /></td></tr>
+<tr class="separator:a99e6d2a07db1738ad10e33b7c786a881"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="a9183d9379777d8be70ab66af1a07f94c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>
@@ -109,17 +117,20 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a81183b9ca6cbf349df88e55bf6576142"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a81183b9ca6cbf349df88e55bf6576142">inflection_point_asc</a></td></tr>
-<tr class="separator:a81183b9ca6cbf349df88e55bf6576142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a721b50d40b85992bcce1a9c7e87e422c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a721b50d40b85992bcce1a9c7e87e422c">slope_asc</a></td></tr>
-<tr class="separator:a721b50d40b85992bcce1a9c7e87e422c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5269203a701948b91fdbf17badc375e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#ad5269203a701948b91fdbf17badc375e">inflection_point_desc</a></td></tr>
-<tr class="separator:ad5269203a701948b91fdbf17badc375e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafdd9c6474eb158b52d6086326fb6706"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#aafdd9c6474eb158b52d6086326fb6706">slope_desc</a></td></tr>
-<tr class="separator:aafdd9c6474eb158b52d6086326fb6706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47c30330966f4c4be60d469ff7d01d60"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a47c30330966f4c4be60d469ff7d01d60">inflection_point_asc</a></td></tr>
+<tr class="separator:a47c30330966f4c4be60d469ff7d01d60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4571cc0b0713c0f9a8c5078dbe5b1033"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a4571cc0b0713c0f9a8c5078dbe5b1033">slope_asc</a></td></tr>
+<tr class="separator:a4571cc0b0713c0f9a8c5078dbe5b1033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a61582c3d83f94ddc17f5ddb01e8e89"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a2a61582c3d83f94ddc17f5ddb01e8e89">inflection_point_desc</a></td></tr>
+<tr class="separator:a2a61582c3d83f94ddc17f5ddb01e8e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11333991775c1771dcdbb80704a90972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDoubleLogisticSelectivityInterface.html#a11333991775c1771dcdbb80704a90972">slope_desc</a></td></tr>
+<tr class="separator:a11333991775c1771dcdbb80704a90972"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classSelectivityInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classSelectivityInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td></tr>
 <tr class="memitem:ad75482256de49ee97eb312ac8fa6fb17 inherit pub_attribs_classSelectivityInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a></td></tr>
 <tr class="separator:ad75482256de49ee97eb312ac8fa6fb17 inherit pub_attribs_classSelectivityInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
+<tr class="memitem:a44e4e3b1dd18103bf79ccb30a76f5933 inherit pub_attribs_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a44e4e3b1dd18103bf79ccb30a76f5933">finalized</a> = false</td></tr>
+<tr class="separator:a44e4e3b1dd18103bf79ccb30a76f5933 inherit pub_attribs_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -172,14 +183,14 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a81183b9ca6cbf349df88e55bf6576142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81183b9ca6cbf349df88e55bf6576142">&#9670;&nbsp;</a></span>inflection_point_asc</h2>
+<a id="a47c30330966f4c4be60d469ff7d01d60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c30330966f4c4be60d469ff7d01d60">&#9670;&nbsp;</a></span>inflection_point_asc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> DoubleLogisticSelectivityInterface::inflection_point_asc</td>
+          <td class="memname"><a class="el" href="classParameterVector.html">ParameterVector</a> DoubleLogisticSelectivityInterface::inflection_point_asc</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -187,14 +198,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ad5269203a701948b91fdbf17badc375e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5269203a701948b91fdbf17badc375e">&#9670;&nbsp;</a></span>inflection_point_desc</h2>
+<a id="a2a61582c3d83f94ddc17f5ddb01e8e89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a61582c3d83f94ddc17f5ddb01e8e89">&#9670;&nbsp;</a></span>inflection_point_desc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> DoubleLogisticSelectivityInterface::inflection_point_desc</td>
+          <td class="memname"><a class="el" href="classParameterVector.html">ParameterVector</a> DoubleLogisticSelectivityInterface::inflection_point_desc</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,14 +213,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a721b50d40b85992bcce1a9c7e87e422c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a721b50d40b85992bcce1a9c7e87e422c">&#9670;&nbsp;</a></span>slope_asc</h2>
+<a id="a4571cc0b0713c0f9a8c5078dbe5b1033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4571cc0b0713c0f9a8c5078dbe5b1033">&#9670;&nbsp;</a></span>slope_asc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> DoubleLogisticSelectivityInterface::slope_asc</td>
+          <td class="memname"><a class="el" href="classParameterVector.html">ParameterVector</a> DoubleLogisticSelectivityInterface::slope_asc</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -217,14 +228,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="aafdd9c6474eb158b52d6086326fb6706"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafdd9c6474eb158b52d6086326fb6706">&#9670;&nbsp;</a></span>slope_desc</h2>
+<a id="a11333991775c1771dcdbb80704a90972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11333991775c1771dcdbb80704a90972">&#9670;&nbsp;</a></span>slope_desc</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> DoubleLogisticSelectivityInterface::slope_desc</td>
+          <td class="memname"><a class="el" href="classParameterVector.html">ParameterVector</a> DoubleLogisticSelectivityInterface::slope_desc</td>
         </tr>
       </table>
 </div><div class="memdoc">

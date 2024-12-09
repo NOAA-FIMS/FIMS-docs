@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['_7eagecompdatainterface_310',['~AgeCompDataInterface',['../classAgeCompDataInterface.html#a166f71a43a8c71e567bf8acb1d426d13',1,'AgeCompDataInterface']]],
-  ['_7edatainterfacebase_311',['~DataInterfaceBase',['../classDataInterfaceBase.html#a3bf54a43965ae51e7a881f359fa0019b',1,'DataInterfaceBase']]],
-  ['_7efleet_312',['~Fleet',['../structfims__popdy_1_1Fleet.html#a8daf372e70483efaeba014d5ebf7500b',1,'fims_popdy::Fleet']]],
-  ['_7eindexdatainterface_313',['~IndexDataInterface',['../classIndexDataInterface.html#a90e264b9bf1d857264196ec85477a786',1,'IndexDataInterface']]]
+  ['years_473',['years',['../structfims__popdy_1_1Population.html#aee3ec924970cafa0d544102eaf79c9db',1,'fims_popdy::Population']]],
+  ['ymax_474',['ymax',['../classAgeCompDataInterface.html#a065981c4d8dd880ce7f3892502e8b8fe',1,'AgeCompDataInterface::ymax()'],['../classLengthCompDataInterface.html#af06714a297eca0725d322ad8d65bf810',1,'LengthCompDataInterface::ymax()'],['../classIndexDataInterface.html#a31c8efb7ef2c3a89ec7272101d3c03b1',1,'IndexDataInterface::ymax()']]]
 ];

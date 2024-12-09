@@ -1,4 +1,32 @@
 var searchData=
 [
-  ['writetofile_489',['WriteToFile',['../classJsonParser.html#ad8ffc15c33b35e9efea97829fadbb5cb',1,'JsonParser']]]
+  ['selectivitybase_727',['SelectivityBase',['../structfims__popdy_1_1SelectivityBase.html#a811f8a606e34435ac6799136b2d5c1fa',1,'fims_popdy::SelectivityBase']]],
+  ['set_728',['set',['../classParameterVector.html#ad78418fdc00b6b9fd5f914c3021bde7a',1,'ParameterVector']]],
+  ['set_5fall_5festimable_729',['set_all_estimable',['../classParameterVector.html#af5723210fad2e222c33912e811934f44',1,'ParameterVector']]],
+  ['set_5fall_5frandom_730',['set_all_random',['../classParameterVector.html#a074e8b3737ef4fb2dfb3bde9a176e7fd',1,'ParameterVector']]],
+  ['set_5fdistribution_5flinks_731',['set_distribution_links',['../classDistributionsInterfaceBase.html#ae8e42238a8b6e6cffbfbd9ac5a04d821',1,'DistributionsInterfaceBase::set_distribution_links()'],['../classDnormDistributionsInterface.html#ae5d27b7117db5c5308eff738689f43e4',1,'DnormDistributionsInterface::set_distribution_links()'],['../classDlnormDistributionsInterface.html#a10ac2011304c6eacd70aa65d6d57510c',1,'DlnormDistributionsInterface::set_distribution_links()'],['../classDmultinomDistributionsInterface.html#a0731b55cd8a154646af138990737cade',1,'DmultinomDistributionsInterface::set_distribution_links()']]],
+  ['set_5flog_5fpath_732',['set_log_path',['../rcpp__interface_8hpp.html#a0b21c940ec97b43420185f5c0cada013',1,'rcpp_interface.hpp']]],
+  ['set_5flog_5fthrow_5fon_5ferror_733',['set_log_throw_on_error',['../rcpp__interface_8hpp.html#a8307f81a8310f0c70a7bf7bc5b4aa5ea',1,'rcpp_interface.hpp']]],
+  ['set_5fobserved_5fdata_734',['set_observed_data',['../classDnormDistributionsInterface.html#ab2234ef63d314d70a9367053042c23a0',1,'DnormDistributionsInterface::set_observed_data()'],['../classDlnormDistributionsInterface.html#aa23722eca1575ce5d84d97d38c2432af',1,'DlnormDistributionsInterface::set_observed_data()'],['../classDmultinomDistributionsInterface.html#a95323ebe970b12b73749d824d61d16ea',1,'DmultinomDistributionsInterface::set_observed_data()'],['../classDistributionsInterfaceBase.html#a0071e40d5d56d8b1a2e5bf3c65edb45f',1,'DistributionsInterfaceBase::set_observed_data()']]],
+  ['set_5fpath_735',['set_path',['../classfims_1_1FIMSLog.html#acdbdf84d23788e3088e664361b1cba8b',1,'fims::FIMSLog']]],
+  ['setfimsfunctions_736',['SetFIMSFunctions',['../rcpp__interface_8hpp.html#a44b146be44c1695b3c978fa8e624f030',1,'rcpp_interface.hpp']]],
+  ['setgrowth_737',['SetGrowth',['../classPopulationInterface.html#ae891516564b4ab4f1a073676b756fe35',1,'PopulationInterface']]],
+  ['setmaturity_738',['SetMaturity',['../classPopulationInterface.html#a0055f2a94b3b8675ffdbaaaa6c8714ff',1,'PopulationInterface']]],
+  ['setnages_739',['SetNages',['../classfims__info_1_1Information.html#afd372194e06dbf16b1012bf2a98db415',1,'fims_info::Information']]],
+  ['setnseasons_740',['SetNseasons',['../classfims__info_1_1Information.html#afbab305ff662fbf552b7807f90c2de8c',1,'fims_info::Information']]],
+  ['setnyears_741',['SetNyears',['../classfims__info_1_1Information.html#a6a86e812817c5f38611fb57958dad5a5',1,'fims_info::Information']]],
+  ['setobservedagecompdata_742',['SetObservedAgeCompData',['../classFleetInterface.html#aea37db0978bb0c29503cc37764348b53',1,'FleetInterface']]],
+  ['setobservedindexdata_743',['SetObservedIndexData',['../classFleetInterface.html#a8f811e1f99b4a21d31827c8d0497aad2',1,'FleetInterface']]],
+  ['setobservedlengthcompdata_744',['SetObservedLengthCompData',['../classFleetInterface.html#abe2dc9d8ce8f8f588621dc63b323b0cf',1,'FleetInterface']]],
+  ['setrecruitment_745',['SetRecruitment',['../classPopulationInterface.html#a70bc972f2ee8aeae73ad85cd0da2c194',1,'PopulationInterface']]],
+  ['setselectivity_746',['SetSelectivity',['../classFleetInterface.html#a0b0ffd5f734cdab9286a4551b4e5e7ae',1,'FleetInterface']]],
+  ['setup_5fdata_747',['setup_data',['../classfims__info_1_1Information.html#ab319b1dbeb7ba35ef0fedf41a5249b30',1,'fims_info::Information']]],
+  ['setup_5fpriors_748',['setup_priors',['../classfims__info_1_1Information.html#a47beb12df93c353ecf98a1ddcc56aec6',1,'fims_info::Information']]],
+  ['setup_5frandom_5feffects_749',['setup_random_effects',['../classfims__info_1_1Information.html#a8f795f877d3163e56fac19632489eaf0',1,'fims_info::Information']]],
+  ['show_750',['show',['../classParameterVector.html#a0657ff7f5f27848156ba8dd11cf2de11',1,'ParameterVector']]],
+  ['show_751',['Show',['../classfims_1_1JsonParser.html#a443c839ec331593e450b57285e7ab59a',1,'fims::JsonParser']]],
+  ['shrink_5fto_5ffit_752',['shrink_to_fit',['../classfims_1_1Vector.html#a37fe09f5a2b8f57272cc0638548c7345',1,'fims::Vector']]],
+  ['size_753',['size',['../classfims_1_1Vector.html#abe2abae6275f702ce15a62f6a63c7062',1,'fims::Vector::size()'],['../classParameterVector.html#a1bc24e4c8af66ffef1b8aa88bb41a137',1,'ParameterVector::size()']]],
+  ['sum_754',['sum',['../fims__math_8hpp.html#a2f6d3a9290062d44590350c1bc739217',1,'fims_math::sum(const std::vector&lt; T &gt; &amp;v)'],['../fims__math_8hpp.html#a60f8fb42e9a4786ca5e30b9fad43afed',1,'fims_math::sum(const fims::Vector&lt; T &gt; &amp;v)']]],
+  ['swap_755',['swap',['../classfims_1_1Vector.html#a5631f6d0649ac37b28a95a8e64be66a2',1,'fims::Vector']]]
 ];

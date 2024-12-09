@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['rbegin_463',['rbegin',['../classfims_1_1Vector.html#ab4cab34b7f946e3db28befa6ee590e2f',1,'fims::Vector::rbegin()'],['../classfims_1_1Vector.html#aa9e587a5f579f6901af405f1af903046',1,'fims::Vector::rbegin() const']]],
-  ['recruitment_5flog_464',['RECRUITMENT_LOG',['../def_8hpp.html#ab79e53c483ecf6594343d0b2d5108447',1,'def.hpp']]],
-  ['recruitmentbase_465',['RecruitmentBase',['../structfims__popdy_1_1RecruitmentBase.html#ae0fef4d2bbcdfd8b80936bdf5d0dbe81',1,'fims_popdy::RecruitmentBase']]],
-  ['registerparameter_466',['RegisterParameter',['../classfims__info_1_1Information.html#a59f18d95d8425246661e3513cecdc0a2',1,'fims_info::Information']]],
-  ['registerrandomeffect_467',['RegisterRandomEffect',['../classfims__info_1_1Information.html#a638e4deb58e190b72db9fb6225325b79',1,'fims_info::Information']]],
-  ['rend_468',['rend',['../classfims_1_1Vector.html#a1b420e6d1d0898afb90b127a06bb11e6',1,'fims::Vector::rend()'],['../classfims_1_1Vector.html#a864f6aaa6466ce9ea6723e6decd880df',1,'fims::Vector::rend() const']]],
-  ['reserve_469',['reserve',['../classfims_1_1Vector.html#a254cc7fdb1dc247fae2216726cc720e7',1,'fims::Vector']]],
-  ['resize_470',['resize',['../classfims_1_1Vector.html#a971eba3d10861eaabaf2b0252182fed9',1,'fims::Vector']]]
+  ['omp_5fcheck_700',['omp_check',['../init_8hpp.html#ad59de88bc84ba14d7cf66b94037f5c63',1,'init.hpp']]],
+  ['omp_5fnum_5fthreads_701',['omp_num_threads',['../init_8hpp.html#adbb1330b8f826d97b203b8009f7902a0',1,'init.hpp']]],
+  ['operator_28_29_702',['operator()',['../structfims__data__object_1_1DataObject.html#a110dbc634a3560a541f21fa91d429d97',1,'fims_data_object::DataObject::operator()(size_t i)'],['../structfims__data__object_1_1DataObject.html#a1fa44b2485782c682eb55d0d75274eef',1,'fims_data_object::DataObject::operator()(size_t i, size_t j)'],['../structfims__data__object_1_1DataObject.html#a407cf5ac3501eff0826d02a57aaaae47',1,'fims_data_object::DataObject::operator()(size_t i, size_t j, size_t k)'],['../structfims__data__object_1_1DataObject.html#aacca2ceb7aebd125c99fb0f1a3bd3944',1,'fims_data_object::DataObject::operator()(size_t i, size_t j, size_t k, size_t l)']]],
+  ['operator_3c_3c_703',['operator&lt;&lt;',['../fims__vector_8hpp.html#af968470b44e7bf7a7757ee4374a2feac',1,'operator&lt;&lt;(std::ostream &amp;out, fims::Vector&lt; Type &gt; &amp;v):&#160;fims_vector.hpp'],['../rcpp__interface__base_8hpp.html#a3f71714d272396cd8f9c3c3230f70c55',1,'operator&lt;&lt;(std::ostream &amp;out, const Parameter &amp;p):&#160;rcpp_interface_base.hpp'],['../rcpp__interface__base_8hpp.html#a820dd64ca0f7144c3333c32116e279b4',1,'operator&lt;&lt;(std::ostream &amp;out, ParameterVector &amp;v):&#160;rcpp_interface_base.hpp']]],
+  ['operator_3d_704',['operator=',['../classParameter.html#a00bd919b6b3a3a44a10d1950c322cfb1',1,'Parameter']]],
+  ['operator_3d_3d_705',['operator==',['../fims__vector_8hpp.html#a5902185c96e064dc5ddba38ae31995b2',1,'fims']]],
+  ['operator_5b_5d_706',['operator[]',['../classfims_1_1Vector.html#a56424bd01c860af0a99d666955f4d7d0',1,'fims::Vector::operator[](size_t pos)'],['../classfims_1_1Vector.html#ad6c77ead8f44e046c6acd14357fa4f4d',1,'fims::Vector::operator[](size_t n) const'],['../classParameterVector.html#a9886e15249071b367abf74dc3a3cf4a7',1,'ParameterVector::operator[]()']]],
+  ['vector_3c_20type_20_3e_707',['vector&lt; Type &gt;',['../classfims_1_1Vector.html#aa1957de9c634fc29f5760137832d0d45',1,'fims::Vector']]]
 ];

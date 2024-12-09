@@ -1,12 +1,24 @@
 var searchData=
 [
-  ['na_5fvalue_211',['na_value',['../structfims__data__object_1_1DataObject.html#a64125aaf71ef4e1ab18ec4a1d6a64b7e',1,'fims_data_object::DataObject']]],
-  ['nages_212',['nages',['../classfims__info_1_1Information.html#a1edb422656c6c8d3d87f4be016ac094d',1,'fims_info::Information::nages()'],['../classFleetInterface.html#a36dd220b4bcc6771b9f388825a1deb38',1,'FleetInterface::nages()'],['../classPopulationInterface.html#a3719adef12f12bcd2790da6b719c9d8d',1,'PopulationInterface::nages()'],['../structfims__popdy_1_1Fleet.html#a2b4fbf80c2df91bcc6d67932a2418e0d',1,'fims_popdy::Fleet::nages()'],['../structfims__popdy_1_1Population.html#ab74ad2aebad2eb0250cf51a63f26a2ce',1,'fims_popdy::Population::nages()']]],
-  ['nfleets_213',['nfleets',['../classPopulationInterface.html#a489d20b31f03bad7c93c37be022b371c',1,'PopulationInterface::nfleets()'],['../structfims__popdy_1_1Population.html#a311f680a45f2bfb93b0b78695c381e3b',1,'fims_popdy::Population::nfleets()']]],
-  ['nllinterfacebase_214',['NLLInterfaceBase',['../classNLLInterfaceBase.html',1,'']]],
-  ['nseasons_215',['nseasons',['../classPopulationInterface.html#a53a89836347c647583448e96938694c0',1,'PopulationInterface::nseasons()'],['../structfims__popdy_1_1Population.html#a07e1c378036f98ff1a9589d4ac7e8a5f',1,'fims_popdy::Population::nseasons()'],['../classfims__info_1_1Information.html#a845dfdd3e005fabf863be088e4908357',1,'fims_info::Information::nseasons()']]],
-  ['null_216',['Null',['../fims__json_8hpp.html#ab1d0a5abd7705ac9e0a1ae51ec6671cba727b8a8d744d88f4d9596d91abfdf277',1,'fims_json.hpp']]],
-  ['number_217',['Number',['../fims__json_8hpp.html#ab1d0a5abd7705ac9e0a1ae51ec6671cbafa620f80ceb585b771a878cc135c4035',1,'fims_json.hpp']]],
-  ['numbers_5fat_5fage_218',['numbers_at_age',['../structfims__popdy_1_1Population.html#a4b762c37dc9ed6424d95e26758b81999',1,'fims_popdy::Population']]],
-  ['nyears_219',['nyears',['../classfims__info_1_1Information.html#ac0e26205f51a84d49f51c07f05da39fe',1,'fims_info::Information::nyears()'],['../classFleetInterface.html#aed0b4b7a2b3564317c944b0077b13af9',1,'FleetInterface::nyears()'],['../classPopulationInterface.html#a2b642bbfe0f2e6efbe746dde1f9fd39e',1,'PopulationInterface::nyears()'],['../structfims__popdy_1_1Fleet.html#ab4eac8d75777fb405710a8fd980a4dba',1,'fims_popdy::Fleet::nyears()'],['../structfims__popdy_1_1Population.html#a3053ab3e549ab57472097c8a88e05416',1,'fims_popdy::Population::nyears()']]]
+  ['m_292',['M',['../structfims__popdy_1_1Population.html#ade6aeb9c5d0f96985c1b4409112e2d1c',1,'fims_popdy::Population']]],
+  ['make_5fmap_293',['make_map',['../classEWAAGrowthInterface.html#ada130444d3ff680e5813e5fdac3fa860',1,'EWAAGrowthInterface']]],
+  ['maturity_294',['maturity',['../structfims__popdy_1_1Population.html#a64989d39a34788e394cbe461bf49f3e2',1,'fims_popdy::Population']]],
+  ['maturity_2ehpp_295',['maturity.hpp',['../maturity_8hpp.html',1,'']]],
+  ['maturity_5fbase_2ehpp_296',['maturity_base.hpp',['../maturity__base_8hpp.html',1,'']]],
+  ['maturity_5fid_297',['maturity_id',['../structfims__popdy_1_1Population.html#ab2f55811906e85cdf288856d27f0f39d',1,'fims_popdy::Population::maturity_id()'],['../classPopulationInterface.html#adb1038e8bac456cb85a1a6c913b16e9d',1,'PopulationInterface::maturity_id()']]],
+  ['maturity_5fmodels_298',['maturity_models',['../classfims__info_1_1Information.html#ac266167f6ac429cc29ea8846c3da8781',1,'fims_info::Information']]],
+  ['maturity_5fmodels_5fiterator_299',['maturity_models_iterator',['../classfims__info_1_1Information.html#aac992e2f443af87e29ab27c6b58e7a5c',1,'fims_info::Information']]],
+  ['maturitybase_300',['MaturityBase',['../structfims__popdy_1_1MaturityBase.html',1,'fims_popdy::MaturityBase&lt; Type &gt;'],['../structfims__popdy_1_1MaturityBase.html#aba833b4d42149ff56e3f4c8c28333d7a',1,'fims_popdy::MaturityBase::MaturityBase()']]],
+  ['maturityinterfacebase_301',['MaturityInterfaceBase',['../classMaturityInterfaceBase.html',1,'']]],
+  ['max_5fm_302',['max_m',['../classParameter.html#ace3bc0c1165266d153b58730ee540289',1,'Parameter']]],
+  ['max_5fsize_303',['max_size',['../classfims_1_1Vector.html#a15d40df5b4ef663486d9d712130dc6d7',1,'fims::Vector']]],
+  ['message_304',['message',['../structfims_1_1LogEntry.html#a700eef36069cb58bdbfd77b0dd1dd857',1,'fims::LogEntry']]],
+  ['min_5fm_305',['min_m',['../classParameter.html#afd532cb4fb7bac35a67a0097ea16b784',1,'Parameter']]],
+  ['model_306',['Model',['../classfims__model_1_1Model.html',1,'fims_model']]],
+  ['model_2ehpp_307',['model.hpp',['../model_8hpp.html',1,'']]],
+  ['model_5fobject_2ehpp_308',['model_object.hpp',['../model__object_8hpp.html',1,'']]],
+  ['mortality_5ff_309',['mortality_F',['../structfims__popdy_1_1Population.html#a15111c6b28581eb1e0b53c0e3a72dee0',1,'fims_popdy::Population']]],
+  ['mortality_5fz_310',['mortality_Z',['../structfims__popdy_1_1Population.html#ac1255c1f4cea7211ba9e0739e30ceafe',1,'fims_popdy::Population']]],
+  ['multinomial_5flpmf_2ehpp_311',['multinomial_lpmf.hpp',['../multinomial__lpmf_8hpp.html',1,'']]],
+  ['multinomiallpmf_312',['MultinomialLPMF',['../structfims__distributions_1_1MultinomialLPMF.html',1,'fims_distributions::MultinomialLPMF&lt; Type &gt;'],['../structfims__distributions_1_1MultinomialLPMF.html#ab31b77abbda5863a2d6fd43cefb27b7e',1,'fims_distributions::MultinomialLPMF::MultinomialLPMF()']]]
 ];

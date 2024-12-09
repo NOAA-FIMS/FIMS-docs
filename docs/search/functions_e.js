@@ -1,20 +1,11 @@
 var searchData=
 [
-  ['selectivity_5flog_471',['SELECTIVITY_LOG',['../def_8hpp.html#a34afbc4af6ad36508ad3d2847da6b75c',1,'def.hpp']]],
-  ['selectivitybase_472',['SelectivityBase',['../structfims__popdy_1_1SelectivityBase.html#a811f8a606e34435ac6799136b2d5c1fa',1,'fims_popdy::SelectivityBase']]],
-  ['setagecomplikelihood_473',['SetAgeCompLikelihood',['../classFleetInterface.html#a3560bbe035fb5bf35947cab27f4412f1',1,'FleetInterface']]],
-  ['setgrowth_474',['SetGrowth',['../classPopulationInterface.html#ae891516564b4ab4f1a073676b756fe35',1,'PopulationInterface']]],
-  ['setindexlikelihood_475',['SetIndexLikelihood',['../classFleetInterface.html#a9f347c1dcdc320ccf3a717e3cf8e094b',1,'FleetInterface']]],
-  ['setmaturity_476',['SetMaturity',['../classPopulationInterface.html#a0055f2a94b3b8675ffdbaaaa6c8714ff',1,'PopulationInterface']]],
-  ['setnages_477',['SetNages',['../classfims__info_1_1Information.html#afd372194e06dbf16b1012bf2a98db415',1,'fims_info::Information']]],
-  ['setnseasons_478',['SetNseasons',['../classfims__info_1_1Information.html#afbab305ff662fbf552b7807f90c2de8c',1,'fims_info::Information']]],
-  ['setnyears_479',['SetNyears',['../classfims__info_1_1Information.html#a6a86e812817c5f38611fb57958dad5a5',1,'fims_info::Information']]],
-  ['setobservedagecompdata_480',['SetObservedAgeCompData',['../classFleetInterface.html#aea37db0978bb0c29503cc37764348b53',1,'FleetInterface']]],
-  ['setobservedindexdata_481',['SetObservedIndexData',['../classFleetInterface.html#a8f811e1f99b4a21d31827c8d0497aad2',1,'FleetInterface']]],
-  ['setrecruitment_482',['SetRecruitment',['../classPopulationInterface.html#a70bc972f2ee8aeae73ad85cd0da2c194',1,'PopulationInterface']]],
-  ['setselectivity_483',['SetSelectivity',['../classFleetInterface.html#a0b0ffd5f734cdab9286a4551b4e5e7ae',1,'FleetInterface']]],
-  ['show_484',['Show',['../classJsonParser.html#acccfd891551f614d40d7320dd6ae943e',1,'JsonParser']]],
-  ['shrink_5fto_5ffit_485',['shrink_to_fit',['../classfims_1_1Vector.html#a37fe09f5a2b8f57272cc0638548c7345',1,'fims::Vector']]],
-  ['size_486',['size',['../classfims_1_1Vector.html#abe2abae6275f702ce15a62f6a63c7062',1,'fims::Vector']]],
-  ['swap_487',['swap',['../classfims_1_1Vector.html#a5631f6d0649ac37b28a95a8e64be66a2',1,'fims::Vector']]]
+  ['parameter_708',['Parameter',['../classParameter.html#ad3f5d861da24673d97bd1bd206b0b89a',1,'Parameter::Parameter(const Parameter &amp;other)'],['../classParameter.html#a0daabd9177ee8c2e46af55347279ef5d',1,'Parameter::Parameter(double value)'],['../classParameter.html#a5ba93ca36c3261d3850e67f92717c2f5',1,'Parameter::Parameter()'],['../classParameter.html#a83a7b25fbbe9434fcfc2ff58bd34cd8b',1,'Parameter::Parameter(double value, double min, double max, bool estimated)']]],
+  ['parametervector_709',['ParameterVector',['../classParameterVector.html#a629cd4f1a62ea863d994225a66506357',1,'ParameterVector::ParameterVector(const fims::Vector&lt; double &gt; &amp;v)'],['../classParameterVector.html#a1d7389c5c25377ee8806789e4cffc672',1,'ParameterVector::ParameterVector(Rcpp::NumericVector x, size_t size)'],['../classParameterVector.html#a05db115fafbe61b9dced91b794b36657',1,'ParameterVector::ParameterVector(size_t size)'],['../classParameterVector.html#a65c888cbb2dc1af915d8e778c7a896f9',1,'ParameterVector::ParameterVector(const ParameterVector &amp;other)'],['../classParameterVector.html#ada1e51ddf6e484390cedd92f5efae84f',1,'ParameterVector::ParameterVector()']]],
+  ['parse_710',['Parse',['../classfims_1_1JsonParser.html#a7b1ee7df3bdbac4c23a282e308ab4f9f',1,'fims::JsonParser']]],
+  ['pop_5fback_711',['pop_back',['../classfims_1_1Vector.html#a8b76bd813c4883eb26c9ad1d8de3bcc7',1,'fims::Vector']]],
+  ['prepare_712',['Prepare',['../structfims__popdy_1_1Fleet.html#a889b7e1e0b2aa9f4a3114d3d6f8ad577',1,'fims_popdy::Fleet::Prepare()'],['../structfims__popdy_1_1Population.html#af7837c4ded88aa2c3d361fd0b3ce7dc7',1,'fims_popdy::Population::Prepare()'],['../structfims__popdy_1_1RecruitmentBase.html#a66e5676c8b301c0bde423b89aff8b1cf',1,'fims_popdy::RecruitmentBase::Prepare()']]],
+  ['prepareconstraineddeviations_713',['PrepareConstrainedDeviations',['../structfims__popdy_1_1RecruitmentBase.html#a5b5b378ec529600bf29803017641d042',1,'fims_popdy::RecruitmentBase']]],
+  ['prettyformatjson_714',['PrettyFormatJSON',['../classfims_1_1JsonParser.html#a5dc54b2cbbf6e2089d91fc696d8e1ab2',1,'fims::JsonParser']]],
+  ['push_5fback_715',['push_back',['../classfims_1_1Vector.html#a5ae1e430317d5068b40ef3a5a95fd2d3',1,'fims::Vector']]]
 ];

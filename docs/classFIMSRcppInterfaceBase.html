@@ -70,6 +70,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classFIMSRcppInterfaceBase-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -91,8 +92,8 @@ Inheritance diagram for FIMSRcppInterfaceBase:</div>
 <area href="classDistributionsInterfaceBase.html" title="Distributions Rcpp Interface." alt="DistributionsInterfaceBase" shape="rect" coords="169,112,328,136"/>
 <area href="classFleetInterfaceBase.html" title="Rcpp interface that serves as the parent class for Rcpp fleet interfaces. This type should be inherit..." alt="FleetInterfaceBase" shape="rect" coords="169,168,328,192"/>
 <area href="classGrowthInterfaceBase.html" title="Rcpp interface that serves as the parent class for Rcpp growth interfaces. This type should be inheri..." alt="GrowthInterfaceBase" shape="rect" coords="169,224,328,248"/>
-<area href="classMaturityInterfaceBase.html" title="MaturityInterfaceBase class should be inherited to define different Rcpp interfaces for each possible..." alt="MaturityInterfaceBase" shape="rect" coords="169,280,328,304"/>
-<area href="classNLLInterfaceBase.html" title="NLLInterfaceBase class should be inherited to define different Rcpp interfaces for each possible nega..." alt="NLLInterfaceBase" shape="rect" coords="169,336,328,360"/>
+<area href="classLPDFInterfaceBase.html" title="LPDFInterfaceBase class should be inherited to define different Rcpp interfaces for each possible log..." alt="LPDFInterfaceBase" shape="rect" coords="169,280,328,304"/>
+<area href="classMaturityInterfaceBase.html" title="MaturityInterfaceBase class should be inherited to define different Rcpp interfaces for each possible..." alt="MaturityInterfaceBase" shape="rect" coords="169,336,328,360"/>
 <area href="classPopulationInterfaceBase.html" title="PopulationInterfaceBase class should be inherited to define different Rcpp interfaces for each possib..." alt="PopulationInterfaceBase" shape="rect" coords="169,392,328,416"/>
 <area href="classRecruitmentInterfaceBase.html" title="RecruitmentInterfaceBase class should be inherited to define different Rcpp interfaces for each possi..." alt="RecruitmentInterfaceBase" shape="rect" coords="169,448,328,472"/>
 <area href="classSelectivityInterfaceBase.html" title="SelectivityInterfaceBase class should be inherited to define different Rcpp interfaces for each possi..." alt="SelectivityInterfaceBase" shape="rect" coords="169,504,328,528"/>
@@ -105,6 +106,19 @@ Public Member Functions</h2></td></tr>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>
 <tr class="memdesc:a9183d9379777d8be70ab66af1a07f94c"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual method to inherit to add objects to the TMB model <br /></td></tr>
 <tr class="separator:a9183d9379777d8be70ab66af1a07f94c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfb6b47bd4ea86042f84590236036d7"><td class="memItemLeft" align="right" valign="top"><a id="abdfb6b47bd4ea86042f84590236036d7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#abdfb6b47bd4ea86042f84590236036d7">finalize</a> ()</td></tr>
+<tr class="memdesc:abdfb6b47bd4ea86042f84590236036d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">finalize function. Extracts derived quantities back to the Rcpp interface object from the Information object. <br /></td></tr>
+<tr class="separator:abdfb6b47bd4ea86042f84590236036d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97acd77c0c4d2e193c67cd0662d803c"><td class="memItemLeft" align="right" valign="top"><a id="aa97acd77c0c4d2e193c67cd0662d803c"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#aa97acd77c0c4d2e193c67cd0662d803c">to_json</a> ()</td></tr>
+<tr class="memdesc:aa97acd77c0c4d2e193c67cd0662d803c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the data to json representation for the output. <br /></td></tr>
+<tr class="separator:aa97acd77c0c4d2e193c67cd0662d803c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a44e4e3b1dd18103bf79ccb30a76f5933"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a44e4e3b1dd18103bf79ccb30a76f5933">finalized</a> = false</td></tr>
+<tr class="separator:a44e4e3b1dd18103bf79ccb30a76f5933"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -133,7 +147,22 @@ Static Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>&lt; FIMS interface object vectors </p>
+<p>FIMS interface object vectors </p>
+
+</div>
+</div>
+<a id="a44e4e3b1dd18103bf79ccb30a76f5933"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44e4e3b1dd18103bf79ccb30a76f5933">&#9670;&nbsp;</a></span>finalized</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool FIMSRcppInterfaceBase::finalized = false</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>If already finalized </p>
 
 </div>
 </div>

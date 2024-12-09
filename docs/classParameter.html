@@ -71,6 +71,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="classParameter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Parameter Class Reference</div>  </div>
@@ -87,6 +88,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a83a7b25fbbe9434fcfc2ff58bd34cd8b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#a83a7b25fbbe9434fcfc2ff58bd34cd8b">Parameter</a> (double value, double min, double max, bool estimated)</td></tr>
 <tr class="memdesc:a83a7b25fbbe9434fcfc2ff58bd34cd8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for initializing <a class="el" href="classParameter.html" title="RcppInterface class that defines the interface between R and C++ for parameter types.">Parameter</a>.  <a href="classParameter.html#a83a7b25fbbe9434fcfc2ff58bd34cd8b">More...</a><br /></td></tr>
 <tr class="separator:a83a7b25fbbe9434fcfc2ff58bd34cd8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f5d861da24673d97bd1bd206b0b89a"><td class="memItemLeft" align="right" valign="top"><a id="ad3f5d861da24673d97bd1bd206b0b89a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#ad3f5d861da24673d97bd1bd206b0b89a">Parameter</a> (const <a class="el" href="classParameter.html">Parameter</a> &amp;other)</td></tr>
+<tr class="memdesc:ad3f5d861da24673d97bd1bd206b0b89a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for initializing <a class="el" href="classParameter.html" title="RcppInterface class that defines the interface between R and C++ for parameter types.">Parameter</a>. <br /></td></tr>
+<tr class="separator:ad3f5d861da24673d97bd1bd206b0b89a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00bd919b6b3a3a44a10d1950c322cfb1"><td class="memItemLeft" align="right" valign="top"><a id="a00bd919b6b3a3a44a10d1950c322cfb1"></a>
+<a class="el" href="classParameter.html">Parameter</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#a00bd919b6b3a3a44a10d1950c322cfb1">operator=</a> (const <a class="el" href="classParameter.html">Parameter</a> &amp;right)</td></tr>
+<tr class="memdesc:a00bd919b6b3a3a44a10d1950c322cfb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for initializing <a class="el" href="classParameter.html" title="RcppInterface class that defines the interface between R and C++ for parameter types.">Parameter</a>. <br /></td></tr>
+<tr class="separator:a00bd919b6b3a3a44a10d1950c322cfb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0daabd9177ee8c2e46af55347279ef5d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#a0daabd9177ee8c2e46af55347279ef5d">Parameter</a> (double value)</td></tr>
 <tr class="memdesc:a0daabd9177ee8c2e46af55347279ef5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for initializing <a class="el" href="classParameter.html" title="RcppInterface class that defines the interface between R and C++ for parameter types.">Parameter</a>.  <a href="classParameter.html#a0daabd9177ee8c2e46af55347279ef5d">More...</a><br /></td></tr>
 <tr class="separator:a0daabd9177ee8c2e46af55347279ef5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -96,8 +105,12 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a90a6f51aff9ea524cc34b83965392c41"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#a90a6f51aff9ea524cc34b83965392c41">value_m</a></td></tr>
-<tr class="separator:a90a6f51aff9ea524cc34b83965392c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa48a69ea9e425a8942ce9536ad5ccdf"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#aaa48a69ea9e425a8942ce9536ad5ccdf">id_m</a></td></tr>
+<tr class="separator:aaa48a69ea9e425a8942ce9536ad5ccdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c506852f8ea3ca7b5b2e8ec596337e8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#a0c506852f8ea3ca7b5b2e8ec596337e8">initial_value_m</a> = 0.0</td></tr>
+<tr class="separator:a0c506852f8ea3ca7b5b2e8ec596337e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a801f5573fedaf0530ecd90530323446f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#a801f5573fedaf0530ecd90530323446f">final_value_m</a> = 0.0</td></tr>
+<tr class="separator:a801f5573fedaf0530ecd90530323446f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd532cb4fb7bac35a67a0097ea16b784"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#afd532cb4fb7bac35a67a0097ea16b784">min_m</a></td></tr>
 <tr class="separator:afd532cb4fb7bac35a67a0097ea16b784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace3bc0c1165266d153b58730ee540289"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#ace3bc0c1165266d153b58730ee540289">max_m</a></td></tr>
@@ -106,6 +119,13 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ab1982e622b732589036b47f0696d2f5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a868b6b52383d2808f693c75e9303d173"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#a868b6b52383d2808f693c75e9303d173">estimated_m</a></td></tr>
 <tr class="separator:a868b6b52383d2808f693c75e9303d173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad436de0ca328d749a0d17712190f3d84"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#ad436de0ca328d749a0d17712190f3d84">random_m</a></td></tr>
+<tr class="separator:ad436de0ca328d749a0d17712190f3d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ab6fd89214b154be99b8ebfe759507b02"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParameter.html#ab6fd89214b154be99b8ebfe759507b02">id_g</a> = 0</td></tr>
+<tr class="separator:ab6fd89214b154be99b8ebfe759507b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>RcppInterface class that defines the interface between R and C++ for parameter types. </p>
@@ -236,6 +256,74 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a801f5573fedaf0530ecd90530323446f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a801f5573fedaf0530ecd90530323446f">&#9670;&nbsp;</a></span>final_value_m</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Parameter::final_value_m = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>final value of the parameter </p>
+
+</div>
+</div>
+<a id="ab6fd89214b154be99b8ebfe759507b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6fd89214b154be99b8ebfe759507b02">&#9670;&nbsp;</a></span>id_g</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Parameter::id_g = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>global id of the parameter </p>
+
+</div>
+</div>
+<a id="aaa48a69ea9e425a8942ce9536ad5ccdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa48a69ea9e425a8942ce9536ad5ccdf">&#9670;&nbsp;</a></span>id_m</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t Parameter::id_m</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>id of the parameter </p>
+
+</div>
+</div>
+<a id="a0c506852f8ea3ca7b5b2e8ec596337e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c506852f8ea3ca7b5b2e8ec596337e8">&#9670;&nbsp;</a></span>initial_value_m</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Parameter::initial_value_m = 0.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>initial value of the parameter </p>
+
+</div>
+</div>
 <a id="ab1982e622b732589036b47f0696d2f5c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab1982e622b732589036b47f0696d2f5c">&#9670;&nbsp;</a></span>is_random_effect_m</h2>
 
@@ -263,8 +351,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      std::numeric_limits&lt;double&gt;::max()</div>
-</div><!-- fragment --><p>max value of the parameter </p>
+<div class="line">      std::numeric_limits&lt;double&gt;::infinity()</div>
+</div><!-- fragment --><p>max value of the parameter; default is positive infinity </p>
 
 </div>
 </div>
@@ -280,23 +368,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line">=</div>
-<div class="line">      std::numeric_limits&lt;double&gt;::min()</div>
-</div><!-- fragment --><p>min value of the parameter </p>
+<div class="line">      -std::numeric_limits&lt;double&gt;::infinity()</div>
+</div><!-- fragment --><p>min value of the parameter; default is negative infinity </p>
 
 </div>
 </div>
-<a id="a90a6f51aff9ea524cc34b83965392c41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90a6f51aff9ea524cc34b83965392c41">&#9670;&nbsp;</a></span>value_m</h2>
+<a id="ad436de0ca328d749a0d17712190f3d84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad436de0ca328d749a0d17712190f3d84">&#9670;&nbsp;</a></span>random_m</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Parameter::value_m</td>
+          <td class="memname">bool Parameter::random_m</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>initial value of the parameter </p>
+<b>Initial value:</b><div class="fragment"><div class="line">=</div>
+<div class="line">    <span class="keyword">false</span></div>
+</div><!-- fragment --><p>is the parameter random? Default value is false. </p>
 
 </div>
 </div>

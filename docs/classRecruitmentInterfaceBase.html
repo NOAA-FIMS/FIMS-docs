@@ -103,19 +103,27 @@ virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRecruitmentInterfaceBase.html#a9e94c45bffb2275caa0a097b516d6155">evaluate</a> (double spawners, double ssbzero)=0</td></tr>
 <tr class="memdesc:a9e94c45bffb2275caa0a097b516d6155"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluate method for child recruitment interface objects to inherit <br /></td></tr>
 <tr class="separator:a9e94c45bffb2275caa0a097b516d6155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf19d3728880426b5dc9625c8a47dd0d"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRecruitmentInterfaceBase.html#adf19d3728880426b5dc9625c8a47dd0d">evaluate_nll</a> ()=0</td></tr>
-<tr class="memdesc:adf19d3728880426b5dc9625c8a47dd0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluate recruitment nll  <a href="classRecruitmentInterfaceBase.html#adf19d3728880426b5dc9625c8a47dd0d">More...</a><br /></td></tr>
-<tr class="separator:adf19d3728880426b5dc9625c8a47dd0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="a9183d9379777d8be70ab66af1a07f94c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>
 <tr class="memdesc:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual method to inherit to add objects to the TMB model <br /></td></tr>
 <tr class="separator:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfb6b47bd4ea86042f84590236036d7 inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="abdfb6b47bd4ea86042f84590236036d7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#abdfb6b47bd4ea86042f84590236036d7">finalize</a> ()</td></tr>
+<tr class="memdesc:abdfb6b47bd4ea86042f84590236036d7 inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">finalize function. Extracts derived quantities back to the Rcpp interface object from the Information object. <br /></td></tr>
+<tr class="separator:abdfb6b47bd4ea86042f84590236036d7 inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97acd77c0c4d2e193c67cd0662d803c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="aa97acd77c0c4d2e193c67cd0662d803c"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#aa97acd77c0c4d2e193c67cd0662d803c">to_json</a> ()</td></tr>
+<tr class="memdesc:aa97acd77c0c4d2e193c67cd0662d803c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the data to json representation for the output. <br /></td></tr>
+<tr class="separator:aa97acd77c0c4d2e193c67cd0662d803c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3edf8070f5555b4868b429f7ef1b41be"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRecruitmentInterfaceBase.html#a3edf8070f5555b4868b429f7ef1b41be">id</a></td></tr>
 <tr class="separator:a3edf8070f5555b4868b429f7ef1b41be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
+<tr class="memitem:a44e4e3b1dd18103bf79ccb30a76f5933 inherit pub_attribs_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a44e4e3b1dd18103bf79ccb30a76f5933">finalized</a> = false</td></tr>
+<tr class="separator:a44e4e3b1dd18103bf79ccb30a76f5933 inherit pub_attribs_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -130,38 +138,7 @@ Static Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classRecruitmentInterfaceBase.html" title="RecruitmentInterfaceBase class should be inherited to define different Rcpp interfaces for each possi...">RecruitmentInterfaceBase</a> class should be inherited to define different Rcpp interfaces for each possible Recruitment function. </p>
 <p>Recruitment Rcpp interface </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="adf19d3728880426b5dc9625c8a47dd0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf19d3728880426b5dc9625c8a47dd0d">&#9670;&nbsp;</a></span>evaluate_nll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual double RecruitmentInterfaceBase::evaluate_nll </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>evaluate recruitment nll </p>
-<dl class="section return"><dt>Returns</dt><dd>double </dd></dl>
-
-<p>Implemented in <a class="el" href="classBevertonHoltRecruitmentInterface.html#a0c22b325e9d6afa6d9d1ccf140a75ad1">BevertonHoltRecruitmentInterface</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
+</div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a3edf8070f5555b4868b429f7ef1b41be"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3edf8070f5555b4868b429f7ef1b41be">&#9670;&nbsp;</a></span>id</h2>
 

@@ -76,53 +76,44 @@ $(function() {
 <div class="title">maturity_base.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This File is part of the NOAA, National Marine Fisheries Service</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Fisheries Integrated Modeling System project. See LICENSE in the</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * source folder for reuse information.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * maturity_base.hpp</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * The purpose of this file is to declare the MaturityBase class</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * which is the base class for all maturity functors.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * DEFINE guards for maturity module outline to define the</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * maturity hpp file if not already defined.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#ifndef POPULATION_DYNAMICS_MATURITY_BASE_HPP</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define POPULATION_DYNAMICS_MATURITY_BASE_HPP</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;../../../common/model_object.hpp&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">namespace </span>fims_popdy {</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1MaturityBase.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfims__popdy_1_1MaturityBase.html">MaturityBase</a> : <span class="keyword">public</span> <a class="code" href="structfims__model__object_1_1FIMSObject.html">fims_model_object::FIMSObject</a>&lt;Type&gt; {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="comment">// id_g is the ID of the instance of the MaturityBase class.</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">// this is like a memory tracker.</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="comment">// Assigning each one its own ID is a way to keep track of</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;  <span class="comment">// all the instances of the MaturityBase class.</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1MaturityBase.html#a79295ed14ac51d968fd4776feaab9caa">   32</a></span>&#160;  <span class="keyword">static</span> uint32_t <a class="code" href="structfims__popdy_1_1MaturityBase.html#a79295ed14ac51d968fd4776feaab9caa">id_g</a>; </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1MaturityBase.html#aba833b4d42149ff56e3f4c8c28333d7a">   36</a></span>&#160;  <a class="code" href="structfims__popdy_1_1MaturityBase.html#aba833b4d42149ff56e3f4c8c28333d7a">MaturityBase</a>() {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// increment id of the singleton maturity class</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    this-&gt;<span class="keywordtype">id</span> = <a class="code" href="structfims__popdy_1_1MaturityBase.html#a79295ed14ac51d968fd4776feaab9caa">MaturityBase::id_g</a>++;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;  }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1MaturityBase.html#a787fb48e92d430f9cd5d3314ee98988d">   46</a></span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> Type <a class="code" href="structfims__popdy_1_1MaturityBase.html#a787fb48e92d430f9cd5d3314ee98988d">evaluate</a>(<span class="keyword">const</span> Type&amp; x) = 0;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// default id of the singleton maturity class</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;uint32_t <a class="code" href="structfims__popdy_1_1MaturityBase.html">MaturityBase&lt;Type&gt;::id_g</a> = 0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}  <span class="comment">// namespace fims_popdy</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* POPULATION_DYNAMICS_MATURITY_BASE_HPP */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="astructfims__model__object_1_1FIMSObject_html"><div class="ttname"><a href="structfims__model__object_1_1FIMSObject.html">fims_model_object::FIMSObject</a></div><div class="ttdoc">FIMSObject struct that defines member types and returns the unique id.</div><div class="ttdef"><b>Definition:</b> model_object.hpp:25</div></div>
-<div class="ttc" id="astructfims__popdy_1_1MaturityBase_html"><div class="ttname"><a href="structfims__popdy_1_1MaturityBase.html">fims_popdy::MaturityBase</a></div><div class="ttdoc">Base class for all maturity functors.</div><div class="ttdef"><b>Definition:</b> maturity_base.hpp:27</div></div>
+<a href="maturity__base_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef POPULATION_DYNAMICS_MATURITY_BASE_HPP</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define POPULATION_DYNAMICS_MATURITY_BASE_HPP</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../../../common/model_object.hpp&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>fims_popdy {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1MaturityBase.html">   24</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfims__popdy_1_1MaturityBase.html">MaturityBase</a> : <span class="keyword">public</span> <a class="code" href="structfims__model__object_1_1FIMSObject.html">fims_model_object::FIMSObject</a>&lt;Type&gt; {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// id_g is the ID of the instance of the MaturityBase class.</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// this is like a memory tracker.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// Assigning each one its own ID is a way to keep track of</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// all the instances of the MaturityBase class.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1MaturityBase.html#a79295ed14ac51d968fd4776feaab9caa">   29</a></span>&#160;    <span class="keyword">static</span> uint32_t <a class="code" href="structfims__popdy_1_1MaturityBase.html#a79295ed14ac51d968fd4776feaab9caa">id_g</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1MaturityBase.html#aba833b4d42149ff56e3f4c8c28333d7a">   33</a></span>&#160;    <a class="code" href="structfims__popdy_1_1MaturityBase.html#aba833b4d42149ff56e3f4c8c28333d7a">MaturityBase</a>()</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment">// increment id of the singleton maturity class</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        this-&gt;<span class="keywordtype">id</span> = <a class="code" href="structfims__popdy_1_1MaturityBase.html#a79295ed14ac51d968fd4776feaab9caa">MaturityBase::id_g</a>++;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1MaturityBase.html#a787fb48e92d430f9cd5d3314ee98988d">   44</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> Type <a class="code" href="structfims__popdy_1_1MaturityBase.html#a787fb48e92d430f9cd5d3314ee98988d">evaluate</a>(<span class="keyword">const</span> Type&amp; x) = 0;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1MaturityBase.html#aba3eea1491daf97d6ccd3c66c7cb87c1">   51</a></span>&#160;    <span class="keyword">virtual</span> <span class="keyword">const</span> Type <a class="code" href="structfims__popdy_1_1MaturityBase.html#aba3eea1491daf97d6ccd3c66c7cb87c1">evaluate</a>(<span class="keyword">const</span> Type&amp; x, <span class="keywordtype">size_t</span> pos) = 0;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// default id of the singleton maturity class</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;uint32_t <a class="code" href="structfims__popdy_1_1MaturityBase.html">MaturityBase&lt;Type&gt;::id_g</a> = 0;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;} <span class="comment">// namespace fims_popdy</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* POPULATION_DYNAMICS_MATURITY_BASE_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="astructfims__model__object_1_1FIMSObject_html"><div class="ttname"><a href="structfims__model__object_1_1FIMSObject.html">fims_model_object::FIMSObject</a></div><div class="ttdoc">FIMSObject struct that defines member types and returns the unique id.</div><div class="ttdef"><b>Definition:</b> model_object.hpp:24</div></div>
+<div class="ttc" id="astructfims__popdy_1_1MaturityBase_html"><div class="ttname"><a href="structfims__popdy_1_1MaturityBase.html">fims_popdy::MaturityBase</a></div><div class="ttdoc">Base class for all maturity functors.</div><div class="ttdef"><b>Definition:</b> maturity_base.hpp:24</div></div>
 <div class="ttc" id="astructfims__popdy_1_1MaturityBase_html_a787fb48e92d430f9cd5d3314ee98988d"><div class="ttname"><a href="structfims__popdy_1_1MaturityBase.html#a787fb48e92d430f9cd5d3314ee98988d">fims_popdy::MaturityBase::evaluate</a></div><div class="ttdeci">virtual const Type evaluate(const Type &amp;x)=0</div><div class="ttdoc">Calculates the maturity.</div></div>
-<div class="ttc" id="astructfims__popdy_1_1MaturityBase_html_a79295ed14ac51d968fd4776feaab9caa"><div class="ttname"><a href="structfims__popdy_1_1MaturityBase.html#a79295ed14ac51d968fd4776feaab9caa">fims_popdy::MaturityBase::id_g</a></div><div class="ttdeci">static uint32_t id_g</div><div class="ttdef"><b>Definition:</b> maturity_base.hpp:32</div></div>
-<div class="ttc" id="astructfims__popdy_1_1MaturityBase_html_aba833b4d42149ff56e3f4c8c28333d7a"><div class="ttname"><a href="structfims__popdy_1_1MaturityBase.html#aba833b4d42149ff56e3f4c8c28333d7a">fims_popdy::MaturityBase::MaturityBase</a></div><div class="ttdeci">MaturityBase()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> maturity_base.hpp:36</div></div>
+<div class="ttc" id="astructfims__popdy_1_1MaturityBase_html_a79295ed14ac51d968fd4776feaab9caa"><div class="ttname"><a href="structfims__popdy_1_1MaturityBase.html#a79295ed14ac51d968fd4776feaab9caa">fims_popdy::MaturityBase::id_g</a></div><div class="ttdeci">static uint32_t id_g</div><div class="ttdef"><b>Definition:</b> maturity_base.hpp:29</div></div>
+<div class="ttc" id="astructfims__popdy_1_1MaturityBase_html_aba3eea1491daf97d6ccd3c66c7cb87c1"><div class="ttname"><a href="structfims__popdy_1_1MaturityBase.html#aba3eea1491daf97d6ccd3c66c7cb87c1">fims_popdy::MaturityBase::evaluate</a></div><div class="ttdeci">virtual const Type evaluate(const Type &amp;x, size_t pos)=0</div><div class="ttdoc">Calculates the selectivity.</div></div>
+<div class="ttc" id="astructfims__popdy_1_1MaturityBase_html_aba833b4d42149ff56e3f4c8c28333d7a"><div class="ttname"><a href="structfims__popdy_1_1MaturityBase.html#aba833b4d42149ff56e3f4c8c28333d7a">fims_popdy::MaturityBase::MaturityBase</a></div><div class="ttdeci">MaturityBase()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition:</b> maturity_base.hpp:33</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

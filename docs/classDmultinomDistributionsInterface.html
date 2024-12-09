@@ -77,10 +77,10 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Rcpp interface for Dmultinom as an S4 object. To instantiate from R: dmultinom_ &lt;- new(TMBDmultinomDistribution)  
+<p>Rcpp interface for Dmultinom as an S4 object. To instantiate from R: dmultinom_ &lt;- new(DmultinomDistribution)  
  <a href="classDmultinomDistributionsInterface.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="rcpp__tmb__distribution_8hpp_source.html">rcpp_tmb_distribution.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="rcpp__distribution_8hpp_source.html">rcpp_distribution.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for DmultinomDistributionsInterface:</div>
 <div class="dyncontent">
@@ -98,24 +98,51 @@ Public Member Functions</h2></td></tr>
 virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#a40dc05d944bab718c046a56b8496fc48">get_id</a> ()</td></tr>
 <tr class="memdesc:a40dc05d944bab718c046a56b8496fc48"><td class="mdescLeft">&#160;</td><td class="mdescRight">get_id method for child distribution interface objects to inherit <br /></td></tr>
 <tr class="separator:a40dc05d944bab718c046a56b8496fc48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a406f549e6e0f55441e1fe53b958e991a"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#a406f549e6e0f55441e1fe53b958e991a">evaluate</a> (bool do_log)</td></tr>
-<tr class="memdesc:a406f549e6e0f55441e1fe53b958e991a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate multinom probability density function, default returns the log of the pdf.  <a href="classDmultinomDistributionsInterface.html#a406f549e6e0f55441e1fe53b958e991a">More...</a><br /></td></tr>
-<tr class="separator:a406f549e6e0f55441e1fe53b958e991a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95323ebe970b12b73749d824d61d16ea"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#a95323ebe970b12b73749d824d61d16ea">set_observed_data</a> (int observed_data_id)</td></tr>
+<tr class="memdesc:a95323ebe970b12b73749d824d61d16ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the unique id for the Observed Data object.  <a href="classDmultinomDistributionsInterface.html#a95323ebe970b12b73749d824d61d16ea">More...</a><br /></td></tr>
+<tr class="separator:a95323ebe970b12b73749d824d61d16ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0731b55cd8a154646af138990737cade"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#a0731b55cd8a154646af138990737cade">set_distribution_links</a> (std::string input_type, Rcpp::IntegerVector ids)</td></tr>
+<tr class="memdesc:a0731b55cd8a154646af138990737cade"><td class="mdescLeft">&#160;</td><td class="mdescRight">set_distribution_links sets pointers for data observations, random effects, or priors  <a href="classDmultinomDistributionsInterface.html#a0731b55cd8a154646af138990737cade">More...</a><br /></td></tr>
+<tr class="separator:a0731b55cd8a154646af138990737cade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77bbdfb9f8849ca0288a76a88d1fdf2b"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#a77bbdfb9f8849ca0288a76a88d1fdf2b">evaluate</a> ()</td></tr>
+<tr class="memdesc:a77bbdfb9f8849ca0288a76a88d1fdf2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate multinom probability density function, default returns the log of the pdf.  <a href="classDmultinomDistributionsInterface.html#a77bbdfb9f8849ca0288a76a88d1fdf2b">More...</a><br /></td></tr>
+<tr class="separator:a77bbdfb9f8849ca0288a76a88d1fdf2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="a9183d9379777d8be70ab66af1a07f94c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>
 <tr class="memdesc:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual method to inherit to add objects to the TMB model <br /></td></tr>
 <tr class="separator:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfb6b47bd4ea86042f84590236036d7 inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="abdfb6b47bd4ea86042f84590236036d7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#abdfb6b47bd4ea86042f84590236036d7">finalize</a> ()</td></tr>
+<tr class="memdesc:abdfb6b47bd4ea86042f84590236036d7 inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">finalize function. Extracts derived quantities back to the Rcpp interface object from the Information object. <br /></td></tr>
+<tr class="separator:abdfb6b47bd4ea86042f84590236036d7 inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa97acd77c0c4d2e193c67cd0662d803c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="aa97acd77c0c4d2e193c67cd0662d803c"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#aa97acd77c0c4d2e193c67cd0662d803c">to_json</a> ()</td></tr>
+<tr class="memdesc:aa97acd77c0c4d2e193c67cd0662d803c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the data to json representation for the output. <br /></td></tr>
+<tr class="separator:aa97acd77c0c4d2e193c67cd0662d803c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ac5d3d6d3a8d5fc74ebb2377b7756f6be"><td class="memItemLeft" align="right" valign="top">Rcpp::IntegerVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#ac5d3d6d3a8d5fc74ebb2377b7756f6be">x</a></td></tr>
-<tr class="separator:ac5d3d6d3a8d5fc74ebb2377b7756f6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a563a86aac155b9a5477bb405e5d31b6a"><td class="memItemLeft" align="right" valign="top">Rcpp::NumericVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#a563a86aac155b9a5477bb405e5d31b6a">p</a></td></tr>
-<tr class="separator:a563a86aac155b9a5477bb405e5d31b6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a0a46a8a38f71c167bdaba657b9ba7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#a48a0a46a8a38f71c167bdaba657b9ba7">x</a></td></tr>
+<tr class="separator:a48a0a46a8a38f71c167bdaba657b9ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63619adb012ab0dd45742eb125654b06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#a63619adb012ab0dd45742eb125654b06">expected_values</a></td></tr>
+<tr class="separator:a63619adb012ab0dd45742eb125654b06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb59cb4939fd3f86a62b02a85eb5080c"><td class="memItemLeft" align="right" valign="top">Rcpp::NumericVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#abb59cb4939fd3f86a62b02a85eb5080c">dims</a></td></tr>
+<tr class="separator:abb59cb4939fd3f86a62b02a85eb5080c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8efa3344d280b08e5aaf5aeeb35c80d"><td class="memItemLeft" align="right" valign="top">Rcpp::NumericVector&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDmultinomDistributionsInterface.html#ac8efa3344d280b08e5aaf5aeeb35c80d">lpdf_vec</a></td></tr>
+<tr class="separator:ac8efa3344d280b08e5aaf5aeeb35c80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classDistributionsInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classDistributionsInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classDistributionsInterfaceBase.html">DistributionsInterfaceBase</a></td></tr>
-<tr class="memitem:afdb0fac86d30fbd1fc60abea3ad209fe inherit pub_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDistributionsInterfaceBase.html#afdb0fac86d30fbd1fc60abea3ad209fe">id</a></td></tr>
-<tr class="separator:afdb0fac86d30fbd1fc60abea3ad209fe inherit pub_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f4650de07c713946705e940bd1b5cd inherit pub_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDistributionsInterfaceBase.html#a59f4650de07c713946705e940bd1b5cd">id_m</a></td></tr>
+<tr class="separator:a59f4650de07c713946705e940bd1b5cd inherit pub_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28b76709fb1ca00c6fa390c344f2dc26 inherit pub_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint32_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDistributionsInterfaceBase.html#a28b76709fb1ca00c6fa390c344f2dc26">key_m</a></td></tr>
+<tr class="separator:a28b76709fb1ca00c6fa390c344f2dc26 inherit pub_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a533fa8603301b990e5c5c1ffedc565ef inherit pub_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDistributionsInterfaceBase.html#a533fa8603301b990e5c5c1ffedc565ef">input_type_m</a></td></tr>
+<tr class="separator:a533fa8603301b990e5c5c1ffedc565ef inherit pub_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28af21ce3651056a3794a8f914d5d728 inherit pub_attribs_classDistributionsInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDistributionsInterfaceBase.html#a28af21ce3651056a3794a8f914d5d728">interface_observed_data_id_m</a></td></tr>
+<tr class="separator:a28af21ce3651056a3794a8f914d5d728 inherit pub_attribs_classDistributionsInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
+<tr class="memitem:a44e4e3b1dd18103bf79ccb30a76f5933 inherit pub_attribs_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a44e4e3b1dd18103bf79ccb30a76f5933">finalized</a> = false</td></tr>
+<tr class="separator:a44e4e3b1dd18103bf79ccb30a76f5933 inherit pub_attribs_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -129,10 +156,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a27f6c0a9860f56c17951872fe26b1515 inherit pub_static_attribs_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Rcpp interface for Dmultinom as an S4 object. To instantiate from R: dmultinom_ &lt;- new(TMBDmultinomDistribution) </p>
+<div class="textblock"><p>Rcpp interface for Dmultinom as an S4 object. To instantiate from R: dmultinom_ &lt;- new(DmultinomDistribution) </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a406f549e6e0f55441e1fe53b958e991a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a406f549e6e0f55441e1fe53b958e991a">&#9670;&nbsp;</a></span>evaluate()</h2>
+<a id="a77bbdfb9f8849ca0288a76a88d1fdf2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77bbdfb9f8849ca0288a76a88d1fdf2b">&#9670;&nbsp;</a></span>evaluate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -143,8 +170,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual double DmultinomDistributionsInterface::evaluate </td>
           <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>do_log</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -164,19 +190,117 @@ Additional Inherited Members</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>log pdf </dd></dl>
 
-<p>Implements <a class="el" href="classDistributionsInterfaceBase.html#a5d9993ff1cc28507b609920dfd7e9d44">DistributionsInterfaceBase</a>.</p>
+<p>Implements <a class="el" href="classDistributionsInterfaceBase.html#a09877510b57140479092bcacb0843703">DistributionsInterfaceBase</a>.</p>
+
+</div>
+</div>
+<a id="a0731b55cd8a154646af138990737cade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0731b55cd8a154646af138990737cade">&#9670;&nbsp;</a></span>set_distribution_links()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool DmultinomDistributionsInterface::set_distribution_links </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>input_type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Rcpp::IntegerVector&#160;</td>
+          <td class="paramname"><em>ids</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>set_distribution_links sets pointers for data observations, random effects, or priors </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">input_type</td><td>String that sets whether the distribution type is: priors, random_effects, or data. </td></tr>
+    <tr><td class="paramname">ids</td><td>Vector of unique ids for each linked parameter/s, derived value/s, or observed data vector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classDistributionsInterfaceBase.html#ae8e42238a8b6e6cffbfbd9ac5a04d821">DistributionsInterfaceBase</a>.</p>
+
+</div>
+</div>
+<a id="a95323ebe970b12b73749d824d61d16ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95323ebe970b12b73749d824d61d16ea">&#9670;&nbsp;</a></span>set_observed_data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool DmultinomDistributionsInterface::set_observed_data </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>observed_data_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set the unique id for the Observed Data object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">observed_data_id</td><td>Unique id for the Observed Age Comp Data object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classDistributionsInterfaceBase.html#a0071e40d5d56d8b1a2e5bf3c65edb45f">DistributionsInterfaceBase</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a563a86aac155b9a5477bb405e5d31b6a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a563a86aac155b9a5477bb405e5d31b6a">&#9670;&nbsp;</a></span>p</h2>
+<a id="abb59cb4939fd3f86a62b02a85eb5080c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb59cb4939fd3f86a62b02a85eb5080c">&#9670;&nbsp;</a></span>dims</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Rcpp::NumericVector DmultinomDistributionsInterface::p</td>
+          <td class="memname">Rcpp::NumericVector DmultinomDistributionsInterface::dims</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Dimensions of the number of rows and columns of the multivariate dataset </p>
+
+</div>
+</div>
+<a id="a63619adb012ab0dd45742eb125654b06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63619adb012ab0dd45742eb125654b06">&#9670;&nbsp;</a></span>expected_values</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classParameterVector.html">ParameterVector</a> DmultinomDistributionsInterface::expected_values</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -184,14 +308,29 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ac5d3d6d3a8d5fc74ebb2377b7756f6be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5d3d6d3a8d5fc74ebb2377b7756f6be">&#9670;&nbsp;</a></span>x</h2>
+<a id="ac8efa3344d280b08e5aaf5aeeb35c80d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8efa3344d280b08e5aaf5aeeb35c80d">&#9670;&nbsp;</a></span>lpdf_vec</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Rcpp::IntegerVector DmultinomDistributionsInterface::x</td>
+          <td class="memname">Rcpp::NumericVector DmultinomDistributionsInterface::lpdf_vec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The vector </p>
+
+</div>
+</div>
+<a id="a48a0a46a8a38f71c167bdaba657b9ba7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a0a46a8a38f71c167bdaba657b9ba7">&#9670;&nbsp;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classParameterVector.html">ParameterVector</a> DmultinomDistributionsInterface::x</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -200,7 +339,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>inst/include/interface/rcpp/rcpp_objects/<a class="el" href="rcpp__tmb__distribution_8hpp_source.html">rcpp_tmb_distribution.hpp</a></li>
+<li>inst/include/interface/rcpp/rcpp_objects/<a class="el" href="rcpp__distribution_8hpp_source.html">rcpp_distribution.hpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

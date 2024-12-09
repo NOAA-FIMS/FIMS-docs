@@ -76,62 +76,53 @@ $(function() {
 <div class="title">sr_beverton_holt.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> * This File is part of the NOAA, National Marine Fisheries Service</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Fisheries Integrated Modeling System project. See LICENSE in the</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * source folder for reuse information.</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Beverton Holt stock recruitment function</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * The purpose of this file is to call the Beverton Holt stock</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * recruitment function from fims_math and does the calculation.</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * Inherits from recruitment base.</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef FIMS_POPULATION_DYNAMICS_RECRUITMENT_SR_BEVERTON_HOLT_HPP</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define FIMS_POPULATION_DYNAMICS_RECRUITMENT_SR_BEVERTON_HOLT_HPP</span></div>
+<a href="sr__beverton__holt_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef FIMS_POPULATION_DYNAMICS_RECRUITMENT_SR_BEVERTON_HOLT_HPP</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#define FIMS_POPULATION_DYNAMICS_RECRUITMENT_SR_BEVERTON_HOLT_HPP</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="recruitment__base_8hpp.html">recruitment_base.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;../../../common/fims_vector.hpp&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="recruitment__base_8hpp.html">recruitment_base.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">namespace </span>fims_popdy {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span>fims_popdy {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1SRBevertonHolt.html">   27</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfims__popdy_1_1SRBevertonHolt.html">SRBevertonHolt</a> : <span class="keyword">public</span> <a class="code" href="structfims__popdy_1_1RecruitmentBase.html">RecruitmentBase</a>&lt;Type&gt; {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="comment">// Here we define the members that will be used in the Beverton Holt SR</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="comment">// function. These members are needed by Beverton Holt but will not be common</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="comment">// to all recruitment functions like spawners is below.</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1SRBevertonHolt.html#a441ad312c069227e5912faa32c6ec4bf">   31</a></span>&#160;  Type <a class="code" href="structfims__popdy_1_1SRBevertonHolt.html#a441ad312c069227e5912faa32c6ec4bf">logit_steep</a>; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <a class="code" href="structfims__popdy_1_1SRBevertonHolt.html">SRBevertonHolt</a>() : <a class="code" href="structfims__popdy_1_1RecruitmentBase.html">RecruitmentBase</a>&lt;Type&gt;() {}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1SRBevertonHolt.html">   25</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structfims__popdy_1_1SRBevertonHolt.html">SRBevertonHolt</a> : <span class="keyword">public</span> <a class="code" href="structfims__popdy_1_1RecruitmentBase.html">RecruitmentBase</a>&lt;Type&gt; {</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="comment">// Here we define the members that will be used in the Beverton Holt SR</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  <span class="comment">// function. These members are needed by Beverton Holt but will not be common</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  <span class="comment">// to all recruitment functions like spawners is below.</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1SRBevertonHolt.html#a98823e945f50662f448b55159b390bd4">   29</a></span>&#160;  <a class="code" href="classfims_1_1Vector.html">fims::Vector&lt;Type&gt;</a> <a class="code" href="structfims__popdy_1_1SRBevertonHolt.html#a98823e945f50662f448b55159b390bd4">logit_steep</a>; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <a class="code" href="structfims__popdy_1_1SRBevertonHolt.html">SRBevertonHolt</a>() : <a class="code" href="structfims__popdy_1_1RecruitmentBase.html">RecruitmentBase</a>&lt;Type&gt;() {}</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="structfims__popdy_1_1SRBevertonHolt.html">SRBevertonHolt</a>() {}</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keyword">virtual</span> ~<a class="code" href="structfims__popdy_1_1SRBevertonHolt.html">SRBevertonHolt</a>() {}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1SRBevertonHolt.html#a555efe558976d502cf0c2bf858344356">   47</a></span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> Type <a class="code" href="structfims__popdy_1_1SRBevertonHolt.html#a555efe558976d502cf0c2bf858344356">evaluate</a>(<span class="keyword">const</span> Type&amp; spawners, <span class="keyword">const</span> Type&amp; phi_0) {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Type recruits;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Type steep;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    Type steep_lo = 0.2;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    Type steep_hi = 1.0;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Type rzero;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// Transform input parameters</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    steep = fims_math::inv_logit(steep_lo, steep_hi, this-&gt;logit_steep);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    rzero = fims_math::exp(this-&gt;<a class="code" href="structfims__popdy_1_1RecruitmentBase.html#aa020783765196f6028f267006e340bc9">log_rzero</a>);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    recruits = (0.8 * rzero * steep * spawners) /</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;               (0.2 * phi_0 * rzero * (1.0 - steep) + spawners * (steep - 0.2));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> recruits;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="structfims__popdy_1_1SRBevertonHolt.html#a555efe558976d502cf0c2bf858344356">   45</a></span>&#160;  <span class="keyword">virtual</span> <span class="keyword">const</span> Type <a class="code" href="structfims__popdy_1_1SRBevertonHolt.html#a555efe558976d502cf0c2bf858344356">evaluate</a>(<span class="keyword">const</span> Type&amp; spawners, <span class="keyword">const</span> Type&amp; phi_0) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Type recruits;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    Type steep;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    Type steep_lo = 0.2;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    Type steep_hi = 1.0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    Type rzero;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// Transform input parameters</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    steep = fims_math::inv_logit(steep_lo, steep_hi, this-&gt;logit_steep[0]);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    rzero = fims_math::exp(this-&gt;<a class="code" href="structfims__popdy_1_1RecruitmentBase.html#a0c07fb1ecfbe727ccf2659585597c56d">log_rzero</a>[0]);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    recruits = (0.8 * rzero * steep * spawners) /</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;               (0.2 * phi_0 * rzero * (1.0 - steep) + spawners * (steep - 0.2));</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> recruits;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}  <span class="comment">// namespace fims_popdy</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}  <span class="comment">// namespace fims_popdy</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_POPULATION_DYNAMICS_RECRUITMENT_SR_BEVERTON_HOLT_HPP */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="arecruitment__base_8hpp_html"><div class="ttname"><a href="recruitment__base_8hpp.html">recruitment_base.hpp</a></div></div>
-<div class="ttc" id="astructfims__popdy_1_1RecruitmentBase_html"><div class="ttname"><a href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a></div><div class="ttdoc">Base class for all recruitment functors.</div><div class="ttdef"><b>Definition:</b> recruitment_base.hpp:32</div></div>
-<div class="ttc" id="astructfims__popdy_1_1RecruitmentBase_html_aa020783765196f6028f267006e340bc9"><div class="ttname"><a href="structfims__popdy_1_1RecruitmentBase.html#aa020783765196f6028f267006e340bc9">fims_popdy::RecruitmentBase::log_rzero</a></div><div class="ttdeci">Type log_rzero</div><div class="ttdef"><b>Definition:</b> recruitment_base.hpp:42</div></div>
-<div class="ttc" id="astructfims__popdy_1_1SRBevertonHolt_html"><div class="ttname"><a href="structfims__popdy_1_1SRBevertonHolt.html">fims_popdy::SRBevertonHolt</a></div><div class="ttdoc">BevertonHolt class that returns the Beverton Holt SR from fims_math.</div><div class="ttdef"><b>Definition:</b> sr_beverton_holt.hpp:27</div></div>
-<div class="ttc" id="astructfims__popdy_1_1SRBevertonHolt_html_a441ad312c069227e5912faa32c6ec4bf"><div class="ttname"><a href="structfims__popdy_1_1SRBevertonHolt.html#a441ad312c069227e5912faa32c6ec4bf">fims_popdy::SRBevertonHolt::logit_steep</a></div><div class="ttdeci">Type logit_steep</div><div class="ttdef"><b>Definition:</b> sr_beverton_holt.hpp:31</div></div>
-<div class="ttc" id="astructfims__popdy_1_1SRBevertonHolt_html_a555efe558976d502cf0c2bf858344356"><div class="ttname"><a href="structfims__popdy_1_1SRBevertonHolt.html#a555efe558976d502cf0c2bf858344356">fims_popdy::SRBevertonHolt::evaluate</a></div><div class="ttdeci">virtual const Type evaluate(const Type &amp;spawners, const Type &amp;phi_0)</div><div class="ttdoc">Beverton Holt implementation of the stock recruitment function.</div><div class="ttdef"><b>Definition:</b> sr_beverton_holt.hpp:47</div></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FIMS_POPULATION_DYNAMICS_RECRUITMENT_SR_BEVERTON_HOLT_HPP */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="aclassfims_1_1Vector_html"><div class="ttname"><a href="classfims_1_1Vector.html">fims::Vector</a></div><div class="ttdef"><b>Definition:</b> fims_vector.hpp:25</div></div>
+<div class="ttc" id="arecruitment__base_8hpp_html"><div class="ttname"><a href="recruitment__base_8hpp.html">recruitment_base.hpp</a></div><div class="ttdoc">Serves as the parent class where recruitment functions are called.</div></div>
+<div class="ttc" id="astructfims__popdy_1_1RecruitmentBase_html"><div class="ttname"><a href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a></div><div class="ttdoc">Base class for all recruitment functors.</div><div class="ttdef"><b>Definition:</b> recruitment_base.hpp:28</div></div>
+<div class="ttc" id="astructfims__popdy_1_1RecruitmentBase_html_a0c07fb1ecfbe727ccf2659585597c56d"><div class="ttname"><a href="structfims__popdy_1_1RecruitmentBase.html#a0c07fb1ecfbe727ccf2659585597c56d">fims_popdy::RecruitmentBase::log_rzero</a></div><div class="ttdeci">fims::Vector&lt; Type &gt; log_rzero</div><div class="ttdef"><b>Definition:</b> recruitment_base.hpp:36</div></div>
+<div class="ttc" id="astructfims__popdy_1_1SRBevertonHolt_html"><div class="ttname"><a href="structfims__popdy_1_1SRBevertonHolt.html">fims_popdy::SRBevertonHolt</a></div><div class="ttdoc">BevertonHolt class that returns the Beverton Holt SR from fims_math.</div><div class="ttdef"><b>Definition:</b> sr_beverton_holt.hpp:25</div></div>
+<div class="ttc" id="astructfims__popdy_1_1SRBevertonHolt_html_a555efe558976d502cf0c2bf858344356"><div class="ttname"><a href="structfims__popdy_1_1SRBevertonHolt.html#a555efe558976d502cf0c2bf858344356">fims_popdy::SRBevertonHolt::evaluate</a></div><div class="ttdeci">virtual const Type evaluate(const Type &amp;spawners, const Type &amp;phi_0)</div><div class="ttdoc">Beverton Holt implementation of the stock recruitment function.</div><div class="ttdef"><b>Definition:</b> sr_beverton_holt.hpp:45</div></div>
+<div class="ttc" id="astructfims__popdy_1_1SRBevertonHolt_html_a98823e945f50662f448b55159b390bd4"><div class="ttname"><a href="structfims__popdy_1_1SRBevertonHolt.html#a98823e945f50662f448b55159b390bd4">fims_popdy::SRBevertonHolt::logit_steep</a></div><div class="ttdeci">fims::Vector&lt; Type &gt; logit_steep</div><div class="ttdef"><b>Definition:</b> sr_beverton_holt.hpp:29</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

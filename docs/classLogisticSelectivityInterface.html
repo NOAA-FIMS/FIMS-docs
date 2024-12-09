@@ -101,6 +101,14 @@ virtual uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el
 <tr class="memitem:af10a57e448b0a9c9a5394ce5f8da6ee1"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogisticSelectivityInterface.html#af10a57e448b0a9c9a5394ce5f8da6ee1">evaluate</a> (double x)</td></tr>
 <tr class="memdesc:af10a57e448b0a9c9a5394ce5f8da6ee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluate the logistic selectivity function  <a href="classLogisticSelectivityInterface.html#af10a57e448b0a9c9a5394ce5f8da6ee1">More...</a><br /></td></tr>
 <tr class="separator:af10a57e448b0a9c9a5394ce5f8da6ee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc07a0b7520cb94533279312ca6a944"><td class="memItemLeft" align="right" valign="top"><a id="a2dc07a0b7520cb94533279312ca6a944"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogisticSelectivityInterface.html#a2dc07a0b7520cb94533279312ca6a944">finalize</a> ()</td></tr>
+<tr class="memdesc:a2dc07a0b7520cb94533279312ca6a944"><td class="mdescLeft">&#160;</td><td class="mdescRight">finalize function. Extracts derived quantities back to the Rcpp interface object from the Information object. <br /></td></tr>
+<tr class="separator:a2dc07a0b7520cb94533279312ca6a944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6868e2168d5ebb91931548e9a3b508bc"><td class="memItemLeft" align="right" valign="top"><a id="a6868e2168d5ebb91931548e9a3b508bc"></a>
+virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogisticSelectivityInterface.html#a6868e2168d5ebb91931548e9a3b508bc">to_json</a> ()</td></tr>
+<tr class="memdesc:a6868e2168d5ebb91931548e9a3b508bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the data to json representation for the output. <br /></td></tr>
+<tr class="separator:a6868e2168d5ebb91931548e9a3b508bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top"><a id="a9183d9379777d8be70ab66af1a07f94c"></a>
 virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>
@@ -109,13 +117,16 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a93ce064fc71322d421a1d2bf6b2b6241"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogisticSelectivityInterface.html#a93ce064fc71322d421a1d2bf6b2b6241">inflection_point</a></td></tr>
-<tr class="separator:a93ce064fc71322d421a1d2bf6b2b6241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4399ae6784259be83b86f101b0933f3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameter.html">Parameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogisticSelectivityInterface.html#a4399ae6784259be83b86f101b0933f3c">slope</a></td></tr>
-<tr class="separator:a4399ae6784259be83b86f101b0933f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a561e7e782ff948a2ab666095640b4232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogisticSelectivityInterface.html#a561e7e782ff948a2ab666095640b4232">inflection_point</a></td></tr>
+<tr class="separator:a561e7e782ff948a2ab666095640b4232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68100be3ce5eddf84819939c5c7785c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classParameterVector.html">ParameterVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLogisticSelectivityInterface.html#ad68100be3ce5eddf84819939c5c7785c">slope</a></td></tr>
+<tr class="separator:ad68100be3ce5eddf84819939c5c7785c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classSelectivityInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classSelectivityInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classSelectivityInterfaceBase.html">SelectivityInterfaceBase</a></td></tr>
 <tr class="memitem:ad75482256de49ee97eb312ac8fa6fb17 inherit pub_attribs_classSelectivityInterfaceBase"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSelectivityInterfaceBase.html#ad75482256de49ee97eb312ac8fa6fb17">id</a></td></tr>
 <tr class="separator:ad75482256de49ee97eb312ac8fa6fb17 inherit pub_attribs_classSelectivityInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
+<tr class="memitem:a44e4e3b1dd18103bf79ccb30a76f5933 inherit pub_attribs_classFIMSRcppInterfaceBase"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a44e4e3b1dd18103bf79ccb30a76f5933">finalized</a> = false</td></tr>
+<tr class="separator:a44e4e3b1dd18103bf79ccb30a76f5933 inherit pub_attribs_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -168,14 +179,14 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a93ce064fc71322d421a1d2bf6b2b6241"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a93ce064fc71322d421a1d2bf6b2b6241">&#9670;&nbsp;</a></span>inflection_point</h2>
+<a id="a561e7e782ff948a2ab666095640b4232"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a561e7e782ff948a2ab666095640b4232">&#9670;&nbsp;</a></span>inflection_point</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> LogisticSelectivityInterface::inflection_point</td>
+          <td class="memname"><a class="el" href="classParameterVector.html">ParameterVector</a> LogisticSelectivityInterface::inflection_point</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -183,14 +194,14 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a4399ae6784259be83b86f101b0933f3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4399ae6784259be83b86f101b0933f3c">&#9670;&nbsp;</a></span>slope</h2>
+<a id="ad68100be3ce5eddf84819939c5c7785c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad68100be3ce5eddf84819939c5c7785c">&#9670;&nbsp;</a></span>slope</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classParameter.html">Parameter</a> LogisticSelectivityInterface::slope</td>
+          <td class="memname"><a class="el" href="classParameterVector.html">ParameterVector</a> LogisticSelectivityInterface::slope</td>
         </tr>
       </table>
 </div><div class="memdoc">
