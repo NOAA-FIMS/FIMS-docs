@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['years_610',['years',['../structfims__popdy_1_1Population.html#aee3ec924970cafa0d544102eaf79c9db',1,'fims_popdy::Population']]],
-  ['ymax_611',['ymax',['../classAgeCompDataInterface.html#a065981c4d8dd880ce7f3892502e8b8fe',1,'AgeCompDataInterface::ymax()'],['../classIndexDataInterface.html#a31c8efb7ef2c3a89ec7272101d3c03b1',1,'IndexDataInterface::ymax()']]]
+  ['x_0',['x',['../structfims__distributions_1_1DensityComponentBase.html#a41665585abc04ae5a0bd61b0c4a478da',1,'fims_distributions::DensityComponentBase::x'],['../classDnormDistributionsInterface.html#a12310c938c2b7e57425947f39cd0ebd4',1,'DnormDistributionsInterface::x'],['../classDlnormDistributionsInterface.html#aab25846177b7941148b2c589771192da',1,'DlnormDistributionsInterface::x'],['../classDmultinomDistributionsInterface.html#a48a0a46a8a38f71c167bdaba657b9ba7',1,'DmultinomDistributionsInterface::x']]]
 ];

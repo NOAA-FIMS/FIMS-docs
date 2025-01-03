@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nllinterfacebase_346',['NLLInterfaceBase',['../classNLLInterfaceBase.html',1,'']]]
+  ['normallpdf_0',['NormalLPDF',['../structfims__distributions_1_1NormalLPDF.html',1,'fims_distributions']]]
 ];
