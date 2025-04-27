@@ -7,5 +7,5 @@ var searchData=
   ['slope_5fasc_4',['slope_asc',['../classDoubleLogisticSelectivityInterface.html#a4571cc0b0713c0f9a8c5078dbe5b1033',1,'DoubleLogisticSelectivityInterface::slope_asc'],['../structfims__popdy_1_1DoubleLogisticSelectivity.html#aa0d98542e054ce41349747abcbedff13',1,'fims_popdy::DoubleLogisticSelectivity::slope_asc']]],
   ['slope_5fdesc_5',['slope_desc',['../classDoubleLogisticSelectivityInterface.html#a11333991775c1771dcdbb80704a90972',1,'DoubleLogisticSelectivityInterface::slope_desc'],['../structfims__popdy_1_1DoubleLogisticSelectivity.html#ac4c70f550f23d0a4cd97c402f6e3fff3',1,'fims_popdy::DoubleLogisticSelectivity::slope_desc']]],
   ['spawning_5fbiomass_6',['spawning_biomass',['../structfims__popdy_1_1Population.html#a02397625ffcaa3d74f1a62f1d0b27e78',1,'fims_popdy::Population']]],
-  ['storage_5fm_7',['storage_m',['../classParameterVector.html#ae05fb87cd78344afb0dcfd9f2ade7791',1,'ParameterVector']]]
+  ['storage_5fm_7',['storage_m',['../classParameterVector.html#ae05fb87cd78344afb0dcfd9f2ade7791',1,'ParameterVector::storage_m'],['../classRealVector.html#a60f12148f4f54adbf68fc515db662e89',1,'RealVector::storage_m']]]
 ];

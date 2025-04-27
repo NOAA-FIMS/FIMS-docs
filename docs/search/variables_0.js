@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['age_5fcomp_5fdata_0',['age_comp_data',['../classAgeCompDataInterface.html#a0a4628a7c7af03102f354f62723d7070',1,'AgeCompDataInterface']]],
-  ['age_5fcomposition_1',['age_composition',['../structfims__popdy_1_1Fleet.html#a8b585c2e574277bb5878794b611754d0',1,'fims_popdy::Fleet']]],
-  ['age_5flength_5fconversion_5fmatrix_2',['age_length_conversion_matrix',['../classFleetInterface.html#aba194b9a159a739cecdc34978fefe7ec',1,'FleetInterface::age_length_conversion_matrix'],['../structfims__popdy_1_1Fleet.html#a0ea2aaad41097771845416ef4fe687d0',1,'fims_popdy::Fleet::age_length_conversion_matrix']]],
-  ['ages_3',['ages',['../classEWAAGrowthInterface.html#aed99ee7c0a5c4e72fcb746ff7683d510',1,'EWAAGrowthInterface::ages'],['../classPopulationInterface.html#abc30d815840cacf4357e6c8022085eb4',1,'PopulationInterface::ages'],['../structfims__popdy_1_1Population.html#a23a683cac81c7ed67ac6a13cf129dfde',1,'fims_popdy::Population::ages']]],
-  ['amax_4',['amax',['../classAgeCompDataInterface.html#ab4bea155960215f368f55fc226d11020',1,'AgeCompDataInterface']]]
+  ['age_5fcomp_5fdata_0',['age_comp_data',['../classAgeCompDataInterface.html#a8bf0c270b8e5f9c313a396420be73ed5',1,'AgeCompDataInterface']]],
+  ['age_5fto_5flength_5fconversion_1',['age_to_length_conversion',['../classFleetInterface.html#a0a08ed1016f607eeb1c93d873ecd1cf3',1,'FleetInterface::age_to_length_conversion'],['../structfims__popdy_1_1Fleet.html#ab0ba9edd8d93288939648869c2ab6996',1,'fims_popdy::Fleet::age_to_length_conversion']]],
+  ['agecomp_5fexpected_2',['agecomp_expected',['../classFleetInterface.html#a0749fc3615237bec9f5afcef202b306e',1,'FleetInterface::agecomp_expected'],['../structfims__popdy_1_1Fleet.html#abb504a33dc5a323bedf033af2ddc91f3',1,'fims_popdy::Fleet::agecomp_expected']]],
+  ['agecomp_5fproportion_3',['agecomp_proportion',['../classFleetInterface.html#a27af06606822e93d4ca831b5de058ee7',1,'FleetInterface::agecomp_proportion'],['../structfims__popdy_1_1Fleet.html#a254ebdcc944bcd6ccfcada27cce42cd3',1,'fims_popdy::Fleet::agecomp_proportion']]],
+  ['ages_4',['ages',['../classEWAAGrowthInterface.html#a73a4b7c681da31c863f48f4f6898f892',1,'EWAAGrowthInterface::ages'],['../classPopulationInterface.html#a72bb9d21b9f124ce5d9fba3020597c84',1,'PopulationInterface::ages'],['../structfims__popdy_1_1Population.html#a23a683cac81c7ed67ac6a13cf129dfde',1,'fims_popdy::Population::ages']]],
+  ['amax_5',['amax',['../classAgeCompDataInterface.html#a2aafb99b2f77dc32fa4772c637f3da16',1,'AgeCompDataInterface']]]
 ];

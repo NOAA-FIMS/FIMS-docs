@@ -81,8 +81,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">rcpp_interface.hpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -100,6 +99,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="rcpp__selectivity_8hpp_source.html">rcpp_objects/rcpp_selectivity.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__distribution_8hpp_source.html">rcpp_objects/rcpp_distribution.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="fims__json_8hpp_source.html">../../utilities/fims_json.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rcpp__interface__base_8hpp_source.html">../rcpp/rcpp_objects/rcpp_interface_base.hpp</a>&quot;</code><br />
 </div>
 <p><a href="rcpp__interface_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -110,17 +110,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a1d0c303c2c44fcb296368608a5f2ff1a" id="r_a1d0c303c2c44fcb296368608a5f2ff1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a1d0c303c2c44fcb296368608a5f2ff1a">CreateTMBModel</a> ()</td></tr>
 <tr class="memdesc:a1d0c303c2c44fcb296368608a5f2ff1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates the TMB model object and adds interface objects to it.  <br /></td></tr>
 <tr class="separator:a1d0c303c2c44fcb296368608a5f2ff1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97fa475ef09ed3c828773c36b159edb8" id="r_a97fa475ef09ed3c828773c36b159edb8"><td class="memItemLeft" align="right" valign="top"><a id="a97fa475ef09ed3c828773c36b159edb8" name="a97fa475ef09ed3c828773c36b159edb8"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>finalize_objects</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">p</a>)</td></tr>
-<tr class="memdesc:a97fa475ef09ed3c828773c36b159edb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops through the Rcpp Interface objects and extracts derived quantities. Updates parameter estimates from model core objects. <br /></td></tr>
-<tr class="separator:a97fa475ef09ed3c828773c36b159edb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9511db6caf31357af16e29a0f6f8d01d" id="r_a9511db6caf31357af16e29a0f6f8d01d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a9511db6caf31357af16e29a0f6f8d01d">finalize_fims</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Nullable</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::List</a> &gt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">obj</a>=<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">R_NilValue</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Nullable</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::List</a> &gt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">opt</a>=<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">R_NilValue</a>)</td></tr>
-<tr class="memdesc:a9511db6caf31357af16e29a0f6f8d01d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalizes a FIMS model by updating the parameter set. This function evaluates the objective function and the gradient with the given parameter set.  <br /></td></tr>
-<tr class="separator:a9511db6caf31357af16e29a0f6f8d01d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10c9b6df645ff700ad90d030605d2c13" id="r_a10c9b6df645ff700ad90d030605d2c13"><td class="memItemLeft" align="right" valign="top"><a id="a10c9b6df645ff700ad90d030605d2c13" name="a10c9b6df645ff700ad90d030605d2c13"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_output</b> ()</td></tr>
-<tr class="memdesc:a10c9b6df645ff700ad90d030605d2c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extracts the derived quantities from model objects. <br /></td></tr>
-<tr class="separator:a10c9b6df645ff700ad90d030605d2c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0017eeb763ab859c0a9bcc36fc247bd4" id="r_a0017eeb763ab859c0a9bcc36fc247bd4"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a0017eeb763ab859c0a9bcc36fc247bd4">finalize_fims</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">par</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Function</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">fn</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Function</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">gr</a>)</td></tr>
+<tr class="separator:a0017eeb763ab859c0a9bcc36fc247bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd5cf41c12b933a40a5d3808cee44a5" id="r_accd5cf41c12b933a40a5d3808cee44a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#accd5cf41c12b933a40a5d3808cee44a5">get_fixed_parameters_vector</a> ()</td></tr>
 <tr class="memdesc:accd5cf41c12b933a40a5d3808cee44a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the fixed parameters vector object.  <br /></td></tr>
 <tr class="separator:accd5cf41c12b933a40a5d3808cee44a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,23 +130,23 @@ Functions</h2></td></tr>
 <tr class="memdesc:ac8bb3912a3ce86b15842e79d0b421204"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the vector of independent variables. <br /></td></tr>
 <tr class="separator:ac8bb3912a3ce86b15842e79d0b421204"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a924e08ad8be03c00824757641ed43619" id="r_a924e08ad8be03c00824757641ed43619"><td class="memItemLeft" align="right" valign="top"><a id="a924e08ad8be03c00824757641ed43619" name="a924e08ad8be03c00824757641ed43619"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_log</b> ()</td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_log</b> ()</td></tr>
 <tr class="memdesc:a924e08ad8be03c00824757641ed43619"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the log entries as a string in JSON format. <br /></td></tr>
 <tr class="separator:a924e08ad8be03c00824757641ed43619"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7665d61cdec92aa03255c2cd09633cc8" id="r_a7665d61cdec92aa03255c2cd09633cc8"><td class="memItemLeft" align="right" valign="top"><a id="a7665d61cdec92aa03255c2cd09633cc8" name="a7665d61cdec92aa03255c2cd09633cc8"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_log_errors</b> ()</td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_log_errors</b> ()</td></tr>
 <tr class="memdesc:a7665d61cdec92aa03255c2cd09633cc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the error entries from the log as a string in JSON format. <br /></td></tr>
 <tr class="separator:a7665d61cdec92aa03255c2cd09633cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1143b71f2fae1d0fdc570a326f2ae84e" id="r_a1143b71f2fae1d0fdc570a326f2ae84e"><td class="memItemLeft" align="right" valign="top"><a id="a1143b71f2fae1d0fdc570a326f2ae84e" name="a1143b71f2fae1d0fdc570a326f2ae84e"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_log_warnings</b> ()</td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_log_warnings</b> ()</td></tr>
 <tr class="memdesc:a1143b71f2fae1d0fdc570a326f2ae84e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the warning entries from the log as a string in JSON format. <br /></td></tr>
 <tr class="separator:a1143b71f2fae1d0fdc570a326f2ae84e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c59f540047725fab06de92844d9e243" id="r_a2c59f540047725fab06de92844d9e243"><td class="memItemLeft" align="right" valign="top"><a id="a2c59f540047725fab06de92844d9e243" name="a2c59f540047725fab06de92844d9e243"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_log_info</b> ()</td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_log_info</b> ()</td></tr>
 <tr class="memdesc:a2c59f540047725fab06de92844d9e243"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the info entries from the log as a string in JSON format. <br /></td></tr>
 <tr class="separator:a2c59f540047725fab06de92844d9e243"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c842aac2387ac8c4b0df86ce2b369d0" id="r_a1c842aac2387ac8c4b0df86ce2b369d0"><td class="memItemLeft" align="right" valign="top"><a id="a1c842aac2387ac8c4b0df86ce2b369d0" name="a1c842aac2387ac8c4b0df86ce2b369d0"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><b>get_log_module</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a> &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">module</a>)</td></tr>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_log_module</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> std::string &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">module</a>)</td></tr>
 <tr class="memdesc:a1c842aac2387ac8c4b0df86ce2b369d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets log entries by module as a string in JSON format. <br /></td></tr>
 <tr class="separator:a1c842aac2387ac8c4b0df86ce2b369d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2abfffed726ee7fcbf89f0ec216fe62" id="r_ad2abfffed726ee7fcbf89f0ec216fe62"><td class="memItemLeft" align="right" valign="top"><a id="ad2abfffed726ee7fcbf89f0ec216fe62" name="ad2abfffed726ee7fcbf89f0ec216fe62"></a>
@@ -163,7 +154,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ad2abfffed726ee7fcbf89f0ec216fe62"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, writes the log on exit. <br /></td></tr>
 <tr class="separator:ad2abfffed726ee7fcbf89f0ec216fe62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b21c940ec97b43420185f5c0cada013" id="r_a0b21c940ec97b43420185f5c0cada013"><td class="memItemLeft" align="right" valign="top"><a id="a0b21c940ec97b43420185f5c0cada013" name="a0b21c940ec97b43420185f5c0cada013"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_log_path</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a> &amp;path)</td></tr>
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>set_log_path</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> std::string &amp;path)</td></tr>
 <tr class="memdesc:a0b21c940ec97b43420185f5c0cada013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the path for the log file to be written to. <br /></td></tr>
 <tr class="separator:a0b21c940ec97b43420185f5c0cada013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8307f81a8310f0c70a7bf7bc5b4aa5ea" id="r_a8307f81a8310f0c70a7bf7bc5b4aa5ea"><td class="memItemLeft" align="right" valign="top"><a id="a8307f81a8310f0c70a7bf7bc5b4aa5ea" name="a8307f81a8310f0c70a7bf7bc5b4aa5ea"></a>
@@ -171,54 +162,23 @@ Functions</h2></td></tr>
 <tr class="memdesc:a8307f81a8310f0c70a7bf7bc5b4aa5ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">If true, throws a runtime exception when an error is logged. <br /></td></tr>
 <tr class="separator:a8307f81a8310f0c70a7bf7bc5b4aa5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb302b24e64ea5019d869cbab4a6e17f" id="r_abb302b24e64ea5019d869cbab4a6e17f"><td class="memItemLeft" align="right" valign="top"><a id="abb302b24e64ea5019d869cbab4a6e17f" name="abb302b24e64ea5019d869cbab4a6e17f"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_info</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">log_entry</a>)</td></tr>
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_info</b> (std::string <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">log_entry</a>)</td></tr>
 <tr class="memdesc:abb302b24e64ea5019d869cbab4a6e17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an info entry to the log from the R environment. <br /></td></tr>
 <tr class="separator:abb302b24e64ea5019d869cbab4a6e17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78b2e675893b5a855befac2d0932d927" id="r_a78b2e675893b5a855befac2d0932d927"><td class="memItemLeft" align="right" valign="top"><a id="a78b2e675893b5a855befac2d0932d927" name="a78b2e675893b5a855befac2d0932d927"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_warning</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">log_entry</a>)</td></tr>
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_warning</b> (std::string <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">log_entry</a>)</td></tr>
 <tr class="memdesc:a78b2e675893b5a855befac2d0932d927"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a warning entry to the log from the R environment. <br /></td></tr>
 <tr class="separator:a78b2e675893b5a855befac2d0932d927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14b639ccdb08205804ff4bfef6641f02" id="r_a14b639ccdb08205804ff4bfef6641f02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a14b639ccdb08205804ff4bfef6641f02">escapeQuotes</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a> &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">input</a>)</td></tr>
+<tr class="memitem:a14b639ccdb08205804ff4bfef6641f02" id="r_a14b639ccdb08205804ff4bfef6641f02"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a14b639ccdb08205804ff4bfef6641f02">escapeQuotes</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> std::string &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">input</a>)</td></tr>
 <tr class="memdesc:a14b639ccdb08205804ff4bfef6641f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escapes quotations.  <br /></td></tr>
 <tr class="separator:a14b639ccdb08205804ff4bfef6641f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d5c2c9072a935ebf9b36ac49cc63ef6" id="r_a3d5c2c9072a935ebf9b36ac49cc63ef6"><td class="memItemLeft" align="right" valign="top"><a id="a3d5c2c9072a935ebf9b36ac49cc63ef6" name="a3d5c2c9072a935ebf9b36ac49cc63ef6"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_error</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">log_entry</a>)</td></tr>
+<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_error</b> (std::string <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">log_entry</a>)</td></tr>
 <tr class="memdesc:a3d5c2c9072a935ebf9b36ac49cc63ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a error entry to the log from the R environment. <br /></td></tr>
 <tr class="separator:a3d5c2c9072a935ebf9b36ac49cc63ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a869139fcd54621818b4dfba7a47f89e4" id="r_a869139fcd54621818b4dfba7a47f89e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a869139fcd54621818b4dfba7a47f89e4">RCPP_MODULE</a> (fims)</td></tr>
 <tr class="memdesc:a869139fcd54621818b4dfba7a47f89e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>fims</code> Rcpp module construct, providing declarative code of what the module exposes to R.  <br /></td></tr>
 <tr class="separator:a869139fcd54621818b4dfba7a47f89e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a8004b7006cb53fb955af16544c9222fc" id="r_a8004b7006cb53fb955af16544c9222fc"><td class="memItemLeft" align="right" valign="top"><a id="a8004b7006cb53fb955af16544c9222fc" name="a8004b7006cb53fb955af16544c9222fc"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FIMS_objective_function</b></td></tr>
-<tr class="memdesc:a8004b7006cb53fb955af16544c9222fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: provide a brief description. <br /></td></tr>
-<tr class="separator:a8004b7006cb53fb955af16544c9222fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a490748cceb78884cb1d80e1441a78373" id="r_a490748cceb78884cb1d80e1441a78373"><td class="memItemLeft" align="right" valign="top"><a id="a490748cceb78884cb1d80e1441a78373" name="a490748cceb78884cb1d80e1441a78373"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">SEXP</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FIMS_gradient_function</b></td></tr>
-<tr class="memdesc:a490748cceb78884cb1d80e1441a78373"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: provide a brief description. <br /></td></tr>
-<tr class="separator:a490748cceb78884cb1d80e1441a78373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76425f0cb4233e8cdb32feff27335526" id="r_a76425f0cb4233e8cdb32feff27335526"><td class="memItemLeft" align="right" valign="top"><a id="a76425f0cb4233e8cdb32feff27335526" name="a76425f0cb4233e8cdb32feff27335526"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FIMS_function_value</b> = 0</td></tr>
-<tr class="memdesc:a76425f0cb4233e8cdb32feff27335526"><td class="mdescLeft">&#160;</td><td class="mdescRight">A double to store the objective function value. <br /></td></tr>
-<tr class="separator:a76425f0cb4233e8cdb32feff27335526"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90f612f9ff8e3b2f17bda847565d1f99" id="r_a90f612f9ff8e3b2f17bda847565d1f99"><td class="memItemLeft" align="right" valign="top"><a id="a90f612f9ff8e3b2f17bda847565d1f99" name="a90f612f9ff8e3b2f17bda847565d1f99"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FIMS_function_parameters</b></td></tr>
-<tr class="memdesc:a90f612f9ff8e3b2f17bda847565d1f99"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: provide a brief description. <br /></td></tr>
-<tr class="separator:a90f612f9ff8e3b2f17bda847565d1f99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ed5dba5ac4eb2ea073bff60addf7dbd" id="r_a6ed5dba5ac4eb2ea073bff60addf7dbd"><td class="memItemLeft" align="right" valign="top"><a id="a6ed5dba5ac4eb2ea073bff60addf7dbd" name="a6ed5dba5ac4eb2ea073bff60addf7dbd"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FIMS_function_gradient</b></td></tr>
-<tr class="memdesc:a6ed5dba5ac4eb2ea073bff60addf7dbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO: provide a brief description. <br /></td></tr>
-<tr class="separator:a6ed5dba5ac4eb2ea073bff60addf7dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7382ec4e8feca0d34447f8cf6ddc6506" id="r_a7382ec4e8feca0d34447f8cf6ddc6506"><td class="memItemLeft" align="right" valign="top"><a id="a7382ec4e8feca0d34447f8cf6ddc6506" name="a7382ec4e8feca0d34447f8cf6ddc6506"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FIMS_mgc_value</b> = 0</td></tr>
-<tr class="memdesc:a7382ec4e8feca0d34447f8cf6ddc6506"><td class="mdescLeft">&#160;</td><td class="mdescRight">A double to store the maximum gradient component. <br /></td></tr>
-<tr class="separator:a7382ec4e8feca0d34447f8cf6ddc6506"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a0b97efa94d1c52a333f444940850d9" id="r_a4a0b97efa94d1c52a333f444940850d9"><td class="memItemLeft" align="right" valign="top"><a id="a4a0b97efa94d1c52a333f444940850d9" name="a4a0b97efa94d1c52a333f444940850d9"></a>
-<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>FIMS_finalized</b> = <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">false</a></td></tr>
-<tr class="memdesc:a4a0b97efa94d1c52a333f444940850d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets FIMS_finalized to false as the default. <br /></td></tr>
-<tr class="separator:a4a0b97efa94d1c52a333f444940850d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The Rcpp interface to declare things. Allows for the use of methods::new() in R. </p>
@@ -278,9 +238,9 @@ template&lt;typename Type &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a> escapeQuotes </td>
+          <td class="memname">std::string escapeQuotes </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">std::string</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> std::string &amp;&#160;</td>
           <td class="paramname"><em>input</em></td><td>)</td>
           <td></td>
         </tr>
@@ -298,23 +258,29 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
-<a id="a9511db6caf31357af16e29a0f6f8d01d" name="a9511db6caf31357af16e29a0f6f8d01d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9511db6caf31357af16e29a0f6f8d01d">&#9670;&#160;</a></span>finalize_fims()</h2>
+<a id="a0017eeb763ab859c0a9bcc36fc247bd4" name="a0017eeb763ab859c0a9bcc36fc247bd4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0017eeb763ab859c0a9bcc36fc247bd4">&#9670;&#160;</a></span>finalize_fims()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a> finalize_fims </td>
+          <td class="memname">std::string finalize_fims </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Nullable</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::List</a> &gt;&#160;</td>
-          <td class="paramname"><em>obj</em> = <code><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">R_NilValue</a></code>, </td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::NumericVector</a>&#160;</td>
+          <td class="paramname"><em>par</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Nullable</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::List</a> &gt;&#160;</td>
-          <td class="paramname"><em>opt</em> = <code><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">R_NilValue</a></code>&#160;</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Function</a>&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::Function</a>&#160;</td>
+          <td class="paramname"><em>gr</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -323,15 +289,16 @@ template&lt;typename Type &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Finalizes a FIMS model by updating the parameter set. This function evaluates the objective function and the gradient with the given parameter set. </p>
+<p>Finalize a model run by populating derived quantities into the Rcpp interface objects and return the output as a JSON string.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">obj</td><td>Either a list containing "fn" and "gr", or a list containing two separate lists "obj" and "opt", "obj" should contain "fn" and "gr", "opt" should contain "par". In the second case, the second function argument is expected to be null and ignored. TODO: Remove the ability to take a single list. </td></tr>
-    <tr><td class="paramname">opt</td><td>A list containing "par". </td></tr>
+    <tr><td class="paramname">par</td><td>A vector of parameter values. </td></tr>
+    <tr><td class="paramname">fn</td><td>The objective function. </td></tr>
+    <tr><td class="paramname">gr</td><td>The gradient function.</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>A JSON output string is returned. </dd></dl>
 
 </div>
 </div>

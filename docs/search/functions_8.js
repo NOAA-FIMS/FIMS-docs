@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['indexdatainterface_0',['IndexDataInterface',['../classIndexDataInterface.html#a3cf28fb4c8210b1829f0cf0db42593dd',1,'IndexDataInterface']]],
+  ['indexdatainterface_0',['indexdatainterface',['../classIndexDataInterface.html#a3cf28fb4c8210b1829f0cf0db42593dd',1,'IndexDataInterface::IndexDataInterface(int ymax=0)'],['../classIndexDataInterface.html#ac8ed27e2d5cbe5a924c5479c96bb850e',1,'IndexDataInterface::IndexDataInterface(const IndexDataInterface &amp;other)']]],
   ['info_5fmessage_1',['info_message',['../classfims_1_1FIMSLog.html#aec8a86ce4a58393a028983d55d8e38bf',1,'fims::FIMSLog']]],
   ['init_5flogging_2',['init_logging',['../rcpp__interface_8hpp.html#ad8bf2ebe714bdb6a1e216ed7d9efa7a3',1,'rcpp_interface.hpp']]],
   ['initialize_3',['initialize',['../structfims__popdy_1_1Fleet.html#abf4af5ba422a680e547d95c9bf2f4920',1,'fims_popdy::Fleet::Initialize()'],['../structfims__popdy_1_1Population.html#a765b3924679833e223dcda95c88d261c',1,'fims_popdy::Population::Initialize()']]],

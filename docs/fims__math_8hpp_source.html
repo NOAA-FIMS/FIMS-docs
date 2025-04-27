@@ -189,7 +189,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="foldopen" id="foldopen00144" data-start="{" data-end="}">
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#ae8d003754148800ba87fbf228bc7d062">  144</a></span><span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code hl_function" href="fims__math_8hpp.html#ae8d003754148800ba87fbf228bc7d062">logistic</a>(<span class="keyword">const</span> Type &amp;inflection_point, <span class="keyword">const</span> Type &amp;slope,</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                           <span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keywordflow">return</span> (1.0) / (1.0 + exp(-1.0 * slope * (x - inflection_point)));</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(1.0) / (<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(1.0) + exp(Type(-1.0) * slope * (x - inflection_point)));</div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
 </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
@@ -203,7 +203,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00175" data-start="{" data-end="}">
 <div class="line"><a id="l00175" name="l00175"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#ab0329c7a64173d4612e7a1d0ddb3f3e6">  175</a></span><span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code hl_function" href="fims__math_8hpp.html#ab0329c7a64173d4612e7a1d0ddb3f3e6">inv_logit</a>(<span class="keyword">const</span> Type &amp;a, <span class="keyword">const</span> Type &amp;b, <span class="keyword">const</span> Type &amp;logit_x) {</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keywordflow">return</span> a + (b - a) / (1.0 + fims_math::exp(-logit_x));</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>  <span class="keywordflow">return</span> a + (b - a) / (<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(1.0) + fims_math::exp(-logit_x));</div>
 <div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>}</div>
 </div>
 <div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span> </div>
@@ -213,9 +213,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>                                  <span class="keyword">const</span> Type &amp;slope_asc,</div>
 <div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>                                  <span class="keyword">const</span> Type &amp;inflection_point_desc,</div>
 <div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>                                  <span class="keyword">const</span> Type &amp;slope_desc, <span class="keyword">const</span> Type &amp;x) {</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordflow">return</span> (1.0) / (1.0 + exp(-1.0 * slope_asc * (x - inflection_point_asc))) *</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>         (1.0 -</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>          (1.0) / (1.0 + exp(-1.0 * slope_desc * (x - inflection_point_desc))));</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>  <span class="keywordflow">return</span> (<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(1.0)) / (<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(1.0) + exp(Type(-1.0) * slope_asc * (x - inflection_point_asc))) *</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>         (<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(1.0) -</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>          (<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(1.0)) / (<span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(1.0) + exp(Type(-1.0) * slope_desc * (x - inflection_point_desc))));</div>
 <div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>}</div>
 </div>
 <div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
@@ -229,7 +229,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Type&gt;</div>
 <div class="foldopen" id="foldopen00243" data-start="{" data-end="}">
 <div class="line"><a id="l00243" name="l00243"></a><span class="lineno"><a class="line" href="fims__math_8hpp.html#a4c3897f03cbc7860a4b73b21f58558f6">  243</a></span><span class="keyword">inline</span> <span class="keyword">const</span> Type <a class="code hl_function" href="fims__math_8hpp.html#a4c3897f03cbc7860a4b73b21f58558f6">ad_min</a>(<span class="keyword">const</span> Type &amp;a, <span class="keyword">const</span> Type &amp;b, Type C = 1e-5) {</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="keywordflow">return</span> (a + b - <a class="code hl_function" href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">fims_math::ad_fabs</a>(a - b, C)) * 0.5;</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  <span class="keywordflow">return</span> (a + b - <a class="code hl_function" href="fims__math_8hpp.html#abda4b1b8b7ea34fcde2a05e78217d522">fims_math::ad_fabs</a>(a - b, C)) * <span class="keyword">static_cast&lt;</span>Type<span class="keyword">&gt;</span>(0.5);</div>
 <div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>}</div>
 </div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span> </div>
