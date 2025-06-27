@@ -95,8 +95,10 @@ Inheritance diagram for RecruitmentInterfaceBase:</div>
  <div class="center">
   <img src="classRecruitmentInterfaceBase.png" usemap="#RecruitmentInterfaceBase_map" alt=""/>
   <map id="RecruitmentInterfaceBase_map" name="RecruitmentInterfaceBase_map">
-<area href="classFIMSRcppInterfaceBase.html" title="Base class for all interface objects." alt="FIMSRcppInterfaceBase" shape="rect" coords="0,0,201,24"/>
+<area href="classFIMSRcppInterfaceBase.html" title="Base class for all interface objects." alt="FIMSRcppInterfaceBase" shape="rect" coords="211,0,412,24"/>
 <area href="classBevertonHoltRecruitmentInterface.html" title="Rcpp interface for Beverton–Holt to instantiate from R: beverton_holt &lt;- methods::new(beverton_holt)." alt="BevertonHoltRecruitmentInterface" shape="rect" coords="0,112,201,136"/>
+<area href="classLogDevsRecruitmentInterface.html" title="Rcpp interface for Log–Devs to instantiate from R: log_devs &lt;- methods::new(log_devs)." alt="LogDevsRecruitmentInterface" shape="rect" coords="211,112,412,136"/>
+<area href="classLogRRecruitmentInterface.html" title="Rcpp interface for Log–R to instantiate from R: log_r &lt;- methods::new(log_r)." alt="LogRRecruitmentInterface" shape="rect" coords="422,112,623,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -116,9 +118,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4bc18067795f5503eecc72ef13a9802a" id="r_a4bc18067795f5503eecc72ef13a9802a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRecruitmentInterfaceBase.html#a4bc18067795f5503eecc72ef13a9802a">get_id</a> ()=0</td></tr>
 <tr class="memdesc:a4bc18067795f5503eecc72ef13a9802a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ID for the child recruitment interface objects to inherit.  <br /></td></tr>
 <tr class="separator:a4bc18067795f5503eecc72ef13a9802a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e94c45bffb2275caa0a097b516d6155" id="r_a9e94c45bffb2275caa0a097b516d6155"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRecruitmentInterfaceBase.html#a9e94c45bffb2275caa0a097b516d6155">evaluate</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">spawners</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">ssbzero</a>)=0</td></tr>
-<tr class="memdesc:a9e94c45bffb2275caa0a097b516d6155"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method for each child recruitment interface object to inherit so each recruitment option can have an <a class="el" href="classRecruitmentInterfaceBase.html#a9e94c45bffb2275caa0a097b516d6155" title="A method for each child recruitment interface object to inherit so each recruitment option can have a...">evaluate()</a> function.  <br /></td></tr>
-<tr class="separator:a9e94c45bffb2275caa0a097b516d6155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd00dd75198dd937762133e00a79e07f" id="r_abd00dd75198dd937762133e00a79e07f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRecruitmentInterfaceBase.html#abd00dd75198dd937762133e00a79e07f">evaluate_mean</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">spawners</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">ssbzero</a>)=0</td></tr>
+<tr class="memdesc:abd00dd75198dd937762133e00a79e07f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method for each child recruitment interface object to inherit so each recruitment option can have an <a class="el" href="classRecruitmentInterfaceBase.html#abd00dd75198dd937762133e00a79e07f" title="A method for each child recruitment interface object to inherit so each recruitment option can have a...">evaluate_mean()</a> function.  <br /></td></tr>
+<tr class="separator:abd00dd75198dd937762133e00a79e07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f093ef54561e11fadb92ca96ab5624e" id="r_a0f093ef54561e11fadb92ca96ab5624e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRecruitmentInterfaceBase.html#a0f093ef54561e11fadb92ca96ab5624e">evaluate_process</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">pos</a>)=0</td></tr>
+<tr class="memdesc:a0f093ef54561e11fadb92ca96ab5624e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method for each child recruitment process interface object to inherit so each recruitment process option can have a <a class="el" href="classRecruitmentInterfaceBase.html#a0f093ef54561e11fadb92ca96ab5624e" title="A method for each child recruitment process interface object to inherit so each recruitment process o...">evaluate_process()</a> function.  <br /></td></tr>
+<tr class="separator:a0f093ef54561e11fadb92ca96ab5624e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a9183d9379777d8be70ab66af1a07f94c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>
 <tr class="memdesc:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual method to inherit to add objects to the TMB model.  <br /></td></tr>
@@ -136,6 +141,10 @@ Public Attributes</h2></td></tr>
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>id</b></td></tr>
 <tr class="memdesc:a3edf8070f5555b4868b429f7ef1b41be"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local id of the <a class="el" href="classRecruitmentInterfaceBase.html" title="Rcpp interface that serves as the parent class for Rcpp recruitment interfaces. This type should be i...">RecruitmentInterfaceBase</a> object. <br /></td></tr>
 <tr class="separator:a3edf8070f5555b4868b429f7ef1b41be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab533fcbe6e70ffa1f460795a05e2e8f8" id="r_ab533fcbe6e70ffa1f460795a05e2e8f8"><td class="memItemLeft" align="right" valign="top"><a id="ab533fcbe6e70ffa1f460795a05e2e8f8" name="ab533fcbe6e70ffa1f460795a05e2e8f8"></a>
+<a class="el" href="classSharedInt.html">SharedInt</a>&#160;</td><td class="memItemRight" valign="bottom"><b>process_id</b></td></tr>
+<tr class="memdesc:ab533fcbe6e70ffa1f460795a05e2e8f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The process id of the <a class="el" href="classRecruitmentInterfaceBase.html" title="Rcpp interface that serves as the parent class for Rcpp recruitment interfaces. This type should be i...">RecruitmentInterfaceBase</a> object. <br /></td></tr>
+<tr class="separator:ab533fcbe6e70ffa1f460795a05e2e8f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_classFIMSRcppInterfaceBase"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classFIMSRcppInterfaceBase')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classFIMSRcppInterfaceBase.html">FIMSRcppInterfaceBase</a></td></tr>
 <tr class="memitem:a44e4e3b1dd18103bf79ccb30a76f5933 inherit pub_attribs_classFIMSRcppInterfaceBase" id="r_a44e4e3b1dd18103bf79ccb30a76f5933"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>finalized</b> = <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">false</a></td></tr>
@@ -196,8 +205,8 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9e94c45bffb2275caa0a097b516d6155" name="a9e94c45bffb2275caa0a097b516d6155"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e94c45bffb2275caa0a097b516d6155">&#9670;&#160;</a></span>evaluate()</h2>
+<a id="abd00dd75198dd937762133e00a79e07f" name="abd00dd75198dd937762133e00a79e07f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd00dd75198dd937762133e00a79e07f">&#9670;&#160;</a></span>evaluate_mean()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -206,7 +215,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> RecruitmentInterfaceBase::evaluate </td>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> RecruitmentInterfaceBase::evaluate_mean </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a>&#160;</td>
           <td class="paramname"><em>spawners</em>, </td>
@@ -230,9 +239,39 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A method for each child recruitment interface object to inherit so each recruitment option can have an <a class="el" href="classRecruitmentInterfaceBase.html#a9e94c45bffb2275caa0a097b516d6155" title="A method for each child recruitment interface object to inherit so each recruitment option can have a...">evaluate()</a> function. </p>
+<p>A method for each child recruitment interface object to inherit so each recruitment option can have an <a class="el" href="classRecruitmentInterfaceBase.html#abd00dd75198dd937762133e00a79e07f" title="A method for each child recruitment interface object to inherit so each recruitment option can have a...">evaluate_mean()</a> function. </p>
 
-<p>Implemented in <a class="el" href="classBevertonHoltRecruitmentInterface.html#a769423d2ff84105da200df7ccdb12593">BevertonHoltRecruitmentInterface</a>.</p>
+<p>Implemented in <a class="el" href="classBevertonHoltRecruitmentInterface.html#abf4c40d9472a322f485b2918fd331c54">BevertonHoltRecruitmentInterface</a>, <a class="el" href="classLogDevsRecruitmentInterface.html#aebcba2ad07ac7fd5d14f57fad9309028">LogDevsRecruitmentInterface</a>, and <a class="el" href="classLogRRecruitmentInterface.html#ad4b39942af9ba9b5b4fe400e04ee6606">LogRRecruitmentInterface</a>.</p>
+
+</div>
+</div>
+<a id="a0f093ef54561e11fadb92ca96ab5624e" name="a0f093ef54561e11fadb92ca96ab5624e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f093ef54561e11fadb92ca96ab5624e">&#9670;&#160;</a></span>evaluate_process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">double</a> RecruitmentInterfaceBase::evaluate_process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A method for each child recruitment process interface object to inherit so each recruitment process option can have a <a class="el" href="classRecruitmentInterfaceBase.html#a0f093ef54561e11fadb92ca96ab5624e" title="A method for each child recruitment process interface object to inherit so each recruitment process o...">evaluate_process()</a> function. </p>
+
+<p>Implemented in <a class="el" href="classBevertonHoltRecruitmentInterface.html#a96c43dd3f7213fd1e054bf3de2f829d9">BevertonHoltRecruitmentInterface</a>, <a class="el" href="classLogDevsRecruitmentInterface.html#acff514b8c8a196743bc6dbec6fe5a545">LogDevsRecruitmentInterface</a>, and <a class="el" href="classLogRRecruitmentInterface.html#a5a5bc58cf80f5f18d61046eb633886a3">LogRRecruitmentInterface</a>.</p>
 
 </div>
 </div>
@@ -261,7 +300,7 @@ Static Public Attributes</h2></td></tr>
 
 <p>Get the ID for the child recruitment interface objects to inherit. </p>
 
-<p>Implemented in <a class="el" href="classBevertonHoltRecruitmentInterface.html#aca73a10cce5316257a27744622cd4e13">BevertonHoltRecruitmentInterface</a>.</p>
+<p>Implemented in <a class="el" href="classBevertonHoltRecruitmentInterface.html#aca73a10cce5316257a27744622cd4e13">BevertonHoltRecruitmentInterface</a>, <a class="el" href="classLogDevsRecruitmentInterface.html#a6fc28f680373a23cb13cad45b963cf09">LogDevsRecruitmentInterface</a>, and <a class="el" href="classLogRRecruitmentInterface.html#aaa5bd2d6921649de76afc16041dd7c9f">LogRRecruitmentInterface</a>.</p>
 
 </div>
 </div>

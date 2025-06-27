@@ -99,8 +99,10 @@ Inheritance diagram for fims_popdy::RecruitmentBase&lt; Type &gt;:</div>
  <div class="center">
   <img src="structfims__popdy_1_1RecruitmentBase.png" usemap="#fims_5Fpopdy::RecruitmentBase_3C_20Type_20_3E_map" alt=""/>
   <map id="fims_5Fpopdy::RecruitmentBase_3C_20Type_20_3E_map" name="fims_5Fpopdy::RecruitmentBase_3C_20Type_20_3E_map">
-<area href="structfims__model__object_1_1FIMSObject.html" title="FIMSObject struct that defines member types and returns the unique id." alt="fims_model_object::FIMSObject&lt; Type &gt;" shape="rect" coords="0,0,240,24"/>
-<area href="structfims__popdy_1_1SRBevertonHolt.html" title="BevertonHolt class that returns the Beverton–Holt stock–recruitment from fims_math." alt="fims_popdy::SRBevertonHolt&lt; Type &gt;" shape="rect" coords="0,112,240,136"/>
+<area href="structfims__model__object_1_1FIMSObject.html" title="FIMSObject struct that defines member types and returns the unique id." alt="fims_model_object::FIMSObject&lt; Type &gt;" shape="rect" coords="250,0,490,24"/>
+<area href="structfims__popdy_1_1LogDevs.html" title="Log Devs class that returns the log of the input added to the log of the recruitment deviations." alt="fims_popdy::LogDevs&lt; Type &gt;" shape="rect" coords="0,112,240,136"/>
+<area href="structfims__popdy_1_1LogR.html" title="Log Devs class that returns the log of the input added to the log of the recruitment deviations." alt="fims_popdy::LogR&lt; Type &gt;" shape="rect" coords="250,112,490,136"/>
+<area href="structfims__popdy_1_1SRBevertonHolt.html" title="BevertonHolt class that returns the Beverton–Holt stock–recruitment from fims_math." alt="fims_popdy::SRBevertonHolt&lt; Type &gt;" shape="rect" coords="500,112,740,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
@@ -114,9 +116,12 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Prepare</b> ()</td></tr>
 <tr class="memdesc:a66e5676c8b301c0bde423b89aff8b1cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the recruitment deviations vector. <br /></td></tr>
 <tr class="separator:a66e5676c8b301c0bde423b89aff8b1cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e4489a7b00845eec0e5a6c3ef34d3a0" id="r_a7e4489a7b00845eec0e5a6c3ef34d3a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a7e4489a7b00845eec0e5a6c3ef34d3a0">evaluate</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">spawners</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">ssbzero</a>)=0</td></tr>
-<tr class="memdesc:a7e4489a7b00845eec0e5a6c3ef34d3a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the expected recruitment for a given spawning input.  <br /></td></tr>
-<tr class="separator:a7e4489a7b00845eec0e5a6c3ef34d3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a255d211d815eee87714e8f26bb188d5c" id="r_a255d211d815eee87714e8f26bb188d5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a255d211d815eee87714e8f26bb188d5c">evaluate_mean</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">spawners</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">ssbzero</a>)=0</td></tr>
+<tr class="memdesc:a255d211d815eee87714e8f26bb188d5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the expected recruitment for a given spawning input.  <br /></td></tr>
+<tr class="separator:a255d211d815eee87714e8f26bb188d5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a049cd0eed9fae58a904da5dc27888db6" id="r_a049cd0eed9fae58a904da5dc27888db6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a049cd0eed9fae58a904da5dc27888db6">evaluate_process</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">pos</a>)=0</td></tr>
+<tr class="memdesc:a049cd0eed9fae58a904da5dc27888db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handle error in recruitment.  <br /></td></tr>
+<tr class="separator:a049cd0eed9fae58a904da5dc27888db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b5b378ec529600bf29803017641d042" id="r_a5b5b378ec529600bf29803017641d042"><td class="memItemLeft" align="right" valign="top"><a id="a5b5b378ec529600bf29803017641d042" name="a5b5b378ec529600bf29803017641d042"></a>
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>PrepareConstrainedDeviations</b> ()</td></tr>
 <tr class="memdesc:a5b5b378ec529600bf29803017641d042"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare constrained recruitment deviations. Based on ADMB sum-to-zero constraint implementation. We still need to adde an additional penalty to the PrepareConstrainedDeviations method. More discussion can be found here: <a href="https://groups.google.com/a/admb-project.org/g/users/c/63YJmYGEPuE">https://groups.google.com/a/admb-project.org/g/users/c/63YJmYGEPuE</a>. <br /></td></tr>
@@ -138,8 +143,18 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a89cb23e1edcad304e74ded6bc97fe220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c07fb1ecfbe727ccf2659585597c56d" id="r_a0c07fb1ecfbe727ccf2659585597c56d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a0c07fb1ecfbe727ccf2659585597c56d">log_rzero</a></td></tr>
 <tr class="separator:a0c07fb1ecfbe727ccf2659585597c56d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904e8b0d97eb1e74384291749d2bcf80" id="r_a904e8b0d97eb1e74384291749d2bcf80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a904e8b0d97eb1e74384291749d2bcf80">log_r</a></td></tr>
+<tr class="separator:a904e8b0d97eb1e74384291749d2bcf80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f6e270306d419a6fa8f3c46152986c" id="r_a98f6e270306d419a6fa8f3c46152986c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a98f6e270306d419a6fa8f3c46152986c">log_expected_recruitment</a></td></tr>
+<tr class="separator:a98f6e270306d419a6fa8f3c46152986c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a847ffa3b1acbb5b5fe44d6816e67cd1b" id="r_a847ffa3b1acbb5b5fe44d6816e67cd1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#a847ffa3b1acbb5b5fe44d6816e67cd1b">estimate_log_recruit_devs</a> = <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">true</a></td></tr>
 <tr class="separator:a847ffa3b1acbb5b5fe44d6816e67cd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7ca260969bb979cf0e954213b5df2c2" id="r_aa7ca260969bb979cf0e954213b5df2c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#aa7ca260969bb979cf0e954213b5df2c2">process_id</a> = -999</td></tr>
+<tr class="separator:aa7ca260969bb979cf0e954213b5df2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f2bf3011857f26ae17f8b30809863f" id="r_ab2f2bf3011857f26ae17f8b30809863f"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#ab2f2bf3011857f26ae17f8b30809863f">process</a></td></tr>
+<tr class="separator:ab2f2bf3011857f26ae17f8b30809863f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf427056522e39bbc0d714473c4789ce" id="r_acf427056522e39bbc0d714473c4789ce"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__popdy_1_1RecruitmentBase.html#acf427056522e39bbc0d714473c4789ce">recruitment</a></td></tr>
+<tr class="separator:acf427056522e39bbc0d714473c4789ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_structfims__model__object_1_1FIMSObject"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_structfims__model__object_1_1FIMSObject')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="structfims__model__object_1_1FIMSObject.html">fims_model_object::FIMSObject&lt; Type &gt;</a></td></tr>
 <tr class="memitem:a3922946642efc5ec4309149f1e0b188a inherit pub_attribs_structfims__model__object_1_1FIMSObject" id="r_a3922946642efc5ec4309149f1e0b188a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structfims__model__object_1_1FIMSObject.html#a3922946642efc5ec4309149f1e0b188a">id</a></td></tr>
 <tr class="separator:a3922946642efc5ec4309149f1e0b188a inherit pub_attribs_structfims__model__object_1_1FIMSObject"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -165,8 +180,8 @@ struct fims_popdy::RecruitmentBase&lt; Type &gt;</div><p>Base class for all recr
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a7e4489a7b00845eec0e5a6c3ef34d3a0" name="a7e4489a7b00845eec0e5a6c3ef34d3a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e4489a7b00845eec0e5a6c3ef34d3a0">&#9670;&#160;</a></span>evaluate()</h2>
+<a id="a255d211d815eee87714e8f26bb188d5c" name="a255d211d815eee87714e8f26bb188d5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a255d211d815eee87714e8f26bb188d5c">&#9670;&#160;</a></span>evaluate_mean()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +192,7 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::evaluate </td>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::evaluate_mean </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &amp;&#160;</td>
           <td class="paramname"><em>spawners</em>, </td>
@@ -210,7 +225,45 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="structfims__popdy_1_1SRBevertonHolt.html#a555efe558976d502cf0c2bf858344356">fims_popdy::SRBevertonHolt&lt; Type &gt;</a>.</p>
+<p>Implemented in <a class="el" href="structfims__popdy_1_1LogDevs.html#ac3cc0ac53d044d164207d9f90595cd58">fims_popdy::LogDevs&lt; Type &gt;</a>, <a class="el" href="structfims__popdy_1_1LogR.html#aaa0dc8c7d1e2cef1e7c060e2f93ffdb3">fims_popdy::LogR&lt; Type &gt;</a>, and <a class="el" href="structfims__popdy_1_1SRBevertonHolt.html#ad668df4ac02082db095bc86068a2c639">fims_popdy::SRBevertonHolt&lt; Type &gt;</a>.</p>
+
+</div>
+</div>
+<a id="a049cd0eed9fae58a904da5dc27888db6" name="a049cd0eed9fae58a904da5dc27888db6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a049cd0eed9fae58a904da5dc27888db6">&#9670;&#160;</a></span>evaluate_process()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">class</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::evaluate_process </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">size_t</a>&#160;</td>
+          <td class="paramname"><em>pos</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handle error in recruitment. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pos</td><td>Position index, e.g., which year. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="structfims__popdy_1_1LogDevs.html#a783fb17bfcfcb15ad1e26a4c34bceff5">fims_popdy::LogDevs&lt; Type &gt;</a>, <a class="el" href="structfims__popdy_1_1LogR.html#a0b9d9b3728dc66e879babb02f3088a4d">fims_popdy::LogR&lt; Type &gt;</a>, and <a class="el" href="structfims__popdy_1_1SRBevertonHolt.html#ac1881bd68c7990ff9b0b47904e72a2b6">fims_popdy::SRBevertonHolt&lt; Type &gt;</a>.</p>
 
 </div>
 </div>
@@ -274,6 +327,40 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
 
 </div>
 </div>
+<a id="a98f6e270306d419a6fa8f3c46152986c" name="a98f6e270306d419a6fa8f3c46152986c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f6e270306d419a6fa8f3c46152986c">&#9670;&#160;</a></span>log_expected_recruitment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">class</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&gt; <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::log_expected_recruitment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Expectation of the recruitment process </p>
+
+</div>
+</div>
+<a id="a904e8b0d97eb1e74384291749d2bcf80" name="a904e8b0d97eb1e74384291749d2bcf80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a904e8b0d97eb1e74384291749d2bcf80">&#9670;&#160;</a></span>log_r</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">class</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfims_1_1Vector.html">fims::Vector</a>&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&gt; <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::log_r</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Natural log of recruitment used for random effects </p>
+
+</div>
+</div>
 <a id="af1151687013ce34c91144260da6ed8c6" name="af1151687013ce34c91144260da6ed8c6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af1151687013ce34c91144260da6ed8c6">&#9670;&#160;</a></span>log_recruit_devs</h2>
 
@@ -305,6 +392,57 @@ template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e34
       </table>
 </div><div class="memdoc">
 <p>Natural log of unexploited recruitment. </p>
+
+</div>
+</div>
+<a id="ab2f2bf3011857f26ae17f8b30809863f" name="ab2f2bf3011857f26ae17f8b30809863f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f2bf3011857f26ae17f8b30809863f">&#9670;&#160;</a></span>process</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">class</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&gt; &gt; <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::process</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>shared pointer to recruitment processmodule </p>
+
+</div>
+</div>
+<a id="aa7ca260969bb979cf0e954213b5df2c2" name="aa7ca260969bb979cf0e954213b5df2c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ca260969bb979cf0e954213b5df2c2">&#9670;&#160;</a></span>process_id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">class</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">int</a> <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::process_id = -999</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>id of recruitment process model object </p>
+
+</div>
+</div>
+<a id="acf427056522e39bbc0d714473c4789ce" name="acf427056522e39bbc0d714473c4789ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf427056522e39bbc0d714473c4789ce">&#9670;&#160;</a></span>recruitment</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">class</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::shared_ptr&lt;<a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a>&gt; &gt; <a class="el" href="structfims__popdy_1_1RecruitmentBase.html">fims_popdy::RecruitmentBase</a>&lt; <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Type</a> &gt;::recruitment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>shared pointer to recruitment module </p>
 
 </div>
 </div>

@@ -86,20 +86,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The Rcpp interface to declare things. Allows for the use of methods::new() in R.  
+<p>The Rcpp interface to declare things.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;rcpp_objects/rcpp_data.hpp&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="model_8hpp_source.html">../../common/model.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="fims__json_8hpp_source.html">../../utilities/fims_json.hpp</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="rcpp__interface__base_8hpp_source.html">rcpp_objects/rcpp_interface_base.hpp</a>&quot;</code><br />
+<code>#include &quot;rcpp_objects/rcpp_data.hpp&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__fleet_8hpp_source.html">rcpp_objects/rcpp_fleet.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__growth_8hpp_source.html">rcpp_objects/rcpp_growth.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__maturity_8hpp_source.html">rcpp_objects/rcpp_maturity.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="rcpp__natural__mortality_8hpp_source.html">rcpp_objects/rcpp_natural_mortality.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="model_8hpp_source.html">../../common/model.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__population_8hpp_source.html">rcpp_objects/rcpp_population.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__recruitment_8hpp_source.html">rcpp_objects/rcpp_recruitment.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__selectivity_8hpp_source.html">rcpp_objects/rcpp_selectivity.hpp</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="rcpp__distribution_8hpp_source.html">rcpp_objects/rcpp_distribution.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="fims__json_8hpp_source.html">../../utilities/fims_json.hpp</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="rcpp__interface__base_8hpp_source.html">../rcpp/rcpp_objects/rcpp_interface_base.hpp</a>&quot;</code><br />
 </div>
 <p><a href="rcpp__interface_8hpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -121,6 +120,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a82e3a00b5981f857ed79cd594f70bf0e" id="r_a82e3a00b5981f857ed79cd594f70bf0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a82e3a00b5981f857ed79cd594f70bf0e">get_parameter_names</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::List</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">pars</a>)</td></tr>
 <tr class="memdesc:a82e3a00b5981f857ed79cd594f70bf0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the parameter names object.  <br /></td></tr>
 <tr class="separator:a82e3a00b5981f857ed79cd594f70bf0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9adbb18f4b688138a54a189ff3b36e1" id="r_af9adbb18f4b688138a54a189ff3b36e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#af9adbb18f4b688138a54a189ff3b36e1">get_random_names</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::List</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">pars</a>)</td></tr>
+<tr class="memdesc:af9adbb18f4b688138a54a189ff3b36e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the random effects names object.  <br /></td></tr>
+<tr class="separator:af9adbb18f4b688138a54a189ff3b36e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f5a235582e7cc0f29e3431fc89ef10d" id="r_a9f5a235582e7cc0f29e3431fc89ef10d"><td class="memTemplParams" colspan="2">template&lt;typename Type &gt; </td></tr>
 <tr class="memitem:a9f5a235582e7cc0f29e3431fc89ef10d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">clear_internal</a> ()</td></tr>
 <tr class="memdesc:a9f5a235582e7cc0f29e3431fc89ef10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the internal objects.  <br /></td></tr>
@@ -176,12 +178,9 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>get_log_module
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>log_error</b> (std::string <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">log_entry</a>)</td></tr>
 <tr class="memdesc:a3d5c2c9072a935ebf9b36ac49cc63ef6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a error entry to the log from the R environment. <br /></td></tr>
 <tr class="separator:a3d5c2c9072a935ebf9b36ac49cc63ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a869139fcd54621818b4dfba7a47f89e4" id="r_a869139fcd54621818b4dfba7a47f89e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="rcpp__interface_8hpp.html#a869139fcd54621818b4dfba7a47f89e4">RCPP_MODULE</a> (fims)</td></tr>
-<tr class="memdesc:a869139fcd54621818b4dfba7a47f89e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <code>fims</code> Rcpp module construct, providing declarative code of what the module exposes to R.  <br /></td></tr>
-<tr class="separator:a869139fcd54621818b4dfba7a47f89e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The Rcpp interface to declare things. Allows for the use of methods::new() in R. </p>
+<div class="textblock"><p>The Rcpp interface to declare things. </p>
 <dl class="section copyright"><dt>Copyright</dt><dd>This file is part of the NOAA, National Marine Fisheries Service Fisheries Integrated Modeling System project. See LICENSE in the source folder for reuse information. </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a9f5a235582e7cc0f29e3431fc89ef10d" name="a9f5a235582e7cc0f29e3431fc89ef10d"></a>
@@ -349,6 +348,33 @@ template&lt;typename Type &gt; </div>
 
 </div>
 </div>
+<a id="af9adbb18f4b688138a54a189ff3b36e1" name="af9adbb18f4b688138a54a189ff3b36e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9adbb18f4b688138a54a189ff3b36e1">&#9670;&#160;</a></span>get_random_names()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::List</a> get_random_names </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">Rcpp::List</a>&#160;</td>
+          <td class="paramname"><em>pars</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the random effects names object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pars</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Rcpp::List </dd></dl>
+
+</div>
+</div>
 <a id="ace395771e2a80c98b2ae2e3da4d141dc" name="ace395771e2a80c98b2ae2e3da4d141dc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace395771e2a80c98b2ae2e3da4d141dc">&#9670;&#160;</a></span>get_random_parameters_vector()</h2>
 
@@ -384,27 +410,6 @@ template&lt;typename Type &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Initializes the logging system, setting all signal handling. </p>
-
-</div>
-</div>
-<a id="a869139fcd54621818b4dfba7a47f89e4" name="a869139fcd54621818b4dfba7a47f89e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a869139fcd54621818b4dfba7a47f89e4">&#9670;&#160;</a></span>RCPP_MODULE()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">RCPP_MODULE </td>
-          <td>(</td>
-          <td class="paramtype">fims&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The <code>fims</code> Rcpp module construct, providing declarative code of what the module exposes to R. </p>
-<p>Each element included in the module should have a name, a pointer, and a description separated by commas in that order. Both the name and the description should be wrapped in quotes. The description is printed to the screen when the R function <code>methods::show()</code> is used on the object. The available description should exactly match the information found in the brief tag where the function, class, etc. is documented. See the Rcpp vignette for more information on documenting modules, particularly how to include lists for parameters to a function. Each of the functions included in this module should be exported by manually exporting them in R/FIMS-package.R. </p>
 
 </div>
 </div>

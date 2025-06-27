@@ -21,9 +21,8 @@ var searchData=
   ['checkdimensions_18',['CheckDimensions',['../structfims__model__object_1_1FIMSObject.html#a81239daf538745bbb96c56f627edc781',1,'fims_model_object::FIMSObject']]],
   ['clear_19',['clear',['../classfims__info_1_1Information.html#a8b9e6bc88cfee7e80b360eea2d2853b5',1,'fims_info::Information::Clear()'],['../classfims_1_1FIMSLog.html#a1bd3de73d5a5a6727e3f2b3bd8d4c43c',1,'fims::FIMSLog::clear()'],['../classfims_1_1Vector.html#aee67983e5dafc3b081d3777220cb3c99',1,'fims::Vector::clear()'],['../rcpp__interface_8hpp.html#ac8bb3912a3ce86b15842e79d0b421204',1,'clear():&#160;rcpp_interface.hpp']]],
   ['clear_5finternal_20',['clear_internal',['../rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d',1,'rcpp_interface.hpp']]],
-  ['compois_5fcalc_5fvar_21',['compois_calc_var',['../init_8hpp.html#a8190061e4fa4ebe4914e754c8b430847',1,'init.hpp']]],
-  ['createfleetobjects_22',['CreateFleetObjects',['../classfims__info_1_1Information.html#abc3b88b939a39ab003021f11ad9e88c1',1,'fims_info::Information']]],
-  ['createmodel_23',['CreateModel',['../classfims__info_1_1Information.html#a87a3d2d9a1575dbba625398e7cadd904',1,'fims_info::Information']]],
-  ['createpopulationobjects_24',['CreatePopulationObjects',['../classfims__info_1_1Information.html#a4dfbfb078010da333e1be823deccc76f',1,'fims_info::Information']]],
-  ['createtmbmodel_25',['CreateTMBModel',['../rcpp__interface_8hpp.html#a1d0c303c2c44fcb296368608a5f2ff1a',1,'rcpp_interface.hpp']]]
+  ['createfleetobjects_21',['CreateFleetObjects',['../classfims__info_1_1Information.html#abc3b88b939a39ab003021f11ad9e88c1',1,'fims_info::Information']]],
+  ['createmodel_22',['CreateModel',['../classfims__info_1_1Information.html#a87a3d2d9a1575dbba625398e7cadd904',1,'fims_info::Information']]],
+  ['createpopulationobjects_23',['CreatePopulationObjects',['../classfims__info_1_1Information.html#a4dfbfb078010da333e1be823deccc76f',1,'fims_info::Information']]],
+  ['createtmbmodel_24',['CreateTMBModel',['../rcpp__interface_8hpp.html#a1d0c303c2c44fcb296368608a5f2ff1a',1,'rcpp_interface.hpp']]]
 ];
