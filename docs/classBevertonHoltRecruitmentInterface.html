@@ -105,6 +105,9 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><b>BevertonHoltRecruitmentInterface</b> ()</td></tr>
 <tr class="memdesc:ae1bcd12bfe35ca1a70652f2118038fc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor. <br /></td></tr>
 <tr class="separator:ae1bcd12bfe35ca1a70652f2118038fc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a806ad8496224971001a73770621abd17" id="r_a806ad8496224971001a73770621abd17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBevertonHoltRecruitmentInterface.html#a806ad8496224971001a73770621abd17">BevertonHoltRecruitmentInterface</a> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a> &amp;<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">other</a>)</td></tr>
+<tr class="memdesc:a806ad8496224971001a73770621abd17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new Beverton&ndash;Holt Recruitment Interface object.  <br /></td></tr>
+<tr class="separator:a806ad8496224971001a73770621abd17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d47815b9315d537e414e8036bb10fd6" id="r_a6d47815b9315d537e414e8036bb10fd6"><td class="memItemLeft" align="right" valign="top"><a id="a6d47815b9315d537e414e8036bb10fd6" name="a6d47815b9315d537e414e8036bb10fd6"></a>
 <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a>&#160;</td><td class="memItemRight" valign="bottom"><b>~BevertonHoltRecruitmentInterface</b> ()</td></tr>
 <tr class="memdesc:a6d47815b9315d537e414e8036bb10fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The destructor. <br /></td></tr>
@@ -143,6 +146,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a9183d9379777d8be70ab66af1a07f94c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">virtual</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFIMSRcppInterfaceBase.html#a9183d9379777d8be70ab66af1a07f94c">add_to_fims_tmb</a> ()</td></tr>
 <tr class="memdesc:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">A virtual method to inherit to add objects to the TMB model.  <br /></td></tr>
 <tr class="separator:a9183d9379777d8be70ab66af1a07f94c inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fa6e0deb883a921fe70b328cdd30fee inherit pub_methods_classFIMSRcppInterfaceBase" id="r_a1fa6e0deb883a921fe70b328cdd30fee"><td class="memItemLeft" align="right" valign="top">
+std::string&#160;</td><td class="memItemRight" valign="bottom"><b>make_dimensions</b> (<a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">start</a>, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> end, <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">uint32_t</a> <a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">rep</a>=1)</td></tr>
+<tr class="memdesc:a1fa6e0deb883a921fe70b328cdd30fee inherit pub_methods_classFIMSRcppInterfaceBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a string of dimensions for the model. <br /></td></tr>
+<tr class="separator:a1fa6e0deb883a921fe70b328cdd30fee inherit pub_methods_classFIMSRcppInterfaceBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -216,7 +223,42 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Rcpp interface for Beverton&ndash;Holt to instantiate from R: beverton_holt &lt;- methods::new(beverton_holt). </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a806ad8496224971001a73770621abd17" name="a806ad8496224971001a73770621abd17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a806ad8496224971001a73770621abd17">&#9670;&#160;</a></span>BevertonHoltRecruitmentInterface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">BevertonHoltRecruitmentInterface::BevertonHoltRecruitmentInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="rcpp__interface_8hpp.html#a9f5a235582e7cc0f29e3431fc89ef10d">const</a> <a class="el" href="classBevertonHoltRecruitmentInterface.html">BevertonHoltRecruitmentInterface</a> &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a new Beverton&ndash;Holt Recruitment Interface object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The passed object to copy. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="abf4c40d9472a322f485b2918fd331c54" name="abf4c40d9472a322f485b2918fd331c54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abf4c40d9472a322f485b2918fd331c54">&#9670;&#160;</a></span>evaluate_mean()</h2>
 

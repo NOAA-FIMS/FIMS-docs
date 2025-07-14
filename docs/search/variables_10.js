@@ -1,7 +1,7 @@
 var searchData=
 [
   ['random_5feffects_5fnames_0',['random_effects_names',['../classfims__info_1_1Information.html#acae6ee10137877bb3a4d3f353bd2b49a',1,'fims_info::Information']]],
-  ['random_5feffects_5fparameters_1',['random_effects_parameters',['../classfims__info_1_1Information.html#a1a1aab0813d3722c93487db9ca0ef168',1,'fims_info::Information::random_effects_parameters'],['../structfims__model__object_1_1FIMSObject.html#a9d8ddb11af5bb51a811f7d4c855f49b3',1,'fims_model_object::FIMSObject::random_effects_parameters']]],
+  ['random_5feffects_5fparameters_1',['random_effects_parameters',['../classfims__info_1_1Information.html#af78de7edc3287ccc7b047cea2275db8d',1,'fims_info::Information::random_effects_parameters'],['../structfims__model__object_1_1FIMSObject.html#a9d8ddb11af5bb51a811f7d4c855f49b3',1,'fims_model_object::FIMSObject::random_effects_parameters']]],
   ['rank_2',['rank',['../structfims_1_1LogEntry.html#a2db0d4c1a68442562f1a33d845ed89ad',1,'fims::LogEntry']]],
   ['re_3',['re',['../structfims__distributions_1_1DistributionElementObject.html#a7e58c13fb66f45a86e4190755036f396',1,'fims_distributions::DistributionElementObject']]],
   ['re_5fexpected_5fvalues_4',['re_expected_values',['../structfims__distributions_1_1DistributionElementObject.html#a90489663aa2d07a312895e85c4f74ca0',1,'fims_distributions::DistributionElementObject']]],

@@ -7,6 +7,7 @@ var searchData=
   ['max_5fm_4',['max_m',['../classParameter.html#ace3bc0c1165266d153b58730ee540289',1,'Parameter']]],
   ['message_5',['message',['../structfims_1_1LogEntry.html#a700eef36069cb58bdbfd77b0dd1dd857',1,'fims::LogEntry']]],
   ['min_5fm_6',['min_m',['../classParameter.html#afd532cb4fb7bac35a67a0097ea16b784',1,'Parameter']]],
-  ['mortality_5ff_7',['mortality_F',['../structfims__popdy_1_1Population.html#a15111c6b28581eb1e0b53c0e3a72dee0',1,'fims_popdy::Population']]],
-  ['mortality_5fz_8',['mortality_Z',['../structfims__popdy_1_1Population.html#ac1255c1f4cea7211ba9e0739e30ceafe',1,'fims_popdy::Population']]]
+  ['models_5fmap_7',['models_map',['../classfims__info_1_1Information.html#a14847edc29ac248e9dcaf194d824112b',1,'fims_info::Information']]],
+  ['mortality_5ff_8',['mortality_F',['../structfims__popdy_1_1Population.html#a15111c6b28581eb1e0b53c0e3a72dee0',1,'fims_popdy::Population']]],
+  ['mortality_5fz_9',['mortality_Z',['../structfims__popdy_1_1Population.html#ac1255c1f4cea7211ba9e0739e30ceafe',1,'fims_popdy::Population']]]
 ];

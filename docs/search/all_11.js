@@ -2,7 +2,7 @@ var searchData=
 [
   ['r_5finit_5ffims_0',['R_init_FIMS',['../init_8hpp.html#add719baf213d3976fb31c220eb9285e0',1,'init.hpp']]],
   ['random_5feffects_5fnames_1',['random_effects_names',['../classfims__info_1_1Information.html#acae6ee10137877bb3a4d3f353bd2b49a',1,'fims_info::Information']]],
-  ['random_5feffects_5fparameters_2',['random_effects_parameters',['../classfims__info_1_1Information.html#a1a1aab0813d3722c93487db9ca0ef168',1,'fims_info::Information::random_effects_parameters'],['../structfims__model__object_1_1FIMSObject.html#a9d8ddb11af5bb51a811f7d4c855f49b3',1,'fims_model_object::FIMSObject::random_effects_parameters']]],
+  ['random_5feffects_5fparameters_2',['random_effects_parameters',['../classfims__info_1_1Information.html#af78de7edc3287ccc7b047cea2275db8d',1,'fims_info::Information::random_effects_parameters'],['../structfims__model__object_1_1FIMSObject.html#a9d8ddb11af5bb51a811f7d4c855f49b3',1,'fims_model_object::FIMSObject::random_effects_parameters']]],
   ['rank_3',['rank',['../structfims_1_1LogEntry.html#a2db0d4c1a68442562f1a33d845ed89ad',1,'fims::LogEntry']]],
   ['rbegin_4',['rbegin',['../classfims_1_1Vector.html#aa9e587a5f579f6901af405f1af903046',1,'fims::Vector::rbegin() const'],['../classfims_1_1Vector.html#ab4cab34b7f946e3db28befa6ee590e2f',1,'fims::Vector::rbegin()']]],
   ['rcpp_5fdistribution_2ehpp_5',['rcpp_distribution.hpp',['../rcpp__distribution_8hpp.html',1,'']]],
@@ -40,7 +40,8 @@ var searchData=
   ['rend_37',['rend',['../classfims_1_1Vector.html#a1b420e6d1d0898afb90b127a06bb11e6',1,'fims::Vector::rend()'],['../classfims_1_1Vector.html#a864f6aaa6466ce9ea6723e6decd880df',1,'fims::Vector::rend() const']]],
   ['report_5flpdf_5fvec_38',['report_lpdf_vec',['../structfims__distributions_1_1DensityComponentBase.html#a367e5731b7daf234896a653c03ecaa3e',1,'fims_distributions::DensityComponentBase']]],
   ['reserve_39',['reserve',['../classfims_1_1Vector.html#a254cc7fdb1dc247fae2216726cc720e7',1,'fims::Vector']]],
-  ['resize_40',['resize',['../classfims_1_1Vector.html#a971eba3d10861eaabaf2b0252182fed9',1,'fims::Vector::resize()'],['../classParameterVector.html#a098cdfbbf65f58ee93ffc76090a80e92',1,'ParameterVector::resize()'],['../classRealVector.html#a56c89a02cdc713619a20e68563545be8',1,'RealVector::resize()']]],
-  ['reverse_5fiterator_41',['reverse_iterator',['../classfims_1_1Vector.html#afb654ff466fb19c85e9d325c1cffcf05',1,'fims::Vector']]],
-  ['routine_42',['routine',['../structfims_1_1LogEntry.html#a47814f40499111f33bed9fa4da6fa619',1,'fims::LogEntry']]]
+  ['resetvector_40',['ResetVector',['../classfims__popdy_1_1FisheryModelBase.html#ab755a0916428375053ade26191ff76a0',1,'fims_popdy::FisheryModelBase']]],
+  ['resize_41',['resize',['../classfims_1_1Vector.html#a971eba3d10861eaabaf2b0252182fed9',1,'fims::Vector::resize()'],['../classParameterVector.html#a098cdfbbf65f58ee93ffc76090a80e92',1,'ParameterVector::resize()'],['../classRealVector.html#a56c89a02cdc713619a20e68563545be8',1,'RealVector::resize()']]],
+  ['reverse_5fiterator_42',['reverse_iterator',['../classfims_1_1Vector.html#afb654ff466fb19c85e9d325c1cffcf05',1,'fims::Vector']]],
+  ['routine_43',['routine',['../structfims_1_1LogEntry.html#a47814f40499111f33bed9fa4da6fa619',1,'fims::LogEntry']]]
 ];

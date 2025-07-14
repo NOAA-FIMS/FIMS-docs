@@ -21,8 +21,9 @@ var searchData=
   ['derived_5flengthcomp_5fexpected_18',['derived_lengthcomp_expected',['../classFleetInterface.html#abd4836a0d9324dd64918a9b939fd913b',1,'FleetInterface']]],
   ['derived_5flengthcomp_5fproportion_19',['derived_lengthcomp_proportion',['../classFleetInterface.html#a92f6568a26eb99e47cd3c26f6d260614',1,'FleetInterface']]],
   ['derived_5fnaa_20',['derived_naa',['../classPopulationInterface.html#ac62f6d1404ac524f199d25fc60f2ab18',1,'PopulationInterface']]],
-  ['derived_5frecruitment_21',['derived_recruitment',['../classPopulationInterface.html#ac0a406e387acafa04f511fe3d99e7650',1,'PopulationInterface']]],
-  ['derived_5fssb_22',['derived_ssb',['../classPopulationInterface.html#a30ce5e52dec3526c7b1b506bfc0da851',1,'PopulationInterface']]],
-  ['dimensions_23',['dimensions',['../structfims__data__object_1_1DataObject.html#ad407ca752c73714b8852b894b3a76026',1,'fims_data_object::DataObject']]],
-  ['dims_24',['dims',['../structfims__distributions_1_1MultinomialLPMF.html#a8f53d2cb377f00bdc112f4ca704da24d',1,'fims_distributions::MultinomialLPMF::dims'],['../classDmultinomDistributionsInterface.html#aa8dd20f0a80e26733c7e70ca27fab55d',1,'DmultinomDistributionsInterface::dims']]]
+  ['derived_5fquantities_21',['derived_quantities',['../structfims__popdy_1_1Fleet.html#a5bc960dd8b05003c01a312086f0d4acc',1,'fims_popdy::Fleet::derived_quantities'],['../structfims__popdy_1_1Population.html#afa101b4c2da741e3d2648d02010b5de6',1,'fims_popdy::Population::derived_quantities']]],
+  ['derived_5frecruitment_22',['derived_recruitment',['../classPopulationInterface.html#ac0a406e387acafa04f511fe3d99e7650',1,'PopulationInterface']]],
+  ['derived_5fssb_23',['derived_ssb',['../classPopulationInterface.html#a30ce5e52dec3526c7b1b506bfc0da851',1,'PopulationInterface']]],
+  ['dimensions_24',['dimensions',['../structfims__data__object_1_1DataObject.html#ad407ca752c73714b8852b894b3a76026',1,'fims_data_object::DataObject']]],
+  ['dims_25',['dims',['../structfims__distributions_1_1MultinomialLPMF.html#a8f53d2cb377f00bdc112f4ca704da24d',1,'fims_distributions::MultinomialLPMF::dims'],['../classDmultinomDistributionsInterface.html#aa8dd20f0a80e26733c7e70ca27fab55d',1,'DmultinomDistributionsInterface::dims']]]
 ];
